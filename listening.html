@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>听力练习</title><link rel="stylesheet" href="listening.css">
+</head>
+<body>
+  <main class="wrap">
+    <nav class="topbar"><a id="back-link" href="index.html">← 返回练习列表</a><div class="top-actions"><span id="save-status" role="status"></span><button type="button" class="secondary" id="open-words">核心词汇词组</button><button type="button" class="secondary" id="open-records">查看做题记录</button></div></nav>
+    <header class="intro"><div class="eyebrow" id="practice-label"></div><h1 id="practice-title"></h1></header>
+    <nav class="section-nav" id="section-nav" aria-label="练习部分"></nav>
+    <div id="sections"></div>
+  </main>
+  <dialog id="words-dialog" aria-labelledby="words-title"><div class="dialog-head"><h2 id="words-title">核心词汇词组</h2><button type="button" class="close-dialog" data-close="words-dialog" aria-label="关闭">×</button></div><div class="word-list" id="word-list"></div></dialog>
+  <dialog id="records-dialog" aria-labelledby="records-title"><div class="dialog-head"><h2 id="records-title">做题记录</h2><button type="button" class="close-dialog" data-close="records-dialog" aria-label="关闭">×</button></div><div class="records-body"><div class="record-list" id="record-list"></div><div class="record-detail" id="record-detail"></div></div></dialog>
+  <script src="core-vocab.js"></script>
+  <script src="data/listening-practices.js"></script>
+  <script src="data/audio-timings.js"></script>
+  <script src="modules/shared.js"></script>
+  <script src="modules/locator.js"></script>
+  <script src="modules/paraphrase.js"></script>
+  <script src="modules/signal.js"></script>
+  <script src="listening-engine.js"></script>
+</body></html>

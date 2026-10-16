@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>选择练习</title>
+  <style>
+    :root{font-family:"Segoe UI","Microsoft YaHei",sans-serif;color:#27332e;background:#f7f5ef}*{box-sizing:border-box}body{margin:0}.wrap{max-width:800px;margin:auto;padding:38px 22px 70px}a{color:#245944;text-decoration:none}.back{font-size:14px}h1{font-family:Georgia,"Noto Serif SC",serif;font-size:clamp(30px,5vw,44px);font-weight:600;margin:32px 0 8px}.sub{color:#66736c;margin:0 0 30px}.practice{display:block;background:#fffefa;border:1px solid #deded5;border-radius:13px;padding:20px 22px;margin:12px 0;box-shadow:0 2px 8px #27332e0c}.practice:hover{border-color:#98af9e}.practice strong{display:block;color:#27332e;font-size:18px}.practice span{font-size:13px;color:#66736c}.empty{padding:45px 24px;text-align:center;background:#fffefa;border:1px solid #deded5;border-radius:13px;color:#66736c}.empty strong{display:block;color:#27332e;font-size:19px;margin-bottom:6px}
+  </style>
+</head>
+<body><main class="wrap"><a class="back" href="index.html">← 返回主页</a><h1 id="title"></h1><p class="sub" id="subtitle"></p><div id="practice-list"></div></main>
+<script src="exercise-catalog.js"></script>
+<script>
+  const p=new URLSearchParams(location.search);const mode=p.get('mode'),book=Number(p.get('book')),test=Number(p.get('test')),part=Number(p.get('part'));
+  const valid=['listening','reading'].includes(mode)&&Number.isInteger(book)&&book>=4&&book<=21&&Number.isInteger(test)&&test>=1&&test<=4&&Number.isInteger(part)&&part>=1&&part<=(mode==='listening'?4:3);
+  const list=document.querySelector('#practice-list');
+  if(!valid){document.querySelector('#title').textContent='没有找到这一项';document.querySelector('#subtitle').textContent='请从目录重新选择。'}
+  else{const label=`C${book} · Test ${test} · ${mode==='listening'?'Part':'Passage'} ${part}`;document.title=label+' · 练习';document.querySelector('#title').textContent=label;document.querySelector('#subtitle').textContent=mode==='listening'?'听力练习':'阅读练习';const entries=RRExerciseCatalog.filter(entry=>entry.mode===mode&&entry.book===book&&entry.test===test&&entry.part===part);if(entries.length){entries.forEach(entry=>{const a=document.createElement('a');a.className='practice';a.href=entry.url;const strong=document.createElement('strong');strong.textContent=entry.title;const span=document.createElement('span');span.textContent=entry.description;a.append(strong,span);list.append(a)})}else{const box=document.createElement('div');box.className='empty';box.innerHTML='<strong>暂无练习</strong><span>这一部分还没有添加内容。</span>';list.append(box)}}
+</script></body></html>
