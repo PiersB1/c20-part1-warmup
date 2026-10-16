@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>餐厅对话 · 听前练习</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #26342f;
+      --muted: #66736c;
+      --green: #245944;
+      --paper: #f7f5ef;
+      --line: #dddcd3;
+      --card: #fffefa;
+      --accent: #e8eee7;
+      --bad: #a14b3f
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Inter, "Segoe UI", "Microsoft YaHei", sans-serif;
+      line-height: 1.65
+    }
+
+    button,
+    input {
+      font: inherit
+    }
+
+    button {
+      cursor: pointer
+    }
+
+    .wrap {
+      max-width: 880px;
+      margin: auto;
+      padding: 42px 22px 80px
+    }
+
+    .eyebrow {
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .16em;
+      text-transform: uppercase
+    }
+
+    h1 {
+      font-family: Georgia, "Noto Serif SC", serif;
+      font-size: clamp(32px, 5vw, 50px);
+      line-height: 1.2;
+      margin: 10px 0 18px;
+      font-weight: 600
+    }
+
+    h2 {
+      font-family: Georgia, "Noto Serif SC", serif;
+      font-size: 27px;
+      margin: 0 0 10px
+    }
+
+    p {
+      margin: 0 0 12px
+    }
+
+    .lead {
+      max-width: 700px;
+      color: var(--muted);
+      font-size: 16px
+    }
+
+    .intro {
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 23px
+    }
+
+    .chip {
+      border: 1px solid #cbd5ca;
+      border-radius: 30px;
+      padding: 5px 11px;
+      font-size: 12px;
+      color: var(--green);
+      background: #f0f4ee
+    }
+
+    section {
+      margin-top: 40px
+    }
+
+    .section-head {
+      display: flex;
+      align-items: baseline;
+      gap: 13px;
+      margin-bottom: 18px
+    }
+
+    .section-head small {
+      color: var(--muted)
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 22px;
+      margin: 12px 0;
+      box-shadow: 0 2px 10px #25362808
+    }
+
+    .qtop {
+      display: flex;
+      gap: 12px;
+      align-items: start
+    }
+
+    .num {
+      min-width: 27px;
+      height: 27px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--green);
+      text-align: center;
+      line-height: 27px;
+      font-weight: 700;
+      font-size: 13px
+    }
+
+    .prompt {
+      font-weight: 650;
+      flex: 1
+    }
+
+    .tag {
+      font-size: 11px;
+      color: var(--muted);
+      border: 1px solid var(--line);
+      padding: 2px 7px;
+      border-radius: 6px;
+      white-space: nowrap
+    }
+
+    .options {
+      display: grid;
+      gap: 8px;
+      margin-top: 16px
+    }
+
+    .option {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 10px 12px;
+      cursor: pointer;
+      line-height: 1.4
+    }
+
+    .option:hover {
+      border-color: #789783;
+      background: #f7faf5
+    }
+
+    .option:has(input:checked) {
+      border-color: var(--green);
+      background: #f1f6ef
+    }
+
+    .option input {
+      accent-color: var(--green);
+      margin: 0
+    }
+
+    .inline-input {
+      border: 0;
+      border-bottom: 2px solid #99afa0;
+      border-radius: 0;
+      background: #f7faf5;
+      min-width: 110px;
+      width: 180px;
+      padding: 5px 8px;
+      text-align: center;
+      outline: none;
+      color: var(--ink)
+    }
+
+    .inline-input:focus {
+      border-color: var(--green)
+    }
+
+    .sentence {
+      margin-top: 15px;
+      font-size: 17px;
+      line-height: 2
+    }
+
+    .feedback {
+      display: none;
+      margin-top: 12px;
+      padding: 10px 12px;
+      border-radius: 9px;
+      font-size: 14px;
+      background: #eef5ed;
+      color: var(--green)
+    }
+
+    .feedback.bad {
+      background: #fbefeb;
+      color: var(--bad)
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      flex-wrap: wrap;
+      margin-top: 20px
+    }
+
+    .primary {
+      background: var(--green);
+      border: 1px solid var(--green);
+      color: white;
+      border-radius: 10px;
+      padding: 10px 17px;
+      font-weight: 700
+    }
+
+    .primary:hover {
+      background: #194531
+    }
+
+    .score {
+      font-size: 14px;
+      color: var(--muted)
+    }
+
+    .level {
+      font-size: 12px;
+      color: var(--green);
+      font-weight: 800;
+      letter-spacing: .08em;
+      margin: 28px 0 9px
+    }
+
+    .listen-row {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 15px
+    }
+
+    .play {
+      border: 1px solid var(--green);
+      border-radius: 9px;
+      background: #f0f6ef;
+      color: var(--green);
+      padding: 7px 13px;
+      font-weight: 700
+    }
+
+    .play:hover {
+      background: #e4efe3
+    }
+
+    .play:disabled {
+      opacity: .65;
+      cursor: wait
+    }
+
+    .hint {
+      font-size: 12px;
+      color: var(--muted)
+    }
+
+    .listen-sentence {
+      font-size: 17px;
+      margin-top: 14px;
+      line-height: 2
+    }
+
+    .footnote {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 22px
+    }
+
+    .divider {
+      border: 0;
+      border-top: 1px solid var(--line);
+      margin: 40px 0 0
+    }
+
+    .reset {
+      border: 0;
+      background: transparent;
+      color: var(--green);
+      text-decoration: underline;
+      padding: 4px
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0
+    }
+
+    @media(max-width:560px) {
+      .wrap {
+        padding: 28px 16px 64px
+      }
+
+      .card {
+        padding: 17px
+      }
+
+      .section-head {
+        display: block
+      }
+
+      .section-head small {
+        display: block;
+        margin-top: 3px
+      }
+
+      .inline-input {
+        width: 145px
+      }
+
+      .prompt {
+        font-size: 15px
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <header class="intro">
+      <div class="eyebrow">剑桥雅思 20 · Test 1 · Listening Part 1</div>
+      <h1>餐厅对话 · 软软听前练习</h1>
+      <p class="lead">先练词汇和表达，再听句子填空。</p>
+    </header>
+    <section aria-labelledby="vocab-title">
+      <div class="section-head">
+        <h2 id="vocab-title">01 · 词汇与表达</h2><small>11 题</small>
+      </div>
+      <div id="vocab"></div>
+      <div class="actions"><button class="primary" id="check-vocab">核对答案</button><span class="score" id="vocab-score"
+          aria-live="polite"></span></div>
+    </section>
+    <hr class="divider">
+    <section aria-labelledby="listen-title">
+      <div class="section-head">
+        <h2 id="listen-title">02 · 听句子填空</h2><small>12 题</small>
+      </div>
+      <p class="lead">每句单独播放，听完填写空格。可以重听。</p>
+      <div id="listening"></div>
+      <div class="actions"><button class="primary" id="check-listen">核对答案</button><span class="score" id="listen-score"
+          aria-live="polite"></span><button class="reset" id="reset-listen">清空</button></div>
+    </section>
+  </main>
+  <script>
+    const vocab = [
+      {type: 'single', q: '“我建议这家店用于庆祝”中，“建议、推荐”是哪个词？', options: ['recommend', 'reserve', 'review'], answer: 'recommend', why: 'recommend a restaurant = 推荐一家餐厅；reserve a table = 订位。'},
+      {type: 'single', q: 'a special occasion 最接近什么意思？', options: ['特别的庆祝场合', '固定午餐套餐', '单人份菜量'], answer: '特别的庆祝场合', why: '生日聚餐就是一种 special occasion。'},
+      {type: 'single', q: '餐厅要求先付一笔 deposit，意思是？', options: ['押金／订金', '服务费', '折扣'], answer: '押金／订金', why: 'deposit 是提前支付的一笔款项，订餐时常见。'},
+      {type: 'multi', q: '哪些表达与“菜品和份量”有关？选两项。', options: ['a selection of dishes', 'portion size', 'book a table', 'near the station'], answer: ['a selection of dishes', 'portion size'], why: 'selection 说可选菜品；portion size 说份量。'},
+      {type: 'single', q: '“£24 per head” 应理解为？', options: ['每人 24 英镑', '总共 24 英镑', '订金 24 英镑'], answer: '每人 24 英镑', why: 'per head 是口语里的 per person。'},
+      {type: 'single', q: 'quite reasonable 描述价格，最接近？', options: ['相当合理', '很安静', '绝对免费'], answer: '相当合理', why: 'quite 是“相当”；别把 quite /kwaɪt/ 听成 quiet /ˈkwaɪət/。'},
+      {type: 'single', q: '听到 “a limited selection of dishes” 时，应该理解为？', options: ['菜的选择不多', '菜都限时供应', '菜品无限量'], answer: '菜的选择不多', why: 'limited 修饰 selection，说明可选范围较小。'},
+      {type: 'single', q: '“The smaller room is quieter than the main hall.” 比较的是？', options: ['两个空间的安静程度', '两间餐厅的价格', '两份套餐的大小'], answer: '两个空间的安静程度', why: 'quieter than 是比较级；than 后面是比较对象。'},
+      {type: 'cloze', q: '选词填空：The bill is £18 ___ person.（per / for / by）', answer: 'per', why: 'per person = 每人。'},
+      {type: 'cloze', q: '选词填空：We ___ need to pay today.（don’t / aren’t / haven’t）', answer: "don't", why: "don't need to = 不需要；注意否定词会改变整句意思。"},
+      {type: 'cloze', q: '选词填空：If we had ___ earlier, we could have found a table.（booked / book / booking）', answer: 'booked', why: 'If + had + 过去分词，could have + 过去分词，表示对过去情况的假设。'}
+    ];
+    const listening = [
+      {sentence: 'We should ___ a table for Saturday evening.', answer: 'reserve', audio: 'audio/01.mp3', level: '0.8× · 词汇', why: 'reserve a table = 订位。'},
+      {sentence: 'The café has a relaxed ___.', answer: 'atmosphere', audio: 'audio/02.mp3', level: '0.8× · 词汇', why: 'atmosphere = 氛围。'},
+      {sentence: 'They asked for a small ___ when I booked.', answer: 'deposit', audio: 'audio/03.mp3', level: '0.8× · 词汇', why: 'deposit = 订金／押金。'},
+      {sentence: 'The menu offers a good ___ of starters.', answer: 'selection', audio: 'audio/04.mp3', level: '0.8× · 词汇', why: 'a selection of = 一些可供选择的……'},
+      {sentence: 'The fixed-price lunch is quite ___.', answer: 'reasonable', audio: 'audio/05.mp3', level: '0.9× · 词汇', why: 'reasonable 在这里形容价格合理。'},
+      {sentence: 'Each ___ is large enough to share.', answer: 'portion', audio: 'audio/06.mp3', level: '0.9× · 词汇', why: 'portion = 一份菜的份量。'},
+      {sentence: 'The total comes to twenty-four pounds ___.', answer: 'per person', audio: 'audio/07.mp3', level: '0.9× · 连读', why: 'pounds per person 连起来听，但要写两个词。'},
+      {sentence: 'I’d ___ calling before you go.', answer: 'recommend', audio: 'audio/08.mp3', level: '0.9× · 缩读', why: 'I’d = I would；recommend 后接动词 -ing。'},
+      {sentence: 'The downstairs room is ___ the one upstairs.', answer: 'quieter than', audio: 'audio/09.mp3', level: '1.0× · 易混词', why: 'quieter than 是比较级；quiet 与 quite 不同。'},
+      {sentence: 'We ___ pay until the day itself.', answer: "don't need to", audio: 'audio/10.mp3', level: '1.0× · 否定与连读', why: "don't need to 是“不需要”；不能漏掉 don't。"},
+      {sentence: 'The booking is for ___, not Tuesday.', answer: 'Thursday', audio: 'audio/11.mp3', level: '1.0× · 信息修正', why: '说话人用 not Tuesday 排除先听到的日期信息。'},
+      {sentence: 'We ___ chosen the terrace if it hadn’t started raining.', answer: "would've", accept: ['would have'], audio: 'audio/12.mp3', level: '1.0× · 缩读与语法', why: "would've = would have；后面接过去分词 chosen。"}
+    ];
+    const $ = s => document.querySelector(s);
+    function normalize(s) {return s.toLowerCase().trim().replace(/[’‘]/g, "'").replace(/\s+/g, ' ').replace(/[.,!?]$/, '')}
+    function renderVocab() {const box = $('#vocab'); vocab.forEach((x, i) => {const card = document.createElement('div'); card.className = 'card'; card.innerHTML = `<div class="qtop"><span class="num">${i + 1}</span><span class="prompt">${x.q}</span><span class="tag">${x.type === 'multi' ? '多选' : x.type === 'cloze' ? '填空' : '单选'}</span></div>`; if (x.type === 'cloze') {const row = document.createElement('div'); row.className = 'sentence'; row.innerHTML = `<label class="sr-only" for="v${i}">第 ${i + 1} 题答案</label><input class="inline-input" id="v${i}" autocomplete="off" spellcheck="false">`; card.append(row)} else {const opts = document.createElement('div'); opts.className = 'options'; x.options.forEach((choice, j) => {const label = document.createElement('label'); label.className = 'option'; const input = document.createElement('input'); input.type = x.type === 'multi' ? 'checkbox' : 'radio'; input.name = `v${i}`; input.value = choice; label.append(input, document.createTextNode(choice)); opts.append(label)}); card.append(opts)} const fb = document.createElement('div'); fb.className = 'feedback'; fb.setAttribute('aria-live', 'polite'); card.append(fb); box.append(card)})}
+    function renderListening() {const box = $('#listening'); listening.forEach((x, i) => {if (i % 4 === 0) {const l = document.createElement('div'); l.className = 'level'; l.textContent = `第 ${i + 1}–${i + 4} 题 · ${x.level.split(' · ')[0]}`; box.append(l)} const card = document.createElement('div'); card.className = 'card'; card.innerHTML = `<div class="qtop"><span class="num">${i + 1}</span><span class="prompt">听一句，补全空格</span><span class="tag">${x.level.split(' · ')[1]}</span></div><div class="listen-row"><button class="play" type="button" aria-label="播放第 ${i + 1} 题音频">▶ 播放</button></div><div class="listen-sentence"></div><div class="feedback" aria-live="polite"></div>`; const sentence = card.querySelector('.listen-sentence'); const parts = x.sentence.split('___'); sentence.append(document.createTextNode(parts[0])); const inp = document.createElement('input'); inp.className = 'inline-input'; inp.autocomplete = 'off'; inp.spellcheck = false; inp.setAttribute('aria-label', `第 ${i + 1} 题听写答案`); sentence.append(inp, document.createTextNode(parts[1])); const audio = new Audio(x.audio); audio.preload = 'none'; card.querySelector('.play').addEventListener('click', () => {audio.pause(); audio.currentTime = 0; audio.play().catch(() => {const fb = card.querySelector('.feedback'); fb.textContent = '音频无法播放。'; fb.className = 'feedback bad'; fb.style.display = 'block'})}); box.append(card)})}
+    function showFeedback(card, ok, answer, why) {const fb = card.querySelector('.feedback'); fb.className = 'feedback' + (ok ? '' : ' bad'); fb.textContent = (ok ? '✓ 正确。' : '再看一下。正确答案：' + answer + '。') + ' ' + why; fb.style.display = 'block'}
+    $('#check-vocab').addEventListener('click', () => {let n = 0;[...$('#vocab').children].forEach((card, i) => {const x = vocab[i]; let value; if (x.type === 'cloze') value = card.querySelector('input').value; else if (x.type === 'multi') value = [...card.querySelectorAll('input:checked')].map(y => y.value); else value = card.querySelector('input:checked')?.value || ''; const ok = Array.isArray(x.answer) ? Array.isArray(value) && value.length === x.answer.length && value.every(v => x.answer.includes(v)) : normalize(value) === normalize(x.answer); if (ok) n++; showFeedback(card, ok, Array.isArray(x.answer) ? x.answer.join('、') : x.answer, x.why)}); $('#vocab-score').textContent = `答对 ${n} / ${vocab.length} 题`});
+    $('#check-listen').addEventListener('click', () => {let n = 0;[...$('#listening').querySelectorAll('.card')].forEach((card, i) => {const x = listening[i], v = normalize(card.querySelector('input').value); const ok = [x.answer, ...(x.accept || [])].some(a => normalize(a) === v); if (ok) n++; showFeedback(card, ok, x.answer, x.why)}); $('#listen-score').textContent = `听写正确 ${n} / ${listening.length} 题`});
+    $('#reset-listen').addEventListener('click', () => {[...$('#listening').querySelectorAll('.card')].forEach(card => {card.querySelector('input').value = ''; card.querySelector('.feedback').style.display = 'none'}); $('#listen-score').textContent = ''});
+    renderVocab(); renderListening();
+  </script>
+</body>
+
+</html>
