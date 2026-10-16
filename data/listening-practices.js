@@ -183,7 +183,7 @@ window.RRListeningPractices = (() => {
       ],
       sections:[
         {id:'locators',type:'locator',title:'定位词标记',instruction:'只标记定位表达，不填写空格。点击加下划线，再点取消；每句的可标记数量有限。',items:locatorItems},
-        {id:'paraphrases',type:'paraphrase',title:'同义替换',instruction:'将下方表达拖入对应空格。每段多出 3 项；也可以先点选表达，再点空格。',items:paraphraseItems},
+        {id:'paraphrases',type:'paraphrase',title:'同义替换',instruction:'将下方表达拖入对应空格，每段多出 3 项。已填表达可拖回词库或移到其他空格；也可以点选操作。',items:paraphraseItems},
         {id:'signals',type:'signal',title:'信号词捕捉',instruction:'听到提醒、修正或话题转向等信号，立即标记考点句的起点。每段有 3 处，重听会清空标记。',items:signalItems}
       ]
     }

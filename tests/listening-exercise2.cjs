@@ -54,13 +54,31 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
       });
     }, i);
   }
-  await page.locator('[data-section-check="locators"]').click();
-  assert.match(await page.locator('#locators .section-score').innerText(), /50\/50/);
+  assert.equal(await page.locator('[data-section-check]').count(), 0);
+  assert.equal(await page.locator('#check-practice').count(), 1);
+  assert.equal(await page.locator('.feedback:visible').count(), 0);
+  await page.locator('#open-records').click();
+  assert.equal(await page.locator('.record-item').count(), 0);
+  await page.locator('[data-close="records-dialog"]').click();
   assert.equal(await page.locator('.source-wrap:visible').count(), 10);
 
   // A real browser drag, followed by the accessible click-to-place path.
   await page.locator('[data-choice-id="p1-a"]').dragTo(page.locator('[data-slot-id="p1-1"]'));
   assert.equal(await page.locator('[data-slot-id="p1-1"]').innerText(), 'relaxed');
+  const firstBank=page.locator('.paraphrase-card').first().locator('.word-bank');
+  await page.locator('[data-slot-id="p1-1"]').dragTo(firstBank);
+  assert.equal(await page.locator('[data-slot-id="p1-1"]').innerText(), '拖入');
+  assert(await page.locator('[data-choice-id="p1-a"]').isVisible());
+  await page.locator('[data-choice-id="p1-a"]').dragTo(page.locator('[data-slot-id="p1-2"]'));
+  await page.locator('[data-slot-id="p1-2"]').dragTo(page.locator('[data-slot-id="p1-1"]'));
+  assert.equal(await page.locator('[data-slot-id="p1-2"]').innerText(), '拖入');
+  assert.equal(await page.locator('[data-slot-id="p1-1"]').innerText(), 'relaxed');
+  // Dropping a filled choice in another paragraph must leave it where it was.
+  await page.locator('[data-slot-id="p1-1"]').dragTo(page.locator('.paraphrase-card').nth(1).locator('.word-bank'));
+  assert.equal(await page.locator('[data-slot-id="p1-1"]').innerText(), 'relaxed');
+  await page.locator('[data-slot-id="p1-1"]').click();
+  assert(await page.locator('[data-choice-id="p1-a"]').isVisible());
+  await page.locator('[data-choice-id="p1-a"]').dragTo(page.locator('[data-slot-id="p1-1"]'));
   await page.evaluate(() => {
     RRPracticeSession.practice.sections[1].items.forEach(item => {
       item.segments.filter(segment=>typeof segment!=='string').forEach(target => {
@@ -71,8 +89,7 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
     });
   });
   assert.equal(await page.locator('.bank-choice:visible').count(), 6);
-  await page.locator('[data-section-check="paraphrases"]').click();
-  assert.match(await page.locator('#paraphrases .section-score').innerText(), /12\/12/);
+  assert.equal(await page.locator('.feedback:visible').count(), 0);
 
   async function playSignal(index) {
     const card = page.locator('.signal-card').nth(index);
@@ -96,9 +113,8 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
   await playSignal(0);
   // One point outside the tolerance and one extra mark must not become a third hit.
   await markAt(0, [times[0][0]+2.2, times[0][1], times[0][2], 2]);
-  await page.locator('[data-section-check="signals"]').click();
   assert.equal((await page.evaluate(()=>RRPracticeSession.controllers[2].getResult())).details[0].correct, 2);
-  assert.equal(await page.locator('.signal-card').first().locator('.standard-marker').count(), 3);
+  assert.equal(await page.locator('.standard-marker').count(), 0);
   await playSignal(0);
   assert.equal(await page.locator('.signal-card').first().locator('.time-marker,.standard-marker').count(), 0);
   await markAt(0, times[0]);
@@ -108,10 +124,18 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
     const audio=__qaAudio.find(audio=>audio.src.endsWith(item.audio));
     return audio.duration>=41&&audio.duration<=48&&Math.abs(audio.duration-RRSignalTimings[item.audio].duration)<0.1;
   })));
-  await page.locator('[data-section-check="signals"]').click();
+  await page.locator('#check-practice').click();
+  assert.match(await page.locator('#locators .section-score').innerText(), /50\/50/);
+  assert.match(await page.locator('#paraphrases .section-score').innerText(), /12\/12/);
   assert.match(await page.locator('#signals .section-score').innerText(), /6\/6 · 多标 0/);
+  assert.equal(await page.locator('.standard-marker').count(), 6);
+  // Replaying after checking clears both the user's markers and the shown reference positions.
+  await playSignal(0);
+  assert.equal(await page.locator('.signal-card').first().locator('.time-marker,.standard-marker').count(), 0);
+  await markAt(0, times[0]);
+  await page.locator('#check-practice').click();
 
-  // All three checks update one saved attempt, which survives a reload and exports intact.
+  // One completion button saves all sections together; rechecking updates that same attempt.
   await page.locator('#open-records').click();
   assert.equal(await page.locator('.record-item').count(), 1);
   const downloadPromise=page.waitForEvent('download');

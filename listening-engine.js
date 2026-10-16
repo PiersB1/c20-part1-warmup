@@ -14,6 +14,7 @@
   $('#practice-label').textContent = `C${practice.location.book} · Test ${practice.location.test} · Part ${practice.location.part} · ${practice.label}`;
   $('#back-link').href = `select.html?mode=listening&book=${practice.location.book}&test=${practice.location.test}&part=${practice.location.part}`;
   const controllers = [];
+  const sectionScores = [];
   practice.sections.forEach((section, index) => {
     const panel = el('section', 'practice-section');panel.id = section.id;
     const heading = el('div', 'section-heading');
@@ -22,17 +23,24 @@
     const questions = el('div', 'questions');panel.append(questions);
     const controller = RRQuestionTypes[section.type].render(section, questions);
     controllers.push(controller);
-    const actions = el('div', 'section-actions');
-    const check = button('核对答案', 'primary');check.dataset.sectionCheck = section.id;
     const score = el('span', 'section-score');score.setAttribute('role', 'status');
-    check.addEventListener('click', () => {
-      const result = controller.check();
-      score.textContent = `${section.type === 'signal' ? '命中' : '正确'} ${result.correct}/${result.total}${section.type === 'signal' ? ` · 多标 ${result.falsePositives} 处` : ''}`;
-      autoSave();
-    });
-    actions.append(check, score);panel.append(actions);$('#sections').append(panel);
+    score.hidden = true;sectionScores.push(score);
+    panel.append(score);$('#sections').append(panel);
     const link = el('a', '', `${String(index + 1).padStart(2, '0')} ${section.title}`);link.href = `#${section.id}`;$('#section-nav').append(link);
   });
+  const submitArea = el('div', 'practice-submit');
+  const checkPractice = button('完成练习并核对答案', 'primary');checkPractice.id = 'check-practice';
+  const summary = el('p', 'practice-summary');summary.setAttribute('role', 'status');
+  checkPractice.addEventListener('click', () => {
+    const results = controllers.map(controller => controller.check());
+    results.forEach((result, index) => {
+      sectionScores[index].hidden = false;
+      sectionScores[index].textContent = `${result.type === 'signal' ? '命中' : '正确'} ${result.correct}/${result.total}${result.type === 'signal' ? ` · 多标 ${result.falsePositives} 处` : ''}`;
+    });
+    summary.textContent = results.map(result => `${result.title} ${result.correct}/${result.total}${result.type === 'signal' ? `（多标 ${result.falsePositives} 处）` : ''}`).join(' · ');
+    autoSave(results);
+  });
+  submitArea.append(checkPractice, summary);$('#sections').after(submitArea);
 
   const storageKey = 'rr:listening:records:v2';
   let activeRecordId = null, selectedRecord = null;
@@ -48,8 +56,7 @@
       return Boolean(detail.response);
     }));
   }
-  function autoSave() {
-    const sections = controllers.map(controller => controller.getResult());
+  function autoSave(sections) {
     if (!hasActivity(sections)) return;
     try {
       const records = getAllRecords(), existing = records.find(record => record.id === activeRecordId), now = new Date().toISOString();

@@ -20,6 +20,7 @@
             const choiceId = assignments.get(id);
             slot.textContent = choiceId ? item.choices.find(choice => choice.id === choiceId).text : '拖入';
             slot.classList.toggle('filled', Boolean(choiceId));
+            slot.draggable = Boolean(choiceId);
             slot.classList.remove('slot-right', 'slot-wrong');
           });
           choices.forEach((node, id) => {
@@ -36,6 +37,20 @@
           picked = null;
           update();
         }
+        function returnToBank(choiceId) {
+          if (!choices.has(choiceId)) return;
+          assignments.forEach((value, key) => {if (value === choiceId) assignments.delete(key);});
+          picked = null;
+          update();
+        }
+        bank.setAttribute('aria-label', '待匹配表达；可以将已填选项拖回这里');
+        bank.addEventListener('dragover', event => {event.preventDefault();bank.classList.add('drag-over');});
+        bank.addEventListener('dragleave', () => bank.classList.remove('drag-over'));
+        bank.addEventListener('drop', event => {
+          event.preventDefault();bank.classList.remove('drag-over');
+          const value = event.dataTransfer.getData('text/plain').split('|');
+          if (value[0] === item.id) returnToBank(value[1]);
+        });
         item.segments.forEach(segment => {
           if (typeof segment === 'string') {paragraph.append(document.createTextNode(segment)); return;}
           const wrapper = el('span', 'match-target');
@@ -43,6 +58,12 @@
           const slot = button('拖入', 'drop-slot');
           slot.dataset.slotId = segment.id;
           slot.setAttribute('aria-label', `${segment.text} 的同义表达`);
+          slot.addEventListener('dragstart', event => {
+            const choiceId = assignments.get(segment.id);
+            if (!choiceId) {event.preventDefault();return;}
+            event.dataTransfer.setData('text/plain', `${item.id}|${choiceId}`);
+            event.dataTransfer.effectAllowed = 'move';
+          });
           slot.addEventListener('dragover', event => {event.preventDefault();slot.classList.add('drag-over');});
           slot.addEventListener('dragleave', () => slot.classList.remove('drag-over'));
           slot.addEventListener('drop', event => {
@@ -52,7 +73,7 @@
           });
           slot.addEventListener('click', () => {
             if (picked) place(segment.id, picked);
-            else if (assignments.has(segment.id)) {assignments.delete(segment.id);update();}
+            else if (assignments.has(segment.id)) returnToBank(assignments.get(segment.id));
           });
           wrapper.append(target, slot);paragraph.append(wrapper);slots.set(segment.id, slot);
         });
