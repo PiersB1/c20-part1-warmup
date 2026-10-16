@@ -1,0 +1,47 @@
+(() => {const Q=RRQuiz.choice,C=RRQuiz.cloze;
+RRAddTopic({test:4,part:1,title:'家庭出游规划',sourceRefs:['https://www.ieltsvault.com/resources/listening/tests/cambridge-ielts-20-listening-test-4'],
+coreWords:[['family room','家庭房'],['admission','入场费、准入'],['concession','优惠票价'],['inclusive','包含所列项目的'],['guided tour','导览游'],['exhibition','展览'],['advance booking','提前预订'],['off-peak','非高峰时段'],['valid','有效的'],['expires','到期失效'],['refreshments','茶点饮料'],['fully booked','预订已满'],['up to','最高可达'],['at least','至少'],['on foot','步行'],['subject to availability','视余量而定']],
+quiz:[
+Q('The family rate is inclusive of breakfast. 可以确定什么？',['所有餐食都免费','家庭房价格含早餐','早餐必须另购','价格包含每项城市活动'],1,'inclusive of 只包含后面明确列出的项目。'),
+Q('Concessions are available for eligible visitors. concession 是？',['任何人都可领取的现金退款','符合条件者可享的优惠价','限于团体的包场服务','只在闭馆后提供的票'],1,'concession 常指特定人群的优惠，不等于所有人折扣。'),
+Q('Save up to forty percent. 这句话保证什么？',['每张票恰好省四成','最高可省四成，但并非所有票都达到','至少省四成','原票价只有四成'],1,'up to 是上限，不是最低保证。'),
+Q('A pass is valid for two consecutive days. 意味着？',['可任选两天且不限间隔','自使用日起连续两天有效','每天只能进入两个地点','两天后才能开始使用'],1,'consecutive 指连续，不能推为任意两天。'),
+Q('The morning tour is fully booked. 最合理的理解是？',['当天所有活动都取消','该场次已无预订名额','现场一定还有大量名额','只是还没有开放预约'],1,'fully booked 只限定这一场次，没有说全天。'),
+Q('Off-peak fares apply after the morning rush. off-peak 是？',['最繁忙时段','非高峰时段','只供境外游客使用','最高票价等级'],1,'off-peak 与客流较少的时段有关。'),
+Q('哪些说法可以表达“提前预订”？选两项。',['book beforehand','make a reservation in advance','pay only after the visit','arrive without a reservation'],[0,1],'beforehand 和 in advance 都表示提前。'),
+Q('Entry includes the gallery, but refreshments cost extra. 哪两点成立？',['画廊准入已包含','茶点也已包含','茶点另收费','所有房间都可随意进入'],[0,2],'but 划清入场与茶点的收费边界。'),
+Q('Tickets are subject to availability. 意思是？',['一定可以买到','是否能买到取决于余票','只需到场就免费','票价永远不会变化'],1,'subject to availability 是有条件的供应。'),
+Q('The voucher expires before the festival ends. 哪项正确？',['券在节庆结束后仍必然有效','券比节庆更早失效','券在节庆结束时才发行','券只适合节庆工作人员'],1,'before 比较两个不同的结束时点。'),
+C('选词填空：The offer is valid ___ you book online.（provided that / even without）','provided that','provided that 引出享优惠所需条件。'),
+C('选词填空：The family room costs less ___ two separate rooms.（than / then）','than','than 用于比较，then 是时间先后。')],
+dictation:[
+['The ___ includes breakfast for all guests.','family room','family room 是家庭房。'],
+['Museum ___ is lower in the late afternoon.','admission','admission 在这里指入场费。'],
+['A ___ is available for full-time students.','concession','concession 是特定条件的优惠价。'],
+['The new ___ opens later this month.','exhibition','exhibition 是展览。'],
+['The price is ___ of a short guided visit.','inclusive','inclusive of 后接已包含项目。'],
+['___ fares begin after the commuter rush.','Off-peak','off-peak 表示非高峰时段。',['off peak']],
+['The voucher ___ at the end of the month.','expires','expires 的尾音 s 不能漏。'],
+['There will be ___ near the main entrance.','refreshments','refreshments 通常为茶点饮料。'],
+['The earlier session is already ___.','fully booked','fully booked 是名额已满。'],
+['The offer gives a reduction of ___ forty percent.','up to','up to 给上限，不能听成至少。'],
+['The old quarter can easily be explored ___.','on foot','on foot 的词间连读要听成整体。'],
+['Discounted tickets are sold ___.','subject to availability','subject to availability 表示视余量而定。']],
+locators:[
+['The|[family-room rate]|includes|[all guests’]|___.','The|[charge for the family accommodation]|covers|breakfast|[for everyone staying in that room,]|but not dinner.','family-room rate 对应 accommodation charge；all guests 对应 everyone staying。'],
+['A room|[for four people]|costs|[approximately]|£___|a night.','For|[a group of four,]|the nightly charge|is|[around]|a hundred and forty-seven pounds,|depending on the date.','for four people 对应 group of four；approximately 对应 around。'],
+['[Advance bookings]|for the city tour|are made|through the|[online]|___.','To|reserve|[before your visit,]|use the|[web-based]|form|rather than calling the guide.','advance booking 对应 visit 前预订；online 对应 web-based。'],
+['The|[recommended transport]|to the arts centre|is a|___.','The|[easiest way to reach]|the arts centre|is by tram,|although|the shuttle bus|also stops nearby.','recommended transport 要定位最好或最方便方式，其他可达方式是干扰。'],
+['The|[least crowded day]|for the gallery|is|___.','The gallery|is|[quietest]|on Thursday;|it is open on Friday too,|but|school groups|often arrive then.','least crowded 对应 quietest；另一个开放日不等于最佳日期。'],
+['The|[forthcoming exhibition]|focuses on|___.','The|[next display]|will feature|photography,|replacing|the sculpture exhibition|that has just finished.','forthcoming 对应 next；旧展览主题不是新主题。'],
+['The café|[stops serving]|[hot lunches]|at|___|p.m.','You can|buy|[cooked meals]|[until]|one o’clock,|with cold snacks|available later.','hot lunches 对应 cooked meals；stops serving 对应 until 给出的结束时间。'],
+['Online customers|may receive|[up to]|___|percent off|[selected tickets].','The largest reduction|is|[as much as]|forty percent,|but it applies only to|[certain seats]|booked through the website.','up to 对应 as much as；selected tickets 对应 certain seats，优惠并非覆盖所有票。'],
+['The|[visitor pass]|is|[valid]|for|___|consecutive days.','You can|use the|[sightseeing card]|for two days in a row,|and it|[remains acceptable]|at every participating venue|during that period.','visitor pass 对应 sightseeing card；valid 对应 remains acceptable。'],
+['The hilltop|[viewpoint]|overlooks|the|___.','From|the|[lookout]|at the top,|you can see|the reservoir,|with the town|behind you.','viewpoint 对应 lookout；注意景物在视线前方还是身后。']],
+paragraphs:[
+{title:'Comparing visitor offers',text:'A [family room] was cheaper than booking separately. The price was [inclusive] of breakfast. The gallery offered a [concession] to some visitors, and entry to the current [exhibition] was part of the ticket. A [guided tour] required [advance booking]. We read the conditions carefully before paying for any part of the day out.',pairs:[['family room','accommodation designed for a family group','家庭房可展开为适合一家人使用的住宿。'],['inclusive','with the stated items already covered','inclusive 只包含已明确列出的项目。'],['concession','a reduced rate for eligible people','concession 是满足条件者优惠价。'],['exhibition','a public display','exhibition 可对应 display。'],['guided tour','a visit led by someone who explains the sights','guided tour 是有人讲解带领的参观。'],['advance booking','making a reservation beforehand','advance booking 表示提前预约。']],distractors:['every service without limits','a private purchase','an overnight fee']},
+{title:'Reading the conditions',text:'We could save [up to] forty percent on selected seats. The offer was [subject to availability] and remained [valid] only for the stated dates. The voucher [expires] before the end of the festival. We chose an [off-peak] journey and decided to explore the older streets [on foot]. The final plan left room for a different activity if the preferred session sold out.',pairs:[['up to','as much as, but not more than','up to 是上限。'],['subject to availability','only if places remain','有余量才可购买。'],['valid','accepted for use','valid 表示可被接受使用。'],['expires','stops being usable after a date','expires 是有效期结束。'],['off-peak','outside the busiest period','off-peak 表示避开最繁忙时段。'],['on foot','without using a vehicle','on foot 指步行方式。']],distractors:['at least that much','guaranteed for everyone','after payment is refunded']}],
+signals:[
+{title:'Arranging a family day out',order:[0,1,2,4,3,5,6,7],focus:'留意房价包含项目、推荐日期和展览变动。',transcript:['I have looked through several options for our family visit to the city.','The hotel near the arts centre has a family room facing a quiet courtyard.','The main advantage is that breakfast for everyone is already included in the room rate.','We could leave our bags at reception while we decide where to go first.','For the gallery, Thursday is the better choice because it is usually less crowded than Friday.','The website has photographs of the entrance and a list of facilities for younger visitors.','One change to note is that the next exhibition is about photography, not the sculpture display mentioned in the old leaflet.','I will check the opening hours again before making the final reservations.'],cues:[{sentence:2,signal:'The main advantage',why:'引出房价已包含的项目，范围是 everyone。'},{sentence:4,signal:'For the gallery',why:'转入参观日期，并用比较说明推荐理由。'},{sentence:6,signal:'One change to note',why:'新展替换旧展，not 后的信息不能当新主题。'}]},
+{title:'Checking tickets and transport',order:[0,1,2,4,3,5,6,7],focus:'留意折扣上限、可用条件和交通选择。',transcript:['The visitor office has sent a short guide to tickets and transport.','There are several offers listed beside the suggested routes through the city.','Be careful with the advertised saving: forty percent is the maximum reduction, not the rate for every seat.','The booking page shows which sessions still have places and when each one starts.','However, the offer is available only while those discounted places remain unsold.','We can keep a copy of the confirmation on the phone rather than print it out.','As for getting to the arts centre, the tram is the simplest choice from our accommodation.','The return journey should still leave enough room in the schedule for a late snack.'],cues:[{sentence:2,signal:'Be careful with',why:'提醒最大折扣不等于所有票都能享受该比例。'},{sentence:4,signal:'However',why:'转折限制优惠适用条件，强调余票。'},{sentence:6,signal:'As for getting',why:'明确转到交通选择，不要沿用票务信息。'}]}]
+});})();

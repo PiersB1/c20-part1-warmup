@@ -55,6 +55,10 @@
   RRQuestionTypes.locator = {
     render(section, container) {
       const items = section.items.map((item, index) => {
+        if(section.map && index === section.mapBeforeIndex){
+          const figure=el('figure','practice-map');figure.innerHTML=section.map.svg;
+          figure.append(el('figcaption','',section.map.caption));container.append(figure);
+        }
         const card = el('article', 'question-card locator-card');
         card.dataset.questionId = item.id;
         const head = el('div', 'question-head');
@@ -68,7 +72,7 @@
         const question = line(item.question, updateCounts);
         const source = line(item.source, updateCounts);
         updateCounts();
-        const questionLabel = el('p', 'small-label', '问题句');
+        const questionLabel = el('p', 'small-label', item.format ? `问题句 · ${item.format}` : '问题句');
         const sourceWrap = el('div', 'source-wrap'); sourceWrap.hidden = true;
         sourceWrap.append(el('p', 'small-label', '原文句'), source.node);
         const reveal = button('▶ 显示原文句', 'secondary reveal-source');

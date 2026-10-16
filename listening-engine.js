@@ -18,7 +18,7 @@
   practice.sections.forEach((section, index) => {
     const panel = el('section', 'practice-section');panel.id = section.id;
     const heading = el('div', 'section-heading');
-    heading.append(el('h2', '', `${String(index + 1).padStart(2, '0')} · ${section.title}`), el('small', '', `${section.items.length} ${section.type === 'locator' ? '题' : '段'}`));
+    heading.append(el('h2', '', `${String(index + 1).padStart(2, '0')} · ${section.title}`), el('small', '', `${section.items.length} ${['locator','quiz','dictation'].includes(section.type) ? '题' : '段'}`));
     panel.append(heading, el('p', 'instruction', section.instruction));
     const questions = el('div', 'questions');panel.append(questions);
     const controller = RRQuestionTypes[section.type].render(section, questions);
@@ -53,7 +53,7 @@
     return sections.some(section => section.details.some(detail => {
       if (section.type === 'locator') return detail.response.question.length || detail.response.source.length;
       if (section.type === 'signal') return detail.played || detail.response.length;
-      return Boolean(detail.response);
+      return Array.isArray(detail.response) ? detail.response.length : Boolean(detail.response);
     }));
   }
   function autoSave(sections) {
@@ -118,7 +118,7 @@
     const box = $('#word-list');box.replaceChildren();
     practice.coreWords.forEach(([english, chinese]) => {
       const existing = RRVocab.words.find(item => item.english === english && item.chinese === chinese);
-      const word = existing || {id:`${practice.id}:${english}`,english,chinese,practiceId:practice.id,practiceTitle:practice.title};
+      const word = existing || {id:`${practice.vocabId||practice.id}:${english}`,english,chinese,practiceId:practice.id,practiceTitle:practice.title};
       const row = el('div', 'word-row'), pair = el('div', 'word-pair');pair.append(el('strong', '', english),el('span', '', chinese));
       const star = button('', 'word-star');
       function update() {const saved = RRVocab.getFavorites().some(item => item.id === word.id);star.textContent = saved ? '★' : '☆';star.setAttribute('aria-label', `${saved?'取消收藏':'收藏'} ${english}`);star.setAttribute('aria-pressed', String(saved));}

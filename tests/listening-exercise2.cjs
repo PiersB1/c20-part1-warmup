@@ -19,9 +19,10 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
     window.Audio = function(...args) {const audio = new NativeAudio(...args);window.__qaAudio.push(audio);return audio;};
   });
   await page.goto(pathToFileURL(path.join(root, 'index.html')).href);
-  await page.locator('a.available').click();
+  await page.locator('a.available[href="select.html?mode=listening&book=20&test=1&part=1"]').click();
   assert.equal(await page.locator('.practice').count(), 2);
   await page.locator('.practice').nth(1).click();
+  await page.locator('#check-practice').waitFor({state:'attached'});
   assert.equal(await page.locator('.locator-card').count(), 10);
   assert.equal(await page.locator('.paraphrase-card').count(), 2);
   assert.equal(await page.locator('.signal-card').count(), 2);
@@ -158,7 +159,7 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
   assert.equal(await page.locator('.favorite-row').count(),1);
   assert.equal(await page.locator('.favorite-reveal span').innerText(),'点击显示意思');
   await page.locator('#close-favorites').click();
-  await page.locator('a.available').click();
+  await page.locator('a.available[href="select.html?mode=listening&book=20&test=1&part=1"]').click();
   await page.locator('.practice').first().click();
   assert.equal(await page.locator('#vocab .card').count(),11);
 

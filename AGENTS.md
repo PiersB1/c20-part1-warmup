@@ -2,7 +2,9 @@
 
 This is a local, buildless practice website. Keep it usable by opening `index.html` directly. Use classic scripts, not fetch-dependent JSON or browser ES modules.
 
-For future listening exercises, use the reusable types in `modules/`: locator, paraphrase, signal. New content belongs in `data/listening-practices.js`; register its entry in `exercise-catalog.js`. Do not copy a new exercise page or rewrite an existing renderer for each exercise. Reading types have not been defined yet; ask the user before establishing them.
+Each listening part normally has two practices: practice 1 uses quiz (core vocabulary/grammar, including multi-select and cloze) plus 12 sentence dictations; practice 2 uses 10 locators, two six-slot paraphrase paragraphs, and two approximately 45-second signal recordings. Reuse the renderers in `modules/`. Add topic content in a `data/*.practice.js` file using `RRAddTopic`, load that file in `listening.html`, and register both entries in `exercise-catalog.js`. Do not copy a new exercise page or rewrite an existing renderer for each exercise. Reading types have not been defined yet; ask the user before establishing them.
+
+Use plausible near-meaning options and contrasts in conditions, scope, timing, and obligation for quiz distractors. The builder shuffles option positions deterministically. Preserve C20T1P1's existing practices. New source question formats must match each target part; an archaeology map practice includes an original diagram but asks only for word marking.
 
 Match the question format of the relevant Cambridge part. Write new sentences and recordings for preparation. Do not reuse the real paper's sentences, gap answers, numerical answers, or proper names. Practise its relevant vocabulary, grammar, paraphrases, distractors, and signal language. If the required content or interaction is ambiguous, ask the user rather than inventing a requirement.
 

@@ -1,0 +1,47 @@
+(() => {const Q=RRQuiz.choice,C=RRQuiz.cloze;
+RRAddTopic({test:2,part:1,title:'照护者支持咨询',sourceRefs:['https://www.ieltsvault.com/resources/listening/tests/cambridge-ielts-20-listening-test-2'],
+coreWords:[['carer','照护者'],['assessment','需求评估'],['respite','暂时替代照护、喘息服务'],['eligible','符合申请条件的'],['reimburse','报销'],['expenses','费用支出'],['receipt','收据'],['referral','转介'],['coordinator','协调员'],['daily routine','日常安排'],['assistance','协助'],['independent','能自行处理事务的'],['available','可提供的'],['entitled to','有资格享有'],['documentation','所需文件'],['unless','除非']],
+quiz:[
+Q('The assessment is an opportunity to discuss your needs. 最准确的理解是？',['必须通过的技能考试','讨论支持需求的评估','对服务的满意度排名','服务完成后的付款结算'],1,'assessment 在这里是了解需求，不是考试。'),
+Q('You may be eligible, but approval is not automatic. 哪项成立？',['满足条件就一定立即获批','可以跳过申请程序','可能符合条件，但仍需审核','没有资格提交申请'],2,'eligible 只说明符合资格，不保证申请结果。'),
+Q('The council will reimburse approved expenses. 通常需要怎么理解？',['直接发放固定补贴','归还已经发生且获认可的支出','免去以后所有收费','代付所有家庭账单'],1,'reimburse 是事后返还支出；approved 限定可报销范围。'),
+Q('A referral is required before the visit. 指的是先要有？',['转介安排','正式投诉','现金押金','搬家许可'],0,'referral 指转交给相关服务人员或机构。'),
+Q('Respite support is temporary. 它最接近什么？',['永久替换家人','短期有人接手照护','增加照护者的固定任务','只提供书面信息'],1,'respite 指暂时代为照护，使照护者能处理其他事情。'),
+Q('The adviser asks about your daily routine. 她想了解？',['你希望未来从事的职业','每天通常怎样安排','只了解夜间紧急情况','上一次假期的行程'],1,'daily routine 是日常反复出现的安排。'),
+Q('哪些表达可以表示“协助”？选两项。',['assistance','help with a task','automatic approval','full responsibility'],[0,1],'协助不等于自动批准，也不等于接管全部责任。'),
+Q('Keep receipts for journeys that have been approved. 哪两点有依据？',['所有旅程都能报销','要保留消费凭证','旅程需在认可范围内','只需记住金额，不要凭证'],[1,2],'receipts 是凭证；that have been approved 限定哪些旅程。'),
+Q('An adviser is available on request. 意味着？',['无需提出需求就会上门','提出需求后可以安排顾问','顾问随时保证立即到达','只有书面材料，没有顾问'],1,'on request 以提出请求为条件，不意味着立即。'),
+Q('She can manage independently, though some tasks take longer. 哪项最准确？',['所有任务都无法完成','必须由别人完全代办','可以自行处理，但速度可能较慢','不需要任何日常安排'],2,'independently 说明能自行处理，不说明快慢。'),
+C('选词填空：Send a copy ___ the adviser asks for the original.（unless / because）','unless','unless 引出例外：未特别要求原件时交复印件。'),
+C('选词填空：The service can be arranged ___ you meet the criteria.（as long as / rather than）','as long as','as long as 表示条件：只要满足标准。')],
+dictation:[
+['The first ___ can take place over the phone.','assessment','assessment 指了解需求的评估。'],
+['A ___ will explain the available services.','coordinator','coordinator 是协调各项服务的人。'],
+['Please bring a ___ for each approved journey.','receipt','receipt 中 p 不发音。'],
+['A short period of ___ may be arranged.','respite','respite 表示暂时替代照护。'],
+['Not everyone who applies will be ___.','eligible','eligible 表示符合条件。'],
+['The office can ___ certain travel expenses.','reimburse','reimburse 指报销已发生的支出。'],
+['A professional ___ is needed for this service.','referral','referral 指转介。'],
+['Keep the relevant ___ in one folder.','documentation','documentation 是所需文件资料。'],
+['We can help ___ the application is complete.','as long as','as long as 连读时中间部分会弱化。'],
+['You ___ attend the first meeting in person.','do not have to','do not have to 表示不必，不是不能。',["don't have to"]],
+['The grant covers travel, ___ household purchases.','rather than','rather than 排除另一类支出。'],
+['Being referred does ___ mean you will be accepted.','not necessarily','not necessarily 是“未必”，不是“一定不”。']],
+locators:[
+['The|[initial consultation]|will take place|by|___.','Your|[first discussion]|with the service|is normally|over the phone,|rather than|at the office.','initial consultation 对应 first discussion；后面区分电话与现场咨询。'],
+['The|[assessment]|is arranged|[after]|a completed|___|is received.','We|organise|the|[needs review]|[once]|your application form|has reached|the team.','assessment 对应 needs review；after 对应 once，注意流程先后。'],
+['The coordinator|needs a|[description]|of the carer’s|[usual]|___.','Please|give us|[an outline]|of|your|[normal]|routine|at home,|including any regular commitments.','description 对应 outline；usual 对应 normal。'],
+['Support may be|[temporary]|while the usual carer|is|[away]|on|___.','A helper|can take over|[for a short period]|when|you are|[not at home]|because of work.','temporary 对应短期；away 对应不在家。'],
+['The adviser|will suggest|[equipment]|to make|[moving around]|the home|___.','Some|[practical aids]|can make|[getting from room to room]|easier,|depending on|the layout.','equipment 对应 practical aids；moving around 对应逐个房间移动，不是搬家。'],
+['[Approved expenses]|must be supported by|[original]|___.','For|[costs we agree to repay,]|keep the|[actual]|receipts,|not just|a list of figures.','approved expenses 对应获同意返还的费用；original 与 actual 都强调原凭证。'],
+['People|[applying for the first time]|should contact|the|[named]|___.','If|this is|[your first application,]|speak to|the|[designated]|coordinator|rather than the general switchboard.','applying for the first time 对应 first application；named 对应 designated。'],
+['An|[additional appointment]|may be offered|if|[more information]|is needed|about|___.','We|sometimes arrange|[a further meeting]|when|[the details are incomplete,]|especially concerning|evening duties.','additional 对应 further；more information 对应现有信息不完整。'],
+['[Copies]|of the documents|are acceptable|[unless]|the adviser requests|___.','Send|[photocopies]|in the first instance,|[except when]|we specifically ask|for originals.','copies 对应 photocopies；unless 对应 except when，不能漏掉例外。'],
+['The support plan|will be|[reviewed]|[every]|___|months.','The coordinator|will|[check the arrangements again]|[at intervals of]|four months,|or sooner|if circumstances change.','reviewed 对应再次检查安排；every 对应 at intervals of。']],
+paragraphs:[
+{title:'Asking about support',text:'The centre offers an [assessment] before discussing a plan. An adviser listens to a description of the family’s [daily routine] and asks which activities require [assistance]. A short period of [respite] may be considered. Being [eligible] does not mean the plan is accepted immediately; a [referral] may also be needed. The adviser explains the next steps in a separate letter.',pairs:[['assessment','a review of what someone needs','assessment 是需求评估。'],['daily routine','the usual pattern of everyday activities','routine 可以展开为日常活动的模式。'],['assistance','help','较长的 assistance 可对应短词 help。'],['respite','temporary relief from caring duties','respite 是短暂免于照护职责的安排。'],['eligible','meeting the conditions for applying','eligible 只指符合申请条件。'],['referral','being directed to another service','referral 是转交给另一服务机构。']],distractors:['guaranteed acceptance','a permanent replacement','an annual fee']},
+{title:'Sending the paperwork',text:'The [coordinator] asked us to keep [documentation] of the approved journeys. We should retain each [receipt] so the office can [reimburse] the agreed costs. Copies are sufficient [unless] the original is requested. The plan can continue [as long as] the stated conditions remain satisfied. We placed the papers in date order before sending them.',pairs:[['coordinator','the person organising the arrangements','coordinator 是负责协调的人。'],['documentation','written evidence and records','documentation 强调文件记录。'],['receipt','proof of payment','receipt 可解释成付款凭证。'],['reimburse','pay back an expense','reimburse 指偿还支出。'],['unless','except if','unless 表示例外条件。'],['as long as','provided that','两者都引出前提条件。']],distractors:['regardless of the conditions','pay in advance','a verbal promise']}],
+signals:[
+{title:'Arranging the first review',focus:'留意申请顺序、需交资料和后续联络。',transcript:['The support team has a small office beside the community library.','You can collect a leaflet there or ask for one to be sent to your home.','Before anything else, you need to complete the short enquiry form so we can arrange a review.','The adviser will normally introduce herself by phone and explain what happens next.','What matters most is a clear description of the duties you carry out on an ordinary day.','You do not need to write a long personal history for this first discussion.','As for further appointments, your coordinator will arrange those after checking the initial information.','Please give us a contact number where you can be reached during the afternoon.'],cues:[{sentence:2,signal:'Before anything else',why:'说明流程第一步，后续安排以它为前提。'},{sentence:4,signal:'What matters most',why:'强调评估所需的核心信息。'},{sentence:6,signal:'As for further appointments',why:'明确转入后续预约的处理方式。'}]},
+{title:'Checking a support plan',focus:'留意报销范围、例外条件和复核。',transcript:['I have read the letter about the proposed support arrangements for our family.','There is a reference number at the top and the adviser has signed at the bottom.','One point to clarify is that only previously approved journeys can be considered for repayment.','The office has supplied an envelope for the paperwork and a checklist on the reverse.','However, they may ask for the original receipt if the copy cannot be read clearly.','The coordinator is available by phone during the afternoon if any section is confusing.','If our circumstances change, we should request another review rather than wait for the next scheduled one.','I will keep the letter with the rest of the documents in a separate folder.'],cues:[{sentence:2,signal:'One point to clarify',why:'明确报销范围，不可理解为所有旅程。'},{sentence:4,signal:'However',why:'转折引出需要原件的例外情况。'},{sentence:6,signal:'If our circumstances change',why:'条件变化触发复核，而非等到原定日期。'}]}]
+});})();

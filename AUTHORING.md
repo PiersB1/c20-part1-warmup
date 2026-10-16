@@ -5,11 +5,14 @@
 ## 文件分工
 
 - `exercise-catalog.js`：目录入口；同一册、Test、Part 可以有多条练习。
-- `data/listening-practices.js`：主题、核心词汇、题目及讲解。
+- `data/listening-practices.js`：原有 C20T1P1 练习 2。
+- `data/practice-builders.js`：成对生成练习 1 和练习 2 的数据构造器。
+- `data/*.practice.js`：每篇主题的独立内容。使用 `RRAddTopic`，在 `listening.html` 增加普通 script 引用；音频生成工具自动发现这些文件。
 - `listening.html`、`listening.css`、`listening-engine.js`：通用页面、自动保存、记录导出／删除及收藏。
 - `modules/locator.js`：定位词标记。
 - `modules/paraphrase.js`：同义替换拖动。
 - `modules/signal.js`：音频信号标记。
+- `modules/quiz.js`、`modules/dictation.js`：词汇／语法题和逐句听写。
 - `data/audio-timings.js`：由真实录音的句子边界生成。
 - `practice.html`：早期的练习 1，保留原入口。
 
@@ -17,7 +20,11 @@
 
 为练习设置唯一 `id`，在 `RRListeningPractices[id]` 中填写 `title`、`label`、`location`、`coreWords` 和 `sections`。目录中的 URL 为 `listening.html?id=该id`。
 
-每个 section 使用 `id`、`type`、`title`、`instruction`、`items`。三个 type 是 `locator`、`paraphrase`、`signal`；渲染器通过同一接口提供 `getResult()` 与 `check()`，不把题目文字写进渲染器。
+常规新增主题用 `RRAddTopic({test,part,title,coreWords,quiz,dictation,locators,paragraphs,signals})` 自动产生两套：`c20-tX-pY-1` 和 `c20-tX-pY-2`。每套最后统一核对。练习 1 有 12 道词汇／语法题和 12 句听写；练习 2 有 10 道定位、2 段各 6 空同替和 2 段各 3 考点信号音频。
+
+定位单元用竖线分隔，方括号内为目标，例如 `The|[minimum term]|is|___|months.`。方括号后的标点可保留；不要把半截标记放在普通单元中。第四项参数可写题干形式（笔记填空、单选题干、多选题干、角色匹配、年份匹配、地图标注）。选择题的正确答案保存文本，不依赖选项序号，构造器会打散选项位置。
+
+每个 section 使用 `id`、`type`、`title`、`instruction`、`items`。练习 1 的 type 是 `quiz`、`dictation`，练习 2 的 type 是 `locator`、`paraphrase`、`signal`；渲染器通过同一接口提供 `getResult()` 与 `check()`，不把题目文字写进渲染器。
 
 ## 定位词
 
@@ -42,6 +49,8 @@ python scripts/generate-listening-audio.py c20-t1-p1-2
 ```
 
 可以用 `--only loc-5 loc-9` 仅重做指定题的音频。工具导出英式自然语音，并读取 SentenceBoundary 得到标准时间；超出时长范围时重新调节生成语速。音频和源文字修改后必须一起更新。检查每个信号表达能在元数据中找到，并在浏览器中核对音频时长、显示、标记、重听清空和判分。
+
+工具也支持一次传多个练习 ID，`--skip-existing` 可继续未完成批次。普通句子按每题 `rate` 合成；信号题以实际音频句界生成时间。批量生成只有同一进程写时间元数据，避免并发覆盖其他篇目。
 
 ## 记录和收藏
 
