@@ -1,8 +1,8 @@
 const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert');
 const root=path.resolve(__dirname,'..'),context={};context.window=context;vm.createContext(context);
-const files=['data/listening-practices.js','data/practice-builders.js',...fs.readdirSync(path.join(root,'data')).filter(name=>name.endsWith('.practice.js')).sort().map(name=>`data/${name}`),'data/audio-timings.js','exercise-catalog.js'];
+const files=['data/listening-practices.js','data/practice-builders.js','data/preparation-builders.js',...fs.readdirSync(path.join(root,'data')).filter(name=>name.endsWith('.practice.js')).sort().map(name=>`data/${name}`),'data/audio-timings.js','exercise-catalog.js'];
 files.forEach(file=>vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),context,{filename:file}));
-const extra=Object.values(context.RRListeningPractices).filter(item=>item.id!=='c20-t1-p1-2');
+const extra=Object.values(context.RRListeningPractices).filter(item=>item.id!=='c20-t1-p1-2'&&item.location.book===20&&item.location.part<=2);
 assert.equal(extra.length,14);
 let audioCount=0,questionCount=0;
 for(const practice of extra){

@@ -2,6 +2,8 @@
 
 页面不需要构建或服务端，所有练习都可以从本地文件打开。
 
+当前覆盖剑20、19、18、11、10、9全部听力 Part 1–4，每篇两套，共192套。本次扩展88篇、176套；原有剑20 Part 1–2保留。主题与题型比例见 `CONTENT-SOURCES.md`。
+
 ## 文件分工
 
 - `exercise-catalog.js`：目录入口；同一册、Test、Part 可以有多条练习。
@@ -22,6 +24,12 @@
 为练习设置唯一 `id`，在 `RRListeningPractices[id]` 中填写 `title`、`label`、`location`、`coreWords` 和 `sections`。目录中的 URL 为 `listening.html?id=该id`。
 
 常规新增主题用 `RRAddTopic({test,part,title,coreWords,quiz,dictation,locators,paragraphs,signals})` 自动产生两套：`c20-tX-pY-1` 和 `c20-tX-pY-2`。每套最后统一核对。练习 1 有 12 道词汇／语法题和 12 句听写；练习 2 有 10 道定位、2 段各 6 空同替和 2 段各 3 考点信号音频。
+
+跨册时显式传 `book`，ID 为 `c{book}-t{test}-p{part}-1/2`。省略 book 才默认剑20。`data/expanded-c*.practice.js` 使用 `RRCompactTopic` 或 `RRPrepareTopic`：每篇12个独立词汇单元、两段主题引入、两组各3项干扰表达、真实题型构成。单元用 `英文|本题中文|英文同义表达|包含___的原创句|可选易混中文|可选带[定位词]的题干`；不能把同一篇段落套给不同主题。前10单元生成词汇听写与定位题，全部12单元构成两段各6空的连贯主题材料。语法听写另占末两句，语法选择题可通过 quizGrammar 调整；核心词汇列表包含实际涉及的表达。
+
+`formats` 形如 `[['单选题干',4],['观点匹配',6]]`，总数必须为10。带地图的题干数量和地图插入位置应符合目标篇目；装置图传 `diagram`，路线图传 `map` 和 `routes`。地图简图不得复现真题答案链。未来阅读题型仍需另行确定。
+
+完成内容后运行 `node scripts/build-catalog.cjs` 更新目录，`node scripts/write-content-index.cjs` 更新核对索引；这些是维护工具，用户打开网页不需要运行构建。
 
 定位单元用竖线分隔，方括号内为目标，例如 `The|[minimum term]|is|___|months.`。方括号后的标点可保留；不要把半截标记放在普通单元中。第四项参数可写题干形式（笔记填空、单选题干、多选题干、角色匹配、年份匹配、地图标注）。选择题的正确答案保存文本，不依赖选项序号，构造器会打散选项位置。
 
@@ -52,6 +60,10 @@ python scripts/generate-listening-audio.py c20-t1-p1-2
 可以用 `--only loc-5 loc-9` 仅重做指定题的音频。工具导出英式自然语音，并读取 SentenceBoundary 得到标准时间；超出时长范围时重新调节生成语速。音频和源文字修改后必须一起更新。检查每个信号表达能在元数据中找到，并在浏览器中核对音频时长、显示、标记、重听清空和判分。
 
 工具也支持一次传多个练习 ID，`--skip-existing` 可继续未完成批次。普通句子按每题 `rate` 合成；信号题以实际音频句界生成时间。批量生成只有同一进程写时间元数据，避免并发覆盖其他篇目。
+
+整批扩展可用 `--all-prepared --concurrency 12 --skip-existing`。工具只处理本批扩展，不覆盖已有剑20 Part 1–2。相同文本、英音、语速复用 `.work/tts-cache`，文件成功写完才替换目标；长录音另比较内容指纹，避免误用旧版本时间戳。修改普通句子后用 `--only 对应id` 重新生成，不要带 skip-existing。Part 3 的 speakers 数组指定每句的英国声音，工具按句合成、解码为PCM后拼接，用实际帧数及句界累计时间，加入每轮0.2秒间隔。需安装 ffmpeg。队列共享一个时间戳写入器，不要同时运行多份生成进程。
+
+验收：`node tests/expanded-library.cjs --audio`、`node tests/expanded-browser.cjs` 与 `node tests/native-audio.cjs`。前者验证88篇结构与录音完整性，中者验证176套统一核对和保存，后者使用浏览器原生音频读取每个新增文件。旧剑20回归仍运行原测试。`.work/` 和 `tmp/` 仅保存依赖、缓存、核对过程与测试截图，不是网页运行所需文件。
 
 ## 记录和收藏
 
