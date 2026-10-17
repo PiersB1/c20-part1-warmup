@@ -8,7 +8,9 @@ let audioCount=0,questionCount=0;
 for(const practice of extra){
   assert(practice.coreWords.length>=14);
   assert(context.RRExerciseCatalog.some(item=>item.id===practice.id));
-  assert.deepEqual(Array.from(practice.sections.map(s=>s.type)),practice.id.endsWith('-1')?['quiz','dictation']:['locator','paraphrase','signal']);
+  const mapPractice=practice.id==='c20-t3-p2-2';
+  assert.deepEqual(Array.from(practice.sections.map(s=>s.type)),practice.id.endsWith('-1')?['quiz','dictation']:mapPractice?['locator','paraphrase','signal','route']:['locator','paraphrase','signal']);
+  if(mapPractice)assert.equal(practice.sections[2].items.length,1);
   assert.equal(practice.sections[0].items.length,practice.id.endsWith('-1')?12:10);
   for(const section of practice.sections){
     for(const item of section.items){
@@ -26,6 +28,12 @@ for(const practice of extra){
         assert.equal(item.cues.length,3);assert.equal(item.tolerance,2);
         const timing=context.RRSignalTimings[item.audio];assert(timing,`Missing timing: ${item.audio}`);assert(timing.duration>=41&&timing.duration<=48);assert.equal(timing.cues.length,3);
         item.cues.forEach((cue,i)=>{assert(item.transcript[cue.sentence].toLowerCase().startsWith(cue.signal.toLowerCase()));assert(timing.cues[i].start>0&&timing.cues[i].start<timing.duration);});
+      }else if(section.type==='route'){
+        const nodes=new Map(item.map.nodes.map(node=>[node.id,node]));
+        assert.equal(item.expectedPath[0],item.start);assert.equal(item.expectedPath.at(-1),item.goal);
+        item.map.edges.forEach(([a,b])=>{assert(nodes.has(a)&&nodes.has(b));assert((nodes.get(a).x===nodes.get(b).x)!==(nodes.get(a).y===nodes.get(b).y));});
+        item.expectedPath.slice(1).forEach((id,i)=>assert(item.map.edges.some(edge=>edge.includes(id)&&edge.includes(item.expectedPath[i]))));
+        const timing=context.RRSignalTimings[item.audio];assert(timing&&timing.duration>=41&&timing.duration<=48);
       }
       if(item.audio){audioCount++;const full=path.join(root,item.audio);assert(fs.existsSync(full),`Missing ${item.audio}`);assert(fs.statSync(full).size>5000);}
     }

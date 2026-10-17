@@ -17,7 +17,7 @@ window.RRExerciseCatalog = [
     const id=`c20-t${test}-p${part}-${exercise}`;
     RRExerciseCatalog.push({id,mode:'listening',book:20,test,part,
       title:`练习 ${exercise} · ${exercise===1?'词汇与句子听写':'定位与同义替换'}`,
-      description:`${theme} · ${exercise===1?'词汇／语法 · 逐句听写':'定位词标记 · 同义替换 · 信号词捕捉'}`,
+      description:`${theme} · ${exercise===1?'词汇／语法 · 逐句听写':'定位词标记 · 同义替换 · 信号词捕捉'+(test===3&&part===2?' · 地图路线':'')}`,
       url:`listening.html?id=${id}`});
   }
 });

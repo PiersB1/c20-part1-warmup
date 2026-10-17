@@ -81,7 +81,7 @@ async def main():
                 voice = 'en-GB-SoniaNeural' if index % 2 == 0 else 'en-GB-RyanNeural'
                 _, duration = await synthesize(text, voice, root / item['audio'], f'{item.get("rate", 0):+d}%')
                 print(practice_id, item['id'], round(duration, 2), flush=True)
-            elif kind == 'signal':
+            elif kind in ('signal', 'route'):
                 text = ' '.join(item['transcript'])
                 voice = 'en-GB-RyanNeural' if index % 2 == 0 else 'en-GB-SoniaNeural'
                 rate = 0
@@ -93,7 +93,7 @@ async def main():
                 if not 41 <= duration <= 48:
                     raise RuntimeError(f'{item["id"]} is {duration:.2f} seconds, outside the 41–48 second range')
                 cues = []
-                for cue in item['cues']:
+                for cue in item.get('cues', []):
                     phrase = clean(cue['signal'])
                     boundary = next((event for event in events if clean(event['text']).startswith(phrase)), None)
                     if boundary is None:
@@ -105,7 +105,7 @@ async def main():
     for practice_id in args.practice_id:
         practice = library[practice_id]
         tasks = [build(practice_id, section['type'], index, item)
-                 for section in practice['sections'] if section['type'] in ('locator', 'dictation', 'signal')
+                 for section in practice['sections'] if section['type'] in ('locator', 'dictation', 'signal', 'route')
                  for index, item in enumerate(section['items'])]
         await asyncio.gather(*tasks)
         timing_path.write_text('window.RRSignalTimings = ' + json.dumps(timings, ensure_ascii=False, indent=2) + ';\n', encoding='utf-8')

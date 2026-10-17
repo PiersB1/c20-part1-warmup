@@ -18,7 +18,7 @@
   practice.sections.forEach((section, index) => {
     const panel = el('section', 'practice-section');panel.id = section.id;
     const heading = el('div', 'section-heading');
-    heading.append(el('h2', '', `${String(index + 1).padStart(2, '0')} · ${section.title}`), el('small', '', `${section.items.length} ${['locator','quiz','dictation'].includes(section.type) ? '题' : '段'}`));
+    heading.append(el('h2', '', `${String(index + 1).padStart(2, '0')} · ${section.title}`), el('small', '', `${section.items.length} ${['locator','quiz','dictation','route'].includes(section.type) ? '题' : '段'}`));
     panel.append(heading, el('p', 'instruction', section.instruction));
     const questions = el('div', 'questions');panel.append(questions);
     const controller = RRQuestionTypes[section.type].render(section, questions);
@@ -53,6 +53,7 @@
     return sections.some(section => section.details.some(detail => {
       if (section.type === 'locator') return detail.response.question.length || detail.response.source.length;
       if (section.type === 'signal') return detail.played || detail.response.length;
+      if (section.type === 'route') return detail.played || detail.response.path.length > 1;
       return Array.isArray(detail.response) ? detail.response.length : Boolean(detail.response);
     }));
   }
@@ -88,6 +89,8 @@
           box.append(el('p', '', `问题句：${item.response.question.join(' / ') || '未标记'}`), el('p', '', `原文句：${item.response.source.join(' / ') || '未标记'}`), el('p', '', `标准定位：${item.expected.question.join(' / ')} ↔ ${item.expected.source.join(' / ')}`));
         } else if (section.type === 'signal') {
           box.append(el('p', '', `标记：${item.response.map(value => `${value.toFixed(1)} 秒`).join('、') || '无'}`), el('p', '', `标准：${item.expected.map(cue => `${cue.start.toFixed(1)} 秒`).join('、')}`));
+        } else if (section.type === 'route') {
+          box.append(el('p', '', `你的路线：${item.response.labels.join(' → ')}`),el('p', '', `标准路线：${item.expected.labels.join(' → ')}`),el('p', '', `终点：${item.response.destination} · ${item.correct?'路线正确':'路线需调整'}`));
         } else box.append(el('p', '', `作答：${item.response || '未匹配'} · 对应表达：${item.expected}`));
         detail.append(box);
       });

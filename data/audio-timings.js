@@ -175,22 +175,6 @@ window.RRSignalTimings = {
     "voice": "en-GB-RyanNeural",
     "rate": 0
   },
-  "audio/c20-t3-p2/signal-02.mp3": {
-    "duration": 44.928,
-    "cues": [
-      {
-        "start": 9.979
-      },
-      {
-        "start": 21.904
-      },
-      {
-        "start": 33.808
-      }
-    ],
-    "voice": "en-GB-SoniaNeural",
-    "rate": -14
-  },
   "audio/c20-t4-p1/signal-01.mp3": {
     "duration": 44.904,
     "cues": [
@@ -254,5 +238,11 @@ window.RRSignalTimings = {
     ],
     "voice": "en-GB-SoniaNeural",
     "rate": 0
+  },
+  "audio/c20-t3-p2/route-01.mp3": {
+    "duration": 45.24,
+    "cues": [],
+    "voice": "en-GB-RyanNeural",
+    "rate": -23
   }
 };

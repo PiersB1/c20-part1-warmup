@@ -12,6 +12,7 @@
 - `modules/locator.js`：定位词标记。
 - `modules/paraphrase.js`：同义替换拖动。
 - `modules/signal.js`：音频信号标记。
+- `modules/route.js`：地图跟走，用于含地图的篇目。
 - `modules/quiz.js`、`modules/dictation.js`：词汇／语法题和逐句听写。
 - `data/audio-timings.js`：由真实录音的句子边界生成。
 - `practice.html`：早期的练习 1，保留原入口。
@@ -54,6 +55,12 @@ python scripts/generate-listening-audio.py c20-t1-p1-2
 
 ## 记录和收藏
 
-新练习记录使用 `rr:listening:records:v2`，按 `practiceId` 分开查看。各题型提交统一结果结构：`id/type/title/correct/total/details`；信号题额外记录多标数量，不把多次点击同一考点计作多个命中。三个大题归属同一次练习，页面底部只设一个“完成练习并核对答案”按钮，同时核对全部大题并保存一条完整记录。各大题不单设核对按钮。页面内再次整体核对更新同一条记录，重新进入后整体核对创建新的记录。作答过程中不保存。
+新练习记录使用 `rr:listening:records:v2`，按 `practiceId` 分开查看。各题型提交统一结果结构：`id/type/title/correct/total/details`；信号题额外记录多标数量，不把多次点击同一考点计作多个命中。所有大题归属同一次练习，页面底部只设一个“完成练习并核对答案”按钮，同时核对全部大题并保存一条完整记录。各大题不单设核对按钮。页面内再次整体核对更新同一条记录，重新进入后整体核对创建新的记录。作答过程中不保存。
 
 收藏继续使用 `core-vocab.js` 的公共存储。每项只显示英文和本场景中文释义；主页默认隐藏中文，点击显示。
+
+## 地图跟走
+
+含地图主题的练习 2 保留 10 道定位与两段同替，信号题减为一段，增加第四大题 `route`。在 `RRAddTopic` 传入 `map` 和 `routes`。每个 route 包含 `title`、`map:{width,height,nodes:[{id,x,y,label}],edges:[[id,id]]}`、`start`、`goal`、`expectedPath`、`buttonLabels:{north,south,west,east}`、`transcript` 句子数组、`explanation` 和 `vocabulary:[[英文,本题中文]]`。边必须是正南北或正东西；一步移动到相邻路口。地图为原创的主题简图，北向上；导览使用原创英式自然录音。
+
+标准路径包括起点，最后一个节点是终点。整条路径完全一致得 1 分，不能只按终点判断。重听清空路径，暂停不清空，退回一步可修正误触。核对时才显示标准路线、导览原文和方向表达。练习仍只有底部一个核对按钮，保存完整路径、地点标签和终点。音频工具支持 route，生成 `route-01.mp3` 并记录实际时长。

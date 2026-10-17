@@ -29,7 +29,7 @@ let pw;try{pw=require('playwright');}catch{pw=require(path.join(os.homedir(),'.c
    });
    await page.locator('.dictation-card').first().getByRole('button',{name:'▶ 播放'}).click();
   }else{
-   assert.equal(await page.locator('.locator-card').count(),10);assert.equal(await page.locator('.paraphrase-card').count(),2);assert.equal(await page.locator('.signal-card').count(),2);
+   assert.equal(await page.locator('.locator-card').count(),10);assert.equal(await page.locator('.paraphrase-card').count(),2);assert.equal(await page.locator('.signal-card').count(),entry.id==='c20-t3-p2-2'?1:2);
    for(let i=0;i<10;i++){
     await page.locator('.locator-card').nth(i).locator('.reveal-source').click();
     await page.locator('.locator-card').nth(i).locator('.source-wrap').waitFor({state:'visible'});
@@ -45,12 +45,13 @@ let pw;try{pw=require('playwright');}catch{pw=require(path.join(os.homedir(),'.c
    await page.locator(`[data-slot-id="${target.id}"]`).dragTo(page.locator('.paraphrase-card').first().locator('.word-bank'));
    assert(await page.locator(`[data-choice-id="${target.answer}"]`).isVisible());
    await page.evaluate(()=>RRPracticeSession.practice.sections[1].items.forEach(item=>item.segments.filter(segment=>typeof segment!=='string').forEach(target=>{document.querySelector(`[data-choice-id="${target.answer}"]`).click();document.querySelector(`[data-slot-id="${target.id}"]`).click();})));
-   for(let i=0;i<2;i++){
+   for(let i=0;i<await page.locator('.signal-card').count();i++){
     await page.locator('.signal-card').nth(i).locator('.audio-controls .secondary').first().click();
     await page.waitForFunction(i=>!document.querySelectorAll('.signal-card')[i].querySelector('.mark-button').disabled,i);
     await page.evaluate(i=>{const item=RRPracticeSession.practice.sections[2].items[i],audio=__qaAudio.find(audio=>audio.src.endsWith(item.audio)),mark=document.querySelectorAll('.signal-card')[i].querySelector('.mark-button');RRSignalTimings[item.audio].cues.forEach(cue=>{audio.currentTime=cue.start;mark.click();});},i);
    }
    assert.equal(await page.locator('.practice-map').count(),entry.id==='c20-t3-p2-2'?1:0);
+   if(entry.id==='c20-t3-p2-2')for(const direction of ['north','east','south','east','north','north'])await page.locator(`[data-direction="${direction}"]`).click();
   }
   assert.equal(await page.locator('.feedback:visible').count(),0);
   await page.locator('#check-practice').click();
@@ -59,7 +60,7 @@ let pw;try{pw=require('playwright');}catch{pw=require(path.join(os.homedir(),'.c
   await page.locator('#check-practice').click();
   await page.locator('#open-records').click();assert.equal(await page.locator('.record-item').count(),1);
   const pending=page.waitForEvent('download');await page.getByRole('button',{name:'导出这次记录 JSON'}).click();
-  const record=JSON.parse(fs.readFileSync(await(await pending).path(),'utf8'));assert.equal(record.practiceId,entry.id);assert.equal(record.sections.length,entry.id.endsWith('-1')?2:3);
+  const record=JSON.parse(fs.readFileSync(await(await pending).path(),'utf8'));assert.equal(record.practiceId,entry.id);assert.equal(record.sections.length,entry.id.endsWith('-1')?2:entry.id==='c20-t3-p2-2'?4:3);
   await page.locator('[data-close="records-dialog"]').click();
   await page.locator('#open-words').click();
   if(entry.id.endsWith('-1'))await page.locator('.word-star').first().click();

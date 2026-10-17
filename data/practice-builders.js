@@ -3,6 +3,7 @@ window.RRQuiz = {
   cloze(q,answer,why){return{type:'cloze',q,answer,why};}
 };
 window.RRAddTopic = config => {
+  if(config.map && !config.routes?.length)throw Error('A map topic needs a route activity.');
   const base = `c20-t${config.test}-p${config.part}`;
   const audioRoot = `audio/${base}`;
   function tokens(text) {
@@ -38,10 +39,11 @@ window.RRAddTopic = config => {
         const choices=item.pairs.map((pair,i)=>({id:`${base}-p${index+1}-a${i+1}`,text:pair[1]})).concat(item.distractors.map((text,i)=>({id:`${base}-p${index+1}-x${i+1}`,text})));
         return {id:`${base}-paragraph-${index+1}`,title:item.title,segments,choices:shuffled(choices,`${base}-${index}`)};
       })},
-      {id:'signals',type:'signal',title:'信号词捕捉',instruction:'听到提醒、修正或转入重点等信号，标记考点句的起点。每段 3 处，重听清空标记；整份练习完成后统一核对。',items:config.signals.map((item,index)=>{
+      {id:'signals',type:'signal',title:'信号词捕捉',instruction:'听到提醒、修正或转入重点等信号，标记考点句的起点。每段 3 处，重听清空标记；整份练习完成后统一核对。',items:(config.map?config.signals.slice(0,1):config.signals).map((item,index)=>{
         const order=item.order||item.transcript.map((_,i)=>i);
         return{id:`${base}-signal-${index+1}`,title:item.title,focus:item.focus,transcript:order.map(i=>item.transcript[i]),cues:item.cues.map(cue=>({...cue,sentence:order.indexOf(cue.sentence)})).sort((a,b)=>a.sentence-b.sentence),tolerance:2,audio:`${audioRoot}/signal-${String(index+1).padStart(2,'0')}.mp3`};
-      })}
+      })},
+      ...(config.map?[{id:'routes',type:'route',title:'跟随路线走地图',instruction:'地图北向上。听导览，用英文方向按钮移动小人，每次走到下一个路口。路线会保留；可暂停或退回一步，重听会回到起点。',items:config.routes.map((item,index)=>({...item,id:`${base}-route-${index+1}`,audio:`${audioRoot}/route-${String(index+1).padStart(2,'0')}.mp3`}))}]:[])
     ]
   };
 };

@@ -20,7 +20,8 @@ window.RRUI = (() => {
   async function play(audio) {
     if (activeAudio && activeAudio !== audio) activeAudio.pause();
     activeAudio = audio;
-    await audio.play();
+    try { await audio.play(); }
+    catch (error) { if (error.name !== 'AbortError') throw error; }
   }
   function time(seconds) {
     return `${Math.floor(seconds / 60)}:${Math.floor(seconds % 60).toString().padStart(2, '0')}`;
