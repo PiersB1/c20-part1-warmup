@@ -13,7 +13,16 @@ for(const topic of c.RRRevisionCoverage){
  for(const item of ls){
   if(/地图|平面图/.test(item.format))continue;
   locators++;
-  for(const f of ['source','question'])assert(item[f].filter(t=>t.key).length>=2,item.id+' one key');
+  assert.equal(item.paired,true,item.id+' missing pair interaction');
+  const count=Number(item.id.match(/l(\d+)$/)[1])<=6?1:2;
+  for(const f of ['source','question']){
+   assert.equal(item[f].filter(t=>t.key).length,count,item.id+' progression');
+   assert.deepEqual(item[f].filter(t=>t.key).map(t=>t.pair).sort(),Array.from({length:count},(_,i)=>i+1));
+   const keyWords=item[f].filter(t=>t.key).reduce((n,t)=>n+t.text.split(/\s+/).length,0);
+   assert(keyWords/txt(item[f]).split(/\s+/).length<.6,item.id+' excessive marked coverage');
+   assert(!/(?:^|\s)['’]s?(?:\s|$)/.test(txt(item[f])),item.id+' split possessive ending');
+  }
+  if(count===2){assert(txt(item.question).split(/\s+/).length>=20,item.id+' short double question');assert(txt(item.source).split(/\s+/).length>=25,item.id+' short double source');}
   assert(!/The discussion of|One detail about|The example involving|The notes on|Regarding .*the speaker mentions/.test(txt(item.question)));
   if(/填空/.test(item.format))assert(txt(item.question).includes('___'));
  }

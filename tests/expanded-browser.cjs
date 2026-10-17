@@ -29,10 +29,6 @@ const {chromium}=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-pri
     practice.sections[1].items.forEach((item,index)=>document.querySelectorAll('.dictation-card')[index].querySelector('input').value=item.answer);
    }else{
     document.querySelectorAll('.reveal-source').forEach(button=>button.click());await Promise.resolve();await Promise.resolve();
-    practice.sections[0].items.forEach((item,index)=>['question','source'].forEach((field,lineIndex)=>{
-     const buttons=document.querySelectorAll('.locator-card')[index].querySelectorAll('.token-line')[lineIndex].querySelectorAll('.token');
-     item[field].filter(t=>!(typeof t==='string'?t:t.text).includes('___')).forEach((token,i)=>{if(token.key)buttons[i].click();});
-    }));
     practice.sections[1].items.forEach(item=>item.segments.filter(s=>typeof s!=='string').forEach(slot=>{document.querySelector(`[data-choice-id="${slot.answer}"]`).click();document.querySelector(`[data-slot-id="${slot.id}"]`).click();}));
     for(const [index,item] of practice.sections[2].items.entries()){
      const card=document.querySelectorAll('.signal-card')[index];card.querySelector('.audio-controls button').click();await Promise.resolve();
@@ -42,6 +38,7 @@ const {chromium}=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-pri
     if(route){const nodes=new Map(route.map.nodes.map(n=>[n.id,n]));route.expectedPath.slice(1).forEach((id,i)=>{const a=nodes.get(route.expectedPath[i]),b=nodes.get(id),direction=b.x>a.x?'east':b.x<a.x?'west':b.y>a.y?'south':'north';document.querySelector(`[data-direction="${direction}"]`).click();});}
    }
   });
+  if(id.endsWith('-2'))await page.evaluate(require('./answer-locators.cjs'));
   assert.equal(await page.locator('.feedback:visible').count(),0);
   await page.locator('#check-practice').click();
   const results=await page.evaluate(()=>RRPracticeSession.controllers.map(c=>c.getResult()));

@@ -40,7 +40,7 @@ for(const book of books)for(let test=1;test<=4;test++)for(let part=1;part<=4;par
     if(item.audio){
      audio++;if(!fs.existsSync(path.join(root,item.audio))||fs.statSync(path.join(root,item.audio)).size<3000)missing.push(item.audio);
      if(full&&['signal','route'].includes(section.type)){
-      const timing=context.RRSignalTimings[item.audio];assert(timing,`Missing timing ${item.audio}`);assert(timing.duration>=41&&timing.duration<=48,`Duration ${item.audio}`);
+      const timing=context.RRSignalTimings[item.audio];assert(timing,`Missing timing ${item.audio}`);assert(section.type==='signal'?timing.duration>=40&&timing.duration<=55:timing.duration>=41&&timing.duration<=48,`Duration ${item.audio}`);
       if(section.type==='signal'){assert.equal(timing.cues.length,3);assert(timing.cues.every(c=>c.start>=0&&c.start<timing.duration));}
       if(item.speakers)assert.equal(timing.voices.length,2);
      }

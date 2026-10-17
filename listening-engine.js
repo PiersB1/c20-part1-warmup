@@ -86,7 +86,11 @@
       section.details.forEach((item, index) => {
         const box = el('div', 'record-question');box.append(el('strong', '', `${index + 1}. ${item.question}`));
         if (section.type === 'locator') {
-          box.append(el('p', '', `问题句：${item.response.question.join(' / ') || '未标记'}`), el('p', '', `原文句：${item.response.source.join(' / ') || '未标记'}`), el('p', '', `标准定位：${item.expected.question.join(' / ')} ↔ ${item.expected.source.join(' / ')}`));
+          if (item.response.pairs) {
+            box.append(el('p', '', `你的配对：${item.response.pairs.map(p=>`${p.number}. ${p.question} ↔ ${p.source}${p.correct?' ✓':' ×'}`).join('；') || '未配对'}`));
+            if(item.response.pending)box.append(el('p','',`未完成：${item.response.pending.text}`));
+            box.append(el('p', '', `标准配对：${item.expected.pairs.map(p=>`${p.question} ↔ ${p.source}`).join('；')}`));
+          } else box.append(el('p', '', `问题句：${item.response.question.join(' / ') || '未标记'}`), el('p', '', `原文句：${item.response.source.join(' / ') || '未标记'}`), el('p', '', `标准定位：${item.expected.question.join(' / ')} ↔ ${item.expected.source.join(' / ')}`));
         } else if (section.type === 'signal') {
           box.append(el('p', '', `标记：${item.response.map(value => `${value.toFixed(1)} 秒`).join('、') || '无'}`), el('p', '', `标准：${item.expected.map(cue => `${cue.start.toFixed(1)} 秒`).join('、')}`));
         } else if (section.type === 'route') {

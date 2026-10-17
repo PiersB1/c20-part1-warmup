@@ -24,6 +24,10 @@ parser.add_argument('--tools-path', default='')
 parser.add_argument('--only', nargs='*', default=[])
 parser.add_argument('--skip-existing', action='store_true')
 parser.add_argument('--editorial', action='store_true', help='Only revised locator, signal and final two dictation recordings; retain map and route audio.')
+parser.add_argument('--kinds', nargs='+', default=['dictation','locator','signal','route'])
+parser.add_argument('--preserve-maps', action='store_true')
+parser.add_argument('--natural-long', action='store_true', default=True, help='Normal speech rate is the default for long recordings; accept 40–55 seconds.')
+parser.add_argument('--output-prefix', default='', help='Stage recordings and their metadata beneath this workspace directory.')
 args = parser.parse_args()
 if args.tools_path:
     sys.path.insert(0, args.tools_path)
@@ -31,6 +35,10 @@ import edge_tts
 from mutagen.mp3 import MP3
 
 root = Path(__file__).resolve().parent.parent
+media_root=(root/args.output_prefix).resolve() if args.output_prefix else root
+if not media_root.is_relative_to(root):
+    raise ValueError('Audio output must remain inside the project')
+(media_root/'data').mkdir(parents=True,exist_ok=True)
 node_loader = """
 const fs=require('fs'),vm=require('vm'),path=require('path');
 const context={};context.window=context;vm.createContext(context);
@@ -47,6 +55,20 @@ library=loaded['practices']
 
 def clean(value):
     return re.sub(r'\s+', ' ', html.unescape(value)).strip().lower()
+
+
+def write_atomic(path, text):
+    pending=path.with_suffix(path.suffix+'.pending')
+    pending.write_text(text,encoding='utf-8')
+    pending.replace(path)
+
+
+def short_speech(kind, index, item):
+    text=(' '.join(t if isinstance(t,str) else t['text'] for t in item['source'])
+          if kind=='locator' else item['sentence'].replace('___',item['answer']))
+    return (re.sub(r'\s+([,.;:?!])',r'\1',text),
+            'en-GB-LibbyNeural' if index%2==0 else 'en-GB-RyanNeural',
+            f'{item.get("rate",0):+d}%')
 
 
 async def synthesize_raw(text, voice, path, rate='+0%'):
@@ -117,20 +139,26 @@ async def dialogue(item, output, rate):
         with wave.open(str(combined),'wb') as audio:
             audio.setnchannels(1);audio.setsampwidth(2);audio.setframerate(24000);audio.writeframes(b''.join(frames))
         pending=output.with_name(output.stem+'.pending.mp3')
-        subprocess.run(['ffmpeg','-y','-loglevel','error','-i',str(combined),'-codec:a','libmp3lame','-b:a','64k',str(pending)],check=True,capture_output=True)
+        subprocess.run(['ffmpeg','-y','-loglevel','error','-i',str(combined),'-codec:a','libmp3lame','-b:a','128k',str(pending)],check=True,capture_output=True)
         pending.replace(output)
     return events,MP3(output).info.length
 
 
 async def main():
     timings = {}
-    timing_path = root / 'data/audio-timings.js'
+    manifest_path=media_root/'data/speech-manifest.json'
+    manifest=json.loads(manifest_path.read_text(encoding='utf-8')) if manifest_path.exists() else {}
+    timing_path = media_root / 'data/audio-timings.js'
     if timing_path.exists():
         content = timing_path.read_text(encoding='utf-8')
         timings = json.loads(content.split('=', 1)[1].strip().rstrip(';'))
     semaphore = asyncio.Semaphore(args.concurrency)
 
     async def build(practice_id, kind, index, item):
+        if kind not in args.kinds:
+            return
+        if args.preserve_maps and (kind=='route' or (kind=='locator' and re.search('地图|平面图',item.get('format','')))):
+            return
         if args.editorial:
             if library[practice_id].get('revision') != '2026-10-editorial':
                 return
@@ -141,29 +169,32 @@ async def main():
         if args.only and item['id'] not in args.only:
             return
         signature=hashlib.sha256(json.dumps({key:item.get(key) for key in ('transcript','speakers','cues')},sort_keys=True).encode()).hexdigest()
-        if args.skip_existing and (root / item['audio']).exists() and (kind not in ('signal','route') or timings.get(item['audio'],{}).get('textHash')==signature):
-            return
+        if args.skip_existing and (media_root/item['audio']).exists():
+            saved=manifest.get(item['audio'],{})
+            same_file=saved.get('audioHash')==hashlib.sha256((media_root/item['audio']).read_bytes()).hexdigest()
+            if kind in ('locator','dictation'):
+                text,voice,rate=short_speech(kind,index,item)
+                if same_file and saved.get('textHash')==hashlib.sha256(text.encode()).hexdigest() and saved.get('voice')==voice and saved.get('rate')==rate:
+                    return
+            elif same_file and timings.get(item['audio'],{}).get('textHash')==signature and saved.get('voice')==('en-GB-RyanNeural' if index%2==0 else 'en-GB-LibbyNeural') and saved.get('rate')==0:
+                return
         async with semaphore:
             if kind in ('locator', 'dictation'):
-                text = (' '.join(token if isinstance(token, str) else token['text'] for token in item['source'])
-                        if kind == 'locator' else item['sentence'].replace('___', item['answer']))
-                voice = 'en-GB-SoniaNeural' if index % 2 == 0 else 'en-GB-RyanNeural'
-                _, duration = await synthesize(text, voice, root / item['audio'], f'{item.get("rate", 0):+d}%')
+                text,voice,rate=short_speech(kind,index,item)
+                _, duration = await synthesize(text, voice, media_root / item['audio'], rate)
+                manifest[item['audio']]={'voice':voice,'rate':rate,'duration':round(duration,3),'textHash':hashlib.sha256(text.encode()).hexdigest(),'audioHash':hashlib.sha256((media_root/item['audio']).read_bytes()).hexdigest()}
+                write_atomic(manifest_path,json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
                 print(practice_id, item['id'], round(duration, 2), flush=True)
             elif kind in ('signal', 'route'):
                 text = ' '.join(item['transcript'])
-                voice = 'en-GB-RyanNeural' if index % 2 == 0 else 'en-GB-SoniaNeural'
-                rate = -15 if item.get('speakers') else 0
-                for _ in range(3):
-                    if item.get('speakers'):
-                        events, duration = await dialogue(item, root / item['audio'], rate)
-                    else:
-                        events, duration = await synthesize(text, voice, root / item['audio'], f'{rate:+d}%')
-                    if 41 <= duration <= 48:
-                        break
-                    rate = round((1 + rate / 100) * duration / 45 * 100 - 100)
-                if not 41 <= duration <= 48:
-                    raise RuntimeError(f'{item["id"]} is {duration:.2f} seconds, outside the 41–48 second range')
+                voice = 'en-GB-RyanNeural' if index % 2 == 0 else 'en-GB-LibbyNeural'
+                rate=0
+                if item.get('speakers'):
+                    events,duration=await dialogue(item,media_root/item['audio'],rate)
+                else:
+                    events,duration=await synthesize(text,voice,media_root/item['audio'],'+0%')
+                if not 40<=duration<=55:
+                    raise RuntimeError(f'{item["id"]} natural speech is {duration:.2f} seconds; revise text instead of forcing speed')
                 cues = []
                 for cue in item.get('cues', []):
                     phrase = clean(cue['signal'])
@@ -174,7 +205,9 @@ async def main():
                 timings[item['audio']] = {'duration': round(duration, 3), 'cues': cues, 'voice': voice, 'rate': rate, 'textHash': signature}
                 if item.get('speakers'):
                     timings[item['audio']]['voices'] = sorted(set(item['speakers']))
-                timing_path.write_text('window.RRSignalTimings = ' + json.dumps(timings, ensure_ascii=False, indent=2) + ';\n', encoding='utf-8')
+                manifest[item['audio']]={**timings[item['audio']],'audioHash':hashlib.sha256((media_root/item['audio']).read_bytes()).hexdigest()}
+                write_atomic(manifest_path,json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
+                write_atomic(timing_path,'window.RRSignalTimings = '+json.dumps(timings,ensure_ascii=False,indent=2)+';\n')
                 print(practice_id, item['id'], round(duration, 2), cues, flush=True)
 
     practice_ids=args.practice_id
@@ -188,8 +221,11 @@ async def main():
         tasks.extend(build(practice_id, section['type'], index, item)
                  for section in practice['sections'] if section['type'] in ('locator', 'dictation', 'signal', 'route')
                  for index, item in enumerate(section['items']))
-    await asyncio.gather(*tasks)
-    timing_path.write_text('window.RRSignalTimings = ' + json.dumps(timings, ensure_ascii=False, indent=2) + ';\n', encoding='utf-8')
+    results=await asyncio.gather(*tasks,return_exceptions=True)
+    write_atomic(timing_path,'window.RRSignalTimings = '+json.dumps(timings,ensure_ascii=False,indent=2)+';\n')
+    errors=[str(result) for result in results if isinstance(result,BaseException)]
+    if errors:
+        raise RuntimeError('\n'.join(errors))
 
 
 asyncio.run(main())

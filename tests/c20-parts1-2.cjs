@@ -34,12 +34,7 @@ let pw;try{pw=require('playwright');}catch{pw=require(path.join(os.homedir(),'.c
     await page.locator('.locator-card').nth(i).locator('.reveal-source').click();
     await page.locator('.locator-card').nth(i).locator('.source-wrap').waitFor({state:'visible'});
    }
-   await page.evaluate(()=>{
-    RRPracticeSession.practice.sections[0].items.forEach((item,index)=>{
-     const card=document.querySelectorAll('.locator-card')[index];
-     ['question','source'].forEach((field,lineIndex)=>{const tokens=item[field].filter(t=>!(typeof t==='string'?t:t.text).includes('___'));const buttons=card.querySelectorAll('.token-line')[lineIndex].querySelectorAll('.token');tokens.forEach((token,i)=>{if(token.key)buttons[i].click();});});
-    });
-   });
+   await page.evaluate(require('./answer-locators.cjs'));
    const target=await page.evaluate(()=>{const item=RRPracticeSession.practice.sections[1].items[0];return item.segments.find(segment=>typeof segment!=='string');});
    await page.locator(`[data-choice-id="${target.answer}"]`).dragTo(page.locator(`[data-slot-id="${target.id}"]`));
    await page.locator(`[data-slot-id="${target.id}"]`).dragTo(page.locator('.paraphrase-card').first().locator('.word-bank'));

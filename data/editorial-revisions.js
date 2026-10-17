@@ -11,10 +11,11 @@ window.RRReviseTopic=(id,edit)=>{
   if(!first||!second)throw Error('Unknown revision '+id);
   const rows=value=>value.trim().split('\n').map(line=>line.trim()).filter(Boolean);
   const tokenise=value=>{
-    const result=[];const re=/\[([^\]]+)\]|([^\[\]]+)/g;let m;
+    const result=[];const re=/\[([^\]]+)\]|\{([^}]+)\}|([^\[\]{}]+)/g;let m;
     while((m=re.exec(value))){
-      if(m[1])result.push({text:m[1],key:true});
-      else result.push(...m[2].trim().split(/\s+/).filter(Boolean));
+      if(m[1]){const [text,pair]=m[1].split('|');result.push({text,key:true,pair:Number(pair)});}
+      else if(m[2])result.push({text:m[2]});
+      else result.push(...m[3].trim().split(/\s+/).filter(Boolean));
     }
     return result;
   };
@@ -27,10 +28,14 @@ window.RRReviseTopic=(id,edit)=>{
     const [q,s,why]=lines[i].split('~');
     if(!why)throw Error(id+' locator explanation '+i);
     const question=tokenise(q),source=tokenise(s);
-    if(question.filter(t=>t.key).length<2||source.filter(t=>t.key).length<2)throw Error(id+' needs multiple locator keys '+i);
+    const qKeys=question.filter(t=>t.key),sKeys=source.filter(t=>t.key);
+    const count=i<6?1:2;
+    if(qKeys.length!==count||sKeys.length!==count)throw Error(id+' locator pair count '+i);
+    for(let n=1;n<=count;n++)if(qKeys.filter(t=>t.pair===n).length!==1||sKeys.filter(t=>t.pair===n).length!==1)throw Error(id+' locator pair identity '+i);
     if(/填空/.test(item.format)&&!q.includes('___'))throw Error(id+' missing gap '+i);
-    return {...item,question,source,explanation:why};
+    return {...item,question,source,paired:true,explanation:why};
   });
+  locators.instruction='先选问题句或原文的一处，再到另一句完成配对。相同数字为一对；点击已选表达可取消整对。只标记，不填答案。';
   const paragraphs=second.sections.find(s=>s.type==='paraphrase');
   paragraphs.items=edit.paragraphs.map((entry,i)=>{
     const segments=[],choices=[];let last=0;const regex=/\[([^\]=>]+)=>([^\]]+)\]/g;let match;
@@ -59,7 +64,7 @@ window.RRReviseTopic=(id,edit)=>{
       transcript.push(parts[0]);
     }
     if(cues.length!==3)throw Error(id+' signal cue count '+i);
-    return {...signals.items[i],title:entry.title,focus:entry.focus,transcript,cues,...(first.location.part===3?{speakers:transcript.map((_,j)=>j%2?'en-GB-RyanNeural':'en-GB-SoniaNeural')}:{})};
+    return {...signals.items[i],title:entry.title,focus:entry.focus,transcript,cues,...(first.location.part===3?{speakers:transcript.map((_,j)=>j%2?'en-GB-RyanNeural':'en-GB-LibbyNeural')}:{})};
   });
   const quiz=first.sections.find(s=>s.type==='quiz');
   const optionRows=rows(edit.options);

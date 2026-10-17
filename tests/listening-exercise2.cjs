@@ -46,15 +46,7 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
     const card = page.locator('.locator-card').nth(i);
     await card.locator('.reveal-source').click();
     await card.locator('.source-wrap').waitFor({state:'visible'});
-    await page.evaluate(index => {
-      const item = RRPracticeSession.practice.sections[0].items[index];
-      const card = document.querySelectorAll('.locator-card')[index];
-      ['question','source'].forEach((field,lineIndex) => {
-        const tokens = item[field].filter(token => !(typeof token==='string'?token:token.text).includes('___'));
-        const nodes = card.querySelectorAll('.token-line')[lineIndex].querySelectorAll('.token');
-        tokens.forEach((token,i) => {if(token.key)nodes[i].click();});
-      });
-    }, i);
+    await page.evaluate(require('./answer-locators.cjs'),i);
   }
   assert.equal(await page.locator('[data-section-check]').count(), 0);
   assert.equal(await page.locator('#check-practice').count(), 1);
@@ -124,7 +116,7 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
   await markAt(1, times[1]);
   assert(await page.evaluate(()=>RRPracticeSession.practice.sections[2].items.every(item=>{
     const audio=__qaAudio.find(audio=>audio.src.endsWith(item.audio));
-    return audio.duration>=41&&audio.duration<=48&&Math.abs(audio.duration-RRSignalTimings[item.audio].duration)<0.1;
+    return audio.duration>=40&&audio.duration<=55&&Math.abs(audio.duration-RRSignalTimings[item.audio].duration)<0.1;
   })));
   await page.locator('#check-practice').click();
   const locatorTotal=await page.evaluate(()=>RRPracticeSession.practice.sections[0].items.reduce((n,i)=>n+i.question.filter(t=>t.key).length+i.source.filter(t=>t.key).length,0));
