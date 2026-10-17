@@ -16,7 +16,7 @@ window.RRVocab = (() => {
     ['per head', '每人'],
     ['portion', '一份菜的份量'],
     ['reasonable', '价格合理的'],
-    ['quite', '相当'],
+    ['quite reasonable', '价格相当合理'],
     ['quieter than', '比……更安静'],
     ['ingredients', '食材'],
     ['reviews', '评价']

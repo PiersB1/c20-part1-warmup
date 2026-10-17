@@ -8,7 +8,7 @@ sys.path.insert(0,str(root/'.work/audio-tools'))
 from mutagen.mp3 import MP3
 loader="""
 const fs=require('fs'),vm=require('vm'),path=require('path'),directory=process.argv[1],c={};c.window=c;vm.createContext(c);
-for(const name of ['listening-practices.js','practice-builders.js','preparation-builders.js',...fs.readdirSync(directory).filter(n=>n.endsWith('.practice.js')).sort()])vm.runInContext(fs.readFileSync(path.join(directory,name),'utf8'),c);
+for(const name of ['listening-practices.js','practice-builders.js','preparation-builders.js','editorial-multi.js','editorial-quiz-context.js','editorial-signal-context.js','editorial-revisions.js',...fs.readdirSync(directory).filter(n=>n.endsWith('.practice.js')).sort()])vm.runInContext(fs.readFileSync(path.join(directory,name),'utf8'),c);
 console.log(JSON.stringify({practices:c.RRListeningPractices,topics:c.RRPreparedTopics}));
 """
 data=json.loads(subprocess.check_output(['node','-e',loader,str(root/'data')],encoding='utf-8'))

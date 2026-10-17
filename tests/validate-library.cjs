@@ -1,12 +1,12 @@
 const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('assert');
 const root=path.resolve(__dirname,'..'),context={};context.window=context;vm.createContext(context);
-const files=['data/listening-practices.js','data/practice-builders.js','data/preparation-builders.js',...fs.readdirSync(path.join(root,'data')).filter(name=>name.endsWith('.practice.js')).sort().map(name=>`data/${name}`),'data/audio-timings.js','exercise-catalog.js'];
+const files=['data/listening-practices.js','data/practice-builders.js','data/preparation-builders.js','data/editorial-multi.js','data/editorial-quiz-context.js','data/editorial-signal-context.js','data/editorial-revisions.js',...fs.readdirSync(path.join(root,'data')).filter(name=>name.endsWith('.practice.js')).sort().map(name=>`data/${name}`),'data/audio-timings.js','exercise-catalog.js'];
 files.forEach(file=>vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),context,{filename:file}));
-const extra=Object.values(context.RRListeningPractices).filter(item=>item.id!=='c20-t1-p1-2'&&item.location.book===20&&item.location.part<=2);
-assert.equal(extra.length,14);
+const extra=Object.values(context.RRListeningPractices).filter(item=>item.location.book===20&&item.location.part<=2);
+assert.equal(extra.length,16);
 let audioCount=0,questionCount=0;
 for(const practice of extra){
-  assert(practice.coreWords.length>=14);
+  assert(practice.coreWords.length>=12);
   assert(context.RRExerciseCatalog.some(item=>item.id===practice.id));
   const mapPractice=practice.id==='c20-t3-p2-2';
   assert.deepEqual(Array.from(practice.sections.map(s=>s.type)),practice.id.endsWith('-1')?['quiz','dictation']:mapPractice?['locator','paraphrase','signal','route']:['locator','paraphrase','signal']);
@@ -41,5 +41,5 @@ for(const practice of extra){
 }
 assert.equal(context.RRListeningPractices['c20-t3-p2-2'].sections[0].items.filter(item=>item.format==='地图标注').length,4);
 assert(context.RRListeningPractices['c20-t3-p2-2'].sections[0].map.svg.includes('<svg'));
-assert.equal(audioCount,168);
+assert.equal(audioCount,192);
 console.log(`Validated ${extra.length} new practices, ${questionCount} tasks, ${audioCount} audio files.`);

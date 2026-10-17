@@ -19,4 +19,4 @@ def get(pair):
     (OUT/f'c{book}-t{test}.txt').write_text(text,encoding='utf-8')
     print(book,test,len(text),flush=True)
 with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-    list(pool.map(get,[(b,t) for b in [20,19,18,11,10,9] for t in range(1,5)]))
+    list(pool.map(get,[(b,t) for b in [20,19,18] for t in range(1,5)]))

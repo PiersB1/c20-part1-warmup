@@ -2,7 +2,7 @@ const fs=require('fs'),path=require('path'),os=require('os'),assert=require('ass
 const {chromium}=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules/playwright'));
 (async()=>{
  const root=path.resolve(__dirname,'..'),context={};context.window=context;vm.createContext(context);
- for(const name of ['listening-practices.js','practice-builders.js','preparation-builders.js',...fs.readdirSync(path.join(root,'data')).filter(n=>n.endsWith('.practice.js')).sort(),'audio-timings.js'])vm.runInContext(fs.readFileSync(path.join(root,'data',name),'utf8'),context);
+ for(const name of ['listening-practices.js','practice-builders.js','preparation-builders.js','editorial-multi.js','editorial-quiz-context.js','editorial-signal-context.js','editorial-revisions.js',...fs.readdirSync(path.join(root,'data')).filter(n=>n.endsWith('.practice.js')).sort(),'audio-timings.js'])vm.runInContext(fs.readFileSync(path.join(root,'data',name),'utf8'),context);
  const ids=context.RRPreparedTopics.flatMap(t=>[1,2].map(n=>`c${t.book}-t${t.test}-p${t.part}-${n}`));
  const ready=id=>context.RRListeningPractices[id].sections.every(s=>s.items.every(item=>!item.audio||(fs.existsSync(path.join(root,item.audio))&&(!['signal','route'].includes(s.type)||context.RRSignalTimings[item.audio]))));
  const selected=process.argv.includes('--ready')?ids.filter(ready):ids;
@@ -18,7 +18,7 @@ const {chromium}=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-pri
   };
  });
  const home=pathToFileURL(path.join(root,'index.html')).href;
- await page.goto(home);assert.equal(await page.locator('a.available').count(),96);
+ await page.goto(home);assert.equal(await page.locator('a.available').count(),48);
  for(const id of selected){
   await page.goto(new URL(`listening.html?id=${id}`,home).href);await page.locator('#check-practice').waitFor();
   assert.equal(await page.locator('#check-practice').count(),1);

@@ -2,13 +2,16 @@
 
 页面不需要构建或服务端，所有练习都可以从本地文件打开。
 
-当前覆盖剑20、19、18、11、10、9全部听力 Part 1–4，每篇两套，共192套。本次扩展88篇、176套；原有剑20 Part 1–2保留。主题与题型比例见 `CONTENT-SOURCES.md`。
+当前覆盖剑20、19、18全部听力 Part 1–4，每篇两套，共96套。剑9、10、11的练习与音频按用户要求清空；首页仍可进入空目录。48篇均使用独立编写的各题型材料。主题与题型比例见 `CONTENT-SOURCES.md`。
 
 ## 文件分工
 
 - `exercise-catalog.js`：目录入口；同一册、Test、Part 可以有多条练习。
-- `data/listening-practices.js`：原有 C20T1P1 练习 2。
+- `data/listening-practices.js`：练习数据容器的初始化。
 - `data/practice-builders.js`：成对生成练习 1 和练习 2 的数据构造器。
+- `data/editorial-quiz-context.js`：单选题的独立英文语境，不与听写等题型整句复用。
+- `data/editorial-multi.js`：多选题中相近但不同的概念。
+- `data/editorial-signal-context.js`：各长音频独立的背景细节与叙事位置。
 - `data/*.practice.js`：每篇主题的独立内容。使用 `RRAddTopic`，在 `listening.html` 增加普通 script 引用；音频生成工具自动发现这些文件。
 - `listening.html`、`listening.css`、`listening-engine.js`：通用页面、自动保存、记录导出／删除及收藏。
 - `modules/locator.js`：定位词标记。
@@ -17,7 +20,7 @@
 - `modules/route.js`：地图跟走，用于含地图的篇目。
 - `modules/quiz.js`、`modules/dictation.js`：词汇／语法题和逐句听写。
 - `data/audio-timings.js`：由真实录音的句子边界生成。
-- `practice.html`：早期的练习 1，保留原入口。
+- `practice.html`：旧入口，自动转到新版C20T1P1练习1。
 
 ## 新增入口
 
@@ -25,9 +28,11 @@
 
 常规新增主题用 `RRAddTopic({test,part,title,coreWords,quiz,dictation,locators,paragraphs,signals})` 自动产生两套：`c20-tX-pY-1` 和 `c20-tX-pY-2`。每套最后统一核对。练习 1 有 12 道词汇／语法题和 12 句听写；练习 2 有 10 道定位、2 段各 6 空同替和 2 段各 3 考点信号音频。
 
-跨册时显式传 `book`，ID 为 `c{book}-t{test}-p{part}-1/2`。省略 book 才默认剑20。`data/expanded-c*.practice.js` 使用 `RRCompactTopic` 或 `RRPrepareTopic`：每篇12个独立词汇单元、两段主题引入、两组各3项干扰表达、真实题型构成。单元用 `英文|本题中文|英文同义表达|包含___的原创句|可选易混中文|可选带[定位词]的题干`；不能把同一篇段落套给不同主题。前10单元生成词汇听写与定位题，全部12单元构成两段各6空的连贯主题材料。语法听写另占末两句，语法选择题可通过 quizGrammar 调整；核心词汇列表包含实际涉及的表达。
+跨册时显式传 `book`，ID 为 `c{book}-t{test}-p{part}-1/2`。省略 book 才默认剑20。`data/expanded-c*.practice.js` 的 `RRSeedTopic` 仅保存本篇12组词汇和独立听写句，以及既有地图；不能单独作为完整题目。`data/revised-c*.practice.js` 用 `RRReviseTopic` 提供10道具体定位题、两段独立同义替换、按内容指定的信号音频及解析、8组近义干扰项、2道语法及独立听写句。`data/editorial-multi.js` 保存两道多选题的相近概念。非地图定位句与听写句、同替段落、信号音频不能整句复用。语法按对应真题的信息关系编写，不按篇目编号轮换。
 
-`formats` 形如 `[['单选题干',4],['观点匹配',6]]`，总数必须为10。带地图的题干数量和地图插入位置应符合目标篇目；装置图传 `diagram`，路线图传 `map` 和 `routes`。地图简图不得复现真题答案链。未来阅读题型仍需另行确定。
+定位简写：`题干含[主要表达]~原文含[对应表达]~具体解析`，每行一题。普通文字会分成可点击干扰单词，定位词组保留整体。`RRParagraph` 的标记为 `[原文表达=>对应改写=>本处解析]`；每段6处、3个近义但不等价的干扰项。信号文本逐行写完整句子，在真正的考点句后加 `~具体解析`，恰好3处；不套统一提示语。`coverage` 记录本篇训练的信息关系，不放到前台说明中。地图定位、图形、路线与录音当前保留。
+
+`formats` 形如 `[['单选题干',4],['观点匹配',6]]`，总数必须为10。带地图的题干数量和地图插入位置应符合目标篇目；装置图传 `diagram`，路线图传 `map` 和 `routes`。地图简图不得复现真题答案链。未来阅读题型仍需另行确定。`editorial-signal-context.js` 为各段提供独立背景细节及叙事位置；考点仍由正文中的显式标记确定，背景不用于按编号挑选答案。
 
 完成内容后运行 `node scripts/build-catalog.cjs` 更新目录，`node scripts/write-content-index.cjs` 更新核对索引；这些是维护工具，用户打开网页不需要运行构建。
 
@@ -61,9 +66,9 @@ python scripts/generate-listening-audio.py c20-t1-p1-2
 
 工具也支持一次传多个练习 ID，`--skip-existing` 可继续未完成批次。普通句子按每题 `rate` 合成；信号题以实际音频句界生成时间。批量生成只有同一进程写时间元数据，避免并发覆盖其他篇目。
 
-整批扩展可用 `--all-prepared --concurrency 12 --skip-existing`。工具只处理本批扩展，不覆盖已有剑20 Part 1–2。相同文本、英音、语速复用 `.work/tts-cache`，文件成功写完才替换目标；长录音另比较内容指纹，避免误用旧版本时间戳。修改普通句子后用 `--only 对应id` 重新生成，不要带 skip-existing。Part 3 的 speakers 数组指定每句的英国声音，工具按句合成、解码为PCM后拼接，用实际帧数及句界累计时间，加入每轮0.2秒间隔。需安装 ffmpeg。队列共享一个时间戳写入器，不要同时运行多份生成进程。
+整批生成可用 `--all-prepared --concurrency 12 --skip-existing`，覆盖当前48篇。相同文本、英音、语速复用 `.work/tts-cache`，文件成功写完才替换目标；长录音另比较内容指纹，避免误用旧版本时间戳。修改普通句子后用 `--only 对应id` 重新生成，不要带 skip-existing。Part 3 的 speakers 数组指定每句的英国声音，工具按句合成、解码为PCM后拼接，用实际帧数及句界累计时间，加入每轮0.2秒间隔。需安装 ffmpeg。队列共享一个时间戳写入器，不要同时运行多份生成进程。当前地图及路线音频保留；按题号指定重录时先排除地图定位项和route项。
 
-验收：`node tests/expanded-library.cjs --audio`、`node tests/expanded-browser.cjs` 与 `node tests/native-audio.cjs`。前者验证88篇结构与录音完整性，中者验证176套统一核对和保存，后者使用浏览器原生音频读取每个新增文件。旧剑20回归仍运行原测试。`.work/` 和 `tmp/` 仅保存依赖、缓存、核对过程与测试截图，不是网页运行所需文件。
+验收：`node tests/editorial-quality.cjs` 检查48篇内容的跨题型重复、功能词、具体定位与配对结构；`node tests/expanded-library.cjs --audio` 检查96套结构及音频；`node tests/expanded-browser.cjs` 检查整套核对和记录；`node tests/native-audio.cjs` 使用浏览器原生音频读取1152个录音。剑20Part1、Part2另运行16套专项验收。内容检查同时需要人工对照题目与原文，结构通过不能替代编辑核对。`.work/` 与 `tmp/` 不是网页运行所需文件。
 
 ## 记录和收藏
 

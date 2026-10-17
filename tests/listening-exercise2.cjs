@@ -35,8 +35,9 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
   assert.equal(await line.locator('.selected').count(), 1);
   await line.locator('.token').nth(0).click();
   assert.equal(await line.locator('.selected').count(), 0);
-  for (let i=0;i<3;i++) await line.locator('.token').nth(i).click();
-  assert.equal(await line.locator('.token:disabled').count(), (await line.locator('.token').count()) - 3);
+  const limit=await page.evaluate(()=>RRPracticeSession.practice.sections[0].items[0].question.filter(t=>t.key).length);
+  for (let i=0;i<limit;i++) await line.locator('.token').nth(i).click();
+  assert.equal(await line.locator('.token:disabled').count(), (await line.locator('.token').count()) - limit);
   await line.locator('.token.selected').first().click();
   assert.equal(await line.locator('.token:disabled').count(), 0);
   await page.evaluate(() => document.querySelectorAll('.locator-card .token.selected').forEach(node => node.click()));
@@ -64,22 +65,22 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
   assert.equal(await page.locator('.source-wrap:visible').count(), 10);
 
   // A real browser drag, followed by the accessible click-to-place path.
-  await page.locator('[data-choice-id="p1-a"]').dragTo(page.locator('[data-slot-id="p1-1"]'));
-  assert.equal(await page.locator('[data-slot-id="p1-1"]').innerText(), 'relaxed');
+  await page.locator('[data-choice-id="c20-t1-p1-p1-a1"]').dragTo(page.locator('[data-slot-id="c20-t1-p1-p1-s1"]'));
+  assert.equal(await page.locator('[data-slot-id="c20-t1-p1-p1-s1"]').innerText(), 'conveniently located near');
   const firstBank=page.locator('.paraphrase-card').first().locator('.word-bank');
-  await page.locator('[data-slot-id="p1-1"]').dragTo(firstBank);
-  assert.equal(await page.locator('[data-slot-id="p1-1"]').innerText(), '拖入');
-  assert(await page.locator('[data-choice-id="p1-a"]').isVisible());
-  await page.locator('[data-choice-id="p1-a"]').dragTo(page.locator('[data-slot-id="p1-2"]'));
-  await page.locator('[data-slot-id="p1-2"]').dragTo(page.locator('[data-slot-id="p1-1"]'));
-  assert.equal(await page.locator('[data-slot-id="p1-2"]').innerText(), '拖入');
-  assert.equal(await page.locator('[data-slot-id="p1-1"]').innerText(), 'relaxed');
+  await page.locator('[data-slot-id="c20-t1-p1-p1-s1"]').dragTo(firstBank);
+  assert.equal(await page.locator('[data-slot-id="c20-t1-p1-p1-s1"]').innerText(), '拖入');
+  assert(await page.locator('[data-choice-id="c20-t1-p1-p1-a1"]').isVisible());
+  await page.locator('[data-choice-id="c20-t1-p1-p1-a1"]').dragTo(page.locator('[data-slot-id="c20-t1-p1-p1-s2"]'));
+  await page.locator('[data-slot-id="c20-t1-p1-p1-s2"]').dragTo(page.locator('[data-slot-id="c20-t1-p1-p1-s1"]'));
+  assert.equal(await page.locator('[data-slot-id="c20-t1-p1-p1-s2"]').innerText(), '拖入');
+  assert.equal(await page.locator('[data-slot-id="c20-t1-p1-p1-s1"]').innerText(), 'conveniently located near');
   // Dropping a filled choice in another paragraph must leave it where it was.
-  await page.locator('[data-slot-id="p1-1"]').dragTo(page.locator('.paraphrase-card').nth(1).locator('.word-bank'));
-  assert.equal(await page.locator('[data-slot-id="p1-1"]').innerText(), 'relaxed');
-  await page.locator('[data-slot-id="p1-1"]').click();
-  assert(await page.locator('[data-choice-id="p1-a"]').isVisible());
-  await page.locator('[data-choice-id="p1-a"]').dragTo(page.locator('[data-slot-id="p1-1"]'));
+  await page.locator('[data-slot-id="c20-t1-p1-p1-s1"]').dragTo(page.locator('.paraphrase-card').nth(1).locator('.word-bank'));
+  assert.equal(await page.locator('[data-slot-id="c20-t1-p1-p1-s1"]').innerText(), 'conveniently located near');
+  await page.locator('[data-slot-id="c20-t1-p1-p1-s1"]').click();
+  assert(await page.locator('[data-choice-id="c20-t1-p1-p1-a1"]').isVisible());
+  await page.locator('[data-choice-id="c20-t1-p1-p1-a1"]').dragTo(page.locator('[data-slot-id="c20-t1-p1-p1-s1"]'));
   await page.evaluate(() => {
     RRPracticeSession.practice.sections[1].items.forEach(item => {
       item.segments.filter(segment=>typeof segment!=='string').forEach(target => {
@@ -126,7 +127,8 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
     return audio.duration>=41&&audio.duration<=48&&Math.abs(audio.duration-RRSignalTimings[item.audio].duration)<0.1;
   })));
   await page.locator('#check-practice').click();
-  assert.match(await page.locator('#locators .section-score').innerText(), /50\/50/);
+  const locatorTotal=await page.evaluate(()=>RRPracticeSession.practice.sections[0].items.reduce((n,i)=>n+i.question.filter(t=>t.key).length+i.source.filter(t=>t.key).length,0));
+  assert((await page.locator('#locators .section-score').innerText()).includes(`${locatorTotal}/${locatorTotal}`));
   assert.match(await page.locator('#paraphrases .section-score').innerText(), /12\/12/);
   assert.match(await page.locator('#signals .section-score').innerText(), /6\/6 · 多标 0/);
   assert.equal(await page.locator('.standard-marker').count(), 6);
@@ -143,7 +145,7 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
   await page.getByRole('button',{name:'导出这次记录 JSON'}).click();
   const download=await downloadPromise;
   const record=JSON.parse(fs.readFileSync(await download.path(),'utf8'));
-  assert.deepEqual(record.sections.map(section=>section.correct), [50,12,6]);
+  assert.deepEqual(record.sections.map(section=>section.correct), [locatorTotal,12,6]);
   await page.reload();
   await page.locator('#open-records').click();
   assert.equal(await page.locator('.record-item').count(), 1);
@@ -161,7 +163,8 @@ catch {playwright = require(path.join(os.homedir(), '.cache/codex-runtimes/codex
   await page.locator('#close-favorites').click();
   await page.locator('a.available[href="select.html?mode=listening&book=20&test=1&part=1"]').click();
   await page.locator('.practice').first().click();
-  assert.equal(await page.locator('#vocab .card').count(),11);
+  await page.locator('.quiz-card').first().waitFor();
+  assert.equal(await page.locator('.quiz-card').count(),12);
 
   // Mobile layout: no horizontal page overflow.
   await page.goto(pathToFileURL(path.join(root,'listening.html')).href+'?id=c20-t1-p1-2');

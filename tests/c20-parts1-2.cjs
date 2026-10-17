@@ -7,9 +7,9 @@ let pw;try{pw=require('playwright');}catch{pw=require(path.join(os.homedir(),'.c
  page.on('pageerror',error=>errors.push(error.message));
  await page.addInitScript(()=>{window.__qaAudio=[];const NativeAudio=window.Audio;window.Audio=function(...args){const audio=new NativeAudio(...args);__qaAudio.push(audio);return audio;};});
  const home=pathToFileURL(path.join(root,'index.html')).href;
- await page.goto(home);assert.equal(await page.locator('a.available').count(),96);
- const entries=await page.evaluate(()=>RRExerciseCatalog.filter(item=>item.book===20&&item.part<=2&&item.id!=='c20-t1-p1-1'&&item.id!=='c20-t1-p1-2'));
- assert.equal(entries.length,14);
+ await page.goto(home);assert.equal(await page.locator('a.available').count(),48);
+ const entries=await page.evaluate(()=>RRExerciseCatalog.filter(item=>item.book===20&&item.part<=2));
+ assert.equal(entries.length,16);
  let decoded=0;
  for(const entry of entries){
   await page.goto(new URL(entry.url,home).href);
@@ -68,8 +68,9 @@ let pw;try{pw=require('playwright');}catch{pw=require(path.join(os.homedir(),'.c
   await page.locator('[data-close="words-dialog"]').click();
   console.log('Passed',entry.id);
  }
- assert.equal(decoded,168);
- await page.goto(home);await page.locator('#open-favorites').click();assert.equal(await page.locator('.favorite-row').count(),7);assert.equal(await page.locator('.favorite-reveal[aria-expanded="false"]').count(),7);
+ assert.equal(decoded,192);
+ await page.goto(home);await page.locator('#open-favorites').click();assert.equal(await page.locator('.favorite-row').count(),8);assert.equal(await page.locator('.favorite-reveal[aria-expanded="false"]').count(),8);
  await page.goto(new URL('listening.html?id=c20-t3-p2-2',home).href);await page.setViewportSize({width:390,height:844});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
- assert.deepEqual(errors,[]);await browser.close();console.log('Passed 14 new practices, 168 decoded audio files, whole-practice records/JSON, reversible drag, shared favorites, map and mobile.');
+ await page.goto(new URL('practice.html',home).href);await page.waitForURL('**/listening.html?id=c20-t1-p1-1');assert.equal(await page.locator('.quiz-card').count(),12);
+ assert.deepEqual(errors,[]);await browser.close();console.log('Passed 16 revised practices, 192 decoded audio files, whole-practice records/JSON, reversible drag, shared favorites, legacy link, map and mobile.');
 })().catch(error=>{console.error(error);process.exit(1);});

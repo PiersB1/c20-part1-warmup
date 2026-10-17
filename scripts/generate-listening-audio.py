@@ -23,6 +23,7 @@ parser.add_argument('--concurrency', type=int, default=3)
 parser.add_argument('--tools-path', default='')
 parser.add_argument('--only', nargs='*', default=[])
 parser.add_argument('--skip-existing', action='store_true')
+parser.add_argument('--editorial', action='store_true', help='Only revised locator, signal and final two dictation recordings; retain map and route audio.')
 args = parser.parse_args()
 if args.tools_path:
     sys.path.insert(0, args.tools_path)
@@ -34,7 +35,7 @@ node_loader = """
 const fs=require('fs'),vm=require('vm'),path=require('path');
 const context={};context.window=context;vm.createContext(context);
 const directory=path.dirname(process.argv[1]);
-const files=[process.argv[1],path.join(directory,'practice-builders.js'),path.join(directory,'preparation-builders.js'),...fs.readdirSync(directory).filter(name=>name.endsWith('.practice.js')).sort().map(name=>path.join(directory,name))];
+const files=[process.argv[1],path.join(directory,'practice-builders.js'),path.join(directory,'preparation-builders.js'),path.join(directory,'editorial-multi.js'),path.join(directory,'editorial-quiz-context.js'),path.join(directory,'editorial-signal-context.js'),path.join(directory,'editorial-revisions.js'),...fs.readdirSync(directory).filter(name=>name.endsWith('.practice.js')).sort().map(name=>path.join(directory,name))];
 for(const file of files)vm.runInContext(fs.readFileSync(file,'utf8'),context);
 console.log(JSON.stringify({practices:context.window.RRListeningPractices,preparedIds:context.window.RRPreparedTopics.flatMap(topic=>[1,2].map(n=>`c${topic.book}-t${topic.test}-p${topic.part}-${n}`))}));
 """
@@ -130,6 +131,13 @@ async def main():
     semaphore = asyncio.Semaphore(args.concurrency)
 
     async def build(practice_id, kind, index, item):
+        if args.editorial:
+            if library[practice_id].get('revision') != '2026-10-editorial':
+                return
+            if kind == 'route' or (kind == 'dictation' and index < 10 and not item.get('editorialChanged')):
+                return
+            if kind == 'locator' and re.search('地图|平面图', item.get('format', '')):
+                return
         if args.only and item['id'] not in args.only:
             return
         signature=hashlib.sha256(json.dumps({key:item.get(key) for key in ('transcript','speakers','cues')},sort_keys=True).encode()).hexdigest()
