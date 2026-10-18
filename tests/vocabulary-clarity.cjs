@@ -24,6 +24,6 @@ const {chromium}=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-pri
   const progress=await page.evaluate(()=>RRPracticeSession.controllers[0].getResult().details.find(d=>d.question==='independent'));assert.equal(progress.attempts.length,2);assert(progress.attempts.every(a=>a.response==='独立的；能自理的'));
   await page.locator('#open-words').click();for(const english of ['respite','independent','on request']){const t=c.RRFoundationPractices['c20-t2-p1-0'].sections[0].items.find(t=>t.english===english);assert.match(await page.locator('.word-row').filter({has:page.getByText(english,{exact:true})}).textContent(),new RegExp(t.chinese.replace(/[（）]/g,'.')));}
   await page.locator('#words-dialog').screenshot({path:path.join(root,'.work/vocabulary-clarity-mobile.png')});assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));assert.deepEqual(errors,[]);
-  console.log(`Vocabulary clarity: reviewed 50 topics; ${updated} contextual core entries simplified. Options/keys consistent; four foundation libraries, existing favorites and unfinished old-label progress verified.`);
+  console.log(`Vocabulary clarity: reviewed 50 topics; ${updated} contextual core entries simplified. Options/keys consistent; ${Object.keys(c.RRFoundationPractices).length} foundation libraries, existing favorites and unfinished old-label progress verified.`);
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1);});

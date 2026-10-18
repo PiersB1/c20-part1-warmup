@@ -31,6 +31,17 @@ window.RRExerciseCatalog = [
     "url": "reading.html?id=c21-r-t1-p1-2"
   },
   {
+    "id": "c20-t1-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 1,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "餐厅预订与推荐 · 词汇与语境",
+    "url": "foundation.html?id=c20-t1-p1-0"
+  },
+  {
     "id": "c20-t1-p1-1",
     "mode": "listening",
     "book": 20,
@@ -49,6 +60,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "餐厅预订与推荐 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c20-t1-p1-2"
+  },
+  {
+    "id": "c20-t1-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 1,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "陶艺工坊 · 词汇与语境",
+    "url": "foundation.html?id=c20-t1-p2-0"
   },
   {
     "id": "c20-t1-p2-1",
@@ -142,6 +164,17 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c20-t2-p1-2"
   },
   {
+    "id": "c20-t2-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 2,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "社区志愿者安排 · 词汇与语境",
+    "url": "foundation.html?id=c20-t2-p2-0"
+  },
+  {
     "id": "c20-t2-p2-1",
     "mode": "listening",
     "book": 20,
@@ -233,6 +266,17 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c20-t3-p1-2"
   },
   {
+    "id": "c20-t3-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 3,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "考古遗址导览 · 词汇与语境",
+    "url": "foundation.html?id=c20-t3-p2-0"
+  },
+  {
     "id": "c20-t3-p2-1",
     "mode": "listening",
     "book": 20,
@@ -293,6 +337,17 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c20-t3-p4-2"
   },
   {
+    "id": "c20-t4-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "家庭出游规划 · 词汇与语境",
+    "url": "foundation.html?id=c20-t4-p1-0"
+  },
+  {
     "id": "c20-t4-p1-1",
     "mode": "listening",
     "book": 20,
@@ -311,6 +366,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "家庭出游规划 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c20-t4-p1-2"
+  },
+  {
+    "id": "c20-t4-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 4,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "球场导览与场馆变迁 · 词汇与语境",
+    "url": "foundation.html?id=c20-t4-p2-0"
   },
   {
     "id": "c20-t4-p2-1",

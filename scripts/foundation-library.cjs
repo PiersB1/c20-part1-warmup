@@ -1,8 +1,9 @@
 const fs=require('fs'),path=require('path'),vm=require('vm');
 module.exports=(context,root)=>{
   const previous=JSON.parse(fs.readFileSync(path.join(root,'data/vocabulary-clarity.json'),'utf8'));
-  for(const file of ['foundation-listening.js','foundation-reading.js'])vm.runInContext(fs.readFileSync(path.join(root,'data',file),'utf8'),context,{filename:file});
+  for(const file of ['foundation-listening.js','foundation-reading.js','foundation-c20-parts1-2.js'])vm.runInContext(fs.readFileSync(path.join(root,'data',file),'utf8'),context,{filename:file});
   vm.runInContext(fs.readFileSync(path.join(root,'data/foundation-contexts.js'),'utf8'),context,{filename:'foundation-contexts.js'});
+  vm.runInContext(fs.readFileSync(path.join(root,'data/foundation-c20-parts1-2-contexts.js'),'utf8'),context,{filename:'foundation-c20-parts1-2-contexts.js'});
   let audioIndex=0;
   const practices=context.RRFoundationSources.map(source=>{
     const base=(source.mode==='reading'?context.RRReadingPractices:context.RRListeningPractices)[source.base];

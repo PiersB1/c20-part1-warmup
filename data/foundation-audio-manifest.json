@@ -798,5 +798,733 @@
     "rate": "+0%",
     "duration": 1.872,
     "sha256": "47dd2fdf423ad55fc7cb1d75814f9ef3fb11eb2637b7bdaa2fc1bb06c13a82d8"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/01.mp3",
+    "text": "recommend",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "f271de6dc3a5c9a198a16270c6beb809dcdd822ae1d7c4f854c8574d315a1d4d"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/02.mp3",
+    "text": "atmosphere",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "ff3d93cab8dbb8577a752ce2fd303845d7deb406cf9f5115a43b378bd5172bd7"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/03.mp3",
+    "text": "speciality",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.968,
+    "sha256": "891d714ae11bd02d501cb20be42aa7e99902c98042070a5661b59059e8b9e589"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/04.mp3",
+    "text": "selection",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "4974ed57da4fa8aa4ffec70b2afbf5cd42e51adb0f4fe9d9b1c4f121ae041684"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/05.mp3",
+    "text": "deposit",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "b70dcbed1253a1d095b828e1bd0bb2e4487d132ab3eba91051096ea929831f90"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/06.mp3",
+    "text": "set menu",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "ea5dee5c6ae55c6cbf8da6a72191b2e55019d6c6031a6856ba6caa4848a34df9"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/07.mp3",
+    "text": "per head",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "6a1d66dd38321273308245da12b5c8e556e2a0121656b93e9a8d56d0e32f1cda"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/08.mp3",
+    "text": "portion",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "93351faf5b0a289ef4e09d80917e8707ed7a107c7feb376b6bed2041a2581396"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/09.mp3",
+    "text": "locally sourced",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 2.088,
+    "sha256": "6e4afdbca812a6fbe41a1a7599b75bbaf35c9ac0bba591e3e7385f12bbaa919d"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/10.mp3",
+    "text": "limited",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "6d119366c7c33913159530b156db9789cb1855af38bba63355b6fbca50fdc9c4"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/11.mp3",
+    "text": "in advance",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "30f16530a517532e81a20c52c8d8265111d0aa5bc972dc1c9b7fb410a591a8b0"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/12.mp3",
+    "text": "drawback",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "cd8104bf5323ab3218bcaa1711fd70f25426d8d7c4567f731ba63e270642200d"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/13.mp3",
+    "text": "a good choice of",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 2.04,
+    "sha256": "b4d19fb574aa99674471db1d3a13eb5cc832a3fedf9c17c0e6d2d61bb28acd58"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p1-0/14.mp3",
+    "text": "within a short distance",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 2.304,
+    "sha256": "9159c12db4c0995211a5aa124781a1c484ee8b236b50ecbc3e264ba3ea7ce25d"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p2-0/01.mp3",
+    "text": "durable",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "44e4a3cf9ff14e7fd12952433db047250539587d5cee3615b117b2a1570927a8"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p2-0/02.mp3",
+    "text": "impression",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "7949e4e2b6bf3deaa8dca9a55d569e8ffda850e86ebe6bf2e0ba08ee1f24bcd5"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p2-0/03.mp3",
+    "text": "purpose",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "a4b60e6323dbd36eaf4bf475eb48e2c1c728a846cb687f96996a64aa59632d8a"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p2-0/04.mp3",
+    "text": "concentration",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.992,
+    "sha256": "5a701c7f875cee08434c96647fd9dfebe93bb6a9b943ff1e61a1185e0f69be5d"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p2-0/05.mp3",
+    "text": "novice",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "3fc264c891bc1b78f9e710a577473aec6c62cb7ae4d2e94af7a2b263b2269f69"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p2-0/06.mp3",
+    "text": "remove",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "5ed639b33b14ad950e2125d44c0fcc5e7ac7763c1106a41c88279487383bd1cc"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p2-0/07.mp3",
+    "text": "kiln",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "2cea607b4abea897928a420ce6677a38f44644afef15d21347a8a083202276de"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p2-0/08.mp3",
+    "text": "firing",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "d03ae89d8d68d1cdcee9c6aae4e16fcab2c3379524865fdd45e8a4865b243e6a"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p2-0/09.mp3",
+    "text": "provided",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "f394fbf4dee0888e9d2dd9d002a0e490c5b8a4ed0815fedabb28f037f0962c30"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p2-0/10.mp3",
+    "text": "essential",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "c54089e2ed29cf5395119046e0536e0fade6e77a0e175ce99194e1bd16072d99"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p2-0/11.mp3",
+    "text": "set aside",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "bddebc70ee058a9b7eb4da0ce7487397ec50482209ac42d8d8ee3b669f51e7ed"
+  },
+  {
+    "audio": "audio/foundation/c20-t1-p2-0/12.mp3",
+    "text": "retain",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "1242b3cd31bc19d7d69603a9bb74322e5c56602669e069c5b9b9806b6fe61041"
+  },
+  {
+    "audio": "audio/foundation/c20-t2-p2-0/01.mp3",
+    "text": "publicity",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "74ca935c887d11a30c512953056ed9fbad1eab9d90b1a754fa927c7978646040"
+  },
+  {
+    "audio": "audio/foundation/c20-t2-p2-0/02.mp3",
+    "text": "liaise",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "a4f1c5976a00ec44521942874a46c58387457d2af67bf8a09483389e15a2ac65"
+  },
+  {
+    "audio": "audio/foundation/c20-t2-p2-0/03.mp3",
+    "text": "feedback",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "04725cbf0968541bd0888c699eaddd57a0b919f61df1cb58230d687275f040df"
+  },
+  {
+    "audio": "audio/foundation/c20-t2-p2-0/04.mp3",
+    "text": "usher",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "5f8e52240930b1a70ccc12550e6b1f8b6bb53cedbdc6d673542d1336ed20db6a"
+  },
+  {
+    "audio": "audio/foundation/c20-t2-p2-0/05.mp3",
+    "text": "promote",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "95e3d47adb0d8f1c4b4c22cbef35c7e8c2f626e1d45a47d9740d22472432cd73"
+  },
+  {
+    "audio": "audio/foundation/c20-t2-p2-0/06.mp3",
+    "text": "cooperation",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.992,
+    "sha256": "85cae5fa90bcf39311414ae85df4c28b8bb9f7b5aed4611d688a004aefe21e81"
+  },
+  {
+    "audio": "audio/foundation/c20-t2-p2-0/07.mp3",
+    "text": "interpersonal",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.968,
+    "sha256": "c5806a394282b01d3f12a871a48903d9eb1c50c42f735737b9c13860ddfd7eee"
+  },
+  {
+    "audio": "audio/foundation/c20-t2-p2-0/08.mp3",
+    "text": "flexible",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "c5051976451ae4c6c257e2ccc285e192ff9cb76bf6de01e2e47c191b0cb1dae1"
+  },
+  {
+    "audio": "audio/foundation/c20-t2-p2-0/09.mp3",
+    "text": "induction",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "7b8005952838355334f891ed3a54b4d8a1a88961e0c18a1c5bc7ffc6469d3e15"
+  },
+  {
+    "audio": "audio/foundation/c20-t2-p2-0/10.mp3",
+    "text": "commitment",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "3ece5280b157263b17472120206119633a5f3c5a821dba022f228929cf1d0fa7"
+  },
+  {
+    "audio": "audio/foundation/c20-t2-p2-0/11.mp3",
+    "text": "forthcoming",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.896,
+    "sha256": "d7a96a0974ebac28f8e1665a81381d100483bf20021ac9600babe2b677803201"
+  },
+  {
+    "audio": "audio/foundation/c20-t2-p2-0/12.mp3",
+    "text": "priority",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "2757a8bc9e917b83150d45cb88b789534ab41d403c13c41ef32cbcf0f32ac4c8"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/01.mp3",
+    "text": "initiative",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "2375e7f823e152ede3e798e76330b00bb585ae163bccca1a272ba11104c5db24"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/02.mp3",
+    "text": "excavation",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "a578ba21316927f8180e8caba30fe2d249cc11c6455d40c8b81a01edd7cbd888"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/03.mp3",
+    "text": "uncover",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "a260060ca7a8d6da6cbb05322b4ac075785eaa143179157ff3efa770b2f404bf"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/04.mp3",
+    "text": "remains",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "5e5829846499397423819ee30609210b8dfb52a067ffc16a206c0affb870bd46"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/05.mp3",
+    "text": "evidence",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "a361a29f807f3f92526c2aba6ec59235e4317aec8d284e4be8ab6f8ef922da14"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/06.mp3",
+    "text": "settlement",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "c53b05e5e63bcff5381616a26b2d3012452a0bcc536317435f02518d64fded2b"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/07.mp3",
+    "text": "survey",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "76a82cae63513f2af28efea6f795b95db4042b736471a59960ff389dc8e05512"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/08.mp3",
+    "text": "preserve",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "f516b87f6453e500947ca42b78e375f71ebac6655ee3b4e8d041c68f7f087564"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/09.mp3",
+    "text": "junction",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "fc8061ce5b2f252b0032009a48b030a38e7e4f27f46324cba653b4ec1557f39f"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/10.mp3",
+    "text": "adjacent to",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.896,
+    "sha256": "b325069ecf4c02dd37484cb78d9eb01a10f7196ba11c1b138131f1ab196e256e"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/11.mp3",
+    "text": "beyond",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "2f711e7877e79f469e442c0c3a567317da81b50647725a08177760aa067464b2"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/12.mp3",
+    "text": "under investigation",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 2.232,
+    "sha256": "a9e781e0ba10ff97eb9ca60cc0f34bbe1d88d4c36edeb293a3c63a435837a2f7"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/13.mp3",
+    "text": "head northwards",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 2.064,
+    "sha256": "e18c8c64a1c798fcbcda7fa300e9d32a75a865e3d9fd1c5f68eea0e41153c87a"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/14.mp3",
+    "text": "take the eastbound path",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 2.496,
+    "sha256": "998f61c8bd055a116d0f18a9508e9a4e99c29caf635f75918820bb85042926d0"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/15.mp3",
+    "text": "go down the plan",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 2.136,
+    "sha256": "6bd3ef9cb0544c03d985ca0c333b58916624d0eee5793e2a5fb583411b8f4dd7"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/16.mp3",
+    "text": "make your way east",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 2.232,
+    "sha256": "60f041f343e0b3510fd85b77ab42d05883e219b25276e7baf7af91c9c406cf4b"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/17.mp3",
+    "text": "towards the top of the plan",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 2.592,
+    "sha256": "73470e711218c3cb318cf37c65effb499dd7a276d173cdbd52ff9916f7c871de"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/18.mp3",
+    "text": "carry straight on",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 2.112,
+    "sha256": "d3264dac7912e7abb8927e026daec24f5ab3e39e6f824c3aec9d806bc472580e"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/19.mp3",
+    "text": "eastbound",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "b37bc5a7b8fd33d9c23e64453bbd426ae99ae88ae43f566438e4a580e7dc57b3"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/20.mp3",
+    "text": "opposite",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "d76f19ef3dd39d1d9c6f685897a43e13abf01d70b3b116ec3e1df4ad2aedb5b3"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/21.mp3",
+    "text": "on your left",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "60cb32188524deb43f6af9abcbbc7cab7f800741f67577c47b65d3aeef8f7580"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/22.mp3",
+    "text": "go past",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "9f3c6217419fbfc21a04c4135c11bd4609e513f3f3e87b66d15e20ec513ba64c"
+  },
+  {
+    "audio": "audio/foundation/c20-t3-p2-0/23.mp3",
+    "text": "keep to",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "4f548fdfe86ef5e3c898827364c2fb2be304d06bbe171296bdca755eb7b15d78"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/01.mp3",
+    "text": "accommodation",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.92,
+    "sha256": "58e2d412b59c839287917170ac333f5e57192545041a443b600c5484e6355a40"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/02.mp3",
+    "text": "approximate",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.968,
+    "sha256": "67179b4deb2671b15a8db9be413dda4866e6d41ae3b1448dfd050598ae2b31ef"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/03.mp3",
+    "text": "guided tour",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "b45849e162667e75dcd9037f91977bdaf9f2c94ef07e2b0ee737fe150a0a4b0d"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/04.mp3",
+    "text": "departure",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "4ca09f638b8a852b5ca0295baf03d0913c341dde77b2016e79bb584060f2e25a"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/05.mp3",
+    "text": "exhibition",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "ea2e86393cb38aedafcdaa179208f355a4075ad66165c506a79b41482856e171"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/06.mp3",
+    "text": "refreshments",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.896,
+    "sha256": "7b728df717fab2acaf180e1b9192508b86a63b489f8332233f57765761480dc7"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/07.mp3",
+    "text": "discount",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "7ab1ff277432ce241e96a4020e0fc9c1659df65f0b2c62d8bbef758338a88fa0"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/08.mp3",
+    "text": "advance booking",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 2.04,
+    "sha256": "35345f8bed52447b9757d159945664df3df5f0abd0884db22c12511ca8cb30a6"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/09.mp3",
+    "text": "panoramic",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "38fc57341947a0eb9e6f5d70ce6eed4c359e622e9d2dc7897572466ea5bb450a"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/10.mp3",
+    "text": "complimentary",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "692b626bcb705ee9faf2037c5bffce21b0394c296c837504ac911b6905713a72"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/11.mp3",
+    "text": "off-peak",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "e91a14a6c017a427ae9ce2da7b34ebe580332764fd26000c7a5a67ca6c653490"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/12.mp3",
+    "text": "subject to availability",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 2.592,
+    "sha256": "c89ba51933b791b06f34cabb5559110387a318bbdd0575b065d4b8b2e480a167"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/13.mp3",
+    "text": "up to",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "e6b0ee37d01901d7d670bfdbc7cebe1c9e2cf0df0b6702fcd487104a6cdcfa4a"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/14.mp3",
+    "text": "per night",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "224c1f19cdc0a29c9036b2760eddb058e58329f372a35bcc8012b23a5c681d87"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p1-0/15.mp3",
+    "text": "not yet open",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.944,
+    "sha256": "72d48e0536e559c431c033a32e2443f5749355fcca9d2179879a821f6016c9dd"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/01.mp3",
+    "text": "accompanied",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "b078c69d92dee7a2affa78e85bca4b7f62a9ee0f28b64d176dfdd23f8cb4755c"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/02.mp3",
+    "text": "refreshments",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.92,
+    "sha256": "3259c6995e885888e911b549d2f85d5b3b5650bf0386e8a9b0d9e69e8c5f809d"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/03.mp3",
+    "text": "admission",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "00de7bf4ebaf470c16208d55486a5f9b8f07d5eba012d2e65c4f206a0756872a"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/04.mp3",
+    "text": "commentary",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "02a21c651f80c6c7ea8350d3889818d0e9dbe8d5061b0dd996f232051c43cd0f"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/05.mp3",
+    "text": "renovation",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "e579248d0c66a39e837eba8897e116ab7d18ebab448952a942a091c155390696"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/06.mp3",
+    "text": "capacity",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "6edc4a0c348dd1a68b6f5e383bc655ce11762b4511c45fabcaa8e68c940aa484"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/07.mp3",
+    "text": "relocate",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.944,
+    "sha256": "a7bd1b8cb9591615f455ed7f70b9168c8a577885f9ab4739a4c1790ad85d669d"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/08.mp3",
+    "text": "inaugurate",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "5cedc888d7064c3674e681bc7c9633cc93f59cb9108e8965a6fc20d5c2670fec"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/09.mp3",
+    "text": "formerly",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "4686a0857e9bb00ede1dc7729c80370379b39bcdd7cdf915e6978b284759fdca"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/10.mp3",
+    "text": "subsequently",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.896,
+    "sha256": "23f56c88ceace234083519cf9ed63962741e16783f1a773290648d2e7ac2023f"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/11.mp3",
+    "text": "by then",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "b7e1ed37027f866260462b29fea308cb5a072c6bc80828cd9f0098e44db3ae30"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/12.mp3",
+    "text": "not until",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 1.872,
+    "sha256": "f30926308286a856b6035c2aa1845bfeaccd41042a273cd6c06842469b9b89b7"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/13.mp3",
+    "text": "in the same year",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 2.064,
+    "sha256": "646b43cadecf75334e1b7f8e2316a62fed1036bd1751db95b529787ea8e0c889"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/14.mp3",
+    "text": "two years later",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%",
+    "duration": 2.04,
+    "sha256": "3ffb53002d1656b04e9366d853472ebf3e51d6263b85bde88b89aa559d1dfd8f"
+  },
+  {
+    "audio": "audio/foundation/c20-t4-p2-0/15.mp3",
+    "text": "under consideration",
+    "voice": "en-GB-LibbyNeural",
+    "rate": "+0%",
+    "duration": 2.304,
+    "sha256": "03a6c26b16318aed04ee7a4fb1d796e2afbbc97c0f396ed94f94015b863bf386"
   }
 ]

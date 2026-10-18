@@ -11,6 +11,11 @@ manifest_path=root/'data/foundation-audio-manifest.json'
 previous=json.loads(manifest_path.read_text(encoding='utf-8')) if manifest_path.exists() else []
 previous={item['audio']:item for item in previous}
 semaphore=asyncio.Semaphore(3)
+def save_manifest():
+    rows=[previous[t['audio']] for t in terms if t['audio'] in previous]
+    pending=manifest_path.with_suffix('.json.pending')
+    pending.write_text(json.dumps(rows,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    pending.replace(manifest_path)
 async def record(term):
     path=root/term['audio'];path.parent.mkdir(parents=True,exist_ok=True)
     text=term['english'].replace('one’s','one\'s')
@@ -21,13 +26,17 @@ async def record(term):
         for attempt in range(4):
             try:
                 pending=path.with_suffix('.partial')
-                await edge_tts.Communicate(text,term['voice'],rate='+0%').save(str(pending))
+                await asyncio.wait_for(edge_tts.Communicate(text,term['voice'],rate='+0%').save(str(pending)),timeout=25)
                 duration=MP3(pending).info.length
                 if not 0.2<duration<12:raise ValueError('Unexpected duration')
                 pending.replace(path)
                 print(term['audio'],flush=True)
-                return {'audio':term['audio'],'text':text,'voice':term['voice'],'rate':'+0%','duration':duration,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
-            except Exception:
+                row={'audio':term['audio'],'text':text,'voice':term['voice'],'rate':'+0%','duration':duration,'sha256':hashlib.sha256(path.read_bytes()).hexdigest()}
+                previous[term['audio']]=row
+                save_manifest()
+                return row
+            except Exception as error:
+                print(f"Retry {attempt+1}: {term['audio']} ({type(error).__name__})",flush=True)
                 if attempt==3:raise
                 await asyncio.sleep(2**attempt)
 async def main():

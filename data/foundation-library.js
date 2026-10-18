@@ -3377,5 +3377,3123 @@ window.RRFoundationPractices = {
         ]
       }
     ]
+  },
+  "c20-t1-p1-0": {
+    "id": "c20-t1-p1-0",
+    "mode": "listening",
+    "title": "餐厅预订与推荐",
+    "label": "练习 0 · 基础词汇",
+    "location": {
+      "skill": "listening",
+      "book": 20,
+      "test": 1,
+      "part": 1
+    },
+    "vocabId": "c20-t1-p1",
+    "coreWords": [
+      [
+        "recommend",
+        "推荐"
+      ],
+      [
+        "atmosphere",
+        "用餐氛围"
+      ],
+      [
+        "speciality",
+        "招牌菜"
+      ],
+      [
+        "selection",
+        "可选种类"
+      ],
+      [
+        "deposit",
+        "预订订金"
+      ],
+      [
+        "set menu",
+        "定价套餐"
+      ],
+      [
+        "per head",
+        "每人"
+      ],
+      [
+        "portion",
+        "一份菜的份量"
+      ],
+      [
+        "locally sourced",
+        "从附近采购的"
+      ],
+      [
+        "limited",
+        "可选范围有限的"
+      ],
+      [
+        "in advance",
+        "提前"
+      ],
+      [
+        "drawback",
+        "不足之处"
+      ],
+      [
+        "a good choice of",
+        "有较多种类可选"
+      ],
+      [
+        "within a short distance",
+        "在不远处"
+      ]
+    ],
+    "selfPaced": true,
+    "sections": [
+      {
+        "id": "c20-t1-p1-0-learning",
+        "type": "foundation",
+        "title": "基础词汇",
+        "unit": "项",
+        "instruction": "",
+        "items": [
+          {
+            "id": "w1",
+            "english": "recommend",
+            "chinese": "推荐",
+            "previousMeanings": [],
+            "example": "I recommend this café because the food is good.",
+            "translation": "我推荐这家咖啡馆，因为东西好吃。",
+            "application": "Which place would you ___ for a quiet meal?",
+            "applicationTranslation": "你会推荐哪家适合安静吃饭的地方？",
+            "audio": "audio/foundation/c20-t1-p1-0/01.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w2",
+            "english": "atmosphere",
+            "chinese": "用餐氛围",
+            "previousMeanings": [],
+            "example": "The soft music gives the room a calm atmosphere.",
+            "translation": "轻柔的音乐让房间气氛平静。",
+            "application": "The friendly staff help create a relaxed ___.",
+            "applicationTranslation": "友善的员工有助于营造轻松的氛围。",
+            "audio": "audio/foundation/c20-t1-p1-0/02.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w3",
+            "english": "speciality",
+            "chinese": "招牌菜",
+            "previousMeanings": [],
+            "example": "Fish pie is the restaurant’s speciality.",
+            "translation": "鱼肉派是这家餐厅的招牌菜。",
+            "application": "Ask what the chef’s ___ is before choosing a dish.",
+            "applicationTranslation": "选菜前可以问问主厨的招牌菜是什么。",
+            "audio": "audio/foundation/c20-t1-p1-0/03.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w4",
+            "english": "selection",
+            "chinese": "可选种类",
+            "previousMeanings": [],
+            "example": "The café has a wide selection of cakes.",
+            "translation": "咖啡馆有很多种蛋糕可选。",
+            "application": "There is a small ___ of soups on the board.",
+            "applicationTranslation": "牌子上列了几种可以选择的汤。",
+            "audio": "audio/foundation/c20-t1-p1-0/04.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w5",
+            "english": "deposit",
+            "chinese": "预订订金",
+            "previousMeanings": [],
+            "example": "We pay a deposit now and the rest after dinner.",
+            "translation": "我们先付订金，晚餐后再付剩余款项。",
+            "application": "A ___ is needed to hold the group’s booking.",
+            "applicationTranslation": "要保留团体预订，需要先付订金。",
+            "audio": "audio/foundation/c20-t1-p1-0/05.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w6",
+            "english": "set menu",
+            "chinese": "定价套餐",
+            "previousMeanings": [],
+            "example": "The set menu includes a starter and a main dish for one price.",
+            "translation": "套餐以固定价格提供前菜和主菜。",
+            "application": "We chose the ___ instead of ordering each dish separately.",
+            "applicationTranslation": "我们选择了套餐，没有每道菜单独点。",
+            "audio": "audio/foundation/c20-t1-p1-0/06.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w7",
+            "english": "per head",
+            "chinese": "每人",
+            "previousMeanings": [],
+            "example": "The lunch costs the same amount per head.",
+            "translation": "午餐按每人相同的金额收费。",
+            "application": "The price is listed ___, not for the whole table.",
+            "applicationTranslation": "标价是每人价格，不是整桌价格。",
+            "audio": "audio/foundation/c20-t1-p1-0/07.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w8",
+            "english": "portion",
+            "chinese": "一份菜的份量",
+            "previousMeanings": [],
+            "example": "One portion of rice is enough for me.",
+            "translation": "一份米饭就够我吃了。",
+            "application": "She asked for a smaller ___ because she was not very hungry.",
+            "applicationTranslation": "她不太饿，所以要了小一点的一份。",
+            "audio": "audio/foundation/c20-t1-p1-0/08.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w9",
+            "english": "locally sourced",
+            "chinese": "从附近采购的",
+            "previousMeanings": [],
+            "example": "The vegetables are locally sourced, from farms nearby.",
+            "translation": "这些蔬菜从附近的农场采购。",
+            "application": "The café uses ___ eggs from a farm down the road.",
+            "applicationTranslation": "咖啡馆使用从附近一家农场采购的鸡蛋。",
+            "audio": "audio/foundation/c20-t1-p1-0/09.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w10",
+            "english": "limited",
+            "chinese": "可选范围有限的",
+            "previousMeanings": [],
+            "example": "Space is limited, so only a few tables fit here.",
+            "translation": "空间有限，这里只能放几张桌子。",
+            "application": "The choice is ___ after lunch, when most dishes have sold out.",
+            "applicationTranslation": "午餐后大部分菜已售完，可选的种类有限。",
+            "audio": "audio/foundation/c20-t1-p1-0/10.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w11",
+            "english": "in advance",
+            "chinese": "提前",
+            "previousMeanings": [],
+            "example": "Please book in advance rather than arriving without a table.",
+            "translation": "请提前预订，不要直接到店却没有餐位。",
+            "application": "Let us know ___ if you cannot eat certain foods.",
+            "applicationTranslation": "如果有食物不能吃，请提前告诉我们。",
+            "audio": "audio/foundation/c20-t1-p1-0/11.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w12",
+            "english": "drawback",
+            "chinese": "不足之处",
+            "previousMeanings": [],
+            "example": "The only drawback is the noisy road outside.",
+            "translation": "唯一的不足是外面的路比较吵。",
+            "application": "The long wait was a ___ of eating at such a busy place.",
+            "applicationTranslation": "在这么忙的餐厅吃饭，一个不足就是等候时间长。",
+            "audio": "audio/foundation/c20-t1-p1-0/12.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w13",
+            "english": "a good choice of",
+            "chinese": "有较多种类可选",
+            "previousMeanings": [],
+            "example": "The menu offers a good choice of meat-free dishes.",
+            "translation": "菜单上有不少不含肉的菜可以选。",
+            "application": "The shop has ___ fresh sandwiches for lunch.",
+            "applicationTranslation": "店里有多种新鲜三明治可供午餐选择。",
+            "audio": "audio/foundation/c20-t1-p1-0/13.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w14",
+            "english": "within a short distance",
+            "chinese": "在不远处",
+            "previousMeanings": [
+              "在不远的范围内"
+            ],
+            "example": "Several cafés are within a short distance of the hotel.",
+            "translation": "酒店附近不远处就有几家咖啡馆。",
+            "application": "The restaurant is ___ of the station, so we can walk there.",
+            "applicationTranslation": "餐厅离车站不远，我们可以走过去。",
+            "audio": "audio/foundation/c20-t1-p1-0/14.mp3",
+            "voice": "en-GB-RyanNeural"
+          }
+        ],
+        "groups": [
+          [
+            "w1",
+            "w2",
+            "w3",
+            "w4",
+            "w5"
+          ],
+          [
+            "w6",
+            "w7",
+            "w8",
+            "w9",
+            "w10"
+          ],
+          [
+            "w11",
+            "w12",
+            "w13",
+            "w14"
+          ]
+        ]
+      },
+      {
+        "id": "c20-t1-p1-0-contexts",
+        "type": "foundation-context",
+        "title": "语境练习",
+        "unit": "篇",
+        "instruction": "选词填空，每篇完成后核对。",
+        "items": [
+          {
+            "id": "choosing",
+            "title": "Somewhere for lunch",
+            "words": [
+              {
+                "id": "w1",
+                "english": "recommend",
+                "chinese": "推荐",
+                "previousMeanings": [],
+                "example": "I recommend this café because the food is good.",
+                "translation": "我推荐这家咖啡馆，因为东西好吃。",
+                "application": "Which place would you ___ for a quiet meal?",
+                "applicationTranslation": "你会推荐哪家适合安静吃饭的地方？",
+                "audio": "audio/foundation/c20-t1-p1-0/01.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w2",
+                "english": "atmosphere",
+                "chinese": "用餐氛围",
+                "previousMeanings": [],
+                "example": "The soft music gives the room a calm atmosphere.",
+                "translation": "轻柔的音乐让房间气氛平静。",
+                "application": "The friendly staff help create a relaxed ___.",
+                "applicationTranslation": "友善的员工有助于营造轻松的氛围。",
+                "audio": "audio/foundation/c20-t1-p1-0/02.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w3",
+                "english": "speciality",
+                "chinese": "招牌菜",
+                "previousMeanings": [],
+                "example": "Fish pie is the restaurant’s speciality.",
+                "translation": "鱼肉派是这家餐厅的招牌菜。",
+                "application": "Ask what the chef’s ___ is before choosing a dish.",
+                "applicationTranslation": "选菜前可以问问主厨的招牌菜是什么。",
+                "audio": "audio/foundation/c20-t1-p1-0/03.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w4",
+                "english": "selection",
+                "chinese": "可选种类",
+                "previousMeanings": [],
+                "example": "The café has a wide selection of cakes.",
+                "translation": "咖啡馆有很多种蛋糕可选。",
+                "application": "There is a small ___ of soups on the board.",
+                "applicationTranslation": "牌子上列了几种可以选择的汤。",
+                "audio": "audio/foundation/c20-t1-p1-0/04.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w9",
+                "english": "locally sourced",
+                "chinese": "从附近采购的",
+                "previousMeanings": [],
+                "example": "The vegetables are locally sourced, from farms nearby.",
+                "translation": "这些蔬菜从附近的农场采购。",
+                "application": "The café uses ___ eggs from a farm down the road.",
+                "applicationTranslation": "咖啡馆使用从附近一家农场采购的鸡蛋。",
+                "audio": "audio/foundation/c20-t1-p1-0/09.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w13",
+                "english": "a good choice of",
+                "chinese": "有较多种类可选",
+                "previousMeanings": [],
+                "example": "The menu offers a good choice of meat-free dishes.",
+                "translation": "菜单上有不少不含肉的菜可以选。",
+                "application": "The shop has ___ fresh sandwiches for lunch.",
+                "applicationTranslation": "店里有多种新鲜三明治可供午餐选择。",
+                "audio": "audio/foundation/c20-t1-p1-0/13.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w14",
+                "english": "within a short distance",
+                "chinese": "在不远处",
+                "previousMeanings": [
+                  "在不远的范围内"
+                ],
+                "example": "Several cafés are within a short distance of the hotel.",
+                "translation": "酒店附近不远处就有几家咖啡馆。",
+                "application": "The restaurant is ___ of the station, so we can walk there.",
+                "applicationTranslation": "餐厅离车站不远，我们可以走过去。",
+                "audio": "audio/foundation/c20-t1-p1-0/14.mp3",
+                "voice": "en-GB-RyanNeural"
+              }
+            ],
+            "paragraphs": [
+              "We wanted to take a friend out for lunch after work. Nobody wanted a long journey, so we looked for somewhere {{within a short distance}} of the office. A colleague mentioned a small place on a quiet street.",
+              "I went in to ask about the food. The {{atmosphere}} was relaxed: people were talking, but there was no loud music. On the board was a wide {{selection}} of hot dishes, including several made without meat. That mattered because one of our friends does not eat it.",
+              "The chef’s {{speciality}} was a warm dish of beans and vegetables. The eggs and vegetables were {{locally sourced}}, and the owner told me which nearby farms supplied them. There was also {{a good choice of}} simple side dishes to share. I took a photo of the menu and sent it to the others before booking."
+            ]
+          },
+          {
+            "id": "booking",
+            "title": "Booking for a group",
+            "words": [
+              {
+                "id": "w5",
+                "english": "deposit",
+                "chinese": "预订订金",
+                "previousMeanings": [],
+                "example": "We pay a deposit now and the rest after dinner.",
+                "translation": "我们先付订金，晚餐后再付剩余款项。",
+                "application": "A ___ is needed to hold the group’s booking.",
+                "applicationTranslation": "要保留团体预订，需要先付订金。",
+                "audio": "audio/foundation/c20-t1-p1-0/05.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w6",
+                "english": "set menu",
+                "chinese": "定价套餐",
+                "previousMeanings": [],
+                "example": "The set menu includes a starter and a main dish for one price.",
+                "translation": "套餐以固定价格提供前菜和主菜。",
+                "application": "We chose the ___ instead of ordering each dish separately.",
+                "applicationTranslation": "我们选择了套餐，没有每道菜单独点。",
+                "audio": "audio/foundation/c20-t1-p1-0/06.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w7",
+                "english": "per head",
+                "chinese": "每人",
+                "previousMeanings": [],
+                "example": "The lunch costs the same amount per head.",
+                "translation": "午餐按每人相同的金额收费。",
+                "application": "The price is listed ___, not for the whole table.",
+                "applicationTranslation": "标价是每人价格，不是整桌价格。",
+                "audio": "audio/foundation/c20-t1-p1-0/07.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w8",
+                "english": "portion",
+                "chinese": "一份菜的份量",
+                "previousMeanings": [],
+                "example": "One portion of rice is enough for me.",
+                "translation": "一份米饭就够我吃了。",
+                "application": "She asked for a smaller ___ because she was not very hungry.",
+                "applicationTranslation": "她不太饿，所以要了小一点的一份。",
+                "audio": "audio/foundation/c20-t1-p1-0/08.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w10",
+                "english": "limited",
+                "chinese": "可选范围有限的",
+                "previousMeanings": [],
+                "example": "Space is limited, so only a few tables fit here.",
+                "translation": "空间有限，这里只能放几张桌子。",
+                "application": "The choice is ___ after lunch, when most dishes have sold out.",
+                "applicationTranslation": "午餐后大部分菜已售完，可选的种类有限。",
+                "audio": "audio/foundation/c20-t1-p1-0/10.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w11",
+                "english": "in advance",
+                "chinese": "提前",
+                "previousMeanings": [],
+                "example": "Please book in advance rather than arriving without a table.",
+                "translation": "请提前预订，不要直接到店却没有餐位。",
+                "application": "Let us know ___ if you cannot eat certain foods.",
+                "applicationTranslation": "如果有食物不能吃，请提前告诉我们。",
+                "audio": "audio/foundation/c20-t1-p1-0/11.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w12",
+                "english": "drawback",
+                "chinese": "不足之处",
+                "previousMeanings": [],
+                "example": "The only drawback is the noisy road outside.",
+                "translation": "唯一的不足是外面的路比较吵。",
+                "application": "The long wait was a ___ of eating at such a busy place.",
+                "applicationTranslation": "在这么忙的餐厅吃饭，一个不足就是等候时间长。",
+                "audio": "audio/foundation/c20-t1-p1-0/12.mp3",
+                "voice": "en-GB-RyanNeural"
+              }
+            ],
+            "paragraphs": [
+              "Caller: We would like to bring a small group for lunch. Do we have to choose all our food now?",
+              "Restaurant: No. You can choose on the day. We offer a {{set menu}} with a fixed price for two courses, or you can order separate dishes. The choice becomes more {{limited}} late in the afternoon, when some dishes may have sold out.",
+              "Caller: Can you hold a table while I check with everyone?",
+              "Restaurant: We can hold it briefly, but we ask for a {{deposit}} to confirm a group booking. We take that amount off the final bill, so you do not pay it twice.",
+              "Caller: Would we have a room to ourselves?",
+              "Restaurant: That is the one {{drawback}} for a private party. We have only one dining room, so other customers would be eating in the same space. If that is fine, I can send you the booking details."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "c20-t1-p2-0": {
+    "id": "c20-t1-p2-0",
+    "mode": "listening",
+    "title": "陶艺工坊",
+    "label": "练习 0 · 基础词汇",
+    "location": {
+      "skill": "listening",
+      "book": 20,
+      "test": 1,
+      "part": 2
+    },
+    "vocabId": "c20-t1-p2",
+    "coreWords": [
+      [
+        "durable",
+        "耐用的；不易损坏的"
+      ],
+      [
+        "impression",
+        "压在材料表面留下的印痕"
+      ],
+      [
+        "purpose",
+        "原本的用途"
+      ],
+      [
+        "concentration",
+        "专注"
+      ],
+      [
+        "novice",
+        "初学者"
+      ],
+      [
+        "remove",
+        "取下并移开"
+      ],
+      [
+        "kiln",
+        "陶窑"
+      ],
+      [
+        "firing",
+        "烧制过程"
+      ],
+      [
+        "provided",
+        "现场提供的"
+      ],
+      [
+        "essential",
+        "不可缺少的"
+      ],
+      [
+        "set aside",
+        "留置一旁"
+      ],
+      [
+        "retain",
+        "保留"
+      ]
+    ],
+    "selfPaced": true,
+    "sections": [
+      {
+        "id": "c20-t1-p2-0-learning",
+        "type": "foundation",
+        "title": "基础词汇",
+        "unit": "项",
+        "instruction": "",
+        "items": [
+          {
+            "id": "w1",
+            "english": "durable",
+            "chinese": "耐用的；不易损坏的",
+            "previousMeanings": [
+              "能长期保存的"
+            ],
+            "example": "A durable cup should last through years of use.",
+            "translation": "耐用的杯子应当能用很多年。",
+            "application": "We need a ___ material that will not break easily.",
+            "applicationTranslation": "我们需要一种不容易损坏的耐用材料。",
+            "audio": "audio/foundation/c20-t1-p2-0/01.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w2",
+            "english": "impression",
+            "chinese": "压在材料表面留下的印痕",
+            "previousMeanings": [
+              "材料表面的压印痕迹"
+            ],
+            "example": "Pressing a leaf into soft clay leaves an impression.",
+            "translation": "把叶子压进软陶土里，会留下印痕。",
+            "application": "The stamp made a clear ___ on the surface.",
+            "applicationTranslation": "印章在表面留下了清晰的印痕。",
+            "audio": "audio/foundation/c20-t1-p2-0/02.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w3",
+            "english": "purpose",
+            "chinese": "原本的用途",
+            "previousMeanings": [],
+            "example": "The purpose of this tool is to cut straight lines.",
+            "translation": "这个工具的用途是切出直线。",
+            "application": "She asked the ___ of the small hole in the lid.",
+            "applicationTranslation": "她问盖子上那个小孔是做什么用的。",
+            "audio": "audio/foundation/c20-t1-p2-0/03.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w4",
+            "english": "concentration",
+            "chinese": "专注",
+            "previousMeanings": [],
+            "example": "This careful work needs concentration.",
+            "translation": "这项细致的工作需要专注。",
+            "application": "A quiet room helps my ___ when I shape small pieces.",
+            "applicationTranslation": "制作小物件时，安静的房间有助于我集中注意力。",
+            "audio": "audio/foundation/c20-t1-p2-0/04.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w5",
+            "english": "novice",
+            "chinese": "初学者",
+            "previousMeanings": [],
+            "example": "A novice can join; no experience is needed.",
+            "translation": "初学者也可以参加，不需要经验。",
+            "application": "I am a complete ___ and have never made a pot before.",
+            "applicationTranslation": "我完全是初学者，以前从没做过陶器。",
+            "audio": "audio/foundation/c20-t1-p2-0/05.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w6",
+            "english": "remove",
+            "chinese": "取下并移开",
+            "previousMeanings": [],
+            "example": "Remove the lid before looking inside.",
+            "translation": "先取下盖子，再看里面。",
+            "application": "Please ___ the paper from the table when you finish.",
+            "applicationTranslation": "做完后，请把纸从桌子上拿走。",
+            "audio": "audio/foundation/c20-t1-p2-0/06.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w7",
+            "english": "kiln",
+            "chinese": "陶窑",
+            "previousMeanings": [],
+            "example": "A kiln is a special oven used to heat clay objects.",
+            "translation": "陶窑是用来高温烧制陶土制品的特殊炉子。",
+            "application": "The dry bowls are ready to go into the ___.",
+            "applicationTranslation": "这些碗已经干了，可以放进陶窑烧制了。",
+            "audio": "audio/foundation/c20-t1-p2-0/07.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w8",
+            "english": "firing",
+            "chinese": "烧制过程",
+            "previousMeanings": [],
+            "example": "Firing uses heat to make a clay pot hard.",
+            "translation": "烧制通过加热使陶土罐变硬。",
+            "application": "The colour may change during ___ in the hot oven.",
+            "applicationTranslation": "在炉中高温烧制时，颜色可能发生变化。",
+            "audio": "audio/foundation/c20-t1-p2-0/08.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w9",
+            "english": "provided",
+            "chinese": "现场提供的",
+            "previousMeanings": [],
+            "example": "The tools are provided, so you need not bring your own.",
+            "translation": "现场提供工具，你不用自己带。",
+            "application": "Paper and pencils are ___ for everyone in the class.",
+            "applicationTranslation": "课堂会为每个人提供纸和铅笔。",
+            "audio": "audio/foundation/c20-t1-p2-0/09.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w10",
+            "english": "essential",
+            "chinese": "不可缺少的",
+            "previousMeanings": [],
+            "example": "It is essential to keep your hands away from the hot oven.",
+            "translation": "双手远离热炉子，这一点非常重要。",
+            "application": "Drying the clay first is ___ before we heat it.",
+            "applicationTranslation": "加热之前，必须先把陶土晾干。",
+            "audio": "audio/foundation/c20-t1-p2-0/10.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w11",
+            "english": "set aside",
+            "chinese": "留置一旁",
+            "previousMeanings": [],
+            "example": "Set aside the finished piece while you clear the table.",
+            "translation": "收拾桌子时，先把做好的作品放在一旁。",
+            "application": "Please ___ a little clay for the handle.",
+            "applicationTranslation": "请留一点陶土在旁边，待会儿做把手。",
+            "audio": "audio/foundation/c20-t1-p2-0/11.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w12",
+            "english": "retain",
+            "chinese": "保留",
+            "previousMeanings": [],
+            "example": "We want to retain the shape while the clay dries.",
+            "translation": "陶土变干时，我们希望保持它的形状。",
+            "application": "The bowl should ___ its round base after heating.",
+            "applicationTranslation": "加热后，这只碗应当仍保持圆形的底部。",
+            "audio": "audio/foundation/c20-t1-p2-0/12.mp3",
+            "voice": "en-GB-RyanNeural"
+          }
+        ],
+        "groups": [
+          [
+            "w1",
+            "w2",
+            "w3",
+            "w4",
+            "w5",
+            "w6"
+          ],
+          [
+            "w7",
+            "w8",
+            "w9",
+            "w10",
+            "w11",
+            "w12"
+          ]
+        ]
+      },
+      {
+        "id": "c20-t1-p2-0-contexts",
+        "type": "foundation-context",
+        "title": "语境练习",
+        "unit": "篇",
+        "instruction": "选词填空，每篇完成后核对。",
+        "items": [
+          {
+            "id": "making",
+            "title": "My first pottery class",
+            "words": [
+              {
+                "id": "w1",
+                "english": "durable",
+                "chinese": "耐用的；不易损坏的",
+                "previousMeanings": [
+                  "能长期保存的"
+                ],
+                "example": "A durable cup should last through years of use.",
+                "translation": "耐用的杯子应当能用很多年。",
+                "application": "We need a ___ material that will not break easily.",
+                "applicationTranslation": "我们需要一种不容易损坏的耐用材料。",
+                "audio": "audio/foundation/c20-t1-p2-0/01.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w2",
+                "english": "impression",
+                "chinese": "压在材料表面留下的印痕",
+                "previousMeanings": [
+                  "材料表面的压印痕迹"
+                ],
+                "example": "Pressing a leaf into soft clay leaves an impression.",
+                "translation": "把叶子压进软陶土里，会留下印痕。",
+                "application": "The stamp made a clear ___ on the surface.",
+                "applicationTranslation": "印章在表面留下了清晰的印痕。",
+                "audio": "audio/foundation/c20-t1-p2-0/02.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w3",
+                "english": "purpose",
+                "chinese": "原本的用途",
+                "previousMeanings": [],
+                "example": "The purpose of this tool is to cut straight lines.",
+                "translation": "这个工具的用途是切出直线。",
+                "application": "She asked the ___ of the small hole in the lid.",
+                "applicationTranslation": "她问盖子上那个小孔是做什么用的。",
+                "audio": "audio/foundation/c20-t1-p2-0/03.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w4",
+                "english": "concentration",
+                "chinese": "专注",
+                "previousMeanings": [],
+                "example": "This careful work needs concentration.",
+                "translation": "这项细致的工作需要专注。",
+                "application": "A quiet room helps my ___ when I shape small pieces.",
+                "applicationTranslation": "制作小物件时，安静的房间有助于我集中注意力。",
+                "audio": "audio/foundation/c20-t1-p2-0/04.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w5",
+                "english": "novice",
+                "chinese": "初学者",
+                "previousMeanings": [],
+                "example": "A novice can join; no experience is needed.",
+                "translation": "初学者也可以参加，不需要经验。",
+                "application": "I am a complete ___ and have never made a pot before.",
+                "applicationTranslation": "我完全是初学者，以前从没做过陶器。",
+                "audio": "audio/foundation/c20-t1-p2-0/05.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w6",
+                "english": "remove",
+                "chinese": "取下并移开",
+                "previousMeanings": [],
+                "example": "Remove the lid before looking inside.",
+                "translation": "先取下盖子，再看里面。",
+                "application": "Please ___ the paper from the table when you finish.",
+                "applicationTranslation": "做完后，请把纸从桌子上拿走。",
+                "audio": "audio/foundation/c20-t1-p2-0/06.mp3",
+                "voice": "en-GB-RyanNeural"
+              }
+            ],
+            "paragraphs": [
+              "I had never worked with clay before and expected to make a mess. The teacher gave each of us a small piece and showed us how to press it flat. We did not begin with a large bowl or anything difficult.",
+              "I pressed a shell into the soft surface, then lifted it away. It left a clear {{impression}} of its lines. Keeping the edge smooth needed more {{concentration}} than I expected. When I rushed, my fingers pushed the shape out of place.",
+              "I wanted to make something {{durable}}, not an object that would break as soon as I used it. The teacher explained that shaping was only the first step. I would have to let the piece dry, then wait while it was heated. I left it on the shelf with my name beside it."
+            ]
+          },
+          {
+            "id": "finishing",
+            "title": "After you have shaped your pot",
+            "words": [
+              {
+                "id": "w7",
+                "english": "kiln",
+                "chinese": "陶窑",
+                "previousMeanings": [],
+                "example": "A kiln is a special oven used to heat clay objects.",
+                "translation": "陶窑是用来高温烧制陶土制品的特殊炉子。",
+                "application": "The dry bowls are ready to go into the ___.",
+                "applicationTranslation": "这些碗已经干了，可以放进陶窑烧制了。",
+                "audio": "audio/foundation/c20-t1-p2-0/07.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w8",
+                "english": "firing",
+                "chinese": "烧制过程",
+                "previousMeanings": [],
+                "example": "Firing uses heat to make a clay pot hard.",
+                "translation": "烧制通过加热使陶土罐变硬。",
+                "application": "The colour may change during ___ in the hot oven.",
+                "applicationTranslation": "在炉中高温烧制时，颜色可能发生变化。",
+                "audio": "audio/foundation/c20-t1-p2-0/08.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w9",
+                "english": "provided",
+                "chinese": "现场提供的",
+                "previousMeanings": [],
+                "example": "The tools are provided, so you need not bring your own.",
+                "translation": "现场提供工具，你不用自己带。",
+                "application": "Paper and pencils are ___ for everyone in the class.",
+                "applicationTranslation": "课堂会为每个人提供纸和铅笔。",
+                "audio": "audio/foundation/c20-t1-p2-0/09.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w10",
+                "english": "essential",
+                "chinese": "不可缺少的",
+                "previousMeanings": [],
+                "example": "It is essential to keep your hands away from the hot oven.",
+                "translation": "双手远离热炉子，这一点非常重要。",
+                "application": "Drying the clay first is ___ before we heat it.",
+                "applicationTranslation": "加热之前，必须先把陶土晾干。",
+                "audio": "audio/foundation/c20-t1-p2-0/10.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w11",
+                "english": "set aside",
+                "chinese": "留置一旁",
+                "previousMeanings": [],
+                "example": "Set aside the finished piece while you clear the table.",
+                "translation": "收拾桌子时，先把做好的作品放在一旁。",
+                "application": "Please ___ a little clay for the handle.",
+                "applicationTranslation": "请留一点陶土在旁边，待会儿做把手。",
+                "audio": "audio/foundation/c20-t1-p2-0/11.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w12",
+                "english": "retain",
+                "chinese": "保留",
+                "previousMeanings": [],
+                "example": "We want to retain the shape while the clay dries.",
+                "translation": "陶土变干时，我们希望保持它的形状。",
+                "application": "The bowl should ___ its round base after heating.",
+                "applicationTranslation": "加热后，这只碗应当仍保持圆形的底部。",
+                "audio": "audio/foundation/c20-t1-p2-0/12.mp3",
+                "voice": "en-GB-RyanNeural"
+              }
+            ],
+            "paragraphs": [
+              "Name labels are {{provided}} beside the drying shelves. Write clearly so that we can find your work again. Before clearing your table, {{set aside}} any small pieces you still need for a handle or a lid.",
+              "A newly made pot must dry before it goes into the {{kiln}}, the special oven at the back of the workshop. We check the pieces before loading them. Please let a member of staff do this part of the work.",
+              "The next stage is {{firing}}. Heat makes the clay hard, and the colour may change. A well-made piece should {{retain}} its basic shape, although it may become a little smaller. Once everything has cooled, we will contact you to arrange collection."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "c20-t2-p2-0": {
+    "id": "c20-t2-p2-0",
+    "mode": "listening",
+    "title": "社区志愿者安排",
+    "label": "练习 0 · 基础词汇",
+    "location": {
+      "skill": "listening",
+      "book": 20,
+      "test": 2,
+      "part": 2
+    },
+    "vocabId": "c20-t2-p2",
+    "coreWords": [
+      [
+        "publicity",
+        "服务宣传"
+      ],
+      [
+        "liaise",
+        "联络并协调"
+      ],
+      [
+        "feedback",
+        "参与者的意见反馈"
+      ],
+      [
+        "usher",
+        "引导观众入座"
+      ],
+      [
+        "promote",
+        "向公众推广"
+      ],
+      [
+        "cooperation",
+        "机构之间的合作"
+      ],
+      [
+        "interpersonal",
+        "与人沟通的"
+      ],
+      [
+        "flexible",
+        "能适应安排变化的"
+      ],
+      [
+        "induction",
+        "入门介绍"
+      ],
+      [
+        "commitment",
+        "投入；承诺坚持参与"
+      ],
+      [
+        "forthcoming",
+        "即将举行的"
+      ],
+      [
+        "priority",
+        "优先考虑的事项"
+      ]
+    ],
+    "selfPaced": true,
+    "sections": [
+      {
+        "id": "c20-t2-p2-0-learning",
+        "type": "foundation",
+        "title": "基础词汇",
+        "unit": "项",
+        "instruction": "",
+        "items": [
+          {
+            "id": "w1",
+            "english": "publicity",
+            "chinese": "服务宣传",
+            "previousMeanings": [],
+            "example": "The event needs publicity so that people know it is happening.",
+            "translation": "活动需要宣传，让大家知道它要举行。",
+            "application": "Posters and local radio helped with the ___ for our service.",
+            "applicationTranslation": "海报和本地电台帮助宣传了我们的服务。",
+            "audio": "audio/foundation/c20-t2-p2-0/01.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w2",
+            "english": "liaise",
+            "chinese": "联络并协调",
+            "previousMeanings": [],
+            "example": "I liaise with the library to agree on dates.",
+            "translation": "我与图书馆联络、商定日期。",
+            "application": "Someone must ___ with both teams to keep the plans in line.",
+            "applicationTranslation": "需要有人与两个团队联络协调，让安排一致。",
+            "audio": "audio/foundation/c20-t2-p2-0/02.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w3",
+            "english": "feedback",
+            "chinese": "参与者的意见反馈",
+            "previousMeanings": [],
+            "example": "We ask for feedback to learn what visitors liked.",
+            "translation": "我们征求反馈，了解来访者喜欢什么。",
+            "application": "Your ___ will help us improve the next event.",
+            "applicationTranslation": "你的反馈有助于我们改进下次活动。",
+            "audio": "audio/foundation/c20-t2-p2-0/03.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w4",
+            "english": "usher",
+            "chinese": "引导观众入座",
+            "previousMeanings": [],
+            "example": "Two helpers usher guests to their seats.",
+            "translation": "两位工作人员引导客人入座。",
+            "application": "Could you ___ the visitors into the main hall?",
+            "applicationTranslation": "你能引导来访者进入主厅吗？",
+            "audio": "audio/foundation/c20-t2-p2-0/04.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w5",
+            "english": "promote",
+            "chinese": "向公众推广",
+            "previousMeanings": [],
+            "example": "We promote the club by telling local people about its work.",
+            "translation": "我们向本地人介绍俱乐部的工作，进行宣传推广。",
+            "application": "The team will ___ the classes at the school fair.",
+            "applicationTranslation": "团队会在学校集市上推广这些课程。",
+            "audio": "audio/foundation/c20-t2-p2-0/05.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w6",
+            "english": "cooperation",
+            "chinese": "机构之间的合作",
+            "previousMeanings": [
+              "机构间协作"
+            ],
+            "example": "Good cooperation means the teams work well together.",
+            "translation": "良好的合作意味着团队能好好配合。",
+            "application": "The project depends on close ___ between the school and the centre.",
+            "applicationTranslation": "项目依赖学校与中心之间的密切合作。",
+            "audio": "audio/foundation/c20-t2-p2-0/06.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w7",
+            "english": "interpersonal",
+            "chinese": "与人沟通的",
+            "previousMeanings": [
+              "人际沟通方面的"
+            ],
+            "example": "Interpersonal skills help you listen and speak to others.",
+            "translation": "人际沟通能力能帮助你倾听别人、与人交谈。",
+            "application": "The role needs good ___ skills because you meet many people.",
+            "applicationTranslation": "这个角色会接触很多人，因此需要良好的人际沟通能力。",
+            "audio": "audio/foundation/c20-t2-p2-0/07.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w8",
+            "english": "flexible",
+            "chinese": "能适应安排变化的",
+            "previousMeanings": [],
+            "example": "I am flexible about times and can change my plans.",
+            "translation": "我在时间上很灵活，可以调整安排。",
+            "application": "We need someone ___ who can help on different days.",
+            "applicationTranslation": "我们需要一个安排灵活、不同日期都能来帮忙的人。",
+            "audio": "audio/foundation/c20-t2-p2-0/08.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w9",
+            "english": "induction",
+            "chinese": "入门介绍",
+            "previousMeanings": [],
+            "example": "The induction introduces new helpers to the team and the work.",
+            "translation": "入门介绍会让新成员熟悉团队和工作。",
+            "application": "Before your first shift, attend the ___ to learn how things work.",
+            "applicationTranslation": "第一次值班前，先参加入门介绍，了解工作方式。",
+            "audio": "audio/foundation/c20-t2-p2-0/09.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w10",
+            "english": "commitment",
+            "chinese": "投入；承诺坚持参与",
+            "previousMeanings": [
+              "持续投入的责任"
+            ],
+            "example": "The role needs a regular commitment, not just one visit.",
+            "translation": "这个角色需要持续投入，不是只来一次。",
+            "application": "Please think about the time ___ before joining the team.",
+            "applicationTranslation": "加入团队之前，请考虑自己能否持续投入时间。",
+            "audio": "audio/foundation/c20-t2-p2-0/10.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w11",
+            "english": "forthcoming",
+            "chinese": "即将举行的",
+            "previousMeanings": [],
+            "example": "The forthcoming concert will take place next month.",
+            "translation": "即将举行的音乐会安排在下个月。",
+            "application": "We are putting up posters for the ___ open day.",
+            "applicationTranslation": "我们正在为即将到来的开放日张贴海报。",
+            "audio": "audio/foundation/c20-t2-p2-0/11.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w12",
+            "english": "priority",
+            "chinese": "优先考虑的事项",
+            "previousMeanings": [],
+            "example": "Safety is our first priority.",
+            "translation": "安全是我们首先要考虑的事。",
+            "application": "Getting everyone inside before the rain became our ___.",
+            "applicationTranslation": "让所有人在下雨前进屋成了我们优先要做的事。",
+            "audio": "audio/foundation/c20-t2-p2-0/12.mp3",
+            "voice": "en-GB-RyanNeural"
+          }
+        ],
+        "groups": [
+          [
+            "w1",
+            "w2",
+            "w3",
+            "w4",
+            "w5",
+            "w6"
+          ],
+          [
+            "w7",
+            "w8",
+            "w9",
+            "w10",
+            "w11",
+            "w12"
+          ]
+        ]
+      },
+      {
+        "id": "c20-t2-p2-0-contexts",
+        "type": "foundation-context",
+        "title": "语境练习",
+        "unit": "篇",
+        "instruction": "选词填空，每篇完成后核对。",
+        "items": [
+          {
+            "id": "outreach",
+            "title": "Helping people find us",
+            "words": [
+              {
+                "id": "w1",
+                "english": "publicity",
+                "chinese": "服务宣传",
+                "previousMeanings": [],
+                "example": "The event needs publicity so that people know it is happening.",
+                "translation": "活动需要宣传，让大家知道它要举行。",
+                "application": "Posters and local radio helped with the ___ for our service.",
+                "applicationTranslation": "海报和本地电台帮助宣传了我们的服务。",
+                "audio": "audio/foundation/c20-t2-p2-0/01.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w5",
+                "english": "promote",
+                "chinese": "向公众推广",
+                "previousMeanings": [],
+                "example": "We promote the club by telling local people about its work.",
+                "translation": "我们向本地人介绍俱乐部的工作，进行宣传推广。",
+                "application": "The team will ___ the classes at the school fair.",
+                "applicationTranslation": "团队会在学校集市上推广这些课程。",
+                "audio": "audio/foundation/c20-t2-p2-0/05.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w2",
+                "english": "liaise",
+                "chinese": "联络并协调",
+                "previousMeanings": [],
+                "example": "I liaise with the library to agree on dates.",
+                "translation": "我与图书馆联络、商定日期。",
+                "application": "Someone must ___ with both teams to keep the plans in line.",
+                "applicationTranslation": "需要有人与两个团队联络协调，让安排一致。",
+                "audio": "audio/foundation/c20-t2-p2-0/02.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w6",
+                "english": "cooperation",
+                "chinese": "机构之间的合作",
+                "previousMeanings": [
+                  "机构间协作"
+                ],
+                "example": "Good cooperation means the teams work well together.",
+                "translation": "良好的合作意味着团队能好好配合。",
+                "application": "The project depends on close ___ between the school and the centre.",
+                "applicationTranslation": "项目依赖学校与中心之间的密切合作。",
+                "audio": "audio/foundation/c20-t2-p2-0/06.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w7",
+                "english": "interpersonal",
+                "chinese": "与人沟通的",
+                "previousMeanings": [
+                  "人际沟通方面的"
+                ],
+                "example": "Interpersonal skills help you listen and speak to others.",
+                "translation": "人际沟通能力能帮助你倾听别人、与人交谈。",
+                "application": "The role needs good ___ skills because you meet many people.",
+                "applicationTranslation": "这个角色会接触很多人，因此需要良好的人际沟通能力。",
+                "audio": "audio/foundation/c20-t2-p2-0/07.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w3",
+                "english": "feedback",
+                "chinese": "参与者的意见反馈",
+                "previousMeanings": [],
+                "example": "We ask for feedback to learn what visitors liked.",
+                "translation": "我们征求反馈，了解来访者喜欢什么。",
+                "application": "Your ___ will help us improve the next event.",
+                "applicationTranslation": "你的反馈有助于我们改进下次活动。",
+                "audio": "audio/foundation/c20-t2-p2-0/03.mp3",
+                "voice": "en-GB-LibbyNeural"
+              }
+            ],
+            "paragraphs": [
+              "Our centre runs free activities, but people cannot join if they never hear about them. We need help with {{publicity}}, from putting notices in local shops to sending a short message to the community website.",
+              "One volunteer will {{liaise}} with the library and the school. This means checking dates with both places and making sure everyone has the same information. Good {{cooperation}} between the three teams saves people from turning up at the wrong time.",
+              "You can also help us {{promote}} the activities by talking to visitors at the weekly market. You do not need to be a great speaker. Good {{interpersonal}} skills matter more: listen to what someone is looking for, answer simply and find a colleague if you do not know the answer."
+            ]
+          },
+          {
+            "id": "event",
+            "title": "Your first event",
+            "words": [
+              {
+                "id": "w4",
+                "english": "usher",
+                "chinese": "引导观众入座",
+                "previousMeanings": [],
+                "example": "Two helpers usher guests to their seats.",
+                "translation": "两位工作人员引导客人入座。",
+                "application": "Could you ___ the visitors into the main hall?",
+                "applicationTranslation": "你能引导来访者进入主厅吗？",
+                "audio": "audio/foundation/c20-t2-p2-0/04.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w8",
+                "english": "flexible",
+                "chinese": "能适应安排变化的",
+                "previousMeanings": [],
+                "example": "I am flexible about times and can change my plans.",
+                "translation": "我在时间上很灵活，可以调整安排。",
+                "application": "We need someone ___ who can help on different days.",
+                "applicationTranslation": "我们需要一个安排灵活、不同日期都能来帮忙的人。",
+                "audio": "audio/foundation/c20-t2-p2-0/08.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w9",
+                "english": "induction",
+                "chinese": "入门介绍",
+                "previousMeanings": [],
+                "example": "The induction introduces new helpers to the team and the work.",
+                "translation": "入门介绍会让新成员熟悉团队和工作。",
+                "application": "Before your first shift, attend the ___ to learn how things work.",
+                "applicationTranslation": "第一次值班前，先参加入门介绍，了解工作方式。",
+                "audio": "audio/foundation/c20-t2-p2-0/09.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w10",
+                "english": "commitment",
+                "chinese": "投入；承诺坚持参与",
+                "previousMeanings": [
+                  "持续投入的责任"
+                ],
+                "example": "The role needs a regular commitment, not just one visit.",
+                "translation": "这个角色需要持续投入，不是只来一次。",
+                "application": "Please think about the time ___ before joining the team.",
+                "applicationTranslation": "加入团队之前，请考虑自己能否持续投入时间。",
+                "audio": "audio/foundation/c20-t2-p2-0/10.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w11",
+                "english": "forthcoming",
+                "chinese": "即将举行的",
+                "previousMeanings": [],
+                "example": "The forthcoming concert will take place next month.",
+                "translation": "即将举行的音乐会安排在下个月。",
+                "application": "We are putting up posters for the ___ open day.",
+                "applicationTranslation": "我们正在为即将到来的开放日张贴海报。",
+                "audio": "audio/foundation/c20-t2-p2-0/11.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w12",
+                "english": "priority",
+                "chinese": "优先考虑的事项",
+                "previousMeanings": [],
+                "example": "Safety is our first priority.",
+                "translation": "安全是我们首先要考虑的事。",
+                "application": "Getting everyone inside before the rain became our ___.",
+                "applicationTranslation": "让所有人在下雨前进屋成了我们优先要做的事。",
+                "audio": "audio/foundation/c20-t2-p2-0/12.mp3",
+                "voice": "en-GB-RyanNeural"
+              }
+            ],
+            "paragraphs": [
+              "Before your first event, please join a short {{induction}}. We will introduce the team, show you the exits and explain who to contact if a visitor needs help. There will be time to ask questions before the doors open.",
+              "During a busy event, some helpers {{usher}} people into the hall and show them where to sit. Others stay near the entrance to answer simple questions. If your own area is quiet, check with the team leader before moving to another job.",
+              "Please be honest about the time {{commitment}} you can make. We would rather know that you can help regularly for a short period than plan around a promise you cannot keep. Tell us early if you cannot attend, so that someone else can take your place."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "c20-t3-p2-0": {
+    "id": "c20-t3-p2-0",
+    "mode": "listening",
+    "title": "考古遗址导览",
+    "label": "练习 0 · 基础词汇",
+    "location": {
+      "skill": "listening",
+      "book": 20,
+      "test": 3,
+      "part": 2
+    },
+    "vocabId": "c20-t3-p2",
+    "coreWords": [
+      [
+        "initiative",
+        "新发起的计划或项目"
+      ],
+      [
+        "excavation",
+        "考古发掘"
+      ],
+      [
+        "uncover",
+        "发掘出；揭开"
+      ],
+      [
+        "remains",
+        "留存的遗迹"
+      ],
+      [
+        "evidence",
+        "证据；判断的依据"
+      ],
+      [
+        "settlement",
+        "过去的人类聚居地"
+      ],
+      [
+        "survey",
+        "现场勘察"
+      ],
+      [
+        "preserve",
+        "保护并保存"
+      ],
+      [
+        "junction",
+        "路径交叉路口"
+      ],
+      [
+        "adjacent to",
+        "紧邻"
+      ],
+      [
+        "beyond",
+        "越过参照物再往前"
+      ],
+      [
+        "under investigation",
+        "仍在研究中"
+      ],
+      [
+        "head northwards",
+        "向北行进"
+      ],
+      [
+        "take the eastbound path",
+        "沿向东的步道"
+      ],
+      [
+        "go down the plan",
+        "向地图下方走"
+      ],
+      [
+        "make your way east",
+        "往东走"
+      ],
+      [
+        "towards the top of the plan",
+        "朝地图上方走"
+      ],
+      [
+        "carry straight on",
+        "沿当前方向继续直走"
+      ],
+      [
+        "eastbound",
+        "向东行进"
+      ],
+      [
+        "opposite",
+        "在……对面"
+      ],
+      [
+        "on your left",
+        "在左侧"
+      ],
+      [
+        "go past",
+        "经过并越过"
+      ],
+      [
+        "keep to",
+        "沿着指定路径行走"
+      ]
+    ],
+    "selfPaced": true,
+    "sections": [
+      {
+        "id": "c20-t3-p2-0-learning",
+        "type": "foundation",
+        "title": "基础词汇",
+        "unit": "项",
+        "instruction": "",
+        "items": [
+          {
+            "id": "w1",
+            "english": "initiative",
+            "chinese": "新发起的计划或项目",
+            "previousMeanings": [
+              "发起的项目"
+            ],
+            "example": "The new initiative brings local people together to care for the site.",
+            "translation": "这项新计划让本地人共同照顾这处遗址。",
+            "application": "The council supports an ___ to open the old site to visitors.",
+            "applicationTranslation": "议会支持一项向游客开放旧遗址的新计划。",
+            "audio": "audio/foundation/c20-t3-p2-0/01.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w2",
+            "english": "excavation",
+            "chinese": "考古发掘",
+            "previousMeanings": [],
+            "example": "Excavation means carefully digging to study what is below ground.",
+            "translation": "考古发掘是小心挖掘，研究地下有什么。",
+            "application": "The team started an ___ where part of an old wall was found.",
+            "applicationTranslation": "团队在发现一段古墙的地方开始了考古发掘。",
+            "audio": "audio/foundation/c20-t3-p2-0/02.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w3",
+            "english": "uncover",
+            "chinese": "发掘出；揭开",
+            "previousMeanings": [
+              "使掩埋物显露"
+            ],
+            "example": "Careful digging may uncover objects hidden in the soil.",
+            "translation": "小心挖掘可能发现埋在土里的物品。",
+            "application": "They hope to ___ the rest of the floor beneath the earth.",
+            "applicationTranslation": "他们希望发掘出土层下面剩下的地面。",
+            "audio": "audio/foundation/c20-t3-p2-0/03.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w4",
+            "english": "remains",
+            "chinese": "留存的遗迹",
+            "previousMeanings": [],
+            "example": "The remains of the building include a low stone wall.",
+            "translation": "建筑留下的遗迹包括一面低矮的石墙。",
+            "application": "Only the ___ of the old gate can still be seen.",
+            "applicationTranslation": "现在只能看到旧门留下的遗迹。",
+            "audio": "audio/foundation/c20-t3-p2-0/04.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w5",
+            "english": "evidence",
+            "chinese": "证据；判断的依据",
+            "previousMeanings": [
+              "支持判断的证据"
+            ],
+            "example": "The broken pots are evidence that people used this place.",
+            "translation": "破碎的陶器是有人使用过这个地方的证据。",
+            "application": "We need more ___ before saying how old the building is.",
+            "applicationTranslation": "判断建筑有多老之前，我们需要更多证据。",
+            "audio": "audio/foundation/c20-t3-p2-0/05.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w6",
+            "english": "settlement",
+            "chinese": "过去的人类聚居地",
+            "previousMeanings": [],
+            "example": "A settlement is a place where a group of people lived.",
+            "translation": "聚居地是曾有一群人生活的地方。",
+            "application": "The houses formed a small ___ beside the stream.",
+            "applicationTranslation": "这些房屋在溪流旁形成了一处小聚居地。",
+            "audio": "audio/foundation/c20-t3-p2-0/06.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w7",
+            "english": "survey",
+            "chinese": "现场勘察",
+            "previousMeanings": [],
+            "example": "The survey records the shape and size of the site.",
+            "translation": "现场勘察记录遗址的形状和大小。",
+            "application": "Before digging, they carry out a ___ of the whole area.",
+            "applicationTranslation": "挖掘前，他们会勘察整片区域。",
+            "audio": "audio/foundation/c20-t3-p2-0/07.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w8",
+            "english": "preserve",
+            "chinese": "保护并保存",
+            "previousMeanings": [],
+            "example": "We preserve old objects so that people can study them later.",
+            "translation": "我们保护、保存旧物，以便以后研究。",
+            "application": "The cover helps ___ the wall by keeping heavy rain off it.",
+            "applicationTranslation": "遮盖物挡住大雨，有助于保护墙体。",
+            "audio": "audio/foundation/c20-t3-p2-0/08.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w9",
+            "english": "junction",
+            "chinese": "路径交叉路口",
+            "previousMeanings": [],
+            "example": "A junction is where two paths meet.",
+            "translation": "路口是两条路径交会的地方。",
+            "application": "Turn right at the ___ of the two main paths.",
+            "applicationTranslation": "在两条主要道路交会的路口右转。",
+            "audio": "audio/foundation/c20-t3-p2-0/09.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w10",
+            "english": "adjacent to",
+            "chinese": "紧邻",
+            "previousMeanings": [],
+            "example": "The office is adjacent to the gate, right beside it.",
+            "translation": "办公室紧挨着大门，就在它旁边。",
+            "application": "The small garden is ___ the visitor centre.",
+            "applicationTranslation": "小花园紧邻游客中心。",
+            "audio": "audio/foundation/c20-t3-p2-0/10.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w11",
+            "english": "beyond",
+            "chinese": "越过参照物再往前",
+            "previousMeanings": [],
+            "example": "The trees are beyond the wall, on its far side.",
+            "translation": "树在墙的另一边，需要越过墙再往前。",
+            "application": "The next stop is ___ the bridge, not before it.",
+            "applicationTranslation": "下一站在桥的另一边，不在桥前。",
+            "audio": "audio/foundation/c20-t3-p2-0/11.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w12",
+            "english": "under investigation",
+            "chinese": "仍在研究中",
+            "previousMeanings": [],
+            "example": "The meaning of the marks is still under investigation.",
+            "translation": "这些标记的含义仍在研究中。",
+            "application": "The date of the wall is ___ and has not been confirmed.",
+            "applicationTranslation": "墙体的年代仍在研究中，还没有确定。",
+            "audio": "audio/foundation/c20-t3-p2-0/12.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w13",
+            "english": "head northwards",
+            "chinese": "向北行进",
+            "previousMeanings": [],
+            "example": "Head northwards to walk towards the top of a north-up map.",
+            "translation": "地图上方是北时，向北行进就是朝地图上方走。",
+            "application": "From the south gate, ___ towards the north field.",
+            "applicationTranslation": "从南门出发，向北走到北边的田地。",
+            "audio": "audio/foundation/c20-t3-p2-0/13.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w14",
+            "english": "take the eastbound path",
+            "chinese": "沿向东的步道",
+            "previousMeanings": [],
+            "example": "Take the eastbound path: it leads to the east side.",
+            "translation": "沿着向东的步道走，它通往东边。",
+            "application": "At the west gate, ___ to cross the site from west to east.",
+            "applicationTranslation": "在西门，沿向东的步道走，从西向东穿过遗址。",
+            "audio": "audio/foundation/c20-t3-p2-0/14.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w15",
+            "english": "go down the plan",
+            "chinese": "向地图下方走",
+            "previousMeanings": [],
+            "example": "Go down the plan to move towards its lower edge.",
+            "translation": "往平面图下方移动，就是朝图的下沿走。",
+            "application": "With north at the top, ___ to find the southern entrance.",
+            "applicationTranslation": "上北下南时，往平面图下方看，找到南边的入口。",
+            "audio": "audio/foundation/c20-t3-p2-0/15.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w16",
+            "english": "make your way east",
+            "chinese": "往东走",
+            "previousMeanings": [],
+            "example": "Make your way east, towards the morning sun.",
+            "translation": "往东走，朝早晨太阳升起的方向走。",
+            "application": "Leave the western field and ___ towards the east gate.",
+            "applicationTranslation": "离开西边的田地，往东走到东门。",
+            "audio": "audio/foundation/c20-t3-p2-0/16.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w17",
+            "english": "towards the top of the plan",
+            "chinese": "朝地图上方走",
+            "previousMeanings": [],
+            "example": "North is shown towards the top of the plan.",
+            "translation": "北边在平面图靠上方的位置。",
+            "application": "Move your finger ___ to trace a northward journey.",
+            "applicationTranslation": "手指往平面图上方移动，描出一条向北走的路线。",
+            "audio": "audio/foundation/c20-t3-p2-0/17.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w18",
+            "english": "carry straight on",
+            "chinese": "沿当前方向继续直走",
+            "previousMeanings": [],
+            "example": "Carry straight on without turning left or right.",
+            "translation": "继续直走，不要左转或右转。",
+            "application": "At the next sign, ___ along the same path.",
+            "applicationTranslation": "到下一个指示牌时，沿原来的路继续直走。",
+            "audio": "audio/foundation/c20-t3-p2-0/18.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w19",
+            "english": "eastbound",
+            "chinese": "向东行进",
+            "previousMeanings": [],
+            "example": "The eastbound route goes towards the east.",
+            "translation": "向东的路线通往东边。",
+            "application": "This ___ path leads from the west field to the east field.",
+            "applicationTranslation": "这条向东的步道从西边的田地通往东边的田地。",
+            "audio": "audio/foundation/c20-t3-p2-0/19.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w20",
+            "english": "opposite",
+            "chinese": "在……对面",
+            "previousMeanings": [],
+            "example": "The café is opposite the gate, across the road.",
+            "translation": "咖啡馆在大门对面，隔着一条路。",
+            "application": "The benches are ___ the ticket office, facing it.",
+            "applicationTranslation": "长椅在售票处对面，正对着它。",
+            "audio": "audio/foundation/c20-t3-p2-0/20.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w21",
+            "english": "on your left",
+            "chinese": "在左侧",
+            "previousMeanings": [],
+            "example": "The shop is on your left as you enter.",
+            "translation": "进门时，商店在你的左边。",
+            "application": "Walking north, you will see the west garden ___.",
+            "applicationTranslation": "向北走时，西边的花园在你的左侧。",
+            "audio": "audio/foundation/c20-t3-p2-0/21.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w22",
+            "english": "go past",
+            "chinese": "经过并越过",
+            "previousMeanings": [],
+            "example": "Go past the café and continue to the next building.",
+            "translation": "经过咖啡馆后继续往前，到下一栋建筑。",
+            "application": "You need to ___ the first gate before you reach the second.",
+            "applicationTranslation": "到第二道门前，你需要先经过第一道门。",
+            "audio": "audio/foundation/c20-t3-p2-0/22.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w23",
+            "english": "keep to",
+            "chinese": "沿着指定路径行走",
+            "previousMeanings": [],
+            "example": "Keep to the marked path rather than walking across the grass.",
+            "translation": "沿标记的路径走，不要穿过草地。",
+            "application": "Please ___ the main route while work is taking place nearby.",
+            "applicationTranslation": "附近施工时，请沿着主路线行走。",
+            "audio": "audio/foundation/c20-t3-p2-0/23.mp3",
+            "voice": "en-GB-LibbyNeural"
+          }
+        ],
+        "groups": [
+          [
+            "w1",
+            "w2",
+            "w3",
+            "w4",
+            "w5",
+            "w6"
+          ],
+          [
+            "w7",
+            "w8",
+            "w9",
+            "w10",
+            "w11",
+            "w12"
+          ],
+          [
+            "w13",
+            "w14",
+            "w15",
+            "w16",
+            "w17",
+            "w18"
+          ],
+          [
+            "w19",
+            "w20",
+            "w21",
+            "w22",
+            "w23"
+          ]
+        ]
+      },
+      {
+        "id": "c20-t3-p2-0-contexts",
+        "type": "foundation-context",
+        "title": "语境练习",
+        "unit": "篇",
+        "instruction": "选词填空，每篇完成后核对。",
+        "items": [
+          {
+            "id": "research",
+            "title": "Before the visitors arrive",
+            "words": [
+              {
+                "id": "w1",
+                "english": "initiative",
+                "chinese": "新发起的计划或项目",
+                "previousMeanings": [
+                  "发起的项目"
+                ],
+                "example": "The new initiative brings local people together to care for the site.",
+                "translation": "这项新计划让本地人共同照顾这处遗址。",
+                "application": "The council supports an ___ to open the old site to visitors.",
+                "applicationTranslation": "议会支持一项向游客开放旧遗址的新计划。",
+                "audio": "audio/foundation/c20-t3-p2-0/01.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w2",
+                "english": "excavation",
+                "chinese": "考古发掘",
+                "previousMeanings": [],
+                "example": "Excavation means carefully digging to study what is below ground.",
+                "translation": "考古发掘是小心挖掘，研究地下有什么。",
+                "application": "The team started an ___ where part of an old wall was found.",
+                "applicationTranslation": "团队在发现一段古墙的地方开始了考古发掘。",
+                "audio": "audio/foundation/c20-t3-p2-0/02.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w3",
+                "english": "uncover",
+                "chinese": "发掘出；揭开",
+                "previousMeanings": [
+                  "使掩埋物显露"
+                ],
+                "example": "Careful digging may uncover objects hidden in the soil.",
+                "translation": "小心挖掘可能发现埋在土里的物品。",
+                "application": "They hope to ___ the rest of the floor beneath the earth.",
+                "applicationTranslation": "他们希望发掘出土层下面剩下的地面。",
+                "audio": "audio/foundation/c20-t3-p2-0/03.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w4",
+                "english": "remains",
+                "chinese": "留存的遗迹",
+                "previousMeanings": [],
+                "example": "The remains of the building include a low stone wall.",
+                "translation": "建筑留下的遗迹包括一面低矮的石墙。",
+                "application": "Only the ___ of the old gate can still be seen.",
+                "applicationTranslation": "现在只能看到旧门留下的遗迹。",
+                "audio": "audio/foundation/c20-t3-p2-0/04.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w5",
+                "english": "evidence",
+                "chinese": "证据；判断的依据",
+                "previousMeanings": [
+                  "支持判断的证据"
+                ],
+                "example": "The broken pots are evidence that people used this place.",
+                "translation": "破碎的陶器是有人使用过这个地方的证据。",
+                "application": "We need more ___ before saying how old the building is.",
+                "applicationTranslation": "判断建筑有多老之前，我们需要更多证据。",
+                "audio": "audio/foundation/c20-t3-p2-0/05.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w6",
+                "english": "settlement",
+                "chinese": "过去的人类聚居地",
+                "previousMeanings": [],
+                "example": "A settlement is a place where a group of people lived.",
+                "translation": "聚居地是曾有一群人生活的地方。",
+                "application": "The houses formed a small ___ beside the stream.",
+                "applicationTranslation": "这些房屋在溪流旁形成了一处小聚居地。",
+                "audio": "audio/foundation/c20-t3-p2-0/06.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w7",
+                "english": "survey",
+                "chinese": "现场勘察",
+                "previousMeanings": [],
+                "example": "The survey records the shape and size of the site.",
+                "translation": "现场勘察记录遗址的形状和大小。",
+                "application": "Before digging, they carry out a ___ of the whole area.",
+                "applicationTranslation": "挖掘前，他们会勘察整片区域。",
+                "audio": "audio/foundation/c20-t3-p2-0/07.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w8",
+                "english": "preserve",
+                "chinese": "保护并保存",
+                "previousMeanings": [],
+                "example": "We preserve old objects so that people can study them later.",
+                "translation": "我们保护、保存旧物，以便以后研究。",
+                "application": "The cover helps ___ the wall by keeping heavy rain off it.",
+                "applicationTranslation": "遮盖物挡住大雨，有助于保护墙体。",
+                "audio": "audio/foundation/c20-t3-p2-0/08.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w12",
+                "english": "under investigation",
+                "chinese": "仍在研究中",
+                "previousMeanings": [],
+                "example": "The meaning of the marks is still under investigation.",
+                "translation": "这些标记的含义仍在研究中。",
+                "application": "The date of the wall is ___ and has not been confirmed.",
+                "applicationTranslation": "墙体的年代仍在研究中，还没有确定。",
+                "audio": "audio/foundation/c20-t3-p2-0/12.mp3",
+                "voice": "en-GB-RyanNeural"
+              }
+            ],
+            "paragraphs": [
+              "A local {{initiative}} has brought together the museum and people who live near an old building site. They want to open part of it to visitors without damaging what is there. Work began with a {{survey}} of the ground, recording the paths, walls and changes in height.",
+              "The team then started a small {{excavation}}. They hoped to {{uncover}} part of a floor that could be seen at the edge of an earlier hole. Every new object was recorded before anyone moved it.",
+              "The buildings may have belonged to a small {{settlement}}, but the team is careful about what it tells visitors. The age of some walls is still {{under investigation}}. Guides explain what is known and what has not yet been confirmed.",
+              "Covers are used to {{preserve}} the parts most likely to be damaged by rain. Visitors see the work from a path rather than walking over the old floor. In this way, the site can welcome people while research continues."
+            ]
+          },
+          {
+            "id": "directions",
+            "title": "Following the walking leaflet",
+            "words": [
+              {
+                "id": "w9",
+                "english": "junction",
+                "chinese": "路径交叉路口",
+                "previousMeanings": [],
+                "example": "A junction is where two paths meet.",
+                "translation": "路口是两条路径交会的地方。",
+                "application": "Turn right at the ___ of the two main paths.",
+                "applicationTranslation": "在两条主要道路交会的路口右转。",
+                "audio": "audio/foundation/c20-t3-p2-0/09.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w10",
+                "english": "adjacent to",
+                "chinese": "紧邻",
+                "previousMeanings": [],
+                "example": "The office is adjacent to the gate, right beside it.",
+                "translation": "办公室紧挨着大门，就在它旁边。",
+                "application": "The small garden is ___ the visitor centre.",
+                "applicationTranslation": "小花园紧邻游客中心。",
+                "audio": "audio/foundation/c20-t3-p2-0/10.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w11",
+                "english": "beyond",
+                "chinese": "越过参照物再往前",
+                "previousMeanings": [],
+                "example": "The trees are beyond the wall, on its far side.",
+                "translation": "树在墙的另一边，需要越过墙再往前。",
+                "application": "The next stop is ___ the bridge, not before it.",
+                "applicationTranslation": "下一站在桥的另一边，不在桥前。",
+                "audio": "audio/foundation/c20-t3-p2-0/11.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w13",
+                "english": "head northwards",
+                "chinese": "向北行进",
+                "previousMeanings": [],
+                "example": "Head northwards to walk towards the top of a north-up map.",
+                "translation": "地图上方是北时，向北行进就是朝地图上方走。",
+                "application": "From the south gate, ___ towards the north field.",
+                "applicationTranslation": "从南门出发，向北走到北边的田地。",
+                "audio": "audio/foundation/c20-t3-p2-0/13.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w14",
+                "english": "take the eastbound path",
+                "chinese": "沿向东的步道",
+                "previousMeanings": [],
+                "example": "Take the eastbound path: it leads to the east side.",
+                "translation": "沿着向东的步道走，它通往东边。",
+                "application": "At the west gate, ___ to cross the site from west to east.",
+                "applicationTranslation": "在西门，沿向东的步道走，从西向东穿过遗址。",
+                "audio": "audio/foundation/c20-t3-p2-0/14.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w15",
+                "english": "go down the plan",
+                "chinese": "向地图下方走",
+                "previousMeanings": [],
+                "example": "Go down the plan to move towards its lower edge.",
+                "translation": "往平面图下方移动，就是朝图的下沿走。",
+                "application": "With north at the top, ___ to find the southern entrance.",
+                "applicationTranslation": "上北下南时，往平面图下方看，找到南边的入口。",
+                "audio": "audio/foundation/c20-t3-p2-0/15.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w16",
+                "english": "make your way east",
+                "chinese": "往东走",
+                "previousMeanings": [],
+                "example": "Make your way east, towards the morning sun.",
+                "translation": "往东走，朝早晨太阳升起的方向走。",
+                "application": "Leave the western field and ___ towards the east gate.",
+                "applicationTranslation": "离开西边的田地，往东走到东门。",
+                "audio": "audio/foundation/c20-t3-p2-0/16.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w17",
+                "english": "towards the top of the plan",
+                "chinese": "朝地图上方走",
+                "previousMeanings": [],
+                "example": "North is shown towards the top of the plan.",
+                "translation": "北边在平面图靠上方的位置。",
+                "application": "Move your finger ___ to trace a northward journey.",
+                "applicationTranslation": "手指往平面图上方移动，描出一条向北走的路线。",
+                "audio": "audio/foundation/c20-t3-p2-0/17.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w18",
+                "english": "carry straight on",
+                "chinese": "沿当前方向继续直走",
+                "previousMeanings": [],
+                "example": "Carry straight on without turning left or right.",
+                "translation": "继续直走，不要左转或右转。",
+                "application": "At the next sign, ___ along the same path.",
+                "applicationTranslation": "到下一个指示牌时，沿原来的路继续直走。",
+                "audio": "audio/foundation/c20-t3-p2-0/18.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w19",
+                "english": "eastbound",
+                "chinese": "向东行进",
+                "previousMeanings": [],
+                "example": "The eastbound route goes towards the east.",
+                "translation": "向东的路线通往东边。",
+                "application": "This ___ path leads from the west field to the east field.",
+                "applicationTranslation": "这条向东的步道从西边的田地通往东边的田地。",
+                "audio": "audio/foundation/c20-t3-p2-0/19.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w20",
+                "english": "opposite",
+                "chinese": "在……对面",
+                "previousMeanings": [],
+                "example": "The café is opposite the gate, across the road.",
+                "translation": "咖啡馆在大门对面，隔着一条路。",
+                "application": "The benches are ___ the ticket office, facing it.",
+                "applicationTranslation": "长椅在售票处对面，正对着它。",
+                "audio": "audio/foundation/c20-t3-p2-0/20.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w21",
+                "english": "on your left",
+                "chinese": "在左侧",
+                "previousMeanings": [],
+                "example": "The shop is on your left as you enter.",
+                "translation": "进门时，商店在你的左边。",
+                "application": "Walking north, you will see the west garden ___.",
+                "applicationTranslation": "向北走时，西边的花园在你的左侧。",
+                "audio": "audio/foundation/c20-t3-p2-0/21.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w22",
+                "english": "go past",
+                "chinese": "经过并越过",
+                "previousMeanings": [],
+                "example": "Go past the café and continue to the next building.",
+                "translation": "经过咖啡馆后继续往前，到下一栋建筑。",
+                "application": "You need to ___ the first gate before you reach the second.",
+                "applicationTranslation": "到第二道门前，你需要先经过第一道门。",
+                "audio": "audio/foundation/c20-t3-p2-0/22.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w23",
+                "english": "keep to",
+                "chinese": "沿着指定路径行走",
+                "previousMeanings": [],
+                "example": "Keep to the marked path rather than walking across the grass.",
+                "translation": "沿标记的路径走，不要穿过草地。",
+                "application": "Please ___ the main route while work is taking place nearby.",
+                "applicationTranslation": "附近施工时，请沿着主路线行走。",
+                "audio": "audio/foundation/c20-t3-p2-0/23.mp3",
+                "voice": "en-GB-LibbyNeural"
+              }
+            ],
+            "accept": {
+              "take the eastbound path": [
+                "make your way east"
+              ],
+              "make your way east": [
+                "take the eastbound path"
+              ],
+              "carry straight on": [
+                "make your way east"
+              ]
+            },
+            "paragraphs": [
+              "The leaflet shows north at the top and east on the right. The walk begins at the west gate. A small café is {{adjacent to}} the ticket office: the two buildings share a wall. Pick up a leaflet there before setting off.",
+              "At the first fork, {{take the eastbound path}} towards the pond on the eastern side. A small garden is north of this path, so it will be {{on your left}} as you walk east. You can look into the garden from the path without entering it.",
+              "When you reach the pond, {{go past}} it and cross the little bridge. The covered seats are {{beyond}} the bridge, on its far side. From there, {{carry straight on}} along the same path until you reach a bench. Do not take either of the side paths before the bench.",
+              "At the bench, turn to face north and {{head northwards}} to the old tree. As you follow this part on paper, your finger moves {{towards the top of the plan}}. At the tree, {{make your way east}} for the final short section of the walk.",
+              "The return path then turns south towards the exit. On paper, {{go down the plan}} with your finger to trace that southward route. Throughout the visit, please {{keep to}} the marked paths. Other areas may be closed while work is taking place."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "c20-t4-p1-0": {
+    "id": "c20-t4-p1-0",
+    "mode": "listening",
+    "title": "家庭出游规划",
+    "label": "练习 0 · 基础词汇",
+    "location": {
+      "skill": "listening",
+      "book": 20,
+      "test": 4,
+      "part": 1
+    },
+    "vocabId": "c20-t4-p1",
+    "coreWords": [
+      [
+        "accommodation",
+        "住宿安排"
+      ],
+      [
+        "approximate",
+        "大约的"
+      ],
+      [
+        "guided tour",
+        "有讲解员带领的参观"
+      ],
+      [
+        "departure",
+        "出发安排"
+      ],
+      [
+        "exhibition",
+        "专题展览"
+      ],
+      [
+        "refreshments",
+        "茶点；简单的饮食"
+      ],
+      [
+        "discount",
+        "价格减免"
+      ],
+      [
+        "advance booking",
+        "提前预订"
+      ],
+      [
+        "panoramic",
+        "视野开阔的"
+      ],
+      [
+        "complimentary",
+        "免费提供的"
+      ],
+      [
+        "off-peak",
+        "非高峰时段的"
+      ],
+      [
+        "subject to availability",
+        "要看是否还有空位"
+      ],
+      [
+        "up to",
+        "最高可达"
+      ],
+      [
+        "per night",
+        "每晚"
+      ],
+      [
+        "not yet open",
+        "尚未开放"
+      ]
+    ],
+    "selfPaced": true,
+    "sections": [
+      {
+        "id": "c20-t4-p1-0-learning",
+        "type": "foundation",
+        "title": "基础词汇",
+        "unit": "项",
+        "instruction": "",
+        "items": [
+          {
+            "id": "w1",
+            "english": "accommodation",
+            "chinese": "住宿安排",
+            "previousMeanings": [],
+            "example": "We need accommodation for the weekend, such as a hotel room.",
+            "translation": "我们周末需要住宿，比如一间酒店客房。",
+            "application": "Please arrange ___ for everyone staying overnight.",
+            "applicationTranslation": "请为所有要过夜的人安排住宿。",
+            "audio": "audio/foundation/c20-t4-p1-0/01.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w2",
+            "english": "approximate",
+            "chinese": "大约的",
+            "previousMeanings": [],
+            "example": "The approximate journey time is an hour; it may be a little longer.",
+            "translation": "车程大约一小时，实际可能更久一点。",
+            "application": "Can you give an ___ cost before we choose a date?",
+            "applicationTranslation": "在我们选日期之前，你能给出大致费用吗？",
+            "audio": "audio/foundation/c20-t4-p1-0/02.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w3",
+            "english": "guided tour",
+            "chinese": "有讲解员带领的参观",
+            "previousMeanings": [],
+            "example": "A guided tour lets us see the building with someone explaining it.",
+            "translation": "导览参观会有人边带路边讲解建筑。",
+            "application": "We booked a ___ rather than looking around on our own.",
+            "applicationTranslation": "我们预约了有人带领讲解的参观，没有选择自行游览。",
+            "audio": "audio/foundation/c20-t4-p1-0/03.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w4",
+            "english": "departure",
+            "chinese": "出发安排",
+            "previousMeanings": [],
+            "example": "Check the departure time so that you do not miss the bus.",
+            "translation": "查好出发时间，避免错过巴士。",
+            "application": "Everyone must be at the stop before ___.",
+            "applicationTranslation": "所有人都必须在出发前到达车站。",
+            "audio": "audio/foundation/c20-t4-p1-0/04.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w5",
+            "english": "exhibition",
+            "chinese": "专题展览",
+            "previousMeanings": [],
+            "example": "The exhibition displays old photographs for visitors to see.",
+            "translation": "展览向参观者展示旧照片。",
+            "application": "The museum has an ___ about the history of local homes.",
+            "applicationTranslation": "博物馆有一场关于本地房屋历史的展览。",
+            "audio": "audio/foundation/c20-t4-p1-0/05.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w6",
+            "english": "refreshments",
+            "chinese": "茶点；简单的饮食",
+            "previousMeanings": [
+              "简便餐饮"
+            ],
+            "example": "Refreshments include tea, juice and small snacks.",
+            "translation": "茶点包括茶、果汁和小点心。",
+            "application": "We can buy ___ if we need a drink or something light to eat.",
+            "applicationTranslation": "如果想喝点东西或吃点简单食物，我们可以买茶点。",
+            "audio": "audio/foundation/c20-t4-p1-0/06.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w7",
+            "english": "discount",
+            "chinese": "价格减免",
+            "previousMeanings": [],
+            "example": "A discount makes the ticket cheaper than the usual price.",
+            "translation": "折扣使票价比平时便宜。",
+            "application": "Ask whether there is a ___ for children.",
+            "applicationTranslation": "问问儿童是否有优惠。",
+            "audio": "audio/foundation/c20-t4-p1-0/07.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w8",
+            "english": "advance booking",
+            "chinese": "提前预订",
+            "previousMeanings": [],
+            "example": "Advance booking means reserving a place before you arrive.",
+            "translation": "提前预订是指到达之前先订好位置。",
+            "application": "This busy trip requires ___, so do not wait until the day itself.",
+            "applicationTranslation": "这趟热门行程需要提前预订，不要等到当天再订。",
+            "audio": "audio/foundation/c20-t4-p1-0/08.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w9",
+            "english": "panoramic",
+            "chinese": "视野开阔的",
+            "previousMeanings": [],
+            "example": "The high window gives a panoramic view over the whole town.",
+            "translation": "高处的窗户能让人开阔地看到整个城镇。",
+            "application": "The hilltop offers ___ views in every direction.",
+            "applicationTranslation": "山顶可以看到四面八方的开阔景色。",
+            "audio": "audio/foundation/c20-t4-p1-0/09.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w10",
+            "english": "complimentary",
+            "chinese": "免费提供的",
+            "previousMeanings": [],
+            "example": "The hotel gives guests a complimentary map, at no extra cost.",
+            "translation": "酒店免费给住客一张地图，不另外收费。",
+            "application": "A ___ drink is included with each ticket.",
+            "applicationTranslation": "每张票都包含一杯免费饮品。",
+            "audio": "audio/foundation/c20-t4-p1-0/10.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w11",
+            "english": "off-peak",
+            "chinese": "非高峰时段的",
+            "previousMeanings": [],
+            "example": "Off-peak trips run outside the busiest travel times.",
+            "translation": "非高峰时段的行程避开最繁忙的出行时间。",
+            "application": "We travel at ___ times to avoid the biggest crowds.",
+            "applicationTranslation": "我们在非高峰时段出行，避开最拥挤的人群。",
+            "audio": "audio/foundation/c20-t4-p1-0/11.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w12",
+            "english": "subject to availability",
+            "chinese": "要看是否还有空位",
+            "previousMeanings": [
+              "以有余位为前提"
+            ],
+            "example": "Extra rooms are subject to availability; we can only offer rooms that are free.",
+            "translation": "额外客房要看有没有空房，不能保证一定能提供。",
+            "application": "Changes are ___, so a different date is not guaranteed.",
+            "applicationTranslation": "能否改期要看有没有空位，不保证一定能换。",
+            "audio": "audio/foundation/c20-t4-p1-0/12.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w13",
+            "english": "up to",
+            "chinese": "最高可达",
+            "previousMeanings": [],
+            "example": "The room holds up to six people, but no more.",
+            "translation": "房间最多可容纳六人，不能再多。",
+            "application": "The walk takes ___ an hour, depending on how often we stop.",
+            "applicationTranslation": "步行最多需要一小时，取决于我们停多少次。",
+            "audio": "audio/foundation/c20-t4-p1-0/13.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w14",
+            "english": "per night",
+            "chinese": "每晚",
+            "previousMeanings": [],
+            "example": "The hotel price is per night, not for the whole stay.",
+            "translation": "酒店标价是每晚价格，不是整个入住期间的总价。",
+            "application": "We pay for the room ___ and stay for two nights.",
+            "applicationTranslation": "我们按每晚房价付费，住两晚。",
+            "audio": "audio/foundation/c20-t4-p1-0/14.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w15",
+            "english": "not yet open",
+            "chinese": "尚未开放",
+            "previousMeanings": [],
+            "example": "The new gallery is not yet open, so we cannot enter today.",
+            "translation": "新展厅尚未开放，我们今天不能进去。",
+            "application": "The garden is ___ and will welcome visitors next month.",
+            "applicationTranslation": "花园尚未开放，下个月才会迎接游客。",
+            "audio": "audio/foundation/c20-t4-p1-0/15.mp3",
+            "voice": "en-GB-RyanNeural"
+          }
+        ],
+        "groups": [
+          [
+            "w1",
+            "w2",
+            "w3",
+            "w4",
+            "w5"
+          ],
+          [
+            "w6",
+            "w7",
+            "w8",
+            "w9",
+            "w10"
+          ],
+          [
+            "w11",
+            "w12",
+            "w13",
+            "w14",
+            "w15"
+          ]
+        ]
+      },
+      {
+        "id": "c20-t4-p1-0-contexts",
+        "type": "foundation-context",
+        "title": "语境练习",
+        "unit": "篇",
+        "instruction": "选词填空，每篇完成后核对。",
+        "items": [
+          {
+            "id": "booking",
+            "title": "Planning a weekend away",
+            "words": [
+              {
+                "id": "w1",
+                "english": "accommodation",
+                "chinese": "住宿安排",
+                "previousMeanings": [],
+                "example": "We need accommodation for the weekend, such as a hotel room.",
+                "translation": "我们周末需要住宿，比如一间酒店客房。",
+                "application": "Please arrange ___ for everyone staying overnight.",
+                "applicationTranslation": "请为所有要过夜的人安排住宿。",
+                "audio": "audio/foundation/c20-t4-p1-0/01.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w2",
+                "english": "approximate",
+                "chinese": "大约的",
+                "previousMeanings": [],
+                "example": "The approximate journey time is an hour; it may be a little longer.",
+                "translation": "车程大约一小时，实际可能更久一点。",
+                "application": "Can you give an ___ cost before we choose a date?",
+                "applicationTranslation": "在我们选日期之前，你能给出大致费用吗？",
+                "audio": "audio/foundation/c20-t4-p1-0/02.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w4",
+                "english": "departure",
+                "chinese": "出发安排",
+                "previousMeanings": [],
+                "example": "Check the departure time so that you do not miss the bus.",
+                "translation": "查好出发时间，避免错过巴士。",
+                "application": "Everyone must be at the stop before ___.",
+                "applicationTranslation": "所有人都必须在出发前到达车站。",
+                "audio": "audio/foundation/c20-t4-p1-0/04.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w8",
+                "english": "advance booking",
+                "chinese": "提前预订",
+                "previousMeanings": [],
+                "example": "Advance booking means reserving a place before you arrive.",
+                "translation": "提前预订是指到达之前先订好位置。",
+                "application": "This busy trip requires ___, so do not wait until the day itself.",
+                "applicationTranslation": "这趟热门行程需要提前预订，不要等到当天再订。",
+                "audio": "audio/foundation/c20-t4-p1-0/08.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w10",
+                "english": "complimentary",
+                "chinese": "免费提供的",
+                "previousMeanings": [],
+                "example": "The hotel gives guests a complimentary map, at no extra cost.",
+                "translation": "酒店免费给住客一张地图，不另外收费。",
+                "application": "A ___ drink is included with each ticket.",
+                "applicationTranslation": "每张票都包含一杯免费饮品。",
+                "audio": "audio/foundation/c20-t4-p1-0/10.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w11",
+                "english": "off-peak",
+                "chinese": "非高峰时段的",
+                "previousMeanings": [],
+                "example": "Off-peak trips run outside the busiest travel times.",
+                "translation": "非高峰时段的行程避开最繁忙的出行时间。",
+                "application": "We travel at ___ times to avoid the biggest crowds.",
+                "applicationTranslation": "我们在非高峰时段出行，避开最拥挤的人群。",
+                "audio": "audio/foundation/c20-t4-p1-0/11.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w12",
+                "english": "subject to availability",
+                "chinese": "要看是否还有空位",
+                "previousMeanings": [
+                  "以有余位为前提"
+                ],
+                "example": "Extra rooms are subject to availability; we can only offer rooms that are free.",
+                "translation": "额外客房要看有没有空房，不能保证一定能提供。",
+                "application": "Changes are ___, so a different date is not guaranteed.",
+                "applicationTranslation": "能否改期要看有没有空位，不保证一定能换。",
+                "audio": "audio/foundation/c20-t4-p1-0/12.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w14",
+                "english": "per night",
+                "chinese": "每晚",
+                "previousMeanings": [],
+                "example": "The hotel price is per night, not for the whole stay.",
+                "translation": "酒店标价是每晚价格，不是整个入住期间的总价。",
+                "application": "We pay for the room ___ and stay for two nights.",
+                "applicationTranslation": "我们按每晚房价付费，住两晚。",
+                "audio": "audio/foundation/c20-t4-p1-0/14.mp3",
+                "voice": "en-GB-LibbyNeural"
+              }
+            ],
+            "paragraphs": [
+              "Caller: I am planning a weekend away with my family. We have chosen the town, but we still need {{accommodation}}. Could you help us find somewhere to stay?",
+              "Adviser: Yes. Tell me your dates and the {{approximate}} amount you want to spend. It does not have to be an exact figure. If you can travel at {{off-peak}} times, outside the busiest periods, there may be more choice.",
+              "Caller: We would prefer to arrive by bus. Can we decide on the hotel when we get there?",
+              "Adviser: I would suggest {{advance booking}} for a family room. There are fewer of those rooms than smaller ones. One hotel includes a {{complimentary}} breakfast, so you would not pay extra for the morning meal.",
+              "Caller: What if our plans change?",
+              "Adviser: Changes are {{subject to availability}}. We can ask, but we cannot promise a different room or date. Once you decide, I will send the hotel details and the bus {{departure}} time so that you know when to be at the stop."
+            ]
+          },
+          {
+            "id": "visit",
+            "title": "A day at the hilltop house",
+            "words": [
+              {
+                "id": "w3",
+                "english": "guided tour",
+                "chinese": "有讲解员带领的参观",
+                "previousMeanings": [],
+                "example": "A guided tour lets us see the building with someone explaining it.",
+                "translation": "导览参观会有人边带路边讲解建筑。",
+                "application": "We booked a ___ rather than looking around on our own.",
+                "applicationTranslation": "我们预约了有人带领讲解的参观，没有选择自行游览。",
+                "audio": "audio/foundation/c20-t4-p1-0/03.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w5",
+                "english": "exhibition",
+                "chinese": "专题展览",
+                "previousMeanings": [],
+                "example": "The exhibition displays old photographs for visitors to see.",
+                "translation": "展览向参观者展示旧照片。",
+                "application": "The museum has an ___ about the history of local homes.",
+                "applicationTranslation": "博物馆有一场关于本地房屋历史的展览。",
+                "audio": "audio/foundation/c20-t4-p1-0/05.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w6",
+                "english": "refreshments",
+                "chinese": "茶点；简单的饮食",
+                "previousMeanings": [
+                  "简便餐饮"
+                ],
+                "example": "Refreshments include tea, juice and small snacks.",
+                "translation": "茶点包括茶、果汁和小点心。",
+                "application": "We can buy ___ if we need a drink or something light to eat.",
+                "applicationTranslation": "如果想喝点东西或吃点简单食物，我们可以买茶点。",
+                "audio": "audio/foundation/c20-t4-p1-0/06.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w7",
+                "english": "discount",
+                "chinese": "价格减免",
+                "previousMeanings": [],
+                "example": "A discount makes the ticket cheaper than the usual price.",
+                "translation": "折扣使票价比平时便宜。",
+                "application": "Ask whether there is a ___ for children.",
+                "applicationTranslation": "问问儿童是否有优惠。",
+                "audio": "audio/foundation/c20-t4-p1-0/07.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w9",
+                "english": "panoramic",
+                "chinese": "视野开阔的",
+                "previousMeanings": [],
+                "example": "The high window gives a panoramic view over the whole town.",
+                "translation": "高处的窗户能让人开阔地看到整个城镇。",
+                "application": "The hilltop offers ___ views in every direction.",
+                "applicationTranslation": "山顶可以看到四面八方的开阔景色。",
+                "audio": "audio/foundation/c20-t4-p1-0/09.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w13",
+                "english": "up to",
+                "chinese": "最高可达",
+                "previousMeanings": [],
+                "example": "The room holds up to six people, but no more.",
+                "translation": "房间最多可容纳六人，不能再多。",
+                "application": "The walk takes ___ an hour, depending on how often we stop.",
+                "applicationTranslation": "步行最多需要一小时，取决于我们停多少次。",
+                "audio": "audio/foundation/c20-t4-p1-0/13.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w15",
+                "english": "not yet open",
+                "chinese": "尚未开放",
+                "previousMeanings": [],
+                "example": "The new gallery is not yet open, so we cannot enter today.",
+                "translation": "新展厅尚未开放，我们今天不能进去。",
+                "application": "The garden is ___ and will welcome visitors next month.",
+                "applicationTranslation": "花园尚未开放，下个月才会迎接游客。",
+                "audio": "audio/foundation/c20-t4-p1-0/15.mp3",
+                "voice": "en-GB-RyanNeural"
+              }
+            ],
+            "paragraphs": [
+              "We began our visit with a {{guided tour}} of the house. A member of staff took us through the main rooms and told us who had lived there. It was easier to notice small details when someone pointed them out.",
+              "Afterwards, we went to an {{exhibition}} of photographs showing how the nearby town had changed. We recognised some streets from the walk up the hill. The children spent a long time comparing an old photograph with the view through the window.",
+              "From the upper room there was a {{panoramic}} view, with open countryside on one side and the town on the other. Before walking back down, we bought some {{refreshments}} in the small café. A drink and a light snack were enough; we planned to eat dinner later."
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "c20-t4-p2-0": {
+    "id": "c20-t4-p2-0",
+    "mode": "listening",
+    "title": "球场导览与场馆变迁",
+    "label": "练习 0 · 基础词汇",
+    "location": {
+      "skill": "listening",
+      "book": 20,
+      "test": 4,
+      "part": 2
+    },
+    "vocabId": "c20-t4-p2",
+    "coreWords": [
+      [
+        "accompanied",
+        "由成人陪同的"
+      ],
+      [
+        "refreshments",
+        "茶点；简单的饮食"
+      ],
+      [
+        "admission",
+        "入场；准许进入"
+      ],
+      [
+        "commentary",
+        "导览讲解"
+      ],
+      [
+        "renovation",
+        "翻新；修缮原有建筑"
+      ],
+      [
+        "capacity",
+        "可容纳人数"
+      ],
+      [
+        "relocate",
+        "迁移到另一位置"
+      ],
+      [
+        "inaugurate",
+        "正式启用"
+      ],
+      [
+        "formerly",
+        "以前；从前"
+      ],
+      [
+        "subsequently",
+        "在那之后"
+      ],
+      [
+        "by then",
+        "到那时（已发生或完成）"
+      ],
+      [
+        "not until",
+        "直到……才"
+      ],
+      [
+        "in the same year",
+        "在同一年"
+      ],
+      [
+        "two years later",
+        "两年之后"
+      ],
+      [
+        "under consideration",
+        "仍在考虑中"
+      ]
+    ],
+    "selfPaced": true,
+    "sections": [
+      {
+        "id": "c20-t4-p2-0-learning",
+        "type": "foundation",
+        "title": "基础词汇",
+        "unit": "项",
+        "instruction": "",
+        "items": [
+          {
+            "id": "w1",
+            "english": "accompanied",
+            "chinese": "由成人陪同的",
+            "previousMeanings": [],
+            "example": "Children must be accompanied by an adult on this visit.",
+            "translation": "这次参观中，儿童必须有成人陪同。",
+            "application": "Young visitors can enter only if they are ___ by a parent.",
+            "applicationTranslation": "小游客只有在家长陪同时才能进入。",
+            "audio": "audio/foundation/c20-t4-p2-0/01.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w2",
+            "english": "refreshments",
+            "chinese": "茶点；简单的饮食",
+            "previousMeanings": [
+              "简便餐饮"
+            ],
+            "example": "We serve refreshments such as tea and biscuits.",
+            "translation": "我们提供茶和饼干之类的茶点。",
+            "application": "A small stand sells ___ during the break.",
+            "applicationTranslation": "休息时，小摊会售卖茶点。",
+            "audio": "audio/foundation/c20-t4-p2-0/02.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w3",
+            "english": "admission",
+            "chinese": "入场；准许进入",
+            "previousMeanings": [
+              "进入场馆的许可"
+            ],
+            "example": "Admission allows you to enter the ground and watch the match.",
+            "translation": "入场许可让你进入场地观看比赛。",
+            "application": "This ticket includes ___ to the main hall.",
+            "applicationTranslation": "这张票包含进入主厅的许可。",
+            "audio": "audio/foundation/c20-t4-p2-0/03.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w4",
+            "english": "commentary",
+            "chinese": "导览讲解",
+            "previousMeanings": [],
+            "example": "The commentary explains what we can see during the tour.",
+            "translation": "导览讲解会说明参观途中看到的事物。",
+            "application": "Listen to the ___ while you walk around the ground.",
+            "applicationTranslation": "绕场地参观时，请听导览讲解。",
+            "audio": "audio/foundation/c20-t4-p2-0/04.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w5",
+            "english": "renovation",
+            "chinese": "翻新；修缮原有建筑",
+            "previousMeanings": [
+              "保留主体的翻修"
+            ],
+            "example": "The building needs renovation to repair its roof and rooms.",
+            "translation": "这栋建筑需要翻修屋顶和房间。",
+            "application": "During ___, the old hall will be repaired rather than replaced.",
+            "applicationTranslation": "翻修期间，会修缮原有大厅，而不是拆掉重建。",
+            "audio": "audio/foundation/c20-t4-p2-0/05.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w6",
+            "english": "capacity",
+            "chinese": "可容纳人数",
+            "previousMeanings": [],
+            "example": "The hall has a capacity of several hundred people.",
+            "translation": "这座大厅可容纳数百人。",
+            "application": "The room is full because it has reached its ___.",
+            "applicationTranslation": "房间已经达到可容纳人数上限，所以坐满了。",
+            "audio": "audio/foundation/c20-t4-p2-0/06.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w7",
+            "english": "relocate",
+            "chinese": "迁移到另一位置",
+            "previousMeanings": [],
+            "example": "The club must relocate while its old building is repaired.",
+            "translation": "旧楼修缮期间，俱乐部必须暂时搬迁。",
+            "application": "They plan to ___ the office to another part of the ground.",
+            "applicationTranslation": "他们计划把办公室搬到场地的另一处。",
+            "audio": "audio/foundation/c20-t4-p2-0/07.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w8",
+            "english": "inaugurate",
+            "chinese": "正式启用",
+            "previousMeanings": [],
+            "example": "A former player will inaugurate the new stand at a ceremony.",
+            "translation": "一位前球员将在仪式上正式启用新看台。",
+            "application": "The mayor is coming to ___ the new sports hall.",
+            "applicationTranslation": "市长将来参加新体育馆的正式启用仪式。",
+            "audio": "audio/foundation/c20-t4-p2-0/08.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w9",
+            "english": "formerly",
+            "chinese": "以前；从前",
+            "previousMeanings": [
+              "在过去的安排中"
+            ],
+            "example": "The building was formerly a school; it is now a club.",
+            "translation": "这栋建筑以前是学校，现在是俱乐部。",
+            "application": "This space was ___ used for storage before it became a café.",
+            "applicationTranslation": "这片空间以前用于储物，后来改成了咖啡馆。",
+            "audio": "audio/foundation/c20-t4-p2-0/09.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w10",
+            "english": "subsequently",
+            "chinese": "在那之后",
+            "previousMeanings": [],
+            "example": "The club bought the field and subsequently built a hall.",
+            "translation": "俱乐部买下田地，随后建了一座大厅。",
+            "application": "She joined as a helper and ___ became the manager.",
+            "applicationTranslation": "她先作为帮手加入，后来成为了经理。",
+            "audio": "audio/foundation/c20-t4-p2-0/10.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w11",
+            "english": "by then",
+            "chinese": "到那时（已发生或完成）",
+            "previousMeanings": [
+              "到那个时点之前"
+            ],
+            "example": "The gates opened at noon; by then, the staff had finished their checks.",
+            "translation": "大门中午开放，到那时员工已完成检查。",
+            "application": "The visitors arrived after lunch; ___, the rain had stopped.",
+            "applicationTranslation": "游客午餐后到达，到那时雨已经停了。",
+            "audio": "audio/foundation/c20-t4-p2-0/11.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w12",
+            "english": "not until",
+            "chinese": "直到……才",
+            "previousMeanings": [],
+            "example": "It was not until spring that the field was ready.",
+            "translation": "直到春天，场地才准备好。",
+            "application": "It was ___ the roof was finished that the hall opened.",
+            "applicationTranslation": "直到屋顶完工，大厅才开放。",
+            "audio": "audio/foundation/c20-t4-p2-0/12.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w13",
+            "english": "in the same year",
+            "chinese": "在同一年",
+            "previousMeanings": [],
+            "example": "The hall and café opened in the same year.",
+            "translation": "大厅和咖啡馆在同一年开放。",
+            "application": "She joined the club and became its captain ___.",
+            "applicationTranslation": "她加入俱乐部，并在同一年成为队长。",
+            "audio": "audio/foundation/c20-t4-p2-0/13.mp3",
+            "voice": "en-GB-LibbyNeural"
+          },
+          {
+            "id": "w14",
+            "english": "two years later",
+            "chinese": "两年之后",
+            "previousMeanings": [],
+            "example": "The plan began in one year; two years later, the work was finished.",
+            "translation": "计划启动两年后，工程完成了。",
+            "application": "He left school, then joined the team ___.",
+            "applicationTranslation": "他离开学校，两年后加入了球队。",
+            "audio": "audio/foundation/c20-t4-p2-0/14.mp3",
+            "voice": "en-GB-RyanNeural"
+          },
+          {
+            "id": "w15",
+            "english": "under consideration",
+            "chinese": "仍在考虑中",
+            "previousMeanings": [],
+            "example": "The plan is under consideration, so no decision has been made.",
+            "translation": "计划仍在考虑中，还没有作出决定。",
+            "application": "A larger café is ___ but has not been approved.",
+            "applicationTranslation": "更大的咖啡馆仍在考虑中，尚未获批。",
+            "audio": "audio/foundation/c20-t4-p2-0/15.mp3",
+            "voice": "en-GB-LibbyNeural"
+          }
+        ],
+        "groups": [
+          [
+            "w1",
+            "w2",
+            "w3",
+            "w4",
+            "w5"
+          ],
+          [
+            "w6",
+            "w7",
+            "w8",
+            "w9",
+            "w10"
+          ],
+          [
+            "w11",
+            "w12",
+            "w13",
+            "w14",
+            "w15"
+          ]
+        ]
+      },
+      {
+        "id": "c20-t4-p2-0-contexts",
+        "type": "foundation-context",
+        "title": "语境练习",
+        "unit": "篇",
+        "instruction": "选词填空，每篇完成后核对。",
+        "items": [
+          {
+            "id": "visit",
+            "title": "Visiting the sports ground",
+            "words": [
+              {
+                "id": "w1",
+                "english": "accompanied",
+                "chinese": "由成人陪同的",
+                "previousMeanings": [],
+                "example": "Children must be accompanied by an adult on this visit.",
+                "translation": "这次参观中，儿童必须有成人陪同。",
+                "application": "Young visitors can enter only if they are ___ by a parent.",
+                "applicationTranslation": "小游客只有在家长陪同时才能进入。",
+                "audio": "audio/foundation/c20-t4-p2-0/01.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w2",
+                "english": "refreshments",
+                "chinese": "茶点；简单的饮食",
+                "previousMeanings": [
+                  "简便餐饮"
+                ],
+                "example": "We serve refreshments such as tea and biscuits.",
+                "translation": "我们提供茶和饼干之类的茶点。",
+                "application": "A small stand sells ___ during the break.",
+                "applicationTranslation": "休息时，小摊会售卖茶点。",
+                "audio": "audio/foundation/c20-t4-p2-0/02.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w3",
+                "english": "admission",
+                "chinese": "入场；准许进入",
+                "previousMeanings": [
+                  "进入场馆的许可"
+                ],
+                "example": "Admission allows you to enter the ground and watch the match.",
+                "translation": "入场许可让你进入场地观看比赛。",
+                "application": "This ticket includes ___ to the main hall.",
+                "applicationTranslation": "这张票包含进入主厅的许可。",
+                "audio": "audio/foundation/c20-t4-p2-0/03.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w4",
+                "english": "commentary",
+                "chinese": "导览讲解",
+                "previousMeanings": [],
+                "example": "The commentary explains what we can see during the tour.",
+                "translation": "导览讲解会说明参观途中看到的事物。",
+                "application": "Listen to the ___ while you walk around the ground.",
+                "applicationTranslation": "绕场地参观时，请听导览讲解。",
+                "audio": "audio/foundation/c20-t4-p2-0/04.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w6",
+                "english": "capacity",
+                "chinese": "可容纳人数",
+                "previousMeanings": [],
+                "example": "The hall has a capacity of several hundred people.",
+                "translation": "这座大厅可容纳数百人。",
+                "application": "The room is full because it has reached its ___.",
+                "applicationTranslation": "房间已经达到可容纳人数上限，所以坐满了。",
+                "audio": "audio/foundation/c20-t4-p2-0/06.mp3",
+                "voice": "en-GB-RyanNeural"
+              }
+            ],
+            "paragraphs": [
+              "Your ticket includes {{admission}} to the ground and the small room showing the club’s history. Please keep it with you, as staff may ask to see it when you move between areas.",
+              "Children must be {{accompanied}} by an adult. Stay together during the visit, especially near doors used by staff. Some parts of the ground will be busy even when no match is taking place.",
+              "A recorded {{commentary}} explains the places along the visitor route. You can pause it if you want longer to look at something. The final talk takes place in a room with a small {{capacity}}, so a large group may have to wait for the next talk rather than enter all at once."
+            ]
+          },
+          {
+            "id": "changes",
+            "title": "A new chapter for the club",
+            "words": [
+              {
+                "id": "w5",
+                "english": "renovation",
+                "chinese": "翻新；修缮原有建筑",
+                "previousMeanings": [
+                  "保留主体的翻修"
+                ],
+                "example": "The building needs renovation to repair its roof and rooms.",
+                "translation": "这栋建筑需要翻修屋顶和房间。",
+                "application": "During ___, the old hall will be repaired rather than replaced.",
+                "applicationTranslation": "翻修期间，会修缮原有大厅，而不是拆掉重建。",
+                "audio": "audio/foundation/c20-t4-p2-0/05.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w7",
+                "english": "relocate",
+                "chinese": "迁移到另一位置",
+                "previousMeanings": [],
+                "example": "The club must relocate while its old building is repaired.",
+                "translation": "旧楼修缮期间，俱乐部必须暂时搬迁。",
+                "application": "They plan to ___ the office to another part of the ground.",
+                "applicationTranslation": "他们计划把办公室搬到场地的另一处。",
+                "audio": "audio/foundation/c20-t4-p2-0/07.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w8",
+                "english": "inaugurate",
+                "chinese": "正式启用",
+                "previousMeanings": [],
+                "example": "A former player will inaugurate the new stand at a ceremony.",
+                "translation": "一位前球员将在仪式上正式启用新看台。",
+                "application": "The mayor is coming to ___ the new sports hall.",
+                "applicationTranslation": "市长将来参加新体育馆的正式启用仪式。",
+                "audio": "audio/foundation/c20-t4-p2-0/08.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w9",
+                "english": "formerly",
+                "chinese": "以前；从前",
+                "previousMeanings": [
+                  "在过去的安排中"
+                ],
+                "example": "The building was formerly a school; it is now a club.",
+                "translation": "这栋建筑以前是学校，现在是俱乐部。",
+                "application": "This space was ___ used for storage before it became a café.",
+                "applicationTranslation": "这片空间以前用于储物，后来改成了咖啡馆。",
+                "audio": "audio/foundation/c20-t4-p2-0/09.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w10",
+                "english": "subsequently",
+                "chinese": "在那之后",
+                "previousMeanings": [],
+                "example": "The club bought the field and subsequently built a hall.",
+                "translation": "俱乐部买下田地，随后建了一座大厅。",
+                "application": "She joined as a helper and ___ became the manager.",
+                "applicationTranslation": "她先作为帮手加入，后来成为了经理。",
+                "audio": "audio/foundation/c20-t4-p2-0/10.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w11",
+                "english": "by then",
+                "chinese": "到那时（已发生或完成）",
+                "previousMeanings": [
+                  "到那个时点之前"
+                ],
+                "example": "The gates opened at noon; by then, the staff had finished their checks.",
+                "translation": "大门中午开放，到那时员工已完成检查。",
+                "application": "The visitors arrived after lunch; ___, the rain had stopped.",
+                "applicationTranslation": "游客午餐后到达，到那时雨已经停了。",
+                "audio": "audio/foundation/c20-t4-p2-0/11.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w12",
+                "english": "not until",
+                "chinese": "直到……才",
+                "previousMeanings": [],
+                "example": "It was not until spring that the field was ready.",
+                "translation": "直到春天，场地才准备好。",
+                "application": "It was ___ the roof was finished that the hall opened.",
+                "applicationTranslation": "直到屋顶完工，大厅才开放。",
+                "audio": "audio/foundation/c20-t4-p2-0/12.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w13",
+                "english": "in the same year",
+                "chinese": "在同一年",
+                "previousMeanings": [],
+                "example": "The hall and café opened in the same year.",
+                "translation": "大厅和咖啡馆在同一年开放。",
+                "application": "She joined the club and became its captain ___.",
+                "applicationTranslation": "她加入俱乐部，并在同一年成为队长。",
+                "audio": "audio/foundation/c20-t4-p2-0/13.mp3",
+                "voice": "en-GB-LibbyNeural"
+              },
+              {
+                "id": "w14",
+                "english": "two years later",
+                "chinese": "两年之后",
+                "previousMeanings": [],
+                "example": "The plan began in one year; two years later, the work was finished.",
+                "translation": "计划启动两年后，工程完成了。",
+                "application": "He left school, then joined the team ___.",
+                "applicationTranslation": "他离开学校，两年后加入了球队。",
+                "audio": "audio/foundation/c20-t4-p2-0/14.mp3",
+                "voice": "en-GB-RyanNeural"
+              },
+              {
+                "id": "w15",
+                "english": "under consideration",
+                "chinese": "仍在考虑中",
+                "previousMeanings": [],
+                "example": "The plan is under consideration, so no decision has been made.",
+                "translation": "计划仍在考虑中，还没有作出决定。",
+                "application": "A larger café is ___ but has not been approved.",
+                "applicationTranslation": "更大的咖啡馆仍在考虑中，尚未获批。",
+                "audio": "audio/foundation/c20-t4-p2-0/15.mp3",
+                "voice": "en-GB-LibbyNeural"
+              }
+            ],
+            "paragraphs": [
+              "The club did not want to replace its old hall completely. Instead, it agreed to a {{renovation}} that would repair the roof and improve the rooms inside. While the work was being done, the teams had to {{relocate}} to a smaller ground nearby.",
+              "It was {{not until}} the changing rooms were finished that the players could return. The first public match was held on the reopening day; {{by then}}, the main building had been checked and was ready for use.",
+              "The club {{subsequently}} added a new stand beside the pitch. A former player was invited to {{inaugurate}} it at a short ceremony before a match. People who had helped raise the money were there to see it open.",
+              "A plan for a larger café is still {{under consideration}}. The club has asked members what they think, but it has not made a final decision. For now, the small café inside the hall will continue to serve visitors."
+            ]
+          }
+        ]
+      }
+    ]
   }
 };
