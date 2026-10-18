@@ -329,7 +329,7 @@ window.RRFoundationPractices = {
         "type": "foundation-context",
         "title": "语境练习",
         "unit": "篇",
-        "instruction": "选词填空。每空单独核对。",
+        "instruction": "选词填空，每篇完成后核对。",
         "items": [
           {
             "id": "daily",
@@ -828,7 +828,7 @@ window.RRFoundationPractices = {
         "type": "foundation-context",
         "title": "语境练习",
         "unit": "篇",
-        "instruction": "选词填空。每空单独核对。",
+        "instruction": "选词填空，每篇完成后核对。",
         "items": [
           {
             "id": "choosing",
@@ -1705,7 +1705,7 @@ window.RRFoundationPractices = {
         "type": "foundation-context",
         "title": "语境练习",
         "unit": "篇",
-        "instruction": "选词填空。每空单独核对。",
+        "instruction": "选词填空，每篇完成后核对。",
         "items": [
           {
             "id": "collection",
@@ -2886,7 +2886,7 @@ window.RRFoundationPractices = {
         "type": "foundation-context",
         "title": "语境练习",
         "unit": "篇",
-        "instruction": "选词填空。每空单独核对。",
+        "instruction": "选词填空，每篇完成后核对。",
         "items": [
           {
             "id": "garden",

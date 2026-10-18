@@ -26,7 +26,7 @@ module.exports=(context,root)=>{
     return {id,mode:source.mode,title:base.title,label:'练习 0 · 基础词汇',location:base.location,vocabId:base.vocabId||source.base.replace(/-1$/,''),coreWords:base.coreWords,selfPaced:true,
       sections:[
         {id:id+'-learning',type:'foundation',title:'基础词汇',unit:'项',instruction:'',items:terms,groups:source.groups.map(g=>g.map(w=>terms.find(t=>t.english===w).id))},
-        {id:id+'-contexts',type:'foundation-context',title:'语境练习',unit:'篇',instruction:'选词填空。每空单独核对。',items:passages.map(p=>({...p,words:p.words.map(w=>terms.find(t=>t.english===w))}))}
+        {id:id+'-contexts',type:'foundation-context',title:'语境练习',unit:'篇',instruction:'选词填空，每篇完成后核对。',items:passages.map(p=>({...p,words:p.words.map(w=>terms.find(t=>t.english===w))}))}
       ]
     };
   });
