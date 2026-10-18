@@ -2,7 +2,7 @@
   const {el, button} = RRUI;
   const $ = selector => document.querySelector(selector);
   const mode = document.body.dataset.mode === 'reading' ? 'reading' : 'listening';
-  const library = mode === 'reading' ? window.RRReadingPractices : window.RRListeningPractices;
+  const library = window.RRFoundationPractices || (mode === 'reading' ? window.RRReadingPractices : window.RRListeningPractices);
   const id = new URLSearchParams(location.search).get('id') || Object.keys(library)[0];
   const practice = library[id];
   if (!practice) {
@@ -25,6 +25,7 @@
     const questions = el('div', 'questions');panel.append(questions);
     const controller = RRQuestionTypes[section.type].render(section, questions);
     controllers.push(controller);
+    questions.addEventListener('rr:answer-check',()=>autoSave(controllers.map(c=>c.getResult())));
     const score = el('span', 'section-score');score.setAttribute('role', 'status');
     score.hidden = true;sectionScores.push(score);
     panel.append(score);$('#sections').append(panel);
@@ -42,7 +43,7 @@
     summary.textContent = results.map(result => `${result.title} ${result.correct}/${result.total}${result.type === 'signal' ? `（多标 ${result.falsePositives} 处）` : ''}`).join(' · ');
     autoSave(results);
   });
-  submitArea.append(checkPractice, summary);$('#sections').after(submitArea);
+  if(!practice.selfPaced){submitArea.append(checkPractice, summary);$('#sections').after(submitArea);}
 
   const storageKey = mode === 'reading' ? 'rr:reading:records:v1' : 'rr:listening:records:v2';
   let activeRecordId = null, selectedRecord = null;
@@ -88,7 +89,12 @@
       detail.append(el('h4', '', `${section.title} · ${section.correct}/${section.total}${section.type === 'signal' ? ` · 多标 ${section.falsePositives}` : ''}`));
       section.details.forEach((item, index) => {
         const box = el('div', 'record-question');box.append(el('strong', '', `${index + 1}. ${item.question}`));
-        if (section.type.startsWith('reading-')) {
+        if (section.type==='foundation') {
+          box.append(el('p','',`作答：${item.response||'尚未核对'} · 对应表达：${item.expected}`));
+          if(item.context)box.append(el('p','',item.context));
+          if(item.chinese)box.append(el('p','',item.chinese));
+          if(item.attempts?.length)box.append(el('p','',`核对 ${item.attempts.length} 次；含提示 ${item.attempts.filter(a=>a.hinted).length} 次`));
+        } else if (section.type.startsWith('reading-')) {
           if(item.context)box.append(el('p','',item.context));
           box.append(el('p','',`作答：${item.responseText||item.response||'未作答'}`),el('p','',`对应答案：${item.expectedText||item.expected}`));
           if(item.explanation)box.append(el('p','',item.explanation));

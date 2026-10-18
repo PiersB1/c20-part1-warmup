@@ -42,8 +42,8 @@ const {chromium}=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-pri
   const home=pathToFileURL(path.join(root,'index.html')).href;
   await page.goto(home);assert.equal(await page.locator('a.available').count(),48);
   await page.locator('[data-mode="reading"]').click();assert.equal(await page.locator('a.available').count(),2);
-  await page.locator('a.available[href*="book=21&test=1&part=1"]').click();assert.equal(await page.locator('.practice').count(),2);
-  await page.locator('.practice').first().click();await page.locator('.sentence-card').first().waitFor();
+  await page.locator('a.available[href*="book=21&test=1&part=1"]').click();assert.equal(await page.locator('.practice').count(),3);
+  await page.locator('.practice[href="reading.html?id=c21-r-t1-p1-1"]').click();await page.locator('.sentence-card').first().waitFor();
   assert.equal(await page.locator('.quiz-card').count(),22);assert.equal(await page.locator('.sentence-card').count(),6);
   assert.equal(await page.locator('#check-practice').count(),1);assert.equal(await page.locator('.feedback:visible').count(),0);
   assert.equal(await page.locator('audio').count(),0);

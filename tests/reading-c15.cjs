@@ -45,7 +45,7 @@ const {chromium}=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-pri
  try{
   const page=await browser.newPage({viewport:{width:1260,height:920},acceptDownloads:true}),errors=[];page.on('pageerror',e=>errors.push(e.message));
   const home=pathToFileURL(path.join(root,'index.html')).href;
-  await page.goto(home+'?mode=reading');await page.locator('a.available[href*="book=15&test=4&part=1"]').click();assert.equal(await page.locator('.practice').count(),2);await page.locator('.practice').first().click();
+  await page.goto(home+'?mode=reading');await page.locator('a.available[href*="book=15&test=4&part=1"]').click();assert.equal(await page.locator('.practice').count(),3);await page.locator('.practice[href="reading.html?id=c15-r-t4-p1-1"]').click();
   await page.locator('#check-practice').waitFor();assert.equal(await page.locator('#check-practice').count(),1);assert.equal(await page.locator('.feedback:visible').count(),0);
   await page.locator('#check-practice').click();assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem('rr:reading:records:v1')||'[]').length),0);
   await page.reload();

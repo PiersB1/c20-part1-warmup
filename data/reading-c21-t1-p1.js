@@ -7,7 +7,7 @@
   const vocab=[
     ['The archive has amassed a substantial collection of exhibition posters without buying a complete collection from any single owner.\n这里 amassed 的意思是？',['逐步积累了','一次性继承了','完整记录了','公开展出了'],'逐步积累了','amass 强调逐步积累大量事物，不限定获得方式，也不等于编目或展出。'],
     ['The trust inherited a group of ceramic panels under the maker’s will, rather than negotiating a purchase with the family.\n这里 inherited 的意思是？',['依遗嘱继承了','受委托临时保管了','经谈判收购了','经鉴定确认了'],'依遗嘱继承了','inherit 在这里指原所有者去世后依遗嘱承接所有权，不是借展或购买。'],
-    ['The foundation’s philanthropic programme pays for free conservation advice for small community museums.\n这里 philanthropic 最接近？',['以公共福祉为目的的','以推广基金会品牌为首要目的的','只为提高藏品价值服务的','专门评估资助回报率的'],'以公共福祉为目的的','philanthropic 指促进他人福祉、具有慈善性质；获得宣传效果不等于项目的主要目的。'],
+    ['The foundation’s philanthropic programme pays for free conservation advice for small community museums.\n这里 philanthropic 最接近？',['以帮助他人、做公益为目的的','以推广基金会品牌为首要目的的','只为提高藏品价值服务的','专门评估资助回报率的'],'以帮助他人、做公益为目的的','philanthropic 指帮助他人、做慈善；项目可能得到宣传，但这不等于宣传就是它的主要目的。'],
     ['The introductory course is geared towards helping volunteers recognise damage, rather than training them to carry out repairs.\n这里 geared towards 的意思是？',['围绕某项目标设计','只允许某类人参加','已被证明能够保证','在完成某项目标后结束'],'围绕某项目标设计','geared towards 说明设计方向；不保证学习结果，也不是报名资格。'],
     ['After several unsuccessful bids, the committee secured a rare exhibition screen from a private seller.\n这里 secured 的意思是？',['成功取得了','确认了真伪','妥善固定了','获得了临时查看许可'],'成功取得了','secure 在竞购语境中是成功获得；不能只套用“固定、使安全”的词义。'],
     ['A permanent climate-control system remained beyond the society’s means, even though members recognised its value.\n这里 beyond the society’s means 表示？',['超出了协会的财力','超出了协会的管理权限','不符合协会的收藏方向','没有达到协会的技术要求'],'超出了协会的财力','means 在这里指财力、经济资源；认识到价值不代表支付得起。'],
@@ -16,7 +16,7 @@
     ['Small donations supplied the bulk of the restoration budget; a single commercial sponsor contributed the remainder.\n这里 the bulk of 表示？',['……的大部分','……的全部','……中最大的一笔单项款','……的固定最低额度'],'……的大部分','bulk 指总体中的主要部分，不等于全部或最大一笔单独捐款。'],
     ['The emergency fund had a humanitarian purpose: it helped displaced craft workers obtain temporary accommodation.\n这里 humanitarian 的重点是？',['减轻人的困境与苦难','保存具有历史价值的工艺','补偿工坊的全部经营损失','促进手工制品进入市场'],'减轻人的困境与苦难','humanitarian 的对象是人的福祉。工匠身份并不把目的变成工艺保护或商业推广。'],
     ['The north and south rooms were allocated to textiles and ceramics respectively.\n正确的对应关系是？',['北室—纺织品；南室—陶瓷','北室—陶瓷；南室—纺织品','两室都同时展出这两类物品','两类物品按面积大小分配，位置未说明'],'北室—纺织品；南室—陶瓷','respectively 让前后两组按原次序逐项对应，不能倒置。'],
-    ['The club’s legacy was a lasting habit of public discussion, not merely the objects it left in storage.\n这里 legacy 指？',['长期留下的影响与传承','尚未处理的库存','必须履行的捐赠条件','物品目前的估价'],'长期留下的影响与传承','legacy 可以指文化与社会影响，不限于实物遗产或金钱。'],
+    ['The club’s legacy was a lasting habit of public discussion, not merely the objects it left in storage.\n这里 legacy 指？',['留给后人的影响','尚未处理的库存','必须履行的捐赠条件','物品目前的估价'],'留给后人的影响','legacy 可以指文化与社会影响，不限于实物遗产或金钱。'],
     ['Despite working far from established centres, the maker became an unlikely pioneer of a technique later adopted by much larger studios.\n这里 unlikely pioneer 最准确地表示？',['出人意料地开拓新技法的人','被广泛预期会率先采用技法的人','尚无法确认是否曾领先的人','提出新技法却没有实施的人'],'出人意料地开拓新技法的人','unlikely修饰pioneer，强调成为开拓者出人意料，不是否定其先驱地位。'],
     ['The catalogue contrasts the designer’s formal training with an upbringing in a household where damaged possessions were routinely repaired.\n这里 upbringing 指？',['家庭成长环境中的教养','从事职业之前的正式训练','成年之后形成的专业资格','对旧物修复方法的独立研究'],'家庭成长环境中的教养','upbringing与formal training在此形成对照，不能把家庭成长过程当成正式职业培训。'],
     ['The archive’s isolation became a problem when the only road was closed, although its remote location had previously attracted researchers seeking quiet.\n这里 isolation 指？',['地理位置偏远、与外界联系不便','因管理规则而拒绝公众进入','藏品与其他材料的分类存放','研究者主动避开所有社交活动'],'地理位置偏远、与外界联系不便','isolation由偏远位置和唯一道路中断体现，不是机构主动拒绝来访者。'],
@@ -36,7 +36,7 @@
     ['consideration','careful thought','for consideration 是供认真考虑，不代表已接受。'],
     ['vibrant','lively','vibrant 在活动氛围中指充满活力，不是仅指色彩鲜艳。'],
     ['upheaval','major disruption','upheaval 是较大动荡与扰乱，不是日常的小调整。'],
-    ['trusted circle','a small group relied upon','trusted circle 指信赖的小群体，不是开放给所有人的组织。']
+    ['trusted circle','a small group relied upon','trusted circle 指一小群信得过的人，不是开放给所有人的组织。']
   ];
   const matchingText=[
     'Members could ',{n:0},' an interest in local design without committing themselves to a purchase. A monthly discussion sometimes happened to ',{n:1},' a visiting maker’s demonstration, but the events were organised independently. Unusual proposals were left for ',{n:2},' until the next meeting. The organisers wanted a ',{n:3},' exchange of views rather than a series of formal speeches. Even during the ',{n:4},' caused by the loss of their usual venue, a ',{n:5},' of volunteers kept the programme running and arranged temporary meeting places.'
@@ -116,7 +116,7 @@
   RRAddReadingTopic({
     id:'c21-r-t1-p1',location:{book:21,test:1,part:1},title:'艺术收藏与公共文化',
     focus:'艺术收藏语境中的核心词汇与改写；让步、限制、指代和观点归属；单词笔记填空；TRUE/FALSE/NOT GIVEN的证据边界。原创情境与事实顺序独立于真题。',
-    coreWords:[['amass','逐步积累大量藏品'],['inherit','继承遗产或藏品'],['inheritance','继承所得的财产'],['upbringing','成长过程中的家庭教养'],['philanthropic','以促进他人福祉为目的的；慈善性质的'],['pursuit','投入从事的活动或兴趣'],['geared towards','围绕……目标设计的'],['extensively','广泛地；在较大范围内'],['coincide with','与……同期发生'],['secure','成功取得'],['beyond one’s means','超出某人的财力'],['relatively','相对地；比较而言'],['contemporary','同时代的；当代的'],['champion','积极倡导或支持'],['have a hand in','参与；对……发挥作用'],['the bulk of','……的大部分'],['finance','为……提供资金'],['humanitarian','旨在减轻人类苦难的；人道主义的'],['vibrant','充满活力的'],['numerous','数量很多的'],['acquire','取得；获得所有权'],['unlikely','出人意料的；不太可能的'],['pioneer','先驱；开拓者'],['isolation','与外界接触较少的状态'],['feel obliged to','觉得有义务或不得不做'],['trusted circle','信赖的小群体'],['for consideration','供认真考虑或审议'],['exclusively','仅仅；专门地'],['upheaval','较大的动荡或扰乱'],['respectively','按前述次序分别地'],['legacy','长期留下的文化影响与传承'],['institution','机构'],['conservation','对藏品的保护与维护'],['ownership','所有权'],['on loan','借出或借入而未转移所有权'],['subscription','会员认捐或缴纳的款项']],
+    coreWords:[['amass','逐渐积累大量藏品'],['inherit','继承遗产或藏品'],['inheritance','继承所得的财产'],['upbringing','家庭教养；成长环境'],['philanthropic','慈善的；为他人做好事的'],['pursuit','爱好；投入从事的活动'],['geared towards','为……设计的；面向……的'],['extensively','广泛地；在较大范围内'],['coincide with','与……同时发生'],['secure','成功取得'],['beyond one’s means','买不起；超出某人的经济能力'],['relatively','相对地；比较而言'],['contemporary','同时代的；当代的'],['champion','积极倡导或支持'],['have a hand in','参与；对……发挥作用'],['the bulk of','……的大部分'],['finance','为……提供资金'],['humanitarian','人道主义的（帮助受苦、受难的人）'],['vibrant','充满活力的'],['numerous','数量很多的'],['acquire','取得；获得所有权'],['unlikely','出人意料的；不太可能的'],['pioneer','先驱；开拓者'],['isolation','与外界隔绝；缺少联系'],['feel obliged to','觉得有义务或不得不做'],['trusted circle','一小群信得过的人'],['for consideration','供考虑；交给有关人员讨论决定'],['exclusively','仅仅；专门地'],['upheaval','较大的动荡或扰乱'],['respectively','分别地（前后按同一顺序对应）'],['legacy','留给后人的文化影响'],['institution','机构'],['conservation','藏品保护与维护'],['ownership','所有权'],['on loan','借展中的；借用中的（仍归原主人所有）'],['subscription','会费；会员缴纳的款项']],
     practices:[
       [
         {id:'reading-vocabulary',type:'quiz',unit:'题',title:'语境词义',instruction:'结合英文语境选择最准确的含义。',items:vocab},

@@ -456,7 +456,7 @@ options:`负责核算所有工资的人|仅负责招聘面试的人|与新员工
 员工每周轮班的时间表|公司全部货物的库存表|对工作能力进行评分的表
 上班时可自行挑选的便服|只在清洁工作时使用的手套|商店向顾客出售的服装
 试用期结束的正式评估|每周重复举行的销售会议|员工自行研究的业务资料
-员工的固定工资标准|商品按日期排列的库存|顾客预约提货的清单
+员工的工资标准|商品按日期排列的库存|顾客预约提货的清单
 只把已有商品移到另一层|撤下所有接近到期的货物|记录已售商品但不补充
 产品最早到货的日期|最后一次检查商品的时间|顾客购买后的保修期限`,
 grammar:[['Use the equipment only after you ___ trained.（have been / have）','have been','先受训再使用，完成被动不能漏听。','Enter the controlled area only when you ___ authorised.'],['Check dates before ___ the shelf.（replenishing / replenished）','replenishing','补货前核查日期，动名词形式。','Inspect the remaining stock before ___ the display.']],

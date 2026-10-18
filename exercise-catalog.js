@@ -1,5 +1,16 @@
 window.RRExerciseCatalog = [
   {
+    "id": "c21-r-t1-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 21,
+    "test": 1,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "艺术收藏与公共文化 · 分组学习 · 换语境应用 · 回忆与短文填词",
+    "url": "foundation.html?id=c21-r-t1-p1-0"
+  },
+  {
     "id": "c21-r-t1-p1-1",
     "mode": "reading",
     "book": 21,
@@ -100,6 +111,17 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c20-t1-p4-2"
   },
   {
+    "id": "c20-t2-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 2,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "照护者支持咨询 · 分组学习 · 换语境应用 · 回忆与短文填词",
+    "url": "foundation.html?id=c20-t2-p1-0"
+  },
+  {
     "id": "c20-t2-p1-1",
     "mode": "listening",
     "book": 20,
@@ -178,6 +200,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "食品潮流与营销 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c20-t2-p4-2"
+  },
+  {
+    "id": "c20-t3-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 3,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "家具租赁咨询 · 分组学习 · 换语境应用 · 回忆与短文填词",
+    "url": "foundation.html?id=c20-t3-p1-0"
   },
   {
     "id": "c20-t3-p1-1",
@@ -486,7 +519,7 @@ window.RRExerciseCatalog = [
     "test": 2,
     "part": 4,
     "title": "练习 1 · 词汇与句子听写",
-    "description": "缓步动物与隐生状态 · 词汇与表达 · 听句子填空",
+    "description": "缓步动物与隐生状态（生命活动几乎暂停） · 词汇与表达 · 听句子填空",
     "url": "listening.html?id=c19-t2-p4-1"
   },
   {
@@ -496,7 +529,7 @@ window.RRExerciseCatalog = [
     "test": 2,
     "part": 4,
     "title": "练习 2 · 定位与同义替换",
-    "description": "缓步动物与隐生状态 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "description": "缓步动物与隐生状态（生命活动几乎暂停） · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c19-t2-p4-2"
   },
   {
@@ -978,6 +1011,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "作家故居与创作生活 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c18-t4-p4-2"
+  },
+  {
+    "id": "c15-r-t4-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 15,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "乡土植物与生态恢复 · 分组学习 · 换语境应用 · 回忆与短文填词",
+    "url": "foundation.html?id=c15-r-t4-p1-0"
   },
   {
     "id": "c15-r-t4-p1-1",

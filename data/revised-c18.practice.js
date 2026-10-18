@@ -89,7 +89,7 @@ options:`按时间保存的全部草稿|给客户使用的项目说明书|学校
 有较高艺术价值的|只供专业人士使用的|能免费向公众提供的
 服装生产制造环节|设计师间的作品交流|向商店批量供应货品`,
 grammar:[['Lena agrees about the variety, ___ not about the timing.（but / so）','but','同意范围有限，不能据此判断两人全面一致。','They approve of the placement, ___ disagree about when to apply.'],['It was the source of the advice ___ she questioned.（that / what）','that','强调句锁定被批评的方面。','It was the choice of adviser ___ the students challenged.']],
-words:[['keep an open mind','暂不预设结论'],['take criticism on board','听取并考虑批评'],['be prepared for','对……有心理准备']],
+words:[['keep an open mind','保持开放的心态，不急着下结论'],['take criticism on board','听取并考虑批评'],['be prepared for','对……有心理准备']],
 locators:`Why was {the opening} demonstration [hard to see|1]?~{The first design} was [not clearly visible|1] from her seat because {a pillar} blocked {the view}.~hard to see 对应 not clearly visible，视觉障碍不是听不清。
 What [surprised|1] both students about {the career} options?~They [had not anticipated|1] such {a range} of jobs outside clothing design.~surprised 对应 had not anticipated，必须保留未曾预料的否定关系。
 What is the students' shared [criticism|1] of the guest speaker?~We both felt his comments about beginners were [too dismissive|1].~criticism 由具体负面评价 too dismissive 实现。

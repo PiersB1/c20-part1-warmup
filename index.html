@@ -14,7 +14,7 @@
     <div id="books" class="books"></div>
   </main>
   <dialog class="favorites-dialog" id="favorites-dialog" aria-labelledby="favorites-title"><div class="dialog-head"><h2 id="favorites-title">收藏的词汇</h2><button type="button" id="close-favorites" aria-label="关闭">×</button></div><div class="favorite-list" id="favorite-list"></div></dialog>
-  <script src="core-vocab.js"></script>
+  <script src="data/vocab-meanings.js"></script><script src="core-vocab.js"></script>
   <script src="exercise-catalog.js"></script>
   <script>
     const books=document.querySelector('#books');let mode=new URLSearchParams(location.search).get('mode')==='reading'?'reading':'listening';

@@ -30,7 +30,7 @@ window.RRVocab = (() => {
   function getFavorites() {
     try {
       const data = JSON.parse(localStorage.getItem(storageKey) || '[]');
-      return Array.isArray(data) ? data : [];
+      return Array.isArray(data) ? data.map(word=>window.RRVocabMeanings?.[word.id]?{...word,chinese:window.RRVocabMeanings[word.id]}:word) : [];
     } catch { return []; }
   }
   function toggleFavorite(word) {

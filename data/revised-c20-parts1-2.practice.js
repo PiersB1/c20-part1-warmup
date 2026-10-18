@@ -20,7 +20,7 @@ options:`正式保证每人都会满意|替顾客直接完成预订|只说明餐
 整桌所有菜品的总量|菜谱规定的全部原料|价格中包含的菜品种类`,
 multi:[['imported','brought from suppliers in another country'],['unavailable','not obtainable at all rather than restricted in range']],
 grammar:[['Lunch is cheaper, ___ the evening menu includes more courses.（whereas / unless）','whereas','区分两时段的价格和包含项目。','The terrace is quiet at noon, ___ the dining room is busier after work.'],['The deposit is refundable ___ notice is given in time.（provided that / even though）','provided that','退款受提前通知条件限制。','A reserved table can be changed ___ the restaurant has enough space.']],
-words:[['a good choice of','有较多种类可选'],['within a short distance','在不远的范围内']],
+words:[['a good choice of','有较多种类可选'],['within a short distance','在不远处']],
 locators:`The [principal|1] reason for recommending the {station café} is its ___ .~It is convenient, but I [mainly|1] recommend it for the {relaxed service}.~principal 对应 mainly，方便只是附带信息。
 At the {smaller restaurant}, guests [awaiting|1] {a table} can use the ___ .~{The courtyard} shelters people [waiting for|1] {their table}, even if it rains.~awaiting 对应 waiting for，而非已经入座。
 The [sharing plates|1] at Willow Kitchen mainly feature ___ .~The [dishes for several diners|1] mostly contain seasonal vegetables {rather than} meat.~sharing plates 对应 dishes for several diners。
@@ -97,7 +97,7 @@ The tutor will explain how to label any unfinished work before the group leaves.
 });
 R(2,1,{
 coverage:'照护任务与时长；帮助和接管区分；日常困难及原因；费用与报销范围；具体支持不等于自动获批。',
-words:[['involve','涉及、需要承担'],['a lack of','缺少'],['cope with','应对'],['on behalf of','替某人办理']],
+words:[['involve','涉及、需要承担'],['a lack of','缺少'],['cope with','应对'],['on behalf of','代表某人；替某人办理']],
 quizContexts:`The family ___ regularly supports a relative at home.
 The ___ explores what the household needs before a plan is suggested.
 A short period of ___ temporarily releases the usual helper from duties.
@@ -116,7 +116,7 @@ options:`只在机构提供医疗的专业人员|只支付家庭费用的人|偶
 尚未付款的费用账单|按估算列出的支出计划|服务申请已通过的通知`,
 multi:[['approved','formally accepted rather than merely meeting application conditions'],['fully dependent','needing another person to take over each task']],
 grammar:[['She manages some tasks herself, ___ others require support.（while / because）','while','区分能自理和需协助的任务，不概括为全部依赖。','The morning routine is manageable, ___ the evening duties are more demanding.'],['Travel costs can be repaid only ___ they were agreed beforehand.（if / despite）','if','报销有预先认可条件，不包括所有支出。','The arrangement can continue ___ the review confirms the same need.']],
-locators:`[Temporary cover|1] gives the usual carer time for ___ .~[Short-term replacement help|1] lets the {regular carer} attend {an evening class}.~temporary cover 对应短期替代照护，不是长期取消原安排。
+locators:`[Temporary cover|1] gives the usual carer time for ___ .~[Short-term replacement help|1] lets the {regular carer} attend {an evening class}.~temporary cover指有人临时接手照护，让平时照顾家人的人腾出时间，不是永久替换原有安排。
 The [assessment|1] asks how long ordinary ___ tasks take.~During the [needs review|1], {the adviser} asks how long ordinary support tasks take.~assessment 对应 needs review，评估内容为照护时间。
 One task involves [assisting|1] {the relative} with ___ .~She needs somebody [helping|1] her when getting ready to leave the bedroom.~assisting 与 helping，具体任务另听。
 The carer [handles|1] correspondence for her aunt each ___ .~She [deals with|1] {the regular letters} for her aunt each weekend.~handles 对应 deals with；代办对象是姨妈的来信，频率另听。
