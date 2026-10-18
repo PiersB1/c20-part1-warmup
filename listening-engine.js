@@ -1,8 +1,10 @@
 (() => {
   const {el, button} = RRUI;
   const $ = selector => document.querySelector(selector);
-  const id = new URLSearchParams(location.search).get('id') || Object.keys(window.RRListeningPractices)[0];
-  const practice = window.RRListeningPractices[id];
+  const mode = document.body.dataset.mode === 'reading' ? 'reading' : 'listening';
+  const library = mode === 'reading' ? window.RRReadingPractices : window.RRListeningPractices;
+  const id = new URLSearchParams(location.search).get('id') || Object.keys(library)[0];
+  const practice = library[id];
   if (!practice) {
     $('#practice-title').textContent = '没有找到这个练习';
     $('#back-link').textContent = '← 返回主页';
@@ -11,14 +13,14 @@
   }
   document.title = `${practice.title} · ${practice.label}`;
   $('#practice-title').textContent = practice.title;
-  $('#practice-label').textContent = `C${practice.location.book} · Test ${practice.location.test} · Part ${practice.location.part} · ${practice.label}`;
-  $('#back-link').href = `select.html?mode=listening&book=${practice.location.book}&test=${practice.location.test}&part=${practice.location.part}`;
+  $('#practice-label').textContent = `C${practice.location.book} · Test ${practice.location.test} · ${mode==='reading'?'Passage':'Part'} ${practice.location.part} · ${practice.label}`;
+  $('#back-link').href = `select.html?mode=${mode}&book=${practice.location.book}&test=${practice.location.test}&part=${practice.location.part}`;
   const controllers = [];
   const sectionScores = [];
   practice.sections.forEach((section, index) => {
     const panel = el('section', 'practice-section');panel.id = section.id;
     const heading = el('div', 'section-heading');
-    heading.append(el('h2', '', `${String(index + 1).padStart(2, '0')} · ${section.title}`), el('small', '', `${section.items.length} ${['locator','quiz','dictation','route'].includes(section.type) ? '题' : '段'}`));
+    heading.append(el('h2', '', `${String(index + 1).padStart(2, '0')} · ${section.title}`), el('small', '', `${section.items.length} ${section.unit||(['locator','quiz','dictation','route'].includes(section.type) ? '题' : '段')}`));
     panel.append(heading, el('p', 'instruction', section.instruction));
     const questions = el('div', 'questions');panel.append(questions);
     const controller = RRQuestionTypes[section.type].render(section, questions);
@@ -42,7 +44,7 @@
   });
   submitArea.append(checkPractice, summary);$('#sections').after(submitArea);
 
-  const storageKey = 'rr:listening:records:v2';
+  const storageKey = mode === 'reading' ? 'rr:reading:records:v1' : 'rr:listening:records:v2';
   let activeRecordId = null, selectedRecord = null;
   function getAllRecords() {
     try {const value = JSON.parse(localStorage.getItem(storageKey) || '[]');return Array.isArray(value) ? value : [];}
@@ -50,11 +52,12 @@
   }
   function getRecords() {return getAllRecords().filter(record => record.practiceId === practice.id);}
   function hasActivity(sections) {
+    const filled=value=>Array.isArray(value)?value.some(filled):value&&typeof value==='object'?Object.values(value).some(filled):typeof value==='string'?Boolean(value.trim()):Boolean(value);
     return sections.some(section => section.details.some(detail => {
       if (section.type === 'locator') return detail.response.question.length || detail.response.source.length;
       if (section.type === 'signal') return detail.played || detail.response.length;
       if (section.type === 'route') return detail.played || detail.response.path.length > 1;
-      return Array.isArray(detail.response) ? detail.response.length : Boolean(detail.response);
+      return filled(detail.response);
     }));
   }
   function autoSave(sections) {
@@ -65,7 +68,7 @@
         schemaVersion: 2, id: existing?.id || `${Date.now()}-${Math.random().toString(36).slice(2,8)}`,
         completedAt: existing?.completedAt || now, updatedAt: now,
         practiceId: practice.id, practiceTitle: practice.title, practiceLabel: practice.label,
-        location: practice.location, sections
+        location: practice.location, mode, sections
       };
       const index = records.findIndex(item => item.id === record.id);
       if (index >= 0) records.splice(index, 1);
@@ -85,7 +88,12 @@
       detail.append(el('h4', '', `${section.title} · ${section.correct}/${section.total}${section.type === 'signal' ? ` · 多标 ${section.falsePositives}` : ''}`));
       section.details.forEach((item, index) => {
         const box = el('div', 'record-question');box.append(el('strong', '', `${index + 1}. ${item.question}`));
-        if (section.type === 'locator') {
+        if (section.type.startsWith('reading-')) {
+          if(item.context)box.append(el('p','',item.context));
+          box.append(el('p','',`作答：${item.responseText||item.response||'未作答'}`),el('p','',`对应答案：${item.expectedText||item.expected}`));
+          if(item.explanation)box.append(el('p','',item.explanation));
+          if(item.translation)box.append(el('p','',`句意：${item.translation}`));
+        } else if (section.type === 'locator') {
           if (item.response.pairs) {
             box.append(el('p', '', `你的配对：${item.response.pairs.map(p=>`${p.number}. ${p.question} ↔ ${p.source}${p.correct?' ✓':' ×'}`).join('；') || '未配对'}`));
             if(item.response.pending)box.append(el('p','',`未完成：${item.response.pending.text}`));

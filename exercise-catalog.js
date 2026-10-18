@@ -1,5 +1,25 @@
 window.RRExerciseCatalog = [
   {
+    "id": "c21-r-t1-p1-1",
+    "mode": "reading",
+    "book": 21,
+    "test": 1,
+    "part": 1,
+    "title": "练习 1",
+    "description": "艺术收藏与公共文化 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c21-r-t1-p1-1"
+  },
+  {
+    "id": "c21-r-t1-p1-2",
+    "mode": "reading",
+    "book": 21,
+    "test": 1,
+    "part": 1,
+    "title": "练习 2",
+    "description": "艺术收藏与公共文化 · 定位与证据 · 信息一致性判断 · 笔记填空",
+    "url": "reading.html?id=c21-r-t1-p1-2"
+  },
+  {
     "id": "c20-t1-p1-1",
     "mode": "listening",
     "book": 20,
@@ -958,5 +978,25 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "作家故居与创作生活 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c18-t4-p4-2"
+  },
+  {
+    "id": "c15-r-t4-p1-1",
+    "mode": "reading",
+    "book": 15,
+    "test": 4,
+    "part": 1,
+    "title": "练习 1",
+    "description": "乡土植物与生态恢复 · 语境词汇 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c15-r-t4-p1-1"
+  },
+  {
+    "id": "c15-r-t4-p1-2",
+    "mode": "reading",
+    "book": 15,
+    "test": 4,
+    "part": 1,
+    "title": "练习 2",
+    "description": "乡土植物与生态恢复 · 定位与证据 · 信息一致性判断 · 笔记填空 · 表格填空",
+    "url": "reading.html?id=c15-r-t4-p1-2"
   }
 ];

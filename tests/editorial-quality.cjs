@@ -1,6 +1,6 @@
 const fs=require('fs'),path=require('path'),assert=require('assert');
 const c=require('./load-library.cjs')(),norm=t=>t.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim(),txt=a=>a.map(t=>typeof t==='string'?t:t.text).join(' ');
-assert.equal(c.RRExerciseCatalog.length,96);assert.equal(c.RRPreparedTopics.length,48);assert.equal(c.RRRevisionCoverage.length,48);
+assert.equal(c.RRExerciseCatalog.filter(p=>p.mode==='listening').length,96);assert.equal(c.RRPreparedTopics.length,48);assert.equal(c.RRRevisionCoverage.length,48);
 const bad=new Set(['on','been','have','and','if','was','from','before','until','into','to','in','at','by','of','for','with']);
 const grammar=new Set(),explanations=new Set(),cuePatterns=new Set();let locators=0,paragraphs=0,signals=0;
 for(const topic of c.RRRevisionCoverage){

@@ -2,7 +2,7 @@ const fs=require('fs'),path=require('path'),vm=require('vm'),assert=require('ass
 const root=path.resolve(__dirname,'..'),context={};context.window=context;vm.createContext(context);
 const files=['data/listening-practices.js','data/practice-builders.js','data/preparation-builders.js','data/editorial-multi.js','data/editorial-quiz-context.js','data/editorial-signal-context.js','data/editorial-revisions.js',...fs.readdirSync(path.join(root,'data')).filter(n=>n.endsWith('.practice.js')).sort().map(n=>`data/${n}`),'data/audio-timings.js','exercise-catalog.js'];
 files.forEach(file=>vm.runInContext(fs.readFileSync(path.join(root,file),'utf8'),context,{filename:file}));
-assert.equal(context.RRPreparedTopics.length,48);assert.equal(context.RRExerciseCatalog.length,96);assert.equal(Object.keys(context.RRListeningPractices).length,96);
+assert.equal(context.RRPreparedTopics.length,48);assert.equal(context.RRExerciseCatalog.filter(p=>p.mode==='listening').length,96);assert.equal(Object.keys(context.RRListeningPractices).length,96);
 const books=[20,19,18],missing=[],full=process.argv.includes('--audio');let tasks=0,audio=0,maps=0,dialogues=0;
 for(const book of books)for(let test=1;test<=4;test++)for(let part=1;part<=4;part++){
  const base=`c${book}-t${test}-p${part}`;

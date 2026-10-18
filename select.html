@@ -10,6 +10,7 @@
 <script src="exercise-catalog.js"></script>
 <script>
   const p=new URLSearchParams(location.search);const mode=p.get('mode'),book=Number(p.get('book')),test=Number(p.get('test')),part=Number(p.get('part'));
+  if(mode==='reading')document.querySelector('.back').href='index.html?mode=reading';
   const valid=['listening','reading'].includes(mode)&&Number.isInteger(book)&&book>=4&&book<=21&&Number.isInteger(test)&&test>=1&&test<=4&&Number.isInteger(part)&&part>=1&&part<=(mode==='listening'?4:3);
   const list=document.querySelector('#practice-list');
   if(!valid){document.querySelector('#title').textContent='没有找到这一项';document.querySelector('#subtitle').textContent='请从目录重新选择。'}
