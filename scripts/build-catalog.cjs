@@ -5,7 +5,7 @@ for(const id of Object.keys(context.RRTopicSeeds))if(!context.RRListeningPractic
 const practices=Object.values(context.RRListeningPractices).map(item=>({id:item.id,mode:'listening',book:item.location.book,test:item.location.test,part:item.location.part,title:item.label,description:item.title+' · '+item.sections.map(s=>s.title).join(' · '),url:`listening.html?id=${item.id}`}));
 for(const name of ['reading-practices.js',...fs.readdirSync(path.join(root,'data')).filter(name=>/^reading-c\d.*\.js$/.test(name)).sort()])vm.runInContext(fs.readFileSync(path.join(root,'data',name),'utf8'),context,{filename:name});
 practices.push(...Object.values(context.RRReadingPractices).map(item=>({id:item.id,mode:'reading',book:item.location.book,test:item.location.test,part:item.location.part,title:item.label,description:item.title+' · '+item.sections.map(s=>s.title).join(' · '),url:`reading.html?id=${item.id}`})));
-practices.push(...require('./foundation-library.cjs')(context,root).map(item=>({id:item.id,mode:item.mode,foundation:true,book:item.location.book,test:item.location.test,part:item.location.part,title:item.label,description:item.title+' · 分组学习 · 换语境应用 · 回忆与短文填词',url:`foundation.html?id=${item.id}`})));
+practices.push(...require('./foundation-library.cjs')(context,root).map(item=>({id:item.id,mode:item.mode,foundation:true,book:item.location.book,test:item.location.test,part:item.location.part,title:item.label,description:item.title+' · 词汇与语境',url:`foundation.html?id=${item.id}`})));
 const entries=practices.sort((a,b)=>b.book-a.book||a.test-b.test||a.part-b.part||a.id.localeCompare(b.id));
 fs.writeFileSync(path.join(root,'exercise-catalog.js'),'window.RRExerciseCatalog = '+JSON.stringify(entries,null,2)+';\n');
 const meanings={};

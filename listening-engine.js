@@ -21,7 +21,7 @@
     const panel = el('section', 'practice-section');panel.id = section.id;
     const heading = el('div', 'section-heading');
     heading.append(el('h2', '', `${String(index + 1).padStart(2, '0')} · ${section.title}`), el('small', '', `${section.items.length} ${section.unit||(['locator','quiz','dictation','route'].includes(section.type) ? '题' : '段')}`));
-    panel.append(heading, el('p', 'instruction', section.instruction));
+    panel.append(heading);if(section.instruction)panel.append(el('p', 'instruction', section.instruction));
     const questions = el('div', 'questions');panel.append(questions);
     const controller = RRQuestionTypes[section.type].render(section, questions);
     controllers.push(controller);
@@ -89,11 +89,11 @@
       detail.append(el('h4', '', `${section.title} · ${section.correct}/${section.total}${section.type === 'signal' ? ` · 多标 ${section.falsePositives}` : ''}`));
       section.details.forEach((item, index) => {
         const box = el('div', 'record-question');box.append(el('strong', '', `${index + 1}. ${item.question}`));
-        if (section.type==='foundation') {
+        if (section.type==='foundation'||section.type==='foundation-context') {
           box.append(el('p','',`作答：${item.response||'尚未核对'} · 对应表达：${item.expected}`));
           if(item.context)box.append(el('p','',item.context));
           if(item.chinese)box.append(el('p','',item.chinese));
-          if(item.attempts?.length)box.append(el('p','',`核对 ${item.attempts.length} 次；含提示 ${item.attempts.filter(a=>a.hinted).length} 次`));
+          if(item.attempts?.length)box.append(el('p','',`核对 ${item.attempts.length} 次`));
         } else if (section.type.startsWith('reading-')) {
           if(item.context)box.append(el('p','',item.context));
           box.append(el('p','',`作答：${item.responseText||item.response||'未作答'}`),el('p','',`对应答案：${item.expectedText||item.expected}`));

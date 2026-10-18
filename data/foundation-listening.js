@@ -20,10 +20,6 @@ RRFoundationSources.push({base:'c20-t2-p1-1',mode:'listening',omitted:['carer','
   ['a lack of','A lack of sleep makes her tired.','缺少睡眠让她很疲倦。','He cannot attend because of ___ transport.','他因为缺少交通工具而无法参加。'],
   ['cope with','We help families cope with sudden changes.','我们帮助家庭应对突发变化。','Can you ___ the extra work on your own?','你能独自应对额外的工作吗？'],
   ['on behalf of','I am calling on behalf of my uncle.','我代叔叔打电话。','She signs the form ___ her father.','她替父亲签署表格。']
-],passageTitle:'A first call to a support centre',passage:[
-  'I am calling {{on behalf of}} a neighbour who looks after his wife. He finds it hard to {{cope with}} every task alone. A recent change has reduced her {{mobility}}, so she now needs {{assistance}} when moving between rooms. There is also {{a lack of}} help nearby.',
-  'The centre offers an {{assessment}} before agreeing a support plan. This will {{involve}} a home visit and a chat about what the family needs. A worker will {{review}} the plan later if things change. Short periods of {{respite}} may give the neighbour time to rest.',
-  'The adviser will check whether the family is {{eligible}} for travel support. The centre may {{reimburse}} money already spent on approved trips. A printed guide is available {{on request}}, so the neighbour does not need a computer to read it.'
 ]});
 RRFoundationSources.push({base:'c20-t3-p1-1',mode:'listening',omitted:['rental','contract','exchange','appliance'],groups:[
   ['rental','quotation','monthly charge','contemporary','inclusive','maintenance'],
@@ -41,7 +37,4 @@ RRFoundationSources.push({base:'c20-t3-p1-1',mode:'listening',omitted:['rental',
   ['up to date','This list is up to date; we checked every price today.','这份清单是最新的，我们今天核对了每个价格。','Keep your address ___ so we can reach you.','及时更新地址，以便我们能联系到你。'],
   ['appliance','A fridge is an appliance used to keep food cool.','冰箱是用于冷藏食物的家用电器。','We need an ___ that can wash our clothes.','我们需要一台可以洗衣服的家用电器。'],
   ['refundable','The booking payment is refundable if you cancel in time.','及时取消，预约款可以退还。','This deposit is ___ if the items come back undamaged.','物品完好归还时，这笔押金可以退还。']
-],passageTitle:'Furnishing a temporary home',passage:[
-  'Two friends need furniture for a temporary home. They ask for a {{quotation}} listing the items and services they have chosen. The {{monthly charge}} needs to fit their budget. They prefer a {{contemporary}} style, with simple shapes and plain colours.',
-  'The price is {{inclusive}} of delivery, but the friends still check the other conditions. The company provides routine {{maintenance}} to keep the items in good condition. Separate {{insurance}} covers the risks listed in the policy. The friends keep their contact details {{up to date}} and ask whether the deposit is {{refundable}} when everything is returned in good condition.'
 ]});

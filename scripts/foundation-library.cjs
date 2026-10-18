@@ -2,6 +2,7 @@ const fs=require('fs'),path=require('path'),vm=require('vm');
 module.exports=(context,root)=>{
   const previous=JSON.parse(fs.readFileSync(path.join(root,'data/vocabulary-clarity.json'),'utf8'));
   for(const file of ['foundation-listening.js','foundation-reading.js'])vm.runInContext(fs.readFileSync(path.join(root,'data',file),'utf8'),context,{filename:file});
+  vm.runInContext(fs.readFileSync(path.join(root,'data/foundation-contexts.js'),'utf8'),context,{filename:'foundation-contexts.js'});
   let audioIndex=0;
   const practices=context.RRFoundationSources.map(source=>{
     const base=(source.mode==='reading'?context.RRReadingPractices:context.RRListeningPractices)[source.base];
@@ -14,11 +15,19 @@ module.exports=(context,root)=>{
     });
     const grouped=source.groups.flat();
     if(grouped.length!==terms.length||new Set(grouped).size!==terms.length||grouped.some(w=>!core.has(w))||source.groups.some(g=>g.length<4||g.length>6))throw Error('Invalid word groups '+id);
-    const blanks=source.passage.flatMap(p=>[...p.matchAll(/\{\{(.*?)\}\}/g)].map(m=>m[1]));
+    const passages=context.RRFoundationContexts[source.base];
+    if(!passages||passages.length!==2)throw Error('Two context passages required '+id);
+    const bankWords=passages.flatMap(p=>p.words);
+    if(bankWords.length!==terms.length||new Set(bankWords).size!==terms.length||bankWords.some(w=>!core.has(w)))throw Error('Context vocabulary must partition the core list '+id);
+    const blanks=passages.flatMap(p=>p.paragraphs.flatMap(text=>[...text.matchAll(/\{\{(.*?)\}\}/g)].map(m=>m[1])));
     if(![4,5].includes(source.omitted.length)||new Set(blanks).size!==blanks.length||blanks.length!==terms.length-source.omitted.length||blanks.some(w=>!core.has(w)||source.omitted.includes(w)))throw Error('Invalid passage bank '+id);
     if(source.omitted.some(w=>!core.has(w)))throw Error('Unknown distractor '+id);
+    for(const p of passages)for(const text of p.paragraphs)for(const match of text.matchAll(/\{\{(.*?)\}\}/g))if(!p.words.includes(match[1]))throw Error('Answer outside its context bank '+id);
     return {id,mode:source.mode,title:base.title,label:'练习 0 · 基础词汇',location:base.location,vocabId:base.vocabId||source.base.replace(/-1$/,''),coreWords:base.coreWords,selfPaced:true,
-      sections:[{id:id+'-learning',type:'foundation',title:'基础词汇',unit:'词组',instruction:'分组认识、换语境应用，再穿插回忆。每题单独核对，学习进度自动保存。',items:terms,groups:source.groups.map(g=>g.map(w=>terms.find(t=>t.english===w).id)),passage:{title:source.passageTitle,paragraphs:source.passage},passageAccept:source.passageAccept||{},omitted:source.omitted}]
+      sections:[
+        {id:id+'-learning',type:'foundation',title:'基础词汇',unit:'项',instruction:'',items:terms,groups:source.groups.map(g=>g.map(w=>terms.find(t=>t.english===w).id))},
+        {id:id+'-contexts',type:'foundation-context',title:'语境练习',unit:'篇',instruction:'选词填空。每空单独核对。',items:passages.map(p=>({...p,words:p.words.map(w=>terms.find(t=>t.english===w))}))}
+      ]
     };
   });
   fs.writeFileSync(path.join(root,'data/foundation-library.js'),'window.RRFoundationPractices = '+JSON.stringify(Object.fromEntries(practices.map(p=>[p.id,p])),null,2)+';\n');

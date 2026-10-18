@@ -7,7 +7,7 @@ window.RRExerciseCatalog = [
     "test": 1,
     "part": 1,
     "title": "练习 0 · 基础词汇",
-    "description": "艺术收藏与公共文化 · 分组学习 · 换语境应用 · 回忆与短文填词",
+    "description": "艺术收藏与公共文化 · 词汇与语境",
     "url": "foundation.html?id=c21-r-t1-p1-0"
   },
   {
@@ -118,7 +118,7 @@ window.RRExerciseCatalog = [
     "test": 2,
     "part": 1,
     "title": "练习 0 · 基础词汇",
-    "description": "照护者支持咨询 · 分组学习 · 换语境应用 · 回忆与短文填词",
+    "description": "照护者支持咨询 · 词汇与语境",
     "url": "foundation.html?id=c20-t2-p1-0"
   },
   {
@@ -209,7 +209,7 @@ window.RRExerciseCatalog = [
     "test": 3,
     "part": 1,
     "title": "练习 0 · 基础词汇",
-    "description": "家具租赁咨询 · 分组学习 · 换语境应用 · 回忆与短文填词",
+    "description": "家具租赁咨询 · 词汇与语境",
     "url": "foundation.html?id=c20-t3-p1-0"
   },
   {
@@ -1020,7 +1020,7 @@ window.RRExerciseCatalog = [
     "test": 4,
     "part": 1,
     "title": "练习 0 · 基础词汇",
-    "description": "乡土植物与生态恢复 · 分组学习 · 换语境应用 · 回忆与短文填词",
+    "description": "乡土植物与生态恢复 · 词汇与语境",
     "url": "foundation.html?id=c15-r-t4-p1-0"
   },
   {
