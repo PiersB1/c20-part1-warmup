@@ -2,7 +2,7 @@
 import argparse, hashlib, html, json, re
 from pathlib import Path
 import subprocess,sys
-parser=argparse.ArgumentParser();parser.add_argument('--complete',action='store_true');args=parser.parse_args()
+parser=argparse.ArgumentParser();parser.add_argument('--complete',action='store_true');parser.add_argument('--books',nargs='+',type=int);args=parser.parse_args()
 root=Path(__file__).resolve().parent.parent
 sys.path.insert(0,str(root/'.work/audio-tools'))
 from mutagen.mp3 import MP3
@@ -16,6 +16,7 @@ timings=json.loads((root/'data/audio-timings.js').read_text(encoding='utf-8').sp
 manifest=json.loads((root/'data/speech-manifest.json').read_text(encoding='utf-8'))
 missing=[];stale=[];invalid=[];total=0
 for topic in data['topics']:
+ if args.books and topic['book'] not in args.books:continue
  for number in [1,2]:
   practice=data['practices'][f'c{topic["book"]}-t{topic["test"]}-p{topic["part"]}-{number}']
   for section in practice['sections']:
@@ -28,7 +29,8 @@ for topic in data['topics']:
      if duration<1:invalid.append(item['audio'])
     except Exception:
      invalid.append(item['audio']);continue
-    retained=section['type']=='route' or (section['type']=='locator' and re.search('地图|平面图',item.get('format','')))
+    original_map=f'c{topic["book"]}-t{topic["test"]}-p{topic["part"]}' in {'c18-t2-p2','c19-t1-p2','c20-t3-p2'}
+    retained=original_map and (section['type']=='route' or (section['type']=='locator' and re.search('地图|平面图',item.get('format',''))))
     if not retained:
      speech=manifest.get(item['audio'],{})
      if speech.get('audioHash')!=hashlib.sha256(path.read_bytes()).hexdigest():stale.append(item['audio']);continue
@@ -41,7 +43,7 @@ for topic in data['topics']:
      signature=hashlib.sha256(json.dumps({key:item.get(key) for key in ('transcript','speakers','cues')},sort_keys=True).encode()).hexdigest()
      timing=timings.get(item['audio'],{})
      if timing.get('textHash')!=signature:stale.append(item['audio']);continue
-     if not ((40<=duration<=55) if section['type']=='signal' else (41<=duration<=48)) or abs(duration-timing['duration'])>.15:invalid.append(item['audio'])
+     if not ((41<=duration<=48) if retained and section['type']=='route' else (40<=duration<=55)) or abs(duration-timing['duration'])>.15:invalid.append(item['audio'])
      if section['type']=='signal':
       voice='en-GB-RyanNeural' if index%2==0 else 'en-GB-LibbyNeural'
       if timing.get('rate')!=0 or timing.get('voice')!=voice:invalid.append(item['audio'])

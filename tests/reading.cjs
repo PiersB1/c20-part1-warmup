@@ -1,6 +1,7 @@
 const assert=require('assert'),fs=require('fs'),path=require('path'),os=require('os'),vm=require('vm'),{pathToFileURL}=require('url');
 const root=path.resolve(__dirname,'..'),c={};c.window=c;vm.createContext(c);
 for(const name of ['reading-practices.js','reading-c21-t1-p1.js'])vm.runInContext(fs.readFileSync(path.join(root,'data',name),'utf8'),c);
+const catalogContext={};catalogContext.window=catalogContext;vm.createContext(catalogContext);vm.runInContext(fs.readFileSync(path.join(root,'exercise-catalog.js'),'utf8'),catalogContext);const availableReading=new Set(catalogContext.RRExerciseCatalog.filter(e=>e.mode==='reading').map(e=>e.book+'/'+e.test+'/'+e.part)).size;
 const practices=Object.values(c.RRReadingPractices);assert.equal(practices.length,2);
 for(const p of practices){
  assert.equal(p.location.book,21);assert.equal(p.location.test,1);assert.equal(p.location.part,1);assert.equal(p.coreWords.length,36);
@@ -40,8 +41,8 @@ const {chromium}=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-pri
   const page=await browser.newPage({acceptDownloads:true,viewport:{width:1260,height:920}}),errors=[];
   page.on('pageerror',error=>errors.push(error.message));
   const home=pathToFileURL(path.join(root,'index.html')).href;
-  await page.goto(home);assert.equal(await page.locator('a.available').count(),48);
-  await page.locator('[data-mode="reading"]').click();assert.equal(await page.locator('a.available').count(),2);
+  await page.goto(home);assert.equal(await page.locator('a.available').count(),new Set(catalogContext.RRExerciseCatalog.filter(e=>e.mode==='listening').map(e=>e.book+'/'+e.test+'/'+e.part)).size);
+  await page.locator('[data-mode="reading"]').click();assert.equal(await page.locator('a.available').count(),availableReading);
   await page.locator('a.available[href*="book=21&test=1&part=1"]').click();assert.equal(await page.locator('.practice').count(),3);
   await page.locator('.practice[href="reading.html?id=c21-r-t1-p1-1"]').click();await page.locator('.sentence-card').first().waitFor();
   assert.equal(await page.locator('.quiz-card').count(),22);assert.equal(await page.locator('.sentence-card').count(),6);
@@ -120,7 +121,7 @@ const {chromium}=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-pri
   const secondRecord=JSON.parse(fs.readFileSync(await(await exportSecond).path(),'utf8'));assert.equal(secondRecord.sections.length,3);assert.equal(secondRecord.sections[0].details[2].response.phrase,'college technicians');
   page.once('dialog',dialog=>dialog.accept());await page.getByRole('button',{name:'删除这次记录'}).click();assert.equal(await page.locator('.record-item').count(),0);
   await page.locator('[data-close="records-dialog"]').click();
-  await page.locator('#back-link').click();await page.locator('.back').click();assert.equal(await page.locator('[data-mode="reading"]').getAttribute('aria-pressed'),'true');assert.equal(await page.locator('a.available').count(),2);
+  await page.locator('#back-link').click();await page.locator('.back').click();assert.equal(await page.locator('[data-mode="reading"]').getAttribute('aria-pressed'),'true');assert.equal(await page.locator('a.available').count(),availableReading);
   assert.deepEqual(errors,[]);
   console.log('Reading: 2 practices; 36 core terms; 36 + 23 marks. Passed home navigation, phrase drag/return, syntax/references (including valid alternatives and keyboard), evidence switching/reset, T/F/NG, one-word limits, whole grading, record isolation/delete/export, shared favorites and mobile widths.');
  }finally{await browser.close();}

@@ -1,0 +1,936 @@
+{
+  "scope": {
+    "readingBooks": [
+      21,
+      19,
+      18,
+      17,
+      16
+    ],
+    "readingPassages": 60,
+    "readingPractices": 180,
+    "listeningFoundationTopics": 48
+  },
+  "reading": [
+    {
+      "id": "c21-r-t1-p1",
+      "title": "The Davies Sisters",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c21-r-t1-p2",
+      "title": "Why we need silence",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c21-r-t1-p3",
+      "title": "Book review: The World of Sugar by Ulbe Bosma",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c21-r-t2-p1",
+      "title": "Do animals dream?",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c21-r-t2-p2",
+      "title": "Mapungubwe",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c21-r-t2-p3",
+      "title": "Artificial Intelligence",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c21-r-t3-p1",
+      "title": "Saving the saiga",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c21-r-t3-p2",
+      "title": "The problems of getting around the city of Dar es Salaam",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c21-r-t3-p3",
+      "title": "Rethinking the Past",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c21-r-t4-p1",
+      "title": "The problems and benefits created by the spread of the water hyacinth in Kenya",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c21-r-t4-p2",
+      "title": "How could multilingualism benefit India's poorest schoolchildren?",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c21-r-t4-p3",
+      "title": "The Globemakers: The Curious Story of an Ancient Craft",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c19-r-t1-p1",
+      "title": "How tennis rackets have changed",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-19-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c19-r-t1-p2",
+      "title": "The pirates of the ancient Mediterranean",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-19-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c19-r-t1-p3",
+      "title": "The persistence and peril of misinformation",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-19-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c19-r-t2-p1",
+      "title": "The Industrial Revolution in Britain",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-19-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c19-r-t2-p2",
+      "title": "Athletes and stress",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-19-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c19-r-t2-p3",
+      "title": "An inquiry into the existence of the gifted child",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-19-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c19-r-t3-p1",
+      "title": "Archaeologists discover evidence of prehistoric island settlers",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-19-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c19-r-t3-p2",
+      "title": "The global importance of wetlands",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-19-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c19-r-t3-p3",
+      "title": "Is the era of artificial speech translation upon us?",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-19-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c19-r-t4-p1",
+      "title": "The impact of climate change on butterflies in Britain",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-19-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c19-r-t4-p2",
+      "title": "Deep-sea Mining",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-19-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c19-r-t4-p3",
+      "title": "The Unselfish Gene",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-19-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c18-r-t1-p1",
+      "title": "Urban farming",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-18-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c18-r-t1-p2",
+      "title": "Forest management in Pennsylvania, USA",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-18-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c18-r-t1-p3",
+      "title": "Conquering Earth’s space junk problem",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-18-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c18-r-t2-p1",
+      "title": "Stonehenge",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-18-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c18-r-t2-p2",
+      "title": "Living with artificial intelligence",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-18-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c18-r-t2-p3",
+      "title": "An ideal city",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-18-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c18-r-t3-p1",
+      "title": "Materials to take us beyond concrete",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-18-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c18-r-t3-p2",
+      "title": "The steam car",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-18-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c18-r-t3-p3",
+      "title": "The case for mixed-ability classes",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-18-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c18-r-t4-p1",
+      "title": "Green roofs",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-18-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c18-r-t4-p2",
+      "title": "The growth mindset",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-18-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c18-r-t4-p3",
+      "title": "Alfred Wegener: science, exploration and the theory of continental drift",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-18-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c17-r-t1-p1",
+      "title": "The development of the London underground railway",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-17-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c17-r-t1-p2",
+      "title": "Stadiums: past, present and future",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-17-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c17-r-t1-p3",
+      "title": "To catch a king",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-17-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c17-r-t2-p1",
+      "title": "The Dead Sea Scrolls",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-17-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c17-r-t2-p2",
+      "title": "A second attempt at domesticating the tomato",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-17-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c17-r-t2-p3",
+      "title": "Insight or evolution?",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-17-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c17-r-t3-p1",
+      "title": "The thylacine",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-17-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c17-r-t3-p2",
+      "title": "Palm oil",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-17-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c17-r-t3-p3",
+      "title": "Building the Skyline: The Birth and Growth of Manhattan’s Skyscrapers",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-17-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c17-r-t4-p1",
+      "title": "Bats to the rescue",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-17-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c17-r-t4-p2",
+      "title": "Does education fuel economic growth?",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-17-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c17-r-t4-p3",
+      "title": "Timur Gareyev - blindfold chess champion",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-17-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c16-r-t1-p1",
+      "title": "Why we need to protect polar bears",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-16-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c16-r-t1-p2",
+      "title": "The Step Pyramid of Djoser",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-16-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c16-r-t1-p3",
+      "title": "The future of work",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-16-academic-reading-test-1/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c16-r-t2-p1",
+      "title": "The White Horse of Uffington",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-16-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c16-r-t2-p2",
+      "title": "I contain multitudes",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-16-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c16-r-t2-p3",
+      "title": "How to make wise decisions",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-16-academic-reading-test-2/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c16-r-t3-p1",
+      "title": "Roman shipbuilding and navigation",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-16-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c16-r-t3-p2",
+      "title": "Climate change reveals ancient artefacts in Norway’s glaciers",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-16-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c16-r-t3-p3",
+      "title": "Plant ‘thermometer’ triggers springtime growth by measuring night-time heat",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-16-academic-reading-test-3/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c16-r-t4-p1",
+      "title": "Roman tunnels",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-16-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c16-r-t4-p2",
+      "title": "Changes in reading habits",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-16-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    },
+    {
+      "id": "c16-r-t4-p3",
+      "title": "Attitudes towards Artificial Intelligence",
+      "source": "https://engnovate.com/ielts-reading-tests/cambridge-ielts-16-academic-reading-test-4/",
+      "sourceCache": true,
+      "availablePractices": [
+        0,
+        1,
+        2
+      ],
+      "missingPractices": []
+    }
+  ],
+  "listening": [
+    {
+      "id": "c20-t1-p1-0",
+      "available": true
+    },
+    {
+      "id": "c20-t1-p2-0",
+      "available": true
+    },
+    {
+      "id": "c20-t1-p3-0",
+      "available": true
+    },
+    {
+      "id": "c20-t1-p4-0",
+      "available": true
+    },
+    {
+      "id": "c20-t2-p1-0",
+      "available": true
+    },
+    {
+      "id": "c20-t2-p2-0",
+      "available": true
+    },
+    {
+      "id": "c20-t2-p3-0",
+      "available": true
+    },
+    {
+      "id": "c20-t2-p4-0",
+      "available": true
+    },
+    {
+      "id": "c20-t3-p1-0",
+      "available": true
+    },
+    {
+      "id": "c20-t3-p2-0",
+      "available": true
+    },
+    {
+      "id": "c20-t3-p3-0",
+      "available": true
+    },
+    {
+      "id": "c20-t3-p4-0",
+      "available": true
+    },
+    {
+      "id": "c20-t4-p1-0",
+      "available": true
+    },
+    {
+      "id": "c20-t4-p2-0",
+      "available": true
+    },
+    {
+      "id": "c20-t4-p3-0",
+      "available": true
+    },
+    {
+      "id": "c20-t4-p4-0",
+      "available": true
+    },
+    {
+      "id": "c19-t1-p1-0",
+      "available": true
+    },
+    {
+      "id": "c19-t1-p2-0",
+      "available": true
+    },
+    {
+      "id": "c19-t1-p3-0",
+      "available": true
+    },
+    {
+      "id": "c19-t1-p4-0",
+      "available": true
+    },
+    {
+      "id": "c19-t2-p1-0",
+      "available": true
+    },
+    {
+      "id": "c19-t2-p2-0",
+      "available": true
+    },
+    {
+      "id": "c19-t2-p3-0",
+      "available": true
+    },
+    {
+      "id": "c19-t2-p4-0",
+      "available": true
+    },
+    {
+      "id": "c19-t3-p1-0",
+      "available": true
+    },
+    {
+      "id": "c19-t3-p2-0",
+      "available": true
+    },
+    {
+      "id": "c19-t3-p3-0",
+      "available": true
+    },
+    {
+      "id": "c19-t3-p4-0",
+      "available": true
+    },
+    {
+      "id": "c19-t4-p1-0",
+      "available": true
+    },
+    {
+      "id": "c19-t4-p2-0",
+      "available": true
+    },
+    {
+      "id": "c19-t4-p3-0",
+      "available": true
+    },
+    {
+      "id": "c19-t4-p4-0",
+      "available": true
+    },
+    {
+      "id": "c18-t1-p1-0",
+      "available": true
+    },
+    {
+      "id": "c18-t1-p2-0",
+      "available": true
+    },
+    {
+      "id": "c18-t1-p3-0",
+      "available": true
+    },
+    {
+      "id": "c18-t1-p4-0",
+      "available": true
+    },
+    {
+      "id": "c18-t2-p1-0",
+      "available": true
+    },
+    {
+      "id": "c18-t2-p2-0",
+      "available": true
+    },
+    {
+      "id": "c18-t2-p3-0",
+      "available": true
+    },
+    {
+      "id": "c18-t2-p4-0",
+      "available": true
+    },
+    {
+      "id": "c18-t3-p1-0",
+      "available": true
+    },
+    {
+      "id": "c18-t3-p2-0",
+      "available": true
+    },
+    {
+      "id": "c18-t3-p3-0",
+      "available": true
+    },
+    {
+      "id": "c18-t3-p4-0",
+      "available": true
+    },
+    {
+      "id": "c18-t4-p1-0",
+      "available": true
+    },
+    {
+      "id": "c18-t4-p2-0",
+      "available": true
+    },
+    {
+      "id": "c18-t4-p3-0",
+      "available": true
+    },
+    {
+      "id": "c18-t4-p4-0",
+      "available": true
+    }
+  ],
+  "summary": {
+    "readingComplete": 60,
+    "readingMissing": 0,
+    "listeningFoundationComplete": 48
+  },
+  "complete": true
+}

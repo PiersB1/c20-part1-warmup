@@ -3,7 +3,8 @@ const {chromium}=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-pri
 (async()=>{
  const root=path.resolve(__dirname,'..'),context={};context.window=context;vm.createContext(context);
  for(const name of ['listening-practices.js','practice-builders.js','preparation-builders.js','editorial-multi.js','editorial-quiz-context.js','editorial-signal-context.js','editorial-revisions.js',...fs.readdirSync(path.join(root,'data')).filter(n=>n.endsWith('.practice.js')).sort(),'audio-timings.js'])vm.runInContext(fs.readFileSync(path.join(root,'data',name),'utf8'),context);
- const ids=context.RRPreparedTopics.flatMap(t=>[1,2].map(n=>`c${t.book}-t${t.test}-p${t.part}-${n}`));
+ const books=process.argv.find(s=>s.startsWith('--books='))?.slice(8).split(',').map(Number);
+ const ids=context.RRPreparedTopics.filter(t=>!books||books.includes(t.book)).flatMap(t=>[1,2].map(n=>`c${t.book}-t${t.test}-p${t.part}-${n}`));
  const ready=id=>context.RRListeningPractices[id].sections.every(s=>s.items.every(item=>!item.audio||(fs.existsSync(path.join(root,item.audio))&&(!['signal','route'].includes(s.type)||context.RRSignalTimings[item.audio]))));
  const selected=process.argv.includes('--ready')?ids.filter(ready):ids;
  if(!process.argv.includes('--ready'))assert(ids.every(ready),'All recordings must exist before the full acceptance run');
@@ -18,14 +19,14 @@ const {chromium}=require(path.join(os.homedir(),'.cache/codex-runtimes/codex-pri
   };
  });
  const home=pathToFileURL(path.join(root,'index.html')).href;
- await page.goto(home);assert.equal(await page.locator('a.available').count(),48);
+ await page.goto(home);assert.equal(await page.locator('a.available').count(),new Set(context.RRPreparedTopics.map(t=>`${t.book}/${t.test}/${t.part}`)).size);
  for(const id of selected){
   await page.goto(new URL(`listening.html?id=${id}`,home).href);await page.locator('#check-practice').waitFor();
   assert.equal(await page.locator('#check-practice').count(),1);
   await page.evaluate(async()=>{
    const practice=RRPracticeSession.practice;
    if(practice.id.endsWith('-1')){
-    practice.sections[0].items.forEach((item,index)=>{const card=document.querySelectorAll('.quiz-card')[index];if(item.type==='cloze')card.querySelector('input').value=item.answer;else{const answers=Array.isArray(item.answer)?item.answer:[item.answer];card.querySelectorAll('input').forEach(input=>{if(answers.includes(input.value))input.click();});}});
+    practice.sections[0].items.forEach((item,index)=>{const card=document.querySelectorAll('.quiz-card')[index];if(item.type==='cloze')card.querySelector('input').value=item.accept?.[0]||item.answer;else{const answers=Array.isArray(item.answer)?item.answer:[item.answer];card.querySelectorAll('input').forEach(input=>{if(answers.includes(input.value))input.click();});}});
     practice.sections[1].items.forEach((item,index)=>document.querySelectorAll('.dictation-card')[index].querySelector('input').value=item.answer);
    }else{
     document.querySelectorAll('.reveal-source').forEach(button=>button.click());await Promise.resolve();await Promise.resolve();

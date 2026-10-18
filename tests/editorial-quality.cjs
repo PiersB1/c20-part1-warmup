@@ -1,6 +1,6 @@
 const fs=require('fs'),path=require('path'),assert=require('assert');
 const c=require('./load-library.cjs')(),norm=t=>t.toLowerCase().replace(/[^a-z0-9]+/g,' ').trim(),txt=a=>a.map(t=>typeof t==='string'?t:t.text).join(' ');
-assert.equal(c.RRExerciseCatalog.filter(p=>p.mode==='listening'&&!p.foundation).length,96);assert.equal(c.RRPreparedTopics.length,48);assert.equal(c.RRRevisionCoverage.length,48);
+assert.equal(c.RRExerciseCatalog.filter(p=>p.mode==='listening'&&!p.foundation&&[18,19,20].includes(p.book)).length,96);assert.equal(c.RRPreparedTopics.filter(p=>[18,19,20].includes(p.book)).length,48);assert.equal(c.RRRevisionCoverage.length,48);
 const bad=new Set(['on','been','have','and','if','was','from','before','until','into','to','in','at','by','of','for','with']);
 const grammar=new Set(),explanations=new Set(),cuePatterns=new Set();let locators=0,paragraphs=0,signals=0;
 for(const topic of c.RRRevisionCoverage){
@@ -46,9 +46,7 @@ for(const topic of c.RRRevisionCoverage){
 }
 assert(cuePatterns.size>=3,'Signal points should not all follow the same sentence placement');
 for(const book of [9,10,11]){
- assert(!c.RRExerciseCatalog.some(p=>p.book===book));
+ // The deleted first version stays deleted; the user has since requested new packs.
  assert(!fs.existsSync(path.resolve(__dirname,`../data/expanded-c${book}.practice.js`)));
- assert(!fs.readdirSync(path.resolve(__dirname,'../audio')).some(n=>n.startsWith(`c${book}-`)));
- assert(!Object.keys(c.RRSignalTimings).some(n=>n.startsWith(`audio/c${book}-`)));
 }
 console.log(`Editorial checks: 48 parts; ${locators} rewritten locators; ${paragraphs} independent paragraphs; ${signals} authored signals; no cross-section sentence reuse or single function words.`);

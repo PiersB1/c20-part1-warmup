@@ -57,7 +57,7 @@
           const target = el('span', 'underlined-target', segment.text);
           const slot = button('拖入', 'drop-slot');
           slot.dataset.slotId = segment.id;
-          slot.setAttribute('aria-label', `${segment.text} 的同义表达`);
+          slot.setAttribute('aria-label', segment.blank ? `第 ${segment.text} 空` : `${segment.text} 的同义表达`);
           slot.addEventListener('dragstart', event => {
             const choiceId = assignments.get(segment.id);
             if (!choiceId) {event.preventDefault();return;}
@@ -75,7 +75,9 @@
             if (picked) place(segment.id, picked);
             else if (assignments.has(segment.id)) returnToBank(assignments.get(segment.id));
           });
-          wrapper.append(target, slot);paragraph.append(wrapper);slots.set(segment.id, slot);
+          if(!segment.blank)wrapper.append(target);
+          else wrapper.append(el('span','small-label',segment.text+' '));
+          wrapper.append(slot);paragraph.append(wrapper);slots.set(segment.id, slot);
         });
         item.choices.forEach(choice => {
           const node = button(choice.text, 'bank-choice');
@@ -88,7 +90,12 @@
           choices.set(choice.id, node);bank.append(node);
         });
         update();
-        card.append(head, paragraph, el('p', 'small-label', '待匹配表达'), bank, fb);
+        card.append(head);
+        if(item.passage){
+          const source=el('div','reading-passage summary-source');source.append(el('h4','',item.passage.title));
+          item.passage.paragraphs.forEach(text=>source.append(el('p','',text)));card.append(source);
+        }
+        card.append(paragraph, el('p', 'small-label', '待匹配表达'), bank, fb);
         container.append(card);
         return {item, assignments, slots, targets, fb};
       });
@@ -100,6 +107,7 @@
           correct: assignments.get(target.id) === target.answer
         })));
         return {id: section.id, type: section.type, title: section.title,
+          ...(section.items.some(item=>item.passage)?{passages:section.items.map(item=>({passage:item.passage,summary:item.segments.map(s=>typeof s==='string'?s:'___').join(''),choices:item.choices}))}:{}),
           correct: details.filter(item => item.correct).length, total: details.length, details};
       }
       return {getResult, check() {

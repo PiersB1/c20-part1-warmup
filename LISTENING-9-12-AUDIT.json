@@ -1,0 +1,643 @@
+{
+  "expectedParts": 64,
+  "completeParts": 64,
+  "missing": [],
+  "parts": [
+    {
+      "id": "c12-t1-p1",
+      "title": "家庭郊游与出行准备",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        115,
+        121
+      ]
+    },
+    {
+      "id": "c12-t1-p2",
+      "title": "厨房新员工培训",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        124,
+        129
+      ]
+    },
+    {
+      "id": "c12-t1-p3",
+      "title": "公共图书馆研究选题",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        126,
+        131
+      ]
+    },
+    {
+      "id": "c12-t1-p4",
+      "title": "商业价值观的适用边界",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        131,
+        123
+      ]
+    },
+    {
+      "id": "c12-t2-p1",
+      "title": "城市艺术节活动咨询",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        132,
+        130
+      ]
+    },
+    {
+      "id": "c12-t2-p2",
+      "title": "戏剧旅行出发说明",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        134,
+        138
+      ]
+    },
+    {
+      "id": "c12-t2-p3",
+      "title": "北欧研究课程与论文规划",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        137,
+        136
+      ]
+    },
+    {
+      "id": "c12-t2-p4",
+      "title": "工作场所冲突与协调",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        119,
+        114
+      ]
+    },
+    {
+      "id": "c12-t3-p1",
+      "title": "重新开放的社区图书馆",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        126,
+        127
+      ]
+    },
+    {
+      "id": "c12-t3-p2",
+      "title": "主题活动度假的市场与服务",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        135,
+        119
+      ]
+    },
+    {
+      "id": "c12-t3-p3",
+      "title": "旅游景点个案研究",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        142,
+        142
+      ]
+    },
+    {
+      "id": "c12-t3-p4",
+      "title": "环境污染对鸟类行为的影响",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        136,
+        113
+      ]
+    },
+    {
+      "id": "c12-t4-p1",
+      "title": "骑行领队岗位申请",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        145,
+        142
+      ]
+    },
+    {
+      "id": "c12-t4-p2",
+      "title": "城市艺术街区与步行导览",
+      "coreWords": 16,
+      "route": true,
+      "signalWords": [
+        141
+      ]
+    },
+    {
+      "id": "c12-t4-p3",
+      "title": "文学作品的银幕改编展示",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        130,
+        135
+      ]
+    },
+    {
+      "id": "c12-t4-p4",
+      "title": "城市声景与环境设计",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        136,
+        124
+      ]
+    },
+    {
+      "id": "c11-t1-p1",
+      "title": "社区场地租用",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        122,
+        111
+      ]
+    },
+    {
+      "id": "c11-t1-p2",
+      "title": "传统农场参观",
+      "coreWords": 16,
+      "route": true,
+      "signalWords": [
+        122
+      ]
+    },
+    {
+      "id": "c11-t1-p3",
+      "title": "学业表现与心理研究",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        128,
+        128
+      ]
+    },
+    {
+      "id": "c11-t1-p4",
+      "title": "海洋生物多样性保护",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        129,
+        114
+      ]
+    },
+    {
+      "id": "c11-t2-p1",
+      "title": "青年议会报名咨询",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        130,
+        115
+      ]
+    },
+    {
+      "id": "c11-t2-p2",
+      "title": "剧院设施与员工导览",
+      "coreWords": 16,
+      "route": true,
+      "signalWords": [
+        132
+      ]
+    },
+    {
+      "id": "c11-t2-p3",
+      "title": "海岸生物实地报告",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        121,
+        131
+      ]
+    },
+    {
+      "id": "c11-t2-p4",
+      "title": "公共音乐厅建筑设计",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        124,
+        121
+      ]
+    },
+    {
+      "id": "c11-t3-p1",
+      "title": "免费活动咨询",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        124,
+        128
+      ]
+    },
+    {
+      "id": "c11-t3-p2",
+      "title": "城镇变化与设施规划",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        123,
+        124
+      ]
+    },
+    {
+      "id": "c11-t3-p3",
+      "title": "故事插图与合作报告",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        129,
+        130
+      ]
+    },
+    {
+      "id": "c11-t3-p4",
+      "title": "商业中的民族志研究",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        126,
+        123
+      ]
+    },
+    {
+      "id": "c11-t4-p1",
+      "title": "节庆节目与票务咨询",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        132,
+        114
+      ]
+    },
+    {
+      "id": "c11-t4-p2",
+      "title": "博物馆藏品与楼层导览",
+      "coreWords": 16,
+      "route": true,
+      "signalWords": [
+        127
+      ]
+    },
+    {
+      "id": "c11-t4-p3",
+      "title": "音乐家演出服装研究",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        121,
+        113
+      ]
+    },
+    {
+      "id": "c11-t4-p4",
+      "title": "土壤储碳与农业实践",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        124,
+        112
+      ]
+    },
+    {
+      "id": "c10-t1-p1",
+      "title": "家庭自驾行程比较",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        123,
+        128
+      ]
+    },
+    {
+      "id": "c10-t1-p2",
+      "title": "健身俱乐部设施与入会",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        123,
+        126
+      ]
+    },
+    {
+      "id": "c10-t1-p3",
+      "title": "家用电器创新设计辅导",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        137,
+        126
+      ]
+    },
+    {
+      "id": "c10-t1-p4",
+      "title": "森林熊类及栖息地保护",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        134,
+        112
+      ]
+    },
+    {
+      "id": "c10-t2-p1",
+      "title": "出行调查与骑行条件",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        130,
+        130
+      ]
+    },
+    {
+      "id": "c10-t2-p2",
+      "title": "城市公共设施与主题游乐场",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        139,
+        121
+      ]
+    },
+    {
+      "id": "c10-t2-p3",
+      "title": "探险者生平与实验考古汇报",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        123,
+        125
+      ]
+    },
+    {
+      "id": "c10-t2-p4",
+      "title": "企业管理与工作方式变化",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        135,
+        110
+      ]
+    },
+    {
+      "id": "c10-t3-p1",
+      "title": "托育中心报名与照护安排",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        142,
+        134
+      ]
+    },
+    {
+      "id": "c10-t3-p2",
+      "title": "海豚保护组织与认养计划",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        132,
+        119
+      ]
+    },
+    {
+      "id": "c10-t3-p3",
+      "title": "戏剧课程反思与海外学习申请",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        129,
+        126
+      ]
+    },
+    {
+      "id": "c10-t3-p4",
+      "title": "动机取向与领导方式",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        128,
+        103
+      ]
+    },
+    {
+      "id": "c10-t4-p1",
+      "title": "住宅维修询价与施工顺序",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        132,
+        133
+      ]
+    },
+    {
+      "id": "c10-t4-p2",
+      "title": "历史港口的兴衰与参观安排",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        148,
+        134
+      ]
+    },
+    {
+      "id": "c10-t4-p3",
+      "title": "实习收获与申请信息来源",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        119,
+        124
+      ]
+    },
+    {
+      "id": "c10-t4-p4",
+      "title": "纳米技术的风险讨论与可能用途",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        127,
+        119
+      ]
+    },
+    {
+      "id": "c9-t1-p1",
+      "title": "餐饮岗位咨询与面试安排",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        139,
+        125
+      ]
+    },
+    {
+      "id": "c9-t1-p2",
+      "title": "运动用品店开业与活动介绍",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        119,
+        111
+      ]
+    },
+    {
+      "id": "c9-t1-p3",
+      "title": "学术学习经历与参与讨论",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        127,
+        124
+      ]
+    },
+    {
+      "id": "c9-t1-p4",
+      "title": "海洋动物搁浅：解释与证据",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        129,
+        130
+      ]
+    },
+    {
+      "id": "c9-t2-p1",
+      "title": "学生宿舍申请与个人偏好",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        129,
+        135
+      ]
+    },
+    {
+      "id": "c9-t2-p2",
+      "title": "自然公园活动与园内路线",
+      "coreWords": 16,
+      "route": true,
+      "signalWords": [
+        134
+      ]
+    },
+    {
+      "id": "c9-t2-p3",
+      "title": "自主学习中心的改进讨论",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        120,
+        124
+      ]
+    },
+    {
+      "id": "c9-t2-p4",
+      "title": "企业组织文化与适合的员工",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        122,
+        117
+      ]
+    },
+    {
+      "id": "c9-t3-p1",
+      "title": "度假公寓比较与保险条款",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        132,
+        133
+      ]
+    },
+    {
+      "id": "c9-t3-p2",
+      "title": "家庭主题公园的发展与分工",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        133,
+        131
+      ]
+    },
+    {
+      "id": "c9-t3-p3",
+      "title": "论文选题与学习方法指导",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        127,
+        137
+      ]
+    },
+    {
+      "id": "c9-t3-p4",
+      "title": "地下住宅的设计与环境代价",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        129,
+        122
+      ]
+    },
+    {
+      "id": "c9-t4-p1",
+      "title": "诊所注册、服务收费与讲座安排",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        129,
+        131
+      ]
+    },
+    {
+      "id": "c9-t4-p2",
+      "title": "度假公寓设备说明与物品位置",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        140,
+        138
+      ]
+    },
+    {
+      "id": "c9-t4-p3",
+      "title": "海外学习经历与教育方式适应",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        113,
+        122
+      ]
+    },
+    {
+      "id": "c9-t4-p4",
+      "title": "城市庭院野生动物调查",
+      "coreWords": 16,
+      "route": false,
+      "signalWords": [
+        141,
+        139
+      ]
+    }
+  ],
+  "complete": true
+}

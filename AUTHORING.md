@@ -2,7 +2,9 @@
 
 页面不需要构建或服务端，所有练习都可以从本地文件打开。
 
-当前覆盖剑20、19、18全部听力 Part 1–4，每篇两套，共96套。剑9、10、11的练习与音频按用户要求清空；首页仍可进入空目录。48篇均使用独立编写的各题型材料。主题与题型比例见 `CONTENT-SOURCES.md`。
+当前覆盖剑20、19、18、12、11、10、9全部听力Part 1–4，112篇各练习0/1/2。剑9–12是用户在清空旧稿后重新授权的新编内容，没有恢复被删的通用题库。主题与题型比例见 `CONTENT-SOURCES.md`。
+
+剑9–12逐篇源文件为`data/authored-cXX-tY-pZ.practice.js`，通过`RRListenPack`组装练习0/1/2；所有词汇、句子、干扰项、两篇语境和信号考点均由篇内显式数据给出，builder只处理结构、id与标记。`node scripts/validate-listening-packs.cjs`为只读结构检查；`node scripts/audit-listening-9-12.cjs --require-complete`要求64篇全部齐备。目录生成器自动发现内容文件并更新普通script列表。
 
 ## 文件分工
 

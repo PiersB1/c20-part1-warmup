@@ -39,16 +39,18 @@ media_root=(root/args.output_prefix).resolve() if args.output_prefix else root
 if not media_root.is_relative_to(root):
     raise ValueError('Audio output must remain inside the project')
 (media_root/'data').mkdir(parents=True,exist_ok=True)
-node_loader = """
+node_loader = r"""
 const fs=require('fs'),vm=require('vm'),path=require('path');
 const context={};context.window=context;vm.createContext(context);
 const directory=path.dirname(process.argv[1]);
-const files=[process.argv[1],path.join(directory,'practice-builders.js'),path.join(directory,'preparation-builders.js'),path.join(directory,'editorial-multi.js'),path.join(directory,'editorial-quiz-context.js'),path.join(directory,'editorial-signal-context.js'),path.join(directory,'editorial-revisions.js'),...fs.readdirSync(directory).filter(name=>name.endsWith('.practice.js')).sort().map(name=>path.join(directory,name))];
+const books=JSON.parse(process.argv[2]||'null');
+const files=[process.argv[1],path.join(directory,'practice-builders.js'),path.join(directory,'preparation-builders.js'),path.join(directory,'editorial-multi.js'),path.join(directory,'editorial-quiz-context.js'),path.join(directory,'editorial-signal-context.js'),path.join(directory,'editorial-revisions.js'),...fs.readdirSync(directory).filter(name=>name.endsWith('.practice.js')&&(!books||!/^authored-c\d+-/.test(name)||books.includes(Number(name.match(/^authored-c(\d+)-/)[1])))).sort().map(name=>path.join(directory,name))];
 for(const file of files)vm.runInContext(fs.readFileSync(file,'utf8'),context);
 console.log(JSON.stringify({practices:context.window.RRListeningPractices,preparedIds:context.window.RRPreparedTopics.flatMap(topic=>[1,2].map(n=>`c${topic.book}-t${topic.test}-p${topic.part}-${n}`))}));
 """
+requested_books = sorted({int(re.match(r'^c(\d+)-', key).group(1)) for key in args.practice_id}) if args.practice_id and not args.all_prepared else None
 loaded = json.loads(subprocess.check_output(
-    ['node', '-e', node_loader, str(root / 'data/listening-practices.js')],
+    ['node', '-e', node_loader, str(root / 'data/listening-practices.js'), json.dumps(requested_books)],
     encoding='utf-8'))
 library=loaded['practices']
 

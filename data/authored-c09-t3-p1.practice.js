@@ -1,0 +1,71 @@
+RRListenPack({book:9,test:3,part:1,title:'度假公寓比较与保险条款',focus:'每人价与合住条件、设施实际位置、估价纠正、总赔付和单件上限、直线电话与总机；表格填空。',formats:[['表格填空',10]],
+words:`
+studio flat|卧室与起居空间合一的小公寓|A studio flat combines living and sleeping space in one main room.|单间公寓把起居和睡眠空间放在同一主房间。|The ___ has a small cooking area beside the main room.|单间公寓主房间旁有小做饭区。
+terrace|露台|A terrace is an outdoor area where people can sit.|露台是可以坐着休息的室外平台。|We ate breakfast on the ___ outside our room.|我们在房间外的露台吃早餐。
+overlook|俯瞰；朝向某景物|A room that overlooks a place has a view over it.|俯瞰某处的房间可以望见那片景物。|The upper windows ___ the old harbour.|上层窗户朝向旧港口。
+saltwater|咸水的；海水的|Saltwater contains salt, unlike fresh water.|咸水含盐，不同于淡水。|The hotel has a ___ pool near the garden.|酒店花园附近有咸水泳池。
+watersports|水上运动|Watersports are activities such as sailing or skiing on water.|水上运动包括帆船、滑水等活动。|The beach centre offers ___ for beginners.|海滩活动中心为初学者提供水上运动。
+per person|每人|A price per person is charged for each individual.|按人计价，就是每个人各收取所列费用。|The trip costs the advertised amount ___, not per room.|行程按广告价格每人收费，不是每间房。
+brochure|介绍册；宣传手册|A brochure gives details about a place, service or product.|介绍册提供某地、服务或产品的详细信息。|The ___ lists the facilities at each apartment.|介绍册列出各公寓的设施。
+policy|保险合同；保单|An insurance policy states what protection has been agreed.|保单说明已经约定的保障内容。|Read the ___ before assuming a loss is covered.|不要直接认定损失能赔，先看保单。
+cancellation|取消预订或行程|Cancellation means an arrangement is called off.|取消意味着原来的安排不再进行。|The form explains what happens after a ___.|表格解释取消预订后怎样处理。
+cover|保险保障范围|Insurance cover is the protection included under the agreement.|保险保障是合同里包括的保护范围。|Check whether the ___ includes your planned activity.|确认保障范围是否包括你计划的活动。
+claim|申请保险赔付|To claim is to ask an insurer to pay for a covered loss.|索赔是要求保险方为约定范围内的损失赔付。|She kept the receipt in case she needed to ___.|她留着收据，以防需要申请赔付。
+single-item limit|单件物品的最高赔付额|A single-item limit caps the payment for one object.|单件赔付上限限制某一件物品最多可获赔多少。|The camera may exceed the policy’s ___.|这台相机的价值可能超过保单的单件赔付上限。
+missed departure|误了出发；未能赶上航班等|Missed departure means not reaching a scheduled departure in time.|错过出发是没有及时赶上计划中的交通班次。|The terms describe which causes of ___ are included.|条款说明哪些误出发原因被包括。
+personal belongings|个人随身物品|Personal belongings are possessions such as clothes and bags.|个人物品包括衣服、包等属于自己的东西。|Keep your ___ with you while waiting.|等候时随身带好自己的物品。
+additional benefit|额外提供的一项保障或好处|An additional benefit is offered beyond the basic provision.|额外权益是在基本内容之外提供的一项好处。|The ___ applies only in the situation described.|额外保障只在写明的情况下适用。
+direct line|直拨电话|A direct line reaches a person or department without the main switchboard.|直线电话不用经过总机就能联系某人或部门。|Use the manager’s ___ if the general office is busy.|总机忙时，用经理的直拨电话。
+`,
+groups:[['studio flat','terrace','overlook','saltwater','watersports'],['per person','brochure','policy','cancellation','cover'],['claim','single-item limit','missed departure','personal belongings','additional benefit','direct line']],omitted:['terrace','watersports','brochure','personal belongings'],
+contexts:[{id:'apartments',title:'Comparing places to stay',words:['studio flat','terrace','overlook','saltwater','watersports','per person','brochure','direct line'],paragraphs:[
+'Two friends looked through a brochure before booking a holiday. A {{studio flat}} would be enough space for them, but they wanted to know what its windows would {{overlook}}. Another apartment had a terrace and access to a {{saltwater}} pool. They liked both, but did not need organised watersports.',
+'They checked the price carefully. One figure was {{per person}}, even though the room had to be shared. It could not simply be divided between them. They wrote down a {{direct line}} so they could ask the same adviser about a detail that was missing from the printed information.'
+]},{id:'terms',title:'Reading the small table carefully',words:['policy','cancellation','cover','claim','single-item limit','missed departure','personal belongings','additional benefit'],paragraphs:[
+'In a practice comparison, a traveller read a sample {{policy}}. She checked the {{cover}} for {{cancellation}} separately from the rules about a {{missed departure}}. The conditions were not identical, so the name of one benefit did not explain the other.',
+'The table also covered personal belongings. It showed a total amount and a smaller {{single-item limit}}. She would need to keep evidence if she wanted to {{claim}} for a loss. An {{additional benefit}} appeared in another row, but it had its own conditions rather than applying in every situation.'
+]}],
+vocab:[
+['The studio flat has one main room, though there is a separate bathroom.\nstudio flat 指？','起居和睡眠空间合一的小公寓','必须与陌生人合住的大宿舍','有两间独立卧室的整栋住宅','只有厨房不能睡觉的房间','主空间合一，不代表卫生间必定与主房相通。'],
+['The terrace is outside the room; it is not the public pavement below.\nterrace 指？','供休息的室外露台','房间里面的一张长桌','楼下所有人通行的街道','泳池水下的台阶','露台是室外平台。'],
+['The room overlooks the courtyard, but the beach is a short walk away.\noverlooks 表示？','从房间可以望见庭院','房间必须穿过庭院才能进入','房间建在海滩里面','庭院比房间租金更低','朝向景观与距离、进入路线分开。'],
+['The brochure describes a saltwater pool rather than a freshwater one.\nsaltwater 是？','含盐水的','保证直接与海相通的','不允许游泳的','只在涨潮时有水的','含盐不自动说明泳池与海连通。'],
+['Watersports are arranged nearby, but are not all run by the apartment owner.\nwatersports 指？','在水上开展的运动活动','所有临海的餐饮活动','只在泳池边观看的表演','只包括陆地上的沙滩跑步','活动地点和运营方分开。'],
+['The quoted charge is per person, with two people required to share.\n正确理解是？','每个人各支付该报价','两个人把报价平均分摊','只入住一个人就必定免费','报价包含该楼全部房间','合住条件不把每人价变成每间价。'],
+['The brochure gives general details, while the adviser checks current availability.\nbrochure 是？','介绍设施和服务的手册','最终确认付款的银行凭证','只用于出发当天的乘车票','保证房间已经订到的合同','介绍资料不等于确定预订。'],
+['The policy lists conditions as well as amounts.\npolicy 在这里指？','保险合同或保单','旅行者自己的行程偏好','公寓每日清洁的轮班表','任何商品通用的宣传口号','保险语境中具体指保单。']
+],
+multi:[{q:'选择两项都表示“向保险方申请赔付”。',options:['make a claim','ask the insurer to pay for a covered loss','buy cover before any loss has occurred','cancel a journey without requesting payment'],answers:[0,1],why:'投保和取消行程本身都不等于索赔。'},{q:'选择两项都描述“可直接联系指定人员的电话”。',options:['a direct line','a number that bypasses the main switchboard','a general switchboard transferring every call','a recorded message with no contact option'],answers:[0,1],why:'直拨号码与总机、录音不同。'}],
+grammar:[['The maximum is up ___ the amount shown, depending on the reason.','to','up to给上限，不是保证每次都赔到该金额。','The sample terms allow payment up ___ the stated maximum if the conditions for a claim are met.'],['The price is charged per person, even ___ the room is shared.','though','even though让步，合住仍按每人计价。','Each traveller pays the quoted charge even ___ two people must share the accommodation.',['when','if']]],
+dictation:[['The ___ combines the sitting area and sleeping area in one main room.','studio flat','studio flat：单间公寓。'],['A small ___ gives guests somewhere to sit outside without leaving the building.','terrace','terrace：露台。'],['The rooms at the back ___ a quiet garden rather than the road.','overlook','overlook：俯瞰或朝向。'],['The ___ pool is available to guests, but swimming lessons cost extra.','saltwater','saltwater：咸水的。'],['Some ___ are offered at the nearby centre rather than at the apartments themselves.','watersports','watersports：水上运动。'],['Please check whether that amount is ___ before comparing the two offers.','per person','per person：每人。'],['The ___ lists the main facilities but does not confirm a particular room.','brochure','brochure：介绍册。'],['The ___ contains separate conditions for different kinds of loss.','policy','policy：保单。'],['The total allowance does not remove the smaller ___ for a single valuable object.','single-item limit','single-item limit：单件赔付上限。'],['An ___ may apply only after the circumstances described in the relevant section have been confirmed.','additional benefit','additional benefit：额外权益或保障。']],
+locators:`
+The room [has a view of|1] ___.~The upper apartment [overlooks|1] the courtyard; the lake is nearby, but cannot be seen from that room.~has a view of对应overlooks，近不等于看得见。
+The price [for each traveller|1] is ___.~For those dates the cost is ninety-six pounds [per person|1], not a total for the pair; two guests must share the room.~for each traveller对应per person，报价单位是重点。
+The [outdoor sitting area|1] includes ___.~The private [terrace|1] has two folding chairs; the barbecue facilities are shared elsewhere in the grounds.~outdoor sitting area对应terrace，私用空间与共用设施分开。
+The [corrected quotation|1] for the selected dates is ___.~After checking the calendar, the [revised price|1] is three hundred and sixty-eight pounds, rather than the earlier estimate of three hundred and forty.~corrected quotation对应revised price，修正后价格覆盖估价。
+The [highest possible payment|1] for cancellation is ___.~Cancellation has a [maximum|1] payment of six thousand pounds, though the actual claim depends on the covered loss and the relevant conditions.~highest possible payment对应maximum，最高额不是固定赔付。
+Follow-up questions should go to the adviser’s [personal contact number|1] rather than the ___.~Use my [direct line|1] for follow-up questions, rather than the general switchboard; the two numbers are listed separately in the email.~personal contact number对应direct line，所问是另一条联系渠道。
+For [one object|1], the payment cannot exceed the [separate ceiling|2] shown in the table, even when the total protection for possessions is much larger: ___.~The [single-item|1] [limit|2] is four hundred pounds, even though the overall belongings cover is much higher; an expensive camera would therefore not be protected up to the total simply because it was your only missing possession.~one object对应single-item；separate ceiling对应limit，单件和总额不同。
+If a traveller [fails to catch|1] the scheduled service, the benefit depends on the [cause|2] rather than merely on the fact that the journey began later: ___.~A [missed|1] departure is covered here when the [reason|2] is a cancelled connecting train; arriving late because you forgot to set an alarm is excluded, even if the additional travel costs would have been exactly the same.~fails to catch对应missed；cause对应reason，错过与为何错过分别定位。
+An [extra entitlement|1] may allow another person to travel, but the adviser distinguishes this from support by the insurer’s [appointed agent|2]; the visitor allowed is ___.~The [additional benefit|1] describes a companion in that situation, rather than a [representative|2] acting for the company, so the two descriptions should not be treated as the same promise of help.~extra entitlement对应additional benefit；appointed agent对应representative，援助者身份要区分。
+The adviser says some activities are offered [near the accommodation|1], not necessarily [on the premises|2]; the facility confirmed at the property itself is ___.~Other activities are [in the surrounding area|1], but the heated swimming pool is [on site|2]; the brochure also mentions a riding school nearby, which is separately run and is not included with the apartment booking.~near the accommodation对应surrounding area；on the premises对应on site，附近不等于店内含有。
+`,
+paragraphs:[{title:'Compare like with like',text:'The traveller asked for an [exact=>precise=>准确而非估计。] quotation for the dates she could use. A cheaper price in another month was [irrelevant=>not applicable=>不适用她的出行时间。] to that decision. She also checked whether the fee was [for each guest=>per person=>按人收取。]. A room could be [occupied jointly=>shared=>两个人合住。] without the displayed amount being divided between them. Some activities were [in the vicinity=>nearby=>在附近。] rather than inside the property, so she asked which facilities were [included=>covered by the stated price=>报价内包含。].',extras:['the total divided between all guests','available only on different dates but automatically usable','guaranteed to be inside the property']},{title:'A large total does not settle every claim',text:'The sample table showed an [upper ceiling=>maximum=>最高限额。] for possessions and a smaller cap [for any one object=>per item=>针对单件。]. A traveller would need to [check=>verify=>核实。] which conditions applied before expecting payment. Some loss might be [excluded=>not covered=>不在保障范围。], while an [extra provision=>additional benefit=>基本内容之外的权益。] could help only in a specified situation. The adviser asked the traveller to keep the relevant papers and [get back in touch=>contact them again=>之后再联系。] if anything remained unclear.',extras:['a guaranteed payment in every case','all objects covered up to the overall total','remove every condition from the policy']}],
+signals:[{title:'The unit of the price',focus:'识别报价修正、按人计价及未包含的附近活动。',text:`
+You have chosen a busy week, so I am checking the actual dates rather than reading the general starting price from the brochure.
+The lower figure I mentioned was for a different period; for your dates, please use the revised quotation I am sending now.~纠正旧价适用时间，以修正后报价为准。
+That includes the apartment and access to the shared facilities described in the main section of the information sheet.
+The amount is for each guest, even though two guests must occupy the room together.~明确每人计价，合住不代表平分报价。
+There is an outdoor sitting area at the property, and several activities are available in the surrounding district.
+Those local activities are not automatically included, so please check their location and charges separately.~附近活动不自动属于已含设施。
+I can send the operator’s contact details with your quotation so you can ask about the activities that interest you.
+`},{title:'Two different limits in one table',focus:'区分总额、单件上限与附条件的误出发保障。',text:`
+The benefits table gives several amounts, and the largest figure is not the answer to every question about a loss.
+For possessions, there is an overall allowance that applies across the relevant part of a claim.
+There is also a lower ceiling for one object, so a single expensive item cannot simply use the whole overall allowance.~明确单件上限独立于总额度。
+The examples in the guide are intended to show that difference, rather than predict the value of every traveller’s belongings.
+Another section concerns a missed departure, but its conditions need to be read separately from cancellation.
+Payment there depends on why the departure was missed; lateness alone is not enough to establish that the example benefit applies.~听取误出发的真实条件，而非只抓到“晚了”。
+For questions about those details, use the adviser’s direct number rather than the general line printed on the cover.~最后给出实际联系渠道，直拨与总机区分。
+`}]
+});

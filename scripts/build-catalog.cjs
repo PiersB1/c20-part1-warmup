@@ -3,7 +3,7 @@ const root=path.resolve(__dirname,'..'),context={};context.window=context;vm.cre
 for(const file of ['listening-practices.js','practice-builders.js','preparation-builders.js','editorial-multi.js','editorial-quiz-context.js','editorial-signal-context.js','editorial-revisions.js',...fs.readdirSync(path.join(root,'data')).filter(name=>name.endsWith('.practice.js')).sort()])vm.runInContext(fs.readFileSync(path.join(root,'data',file),'utf8'),context,{filename:file});
 for(const id of Object.keys(context.RRTopicSeeds))if(!context.RRListeningPractices[id+'-1']||!context.RRListeningPractices[id+'-2'])throw Error(`Missing authored revision for ${id}`);
 const practices=Object.values(context.RRListeningPractices).map(item=>({id:item.id,mode:'listening',book:item.location.book,test:item.location.test,part:item.location.part,title:item.label,description:item.title+' · '+item.sections.map(s=>s.title).join(' · '),url:`listening.html?id=${item.id}`}));
-for(const name of ['reading-practices.js',...fs.readdirSync(path.join(root,'data')).filter(name=>/^reading-c\d.*\.js$/.test(name)).sort()])vm.runInContext(fs.readFileSync(path.join(root,'data',name),'utf8'),context,{filename:name});
+for(const name of ['reading-practices.js','reading-pack-builder.js',...fs.readdirSync(path.join(root,'data')).filter(name=>/^reading-c\d.*\.js$/.test(name)).sort()])vm.runInContext(fs.readFileSync(path.join(root,'data',name),'utf8'),context,{filename:name});
 practices.push(...Object.values(context.RRReadingPractices).map(item=>({id:item.id,mode:'reading',book:item.location.book,test:item.location.test,part:item.location.part,title:item.label,description:item.title+' · '+item.sections.map(s=>s.title).join(' · '),url:`reading.html?id=${item.id}`})));
 practices.push(...require('./foundation-library.cjs')(context,root).map(item=>({id:item.id,mode:item.mode,foundation:true,book:item.location.book,test:item.location.test,part:item.location.part,title:item.label,description:item.title+' · 词汇与语境',url:`foundation.html?id=${item.id}`})));
 const entries=practices.sort((a,b)=>b.book-a.book||a.test-b.test||a.part-b.part||a.id.localeCompare(b.id));
@@ -11,4 +11,10 @@ fs.writeFileSync(path.join(root,'exercise-catalog.js'),'window.RRExerciseCatalog
 const meanings={};
 for(const item of [...Object.values(context.RRListeningPractices),...Object.values(context.RRReadingPractices)])for(const [english,chinese]of item.coreWords)meanings[`${item.vocabId||item.id.replace(/-[12]$/,'')}:${english}`]=chinese;
 fs.writeFileSync(path.join(root,'data/vocab-meanings.js'),'window.RRVocabMeanings = '+JSON.stringify(meanings,null,2)+';\n');
-console.log(`Catalog: ${entries.length} practices across ${new Set(entries.map(e=>`${e.book}/${e.test}/${e.part}`)).size} parts.`);
+const readingPage=path.join(root,'reading.html');
+const tags=fs.readdirSync(path.join(root,'data')).filter(n=>/^reading-c\d.*\.js$/.test(n)).sort().map(n=>'  <script src="data/'+n+'"></script>').join('\n');
+fs.writeFileSync(readingPage,fs.readFileSync(readingPage,'utf8').replace(/  <!-- reading-topics:start -->[\s\S]*?  <!-- reading-topics:end -->/,'  <!-- reading-topics:start -->\n'+tags+'\n  <!-- reading-topics:end -->'));
+const listeningPage=path.join(root,'listening.html');
+const listeningTags=fs.readdirSync(path.join(root,'data')).filter(n=>n.endsWith('.practice.js')).sort().map(n=>'  <script src="data/'+n+'"></script>').join('\n');
+fs.writeFileSync(listeningPage,fs.readFileSync(listeningPage,'utf8').replace(/  <!-- listening-topics:start -->[\s\S]*?  <!-- listening-topics:end -->/,'  <!-- listening-topics:start -->\n'+listeningTags+'\n  <!-- listening-topics:end -->'));
+console.log(`Catalog: ${entries.length} practices across ${new Set(entries.map(e=>`${e.mode}/${e.book}/${e.test}/${e.part}`)).size} parts.`);

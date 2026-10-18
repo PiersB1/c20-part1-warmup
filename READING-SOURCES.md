@@ -38,3 +38,21 @@
 - [IELTS Training Online：Test4解析](https://ieltstrainingonline.com/answers-and-explanations-for-cambridge-ielts-15-reading-test-4/)：交叉核对段落信息关系、题型及答案，避免复用原题填空答案。
 
 原创证据短文比较山坡幼苗遮护条件；笔记短文介绍保护区采种程序；表格短文介绍试验种植床的材料与功能。未复述原题的地域、人物、历史进程、食物加工链或树体部位用途表；填空使用新答案。判断专项另外练习全称范围、观点来源、销量和盈利、可能性与实际安排。各模块独立设定信息，不复用整句。
+
+## 剑21 Test1 Passage2
+
+核对日期：2026-10-18。Why we need silence；原题14–17段落信息匹配，18–21一词摘要填空，22–26人物观点匹配。
+
+核对来源：[Engnovate完整Test1](https://engnovate.com/ielts-reading-tests/cambridge-ielts-21-academic-reading-test-1/)。逐题核对题型、关键词和信息关系；训练使用社区设施、共享办公室和语言中心等原创材料，不复制浮箱实验的研究对象、条件、人数、时长和答案链。
+
+练习1为16语境词义、6同义改写、6处可逆匹配、6长句理解，共36分。练习2为6证据题（10分）、4段落信息、4人物观点、6一词摘要，共24分。36词共享练习0/1/2与收藏。人物观点与段落信息各有独立文章，不复用整段文字。原题摘要答案breath/questionnaire/wellbeing/depression列入新填空禁用检查。
+
+验收：tests/reading-c21-t1-p2.cjs，含36+24全对、错误重选、人物选项重复使用、合理指代备选、全套记录及完整JSON、手机布局。
+
+## 本次完整范围
+
+剑21、19、18、17、16的60篇现均完成练习0/1/2，另保留剑15T4P1。20套原篇正文和题目按Test核对，来源为https://engnovate.com/ielts-reading-tests/cambridge-ielts-{book}-academic-reading-test-{test}/；本地缓存用于创作核查，不由网页加载。篇目标题和具体来源URL在EXPANSION-AUDIT.json。
+
+新增58个RRReadPack数据包逐篇编写词汇例句、新应用、两篇语境、选择题、匹配、长句和证据材料；未把原篇全文或原题答案链加入页面。练习2专项依该篇原题选择判断、段落信息/人物/标题匹配、词库摘要、一词或两词填空、流程、表格、简答和原创图示。详见EXPANSION-COVERAGE.md。
+
+Roman tunnels使用原创竖井模型图，不复刻原图的答案布局。图示练习为rope/ladder/bucket/wheel，其他材料练原篇的测量、偏差、对挖和修正关系；不把原题图中定位词直接当新图答案。

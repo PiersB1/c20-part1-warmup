@@ -1,9 +1,15 @@
 const fs=require('fs'),path=require('path'),vm=require('vm');
 module.exports=(context,root)=>{
   const previous=JSON.parse(fs.readFileSync(path.join(root,'data/vocabulary-clarity.json'),'utf8'));
-  for(const file of ['foundation-listening.js','foundation-reading.js','foundation-c20-parts1-2.js'])vm.runInContext(fs.readFileSync(path.join(root,'data',file),'utf8'),context,{filename:file});
+  for(const file of ['foundation-listening.js','foundation-reading.js','foundation-c20-parts1-2.js','foundation-c20-parts3-4.js','foundation-c19.js','foundation-c18.js'])vm.runInContext(fs.readFileSync(path.join(root,'data',file),'utf8'),context,{filename:file});
   vm.runInContext(fs.readFileSync(path.join(root,'data/foundation-contexts.js'),'utf8'),context,{filename:'foundation-contexts.js'});
   vm.runInContext(fs.readFileSync(path.join(root,'data/foundation-c20-parts1-2-contexts.js'),'utf8'),context,{filename:'foundation-c20-parts1-2-contexts.js'});
+  vm.runInContext(fs.readFileSync(path.join(root,'data/foundation-c20-parts3-4-contexts.js'),'utf8'),context,{filename:'foundation-c20-parts3-4-contexts.js'});
+  vm.runInContext(fs.readFileSync(path.join(root,'data/foundation-c19-contexts.js'),'utf8'),context,{filename:'foundation-c19-contexts.js'});
+  vm.runInContext(fs.readFileSync(path.join(root,'data/foundation-c18-contexts.js'),'utf8'),context,{filename:'foundation-c18-contexts.js'});
+  vm.runInContext(fs.readFileSync(path.join(root,'data/foundation-reading-c21-t1-p2.js'),'utf8'),context,{filename:'foundation-reading-c21-t1-p2.js'});
+  for(const source of context.RRReadingFoundationSources||[]){context.RRFoundationSources.push(source);context.RRFoundationContexts[source.base]=source.contexts;}
+  for(const source of context.RRListenFoundationSources||[]){context.RRFoundationSources.push(source);context.RRFoundationContexts[source.base]=source.contexts;}
   let audioIndex=0;
   const practices=context.RRFoundationSources.map(source=>{
     const base=(source.mode==='reading'?context.RRReadingPractices:context.RRListeningPractices)[source.base];
@@ -12,7 +18,7 @@ module.exports=(context,root)=>{
     if(source.terms.length!==core.size||new Set(source.terms.map(t=>t[0])).size!==core.size)throw Error('Incomplete word coverage '+id);
     const terms=source.terms.map(([english,example,translation,application,applicationTranslation],i)=>{
       if(!core.has(english)||application.split('___').length!==2||!example||!translation||!applicationTranslation)throw Error('Invalid term '+english);
-      return {id:`w${i+1}`,english,chinese:core.get(english),previousMeanings:Object.keys(previous).filter(old=>previous[old]===core.get(english)),example,translation,application,applicationTranslation,audio:`audio/foundation/${id}/${String(i+1).padStart(2,'0')}.mp3`,voice:audioIndex++%2?'en-GB-RyanNeural':'en-GB-LibbyNeural'};
+      return {id:`w${i+1}`,english,chinese:core.get(english),previousMeanings:Object.keys(previous).filter(old=>previous[old]===core.get(english)),example,translation,application,applicationTranslation,audio:`audio/foundation/${id}/${String(i+1).padStart(2,'0')}.mp3`,voice:(source.voiceOffset===undefined?audioIndex++:source.voiceOffset+i)%2?'en-GB-RyanNeural':'en-GB-LibbyNeural'};
     });
     const grouped=source.groups.flat();
     if(grouped.length!==terms.length||new Set(grouped).size!==terms.length||grouped.some(w=>!core.has(w))||source.groups.some(g=>g.length<4||g.length>6))throw Error('Invalid word groups '+id);

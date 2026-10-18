@@ -7,8 +7,8 @@ let pw;try{pw=require('playwright');}catch{pw=require(path.join(os.homedir(),'.c
  page.on('pageerror',error=>errors.push(error.message));
  await page.addInitScript(()=>{window.__qaAudio=[];const NativeAudio=window.Audio;window.Audio=function(...args){const audio=new NativeAudio(...args);__qaAudio.push(audio);return audio;};});
  const home=pathToFileURL(path.join(root,'index.html')).href;
- await page.goto(home);assert.equal(await page.locator('a.available').count(),48);
- const entries=await page.evaluate(()=>RRExerciseCatalog.filter(item=>item.book===20&&item.part<=2));
+ await page.goto(home);assert.equal(await page.locator('a.available').count(),await page.evaluate(()=>new Set(RRExerciseCatalog.filter(e=>e.mode==='listening').map(e=>e.book+'/'+e.test+'/'+e.part)).size));
+ const entries=await page.evaluate(()=>RRExerciseCatalog.filter(item=>item.mode==='listening'&&!item.foundation&&item.book===20&&item.part<=2));
  assert.equal(entries.length,16);
  let decoded=0;
  for(const entry of entries){

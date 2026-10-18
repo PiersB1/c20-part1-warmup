@@ -31,6 +31,347 @@ window.RRExerciseCatalog = [
     "url": "reading.html?id=c21-r-t1-p1-2"
   },
   {
+    "id": "c21-r-t1-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 21,
+    "test": 1,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "噪声、安静与身心反应 · 词汇与语境",
+    "url": "foundation.html?id=c21-r-t1-p2-0"
+  },
+  {
+    "id": "c21-r-t1-p2-1",
+    "mode": "reading",
+    "book": 21,
+    "test": 1,
+    "part": 2,
+    "title": "练习 1",
+    "description": "噪声、安静与身心反应 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c21-r-t1-p2-1"
+  },
+  {
+    "id": "c21-r-t1-p2-2",
+    "mode": "reading",
+    "book": 21,
+    "test": 1,
+    "part": 2,
+    "title": "练习 2",
+    "description": "噪声、安静与身心反应 · 定位与证据 · 段落信息匹配 · 人物观点匹配 · 摘要填空",
+    "url": "reading.html?id=c21-r-t1-p2-2"
+  },
+  {
+    "id": "c21-r-t1-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 21,
+    "test": 1,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "商品贸易、生产与公共健康 · 词汇与语境",
+    "url": "foundation.html?id=c21-r-t1-p3-0"
+  },
+  {
+    "id": "c21-r-t1-p3-1",
+    "mode": "reading",
+    "book": 21,
+    "test": 1,
+    "part": 3,
+    "title": "练习 1",
+    "description": "商品贸易、生产与公共健康 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c21-r-t1-p3-1"
+  },
+  {
+    "id": "c21-r-t1-p3-2",
+    "mode": "reading",
+    "book": 21,
+    "test": 1,
+    "part": 3,
+    "title": "练习 2",
+    "description": "商品贸易、生产与公共健康 · 定位与证据 · 作者意图与评价 · 选词摘要 · 作者观点判断",
+    "url": "reading.html?id=c21-r-t1-p3-2"
+  },
+  {
+    "id": "c21-r-t2-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 21,
+    "test": 2,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "动物睡眠与梦境证据 · 词汇与语境",
+    "url": "foundation.html?id=c21-r-t2-p1-0"
+  },
+  {
+    "id": "c21-r-t2-p1-1",
+    "mode": "reading",
+    "book": 21,
+    "test": 2,
+    "part": 1,
+    "title": "练习 1",
+    "description": "动物睡眠与梦境证据 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c21-r-t2-p1-1"
+  },
+  {
+    "id": "c21-r-t2-p1-2",
+    "mode": "reading",
+    "book": 21,
+    "test": 2,
+    "part": 1,
+    "title": "练习 2",
+    "description": "动物睡眠与梦境证据 · 定位与证据 · 一词表格填空 · 信息判断",
+    "url": "reading.html?id=c21-r-t2-p1-2"
+  },
+  {
+    "id": "c21-r-t2-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 21,
+    "test": 2,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "古代社会、贸易与考古推断 · 词汇与语境",
+    "url": "foundation.html?id=c21-r-t2-p2-0"
+  },
+  {
+    "id": "c21-r-t2-p2-1",
+    "mode": "reading",
+    "book": 21,
+    "test": 2,
+    "part": 2,
+    "title": "练习 1",
+    "description": "古代社会、贸易与考古推断 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c21-r-t2-p2-1"
+  },
+  {
+    "id": "c21-r-t2-p2-2",
+    "mode": "reading",
+    "book": 21,
+    "test": 2,
+    "part": 2,
+    "title": "练习 2",
+    "description": "古代社会、贸易与考古推断 · 定位与证据 · 段落信息匹配 · 多项选择 · 一词摘要填空",
+    "url": "reading.html?id=c21-r-t2-p2-2"
+  },
+  {
+    "id": "c21-r-t2-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 21,
+    "test": 2,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "人工智能的能力、限制与使用判断 · 词汇与语境",
+    "url": "foundation.html?id=c21-r-t2-p3-0"
+  },
+  {
+    "id": "c21-r-t2-p3-1",
+    "mode": "reading",
+    "book": 21,
+    "test": 2,
+    "part": 3,
+    "title": "练习 1",
+    "description": "人工智能的能力、限制与使用判断 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c21-r-t2-p3-1"
+  },
+  {
+    "id": "c21-r-t2-p3-2",
+    "mode": "reading",
+    "book": 21,
+    "test": 2,
+    "part": 3,
+    "title": "练习 2",
+    "description": "人工智能的能力、限制与使用判断 · 定位与证据 · 理解作者论证 · 选词摘要 · 作者观点判断",
+    "url": "reading.html?id=c21-r-t2-p3-2"
+  },
+  {
+    "id": "c21-r-t3-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 21,
+    "test": 3,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "物种保护与种群恢复 · 词汇与语境",
+    "url": "foundation.html?id=c21-r-t3-p1-0"
+  },
+  {
+    "id": "c21-r-t3-p1-1",
+    "mode": "reading",
+    "book": 21,
+    "test": 3,
+    "part": 1,
+    "title": "练习 1",
+    "description": "物种保护与种群恢复 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c21-r-t3-p1-1"
+  },
+  {
+    "id": "c21-r-t3-p1-2",
+    "mode": "reading",
+    "book": 21,
+    "test": 3,
+    "part": 1,
+    "title": "练习 2",
+    "description": "物种保护与种群恢复 · 定位与证据 · 一词笔记填空 · 信息判断",
+    "url": "reading.html?id=c21-r-t3-p1-2"
+  },
+  {
+    "id": "c21-r-t3-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 21,
+    "test": 3,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "城市增长与公共交通 · 词汇与语境",
+    "url": "foundation.html?id=c21-r-t3-p2-0"
+  },
+  {
+    "id": "c21-r-t3-p2-1",
+    "mode": "reading",
+    "book": 21,
+    "test": 3,
+    "part": 2,
+    "title": "练习 1",
+    "description": "城市增长与公共交通 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c21-r-t3-p2-1"
+  },
+  {
+    "id": "c21-r-t3-p2-2",
+    "mode": "reading",
+    "book": 21,
+    "test": 3,
+    "part": 2,
+    "title": "练习 2",
+    "description": "城市增长与公共交通 · 定位与证据 · 信息判断 · 一词笔记填空",
+    "url": "reading.html?id=c21-r-t3-p2-2"
+  },
+  {
+    "id": "c21-r-t3-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 21,
+    "test": 3,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "重新审视史前证据与固有观念 · 词汇与语境",
+    "url": "foundation.html?id=c21-r-t3-p3-0"
+  },
+  {
+    "id": "c21-r-t3-p3-1",
+    "mode": "reading",
+    "book": 21,
+    "test": 3,
+    "part": 3,
+    "title": "练习 1",
+    "description": "重新审视史前证据与固有观念 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c21-r-t3-p3-1"
+  },
+  {
+    "id": "c21-r-t3-p3-2",
+    "mode": "reading",
+    "book": 21,
+    "test": 3,
+    "part": 3,
+    "title": "练习 2",
+    "description": "重新审视史前证据与固有观念 · 定位与证据 · 作者观点与论证 · 句尾匹配 · 作者观点判断",
+    "url": "reading.html?id=c21-r-t3-p3-2"
+  },
+  {
+    "id": "c21-r-t4-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 21,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "水生植物扩散、资源利用与社区选择 · 词汇与语境",
+    "url": "foundation.html?id=c21-r-t4-p1-0"
+  },
+  {
+    "id": "c21-r-t4-p1-1",
+    "mode": "reading",
+    "book": 21,
+    "test": 4,
+    "part": 1,
+    "title": "练习 1",
+    "description": "水生植物扩散、资源利用与社区选择 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c21-r-t4-p1-1"
+  },
+  {
+    "id": "c21-r-t4-p1-2",
+    "mode": "reading",
+    "book": 21,
+    "test": 4,
+    "part": 1,
+    "title": "练习 2",
+    "description": "水生植物扩散、资源利用与社区选择 · 定位与证据 · 信息判断 · 流程填空 · 一词笔记填空",
+    "url": "reading.html?id=c21-r-t4-p1-2"
+  },
+  {
+    "id": "c21-r-t4-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 21,
+    "test": 4,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "多语言背景、教学语言与学习机会 · 词汇与语境",
+    "url": "foundation.html?id=c21-r-t4-p2-0"
+  },
+  {
+    "id": "c21-r-t4-p2-1",
+    "mode": "reading",
+    "book": 21,
+    "test": 4,
+    "part": 2,
+    "title": "练习 1",
+    "description": "多语言背景、教学语言与学习机会 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c21-r-t4-p2-1"
+  },
+  {
+    "id": "c21-r-t4-p2-2",
+    "mode": "reading",
+    "book": 21,
+    "test": 4,
+    "part": 2,
+    "title": "练习 2",
+    "description": "多语言背景、教学语言与学习机会 · 定位与证据 · 选词摘要 · 作者观点判断 · 理解研究与建议",
+    "url": "reading.html?id=c21-r-t4-p2-2"
+  },
+  {
+    "id": "c21-r-t4-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 21,
+    "test": 4,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "手工艺复兴与制作中的反复试验 · 词汇与语境",
+    "url": "foundation.html?id=c21-r-t4-p3-0"
+  },
+  {
+    "id": "c21-r-t4-p3-1",
+    "mode": "reading",
+    "book": 21,
+    "test": 4,
+    "part": 3,
+    "title": "练习 1",
+    "description": "手工艺复兴与制作中的反复试验 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c21-r-t4-p3-1"
+  },
+  {
+    "id": "c21-r-t4-p3-2",
+    "mode": "reading",
+    "book": 21,
+    "test": 4,
+    "part": 3,
+    "title": "练习 2",
+    "description": "手工艺复兴与制作中的反复试验 · 定位与证据 · 选词摘要 · 作者观点判断 · 书评中的意图与评价",
+    "url": "reading.html?id=c21-r-t4-p3-2"
+  },
+  {
     "id": "c20-t1-p1-0",
     "mode": "listening",
     "foundation": true,
@@ -93,6 +434,17 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c20-t1-p2-2"
   },
   {
+    "id": "c20-t1-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 1,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "孤独感研究讨论 · 词汇与语境",
+    "url": "foundation.html?id=c20-t1-p3-0"
+  },
+  {
     "id": "c20-t1-p3-1",
     "mode": "listening",
     "book": 20,
@@ -111,6 +463,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "孤独感研究讨论 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c20-t1-p3-2"
+  },
+  {
+    "id": "c20-t1-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 1,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "城市河流修复 · 词汇与语境",
+    "url": "foundation.html?id=c20-t1-p4-0"
   },
   {
     "id": "c20-t1-p4-1",
@@ -195,6 +558,17 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c20-t2-p2-2"
   },
   {
+    "id": "c20-t2-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 2,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "人文地理选题讨论 · 词汇与语境",
+    "url": "foundation.html?id=c20-t2-p3-0"
+  },
+  {
     "id": "c20-t2-p3-1",
     "mode": "listening",
     "book": 20,
@@ -213,6 +587,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "人文地理选题讨论 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c20-t2-p3-2"
+  },
+  {
+    "id": "c20-t2-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 2,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "食品潮流与营销 · 词汇与语境",
+    "url": "foundation.html?id=c20-t2-p4-0"
   },
   {
     "id": "c20-t2-p4-1",
@@ -297,6 +682,17 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c20-t3-p2-2"
   },
   {
+    "id": "c20-t3-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 3,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "剧场节目单研究 · 词汇与语境",
+    "url": "foundation.html?id=c20-t3-p3-0"
+  },
+  {
     "id": "c20-t3-p3-1",
     "mode": "listening",
     "book": 20,
@@ -315,6 +711,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "剧场节目单研究 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c20-t3-p3-2"
+  },
+  {
+    "id": "c20-t3-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 3,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "包容性设计 · 词汇与语境",
+    "url": "foundation.html?id=c20-t3-p4-0"
   },
   {
     "id": "c20-t3-p4-1",
@@ -399,6 +806,17 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c20-t4-p2-2"
   },
   {
+    "id": "c20-t4-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 4,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "手写学习与书写困难 · 词汇与语境",
+    "url": "foundation.html?id=c20-t4-p3-0"
+  },
+  {
     "id": "c20-t4-p3-1",
     "mode": "listening",
     "book": 20,
@@ -417,6 +835,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "手写学习与书写困难 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c20-t4-p3-2"
+  },
+  {
+    "id": "c20-t4-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 20,
+    "test": 4,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "猛禽保护与社区研究 · 词汇与语境",
+    "url": "foundation.html?id=c20-t4-p4-0"
   },
   {
     "id": "c20-t4-p4-1",
@@ -439,6 +868,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c20-t4-p4-2"
   },
   {
+    "id": "c19-r-t1-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 19,
+    "test": 1,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "运动器材的调整与性能 · 词汇与语境",
+    "url": "foundation.html?id=c19-r-t1-p1-0"
+  },
+  {
+    "id": "c19-r-t1-p1-1",
+    "mode": "reading",
+    "book": 19,
+    "test": 1,
+    "part": 1,
+    "title": "练习 1",
+    "description": "运动器材的调整与性能 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c19-r-t1-p1-1"
+  },
+  {
+    "id": "c19-r-t1-p1-2",
+    "mode": "reading",
+    "book": 19,
+    "test": 1,
+    "part": 1,
+    "title": "练习 2",
+    "description": "运动器材的调整与性能 · 定位与证据 · 信息判断 · 一词笔记填空",
+    "url": "reading.html?id=c19-r-t1-p1-2"
+  },
+  {
+    "id": "c19-t1-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 1,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "郊野公园学校参访 · 词汇与语境",
+    "url": "foundation.html?id=c19-t1-p1-0"
+  },
+  {
     "id": "c19-t1-p1-1",
     "mode": "listening",
     "book": 19,
@@ -457,6 +928,48 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "郊野公园学校参访 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c19-t1-p1-2"
+  },
+  {
+    "id": "c19-r-t1-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 19,
+    "test": 1,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "海上贸易、安全与历史解释 · 词汇与语境",
+    "url": "foundation.html?id=c19-r-t1-p2-0"
+  },
+  {
+    "id": "c19-r-t1-p2-1",
+    "mode": "reading",
+    "book": 19,
+    "test": 1,
+    "part": 2,
+    "title": "练习 1",
+    "description": "海上贸易、安全与历史解释 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c19-r-t1-p2-1"
+  },
+  {
+    "id": "c19-r-t1-p2-2",
+    "mode": "reading",
+    "book": 19,
+    "test": 1,
+    "part": 2,
+    "title": "练习 2",
+    "description": "海上贸易、安全与历史解释 · 定位与证据 · 段落信息匹配 · 双项选择 · 一词摘要填空",
+    "url": "reading.html?id=c19-r-t1-p2-2"
+  },
+  {
+    "id": "c19-t1-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 1,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "友好城市交流与庄园参访 · 词汇与语境",
+    "url": "foundation.html?id=c19-t1-p2-0"
   },
   {
     "id": "c19-t1-p2-1",
@@ -479,6 +992,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c19-t1-p2-2"
   },
   {
+    "id": "c19-r-t1-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 19,
+    "test": 1,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "错误信息、判断与纠正 · 词汇与语境",
+    "url": "foundation.html?id=c19-r-t1-p3-0"
+  },
+  {
+    "id": "c19-r-t1-p3-1",
+    "mode": "reading",
+    "book": 19,
+    "test": 1,
+    "part": 3,
+    "title": "练习 1",
+    "description": "错误信息、判断与纠正 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c19-r-t1-p3-1"
+  },
+  {
+    "id": "c19-r-t1-p3-2",
+    "mode": "reading",
+    "book": 19,
+    "test": 1,
+    "part": 3,
+    "title": "练习 2",
+    "description": "错误信息、判断与纠正 · 定位与证据 · 理解论证与限定 · 选词摘要 · 作者观点判断",
+    "url": "reading.html?id=c19-r-t1-p3-2"
+  },
+  {
+    "id": "c19-t1-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 1,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "食品项目与消费趋势 · 词汇与语境",
+    "url": "foundation.html?id=c19-t1-p3-0"
+  },
+  {
     "id": "c19-t1-p3-1",
     "mode": "listening",
     "book": 19,
@@ -497,6 +1052,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "食品项目与消费趋势 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c19-t1-p3-2"
+  },
+  {
+    "id": "c19-t1-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 1,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "泥炭地中的古代农耕遗址 · 词汇与语境",
+    "url": "foundation.html?id=c19-t1-p4-0"
   },
   {
     "id": "c19-t1-p4-1",
@@ -519,6 +1085,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c19-t1-p4-2"
   },
   {
+    "id": "c19-r-t2-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 19,
+    "test": 2,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "工业转型、生产效率与劳动生活 · 词汇与语境",
+    "url": "foundation.html?id=c19-r-t2-p1-0"
+  },
+  {
+    "id": "c19-r-t2-p1-1",
+    "mode": "reading",
+    "book": 19,
+    "test": 2,
+    "part": 1,
+    "title": "练习 1",
+    "description": "工业转型、生产效率与劳动生活 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c19-r-t2-p1-1"
+  },
+  {
+    "id": "c19-r-t2-p1-2",
+    "mode": "reading",
+    "book": 19,
+    "test": 2,
+    "part": 1,
+    "title": "练习 2",
+    "description": "工业转型、生产效率与劳动生活 · 定位与证据 · 一词笔记填空 · 信息判断",
+    "url": "reading.html?id=c19-r-t2-p1-2"
+  },
+  {
+    "id": "c19-t2-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 2,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "吉他小组报名与活动安排 · 词汇与语境",
+    "url": "foundation.html?id=c19-t2-p1-0"
+  },
+  {
     "id": "c19-t2-p1-1",
     "mode": "listening",
     "book": 19,
@@ -537,6 +1145,48 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "吉他小组报名与活动安排 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c19-t2-p1-2"
+  },
+  {
+    "id": "c19-r-t2-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 19,
+    "test": 2,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "压力评估、身体反应与表现 · 词汇与语境",
+    "url": "foundation.html?id=c19-r-t2-p2-0"
+  },
+  {
+    "id": "c19-r-t2-p2-1",
+    "mode": "reading",
+    "book": 19,
+    "test": 2,
+    "part": 2,
+    "title": "练习 1",
+    "description": "压力评估、身体反应与表现 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c19-r-t2-p2-1"
+  },
+  {
+    "id": "c19-r-t2-p2-2",
+    "mode": "reading",
+    "book": 19,
+    "test": 2,
+    "part": 2,
+    "title": "练习 2",
+    "description": "压力评估、身体反应与表现 · 定位与证据 · 段落信息匹配 · 一词句子填空 · 双项选择",
+    "url": "reading.html?id=c19-r-t2-p2-2"
+  },
+  {
+    "id": "c19-t2-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 2,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "救生艇志愿者经历 · 词汇与语境",
+    "url": "foundation.html?id=c19-t2-p2-0"
   },
   {
     "id": "c19-t2-p2-1",
@@ -559,6 +1209,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c19-t2-p2-2"
   },
   {
+    "id": "c19-r-t2-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 19,
+    "test": 2,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "高水平表现、练习与成长条件 · 词汇与语境",
+    "url": "foundation.html?id=c19-r-t2-p3-0"
+  },
+  {
+    "id": "c19-r-t2-p3-1",
+    "mode": "reading",
+    "book": 19,
+    "test": 2,
+    "part": 3,
+    "title": "练习 1",
+    "description": "高水平表现、练习与成长条件 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c19-r-t2-p3-1"
+  },
+  {
+    "id": "c19-r-t2-p3-2",
+    "mode": "reading",
+    "book": 19,
+    "test": 2,
+    "part": 3,
+    "title": "练习 2",
+    "description": "高水平表现、练习与成长条件 · 定位与证据 · 选词摘要 · 作者观点判断 · 理解研究范围",
+    "url": "reading.html?id=c19-r-t2-p3-2"
+  },
+  {
+    "id": "c19-t2-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 2,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "鞋类回收研究 · 词汇与语境",
+    "url": "foundation.html?id=c19-t2-p3-0"
+  },
+  {
     "id": "c19-t2-p3-1",
     "mode": "listening",
     "book": 19,
@@ -577,6 +1269,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "鞋类回收研究 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c19-t2-p3-2"
+  },
+  {
+    "id": "c19-t2-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 2,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "缓步动物与隐生状态（生命活动几乎暂停） · 词汇与语境",
+    "url": "foundation.html?id=c19-t2-p4-0"
   },
   {
     "id": "c19-t2-p4-1",
@@ -599,6 +1302,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c19-t2-p4-2"
   },
   {
+    "id": "c19-r-t3-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 19,
+    "test": 3,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "早期居民、遗址层位与迁移推断 · 词汇与语境",
+    "url": "foundation.html?id=c19-r-t3-p1-0"
+  },
+  {
+    "id": "c19-r-t3-p1-1",
+    "mode": "reading",
+    "book": 19,
+    "test": 3,
+    "part": 1,
+    "title": "练习 1",
+    "description": "早期居民、遗址层位与迁移推断 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c19-r-t3-p1-1"
+  },
+  {
+    "id": "c19-r-t3-p1-2",
+    "mode": "reading",
+    "book": 19,
+    "test": 3,
+    "part": 1,
+    "title": "练习 2",
+    "description": "早期居民、遗址层位与迁移推断 · 定位与证据 · 信息判断 · 一词笔记填空",
+    "url": "reading.html?id=c19-r-t3-p1-2"
+  },
+  {
+    "id": "c19-t3-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 3,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "本地食品店购物咨询 · 词汇与语境",
+    "url": "foundation.html?id=c19-t3-p1-0"
+  },
+  {
     "id": "c19-t3-p1-1",
     "mode": "listening",
     "book": 19,
@@ -617,6 +1362,48 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "本地食品店购物咨询 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c19-t3-p1-2"
+  },
+  {
+    "id": "c19-r-t3-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 19,
+    "test": 3,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "湿地价值、利用压力与社区参与 · 词汇与语境",
+    "url": "foundation.html?id=c19-r-t3-p2-0"
+  },
+  {
+    "id": "c19-r-t3-p2-1",
+    "mode": "reading",
+    "book": 19,
+    "test": 3,
+    "part": 2,
+    "title": "练习 1",
+    "description": "湿地价值、利用压力与社区参与 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c19-r-t3-p2-1"
+  },
+  {
+    "id": "c19-r-t3-p2-2",
+    "mode": "reading",
+    "book": 19,
+    "test": 3,
+    "part": 2,
+    "title": "练习 2",
+    "description": "湿地价值、利用压力与社区参与 · 定位与证据 · 段落信息匹配 · 一词句子填空 · 人物观点匹配",
+    "url": "reading.html?id=c19-r-t3-p2-2"
+  },
+  {
+    "id": "c19-t3-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 3,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "儿童图书节与阅读活动 · 词汇与语境",
+    "url": "foundation.html?id=c19-t3-p2-0"
   },
   {
     "id": "c19-t3-p2-1",
@@ -639,6 +1426,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c19-t3-p2-2"
   },
   {
+    "id": "c19-r-t3-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 19,
+    "test": 3,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "语音翻译的性能与社会沟通 · 词汇与语境",
+    "url": "foundation.html?id=c19-r-t3-p3-0"
+  },
+  {
+    "id": "c19-r-t3-p3-1",
+    "mode": "reading",
+    "book": 19,
+    "test": 3,
+    "part": 3,
+    "title": "练习 1",
+    "description": "语音翻译的性能与社会沟通 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c19-r-t3-p3-1"
+  },
+  {
+    "id": "c19-r-t3-p3-2",
+    "mode": "reading",
+    "book": 19,
+    "test": 3,
+    "part": 3,
+    "title": "练习 2",
+    "description": "语音翻译的性能与社会沟通 · 定位与证据 · 理解作者立场 · 句尾匹配 · 作者观点判断",
+    "url": "reading.html?id=c19-r-t3-p3-2"
+  },
+  {
+    "id": "c19-t3-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 3,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "科学课堂实验设计 · 词汇与语境",
+    "url": "foundation.html?id=c19-t3-p3-0"
+  },
+  {
     "id": "c19-t3-p3-1",
     "mode": "listening",
     "book": 19,
@@ -657,6 +1486,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "科学课堂实验设计 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c19-t3-p3-2"
+  },
+  {
+    "id": "c19-t3-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 3,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "微塑料与土壤生态 · 词汇与语境",
+    "url": "foundation.html?id=c19-t3-p4-0"
   },
   {
     "id": "c19-t3-p4-1",
@@ -679,6 +1519,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c19-t3-p4-2"
   },
   {
+    "id": "c19-r-t4-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 19,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "气候变化、活动时间与种群差异 · 词汇与语境",
+    "url": "foundation.html?id=c19-r-t4-p1-0"
+  },
+  {
+    "id": "c19-r-t4-p1-1",
+    "mode": "reading",
+    "book": 19,
+    "test": 4,
+    "part": 1,
+    "title": "练习 1",
+    "description": "气候变化、活动时间与种群差异 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c19-r-t4-p1-1"
+  },
+  {
+    "id": "c19-r-t4-p1-2",
+    "mode": "reading",
+    "book": 19,
+    "test": 4,
+    "part": 1,
+    "title": "练习 2",
+    "description": "气候变化、活动时间与种群差异 · 定位与证据 · 信息判断 · 一词笔记填空",
+    "url": "reading.html?id=c19-r-t4-p1-2"
+  },
+  {
+    "id": "c19-t4-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "超市新员工入职安排 · 词汇与语境",
+    "url": "foundation.html?id=c19-t4-p1-0"
+  },
+  {
     "id": "c19-t4-p1-1",
     "mode": "listening",
     "book": 19,
@@ -697,6 +1579,48 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "超市新员工入职安排 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c19-t4-p1-2"
+  },
+  {
+    "id": "c19-r-t4-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 19,
+    "test": 4,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "深海资源、未知价值与开采风险 · 词汇与语境",
+    "url": "foundation.html?id=c19-r-t4-p2-0"
+  },
+  {
+    "id": "c19-r-t4-p2-1",
+    "mode": "reading",
+    "book": 19,
+    "test": 4,
+    "part": 2,
+    "title": "练习 1",
+    "description": "深海资源、未知价值与开采风险 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c19-r-t4-p2-1"
+  },
+  {
+    "id": "c19-r-t4-p2-2",
+    "mode": "reading",
+    "book": 19,
+    "test": 4,
+    "part": 2,
+    "title": "练习 2",
+    "description": "深海资源、未知价值与开采风险 · 定位与证据 · 段落信息匹配 · 人物观点匹配 · 一词摘要填空",
+    "url": "reading.html?id=c19-r-t4-p2-2"
+  },
+  {
+    "id": "c19-t4-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 4,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "新手跑步与训练安排 · 词汇与语境",
+    "url": "foundation.html?id=c19-t4-p2-0"
   },
   {
     "id": "c19-t4-p2-1",
@@ -719,6 +1643,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c19-t4-p2-2"
   },
   {
+    "id": "c19-r-t4-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 19,
+    "test": 4,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "人性、合作与竞争的解释 · 词汇与语境",
+    "url": "foundation.html?id=c19-r-t4-p3-0"
+  },
+  {
+    "id": "c19-r-t4-p3-1",
+    "mode": "reading",
+    "book": 19,
+    "test": 4,
+    "part": 3,
+    "title": "练习 1",
+    "description": "人性、合作与竞争的解释 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c19-r-t4-p3-1"
+  },
+  {
+    "id": "c19-r-t4-p3-2",
+    "mode": "reading",
+    "book": 19,
+    "test": 4,
+    "part": 3,
+    "title": "练习 2",
+    "description": "人性、合作与竞争的解释 · 定位与证据 · 论证与观点选择 · 一词摘要填空 · 作者观点判断",
+    "url": "reading.html?id=c19-r-t4-p3-2"
+  },
+  {
+    "id": "c19-t4-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 4,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "书籍与书店经营讨论 · 词汇与语境",
+    "url": "foundation.html?id=c19-t4-p3-0"
+  },
+  {
     "id": "c19-t4-p3-1",
     "mode": "listening",
     "book": 19,
@@ -737,6 +1703,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "书籍与书店经营讨论 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c19-t4-p3-2"
+  },
+  {
+    "id": "c19-t4-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 19,
+    "test": 4,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "植树造林与生态恢复 · 词汇与语境",
+    "url": "foundation.html?id=c19-t4-p4-0"
   },
   {
     "id": "c19-t4-p4-1",
@@ -759,6 +1736,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c19-t4-p4-2"
   },
   {
+    "id": "c18-r-t1-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 18,
+    "test": 1,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "城市种植的空间、资源与限制 · 词汇与语境",
+    "url": "foundation.html?id=c18-r-t1-p1-0"
+  },
+  {
+    "id": "c18-r-t1-p1-1",
+    "mode": "reading",
+    "book": 18,
+    "test": 1,
+    "part": 1,
+    "title": "练习 1",
+    "description": "城市种植的空间、资源与限制 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c18-r-t1-p1-1"
+  },
+  {
+    "id": "c18-r-t1-p1-2",
+    "mode": "reading",
+    "book": 18,
+    "test": 1,
+    "part": 1,
+    "title": "练习 2",
+    "description": "城市种植的空间、资源与限制 · 定位与证据 · 句子填空 · 表格填空 · 信息判断",
+    "url": "reading.html?id=c18-r-t1-p1-2"
+  },
+  {
+    "id": "c18-t1-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 1,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "出行方式调查 · 词汇与语境",
+    "url": "foundation.html?id=c18-t1-p1-0"
+  },
+  {
     "id": "c18-t1-p1-1",
     "mode": "listening",
     "book": 18,
@@ -777,6 +1796,48 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "出行方式调查 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c18-t1-p1-2"
+  },
+  {
+    "id": "c18-r-t1-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 18,
+    "test": 1,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "森林管理：价值、选择与保留 · 词汇与语境",
+    "url": "foundation.html?id=c18-r-t1-p2-0"
+  },
+  {
+    "id": "c18-r-t1-p2-1",
+    "mode": "reading",
+    "book": 18,
+    "test": 1,
+    "part": 2,
+    "title": "练习 1",
+    "description": "森林管理：价值、选择与保留 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c18-r-t1-p2-1"
+  },
+  {
+    "id": "c18-r-t1-p2-2",
+    "mode": "reading",
+    "book": 18,
+    "test": 1,
+    "part": 2,
+    "title": "练习 2",
+    "description": "森林管理：价值、选择与保留 · 定位与证据 · 段落信息匹配 · 管理方案匹配 · 一词句子填空",
+    "url": "reading.html?id=c18-r-t1-p2-2"
+  },
+  {
+    "id": "c18-t1-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 1,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "志愿服务申请与岗位 · 词汇与语境",
+    "url": "foundation.html?id=c18-t1-p2-0"
   },
   {
     "id": "c18-t1-p2-1",
@@ -799,6 +1860,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c18-t1-p2-2"
   },
   {
+    "id": "c18-r-t1-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 18,
+    "test": 1,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "空间碎片、轨道数据与共同责任 · 词汇与语境",
+    "url": "foundation.html?id=c18-r-t1-p3-0"
+  },
+  {
+    "id": "c18-r-t1-p3-1",
+    "mode": "reading",
+    "book": 18,
+    "test": 1,
+    "part": 3,
+    "title": "练习 1",
+    "description": "空间碎片、轨道数据与共同责任 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c18-r-t1-p3-1"
+  },
+  {
+    "id": "c18-r-t1-p3-2",
+    "mode": "reading",
+    "book": 18,
+    "test": 1,
+    "part": 3,
+    "title": "练习 2",
+    "description": "空间碎片、轨道数据与共同责任 · 定位与证据 · 段落信息匹配 · 一词摘要填空 · 人物观点匹配",
+    "url": "reading.html?id=c18-r-t1-p3-2"
+  },
+  {
+    "id": "c18-t1-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 1,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "时装行业职业讨论 · 词汇与语境",
+    "url": "foundation.html?id=c18-t1-p3-0"
+  },
+  {
     "id": "c18-t1-p3-1",
     "mode": "listening",
     "book": 18,
@@ -817,6 +1920,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "时装行业职业讨论 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c18-t1-p3-2"
+  },
+  {
+    "id": "c18-t1-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 1,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "大象迁地保护 · 词汇与语境",
+    "url": "foundation.html?id=c18-t1-p4-0"
   },
   {
     "id": "c18-t1-p4-1",
@@ -839,6 +1953,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c18-t1-p4-2"
   },
   {
+    "id": "c18-r-t2-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 18,
+    "test": 2,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "史前遗址：建造阶段与证据解释 · 词汇与语境",
+    "url": "foundation.html?id=c18-r-t2-p1-0"
+  },
+  {
+    "id": "c18-r-t2-p1-1",
+    "mode": "reading",
+    "book": 18,
+    "test": 2,
+    "part": 1,
+    "title": "练习 1",
+    "description": "史前遗址：建造阶段与证据解释 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c18-r-t2-p1-1"
+  },
+  {
+    "id": "c18-r-t2-p1-2",
+    "mode": "reading",
+    "book": 18,
+    "test": 2,
+    "part": 1,
+    "title": "练习 2",
+    "description": "史前遗址：建造阶段与证据解释 · 定位与证据 · 两词笔记填空 · 信息判断",
+    "url": "reading.html?id=c18-r-t2-p1-2"
+  },
+  {
+    "id": "c18-t2-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 2,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "餐饮岗位招聘咨询 · 词汇与语境",
+    "url": "foundation.html?id=c18-t2-p1-0"
+  },
+  {
     "id": "c18-t2-p1-1",
     "mode": "listening",
     "book": 18,
@@ -857,6 +2013,48 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "餐饮岗位招聘咨询 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c18-t2-p1-2"
+  },
+  {
+    "id": "c18-r-t2-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 18,
+    "test": 2,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "人工智能的目标、道德与自主权 · 词汇与语境",
+    "url": "foundation.html?id=c18-r-t2-p2-0"
+  },
+  {
+    "id": "c18-r-t2-p2-1",
+    "mode": "reading",
+    "book": 18,
+    "test": 2,
+    "part": 2,
+    "title": "练习 1",
+    "description": "人工智能的目标、道德与自主权 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c18-r-t2-p2-1"
+  },
+  {
+    "id": "c18-r-t2-p2-2",
+    "mode": "reading",
+    "book": 18,
+    "test": 2,
+    "part": 2,
+    "title": "练习 2",
+    "description": "人工智能的目标、道德与自主权 · 定位与证据 · 观点与论证选择 · 作者观点判断 · 词库摘要填空",
+    "url": "reading.html?id=c18-r-t2-p2-2"
+  },
+  {
+    "id": "c18-t2-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 2,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "住宅开发与社区设施 · 词汇与语境",
+    "url": "foundation.html?id=c18-t2-p2-0"
   },
   {
     "id": "c18-t2-p2-1",
@@ -879,6 +2077,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c18-t2-p2-2"
   },
   {
+    "id": "c18-r-t2-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 18,
+    "test": 2,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "理想城市：早期构思与当代规划 · 词汇与语境",
+    "url": "foundation.html?id=c18-r-t2-p3-0"
+  },
+  {
+    "id": "c18-r-t2-p3-1",
+    "mode": "reading",
+    "book": 18,
+    "test": 2,
+    "part": 3,
+    "title": "练习 1",
+    "description": "理想城市：早期构思与当代规划 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c18-r-t2-p3-1"
+  },
+  {
+    "id": "c18-r-t2-p3-2",
+    "mode": "reading",
+    "book": 18,
+    "test": 2,
+    "part": 3,
+    "title": "练习 2",
+    "description": "理想城市：早期构思与当代规划 · 定位与证据 · 信息判断 · 一词摘要填空",
+    "url": "reading.html?id=c18-r-t2-p3-2"
+  },
+  {
+    "id": "c18-t2-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 2,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "火山喷发与历史影响 · 词汇与语境",
+    "url": "foundation.html?id=c18-t2-p3-0"
+  },
+  {
     "id": "c18-t2-p3-1",
     "mode": "listening",
     "book": 18,
@@ -897,6 +2137,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "火山喷发与历史影响 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c18-t2-p3-2"
+  },
+  {
+    "id": "c18-t2-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 2,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "口袋的历史与服装变化 · 词汇与语境",
+    "url": "foundation.html?id=c18-t2-p4-0"
   },
   {
     "id": "c18-t2-p4-1",
@@ -919,6 +2170,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c18-t2-p4-2"
   },
   {
+    "id": "c18-r-t3-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 18,
+    "test": 3,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "建筑材料：性能、规模与全程排放 · 词汇与语境",
+    "url": "foundation.html?id=c18-r-t3-p1-0"
+  },
+  {
+    "id": "c18-r-t3-p1-1",
+    "mode": "reading",
+    "book": 18,
+    "test": 3,
+    "part": 1,
+    "title": "练习 1",
+    "description": "建筑材料：性能、规模与全程排放 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c18-r-t3-p1-1"
+  },
+  {
+    "id": "c18-r-t3-p1-2",
+    "mode": "reading",
+    "book": 18,
+    "test": 3,
+    "part": 1,
+    "title": "练习 2",
+    "description": "建筑材料：性能、规模与全程排放 · 定位与证据 · 段落信息匹配 · 一词摘要填空 · 人物观点匹配",
+    "url": "reading.html?id=c18-r-t3-p1-2"
+  },
+  {
+    "id": "c18-t3-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 3,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "摄影俱乐部报名与比赛 · 词汇与语境",
+    "url": "foundation.html?id=c18-t3-p1-0"
+  },
+  {
     "id": "c18-t3-p1-1",
     "mode": "listening",
     "book": 18,
@@ -937,6 +2230,48 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "摄影俱乐部报名与比赛 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c18-t3-p1-2"
+  },
+  {
+    "id": "c18-r-t3-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 18,
+    "test": 3,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "蒸汽汽车：技术改进与商业成败 · 词汇与语境",
+    "url": "foundation.html?id=c18-r-t3-p2-0"
+  },
+  {
+    "id": "c18-r-t3-p2-1",
+    "mode": "reading",
+    "book": 18,
+    "test": 3,
+    "part": 2,
+    "title": "练习 1",
+    "description": "蒸汽汽车：技术改进与商业成败 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c18-r-t3-p2-1"
+  },
+  {
+    "id": "c18-r-t3-p2-2",
+    "mode": "reading",
+    "book": 18,
+    "test": 3,
+    "part": 2,
+    "title": "练习 2",
+    "description": "蒸汽汽车：技术改进与商业成败 · 定位与证据 · 段落标题匹配 · 细节与推断选择 · 一词摘要填空",
+    "url": "reading.html?id=c18-r-t3-p2-2"
+  },
+  {
+    "id": "c18-t3-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 3,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "野生蘑菇辨识与采集 · 词汇与语境",
+    "url": "foundation.html?id=c18-t3-p2-0"
   },
   {
     "id": "c18-t3-p2-1",
@@ -959,6 +2294,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c18-t3-p2-2"
   },
   {
+    "id": "c18-r-t3-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 18,
+    "test": 3,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "混合能力课堂：直觉、证据与同伴学习 · 词汇与语境",
+    "url": "foundation.html?id=c18-r-t3-p3-0"
+  },
+  {
+    "id": "c18-r-t3-p3-1",
+    "mode": "reading",
+    "book": 18,
+    "test": 3,
+    "part": 3,
+    "title": "练习 1",
+    "description": "混合能力课堂：直觉、证据与同伴学习 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c18-r-t3-p3-1"
+  },
+  {
+    "id": "c18-r-t3-p3-2",
+    "mode": "reading",
+    "book": 18,
+    "test": 3,
+    "part": 3,
+    "title": "练习 2",
+    "description": "混合能力课堂：直觉、证据与同伴学习 · 定位与证据 · 观点与论证选择 · 词库摘要填空 · 作者观点判断",
+    "url": "reading.html?id=c18-r-t3-p3-2"
+  },
+  {
+    "id": "c18-t3-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 3,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "自动化与未来工作 · 词汇与语境",
+    "url": "foundation.html?id=c18-t3-p3-0"
+  },
+  {
     "id": "c18-t3-p3-1",
     "mode": "listening",
     "book": 18,
@@ -977,6 +2354,17 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "自动化与未来工作 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c18-t3-p3-2"
+  },
+  {
+    "id": "c18-t3-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 3,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "太空交通与轨道管理 · 词汇与语境",
+    "url": "foundation.html?id=c18-t3-p4-0"
   },
   {
     "id": "c18-t3-p4-1",
@@ -999,6 +2387,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c18-t3-p4-2"
   },
   {
+    "id": "c18-r-t4-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 18,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "绿色屋顶：效益、实施与组合设计 · 词汇与语境",
+    "url": "foundation.html?id=c18-r-t4-p1-0"
+  },
+  {
+    "id": "c18-r-t4-p1-1",
+    "mode": "reading",
+    "book": 18,
+    "test": 4,
+    "part": 1,
+    "title": "练习 1",
+    "description": "绿色屋顶：效益、实施与组合设计 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c18-r-t4-p1-1"
+  },
+  {
+    "id": "c18-r-t4-p1-2",
+    "mode": "reading",
+    "book": 18,
+    "test": 4,
+    "part": 1,
+    "title": "练习 2",
+    "description": "绿色屋顶：效益、实施与组合设计 · 定位与证据 · 段落信息匹配 · 一词摘要填空 · 双项选择",
+    "url": "reading.html?id=c18-r-t4-p1-2"
+  },
+  {
+    "id": "c18-t4-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "招聘中介岗位咨询 · 词汇与语境",
+    "url": "foundation.html?id=c18-t4-p1-0"
+  },
+  {
     "id": "c18-t4-p1-1",
     "mode": "listening",
     "book": 18,
@@ -1017,6 +2447,48 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "招聘中介岗位咨询 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c18-t4-p1-2"
+  },
+  {
+    "id": "c18-r-t4-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 18,
+    "test": 4,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "成长型思维：理念、干预与研究证据 · 词汇与语境",
+    "url": "foundation.html?id=c18-r-t4-p2-0"
+  },
+  {
+    "id": "c18-r-t4-p2-1",
+    "mode": "reading",
+    "book": 18,
+    "test": 4,
+    "part": 2,
+    "title": "练习 1",
+    "description": "成长型思维：理念、干预与研究证据 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c18-r-t4-p2-1"
+  },
+  {
+    "id": "c18-r-t4-p2-2",
+    "mode": "reading",
+    "book": 18,
+    "test": 4,
+    "part": 2,
+    "title": "练习 2",
+    "description": "成长型思维：理念、干预与研究证据 · 定位与证据 · 论证选择 · 人物观点匹配 · 作者观点判断",
+    "url": "reading.html?id=c18-r-t4-p2-2"
+  },
+  {
+    "id": "c18-t4-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 4,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "农业博物馆参观 · 词汇与语境",
+    "url": "foundation.html?id=c18-t4-p2-0"
   },
   {
     "id": "c18-t4-p2-1",
@@ -1039,6 +2511,48 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c18-t4-p2-2"
   },
   {
+    "id": "c18-r-t4-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 18,
+    "test": 4,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "科学家传记：理论、资料与人生叙述 · 词汇与语境",
+    "url": "foundation.html?id=c18-r-t4-p3-0"
+  },
+  {
+    "id": "c18-r-t4-p3-1",
+    "mode": "reading",
+    "book": 18,
+    "test": 4,
+    "part": 3,
+    "title": "练习 1",
+    "description": "科学家传记：理论、资料与人生叙述 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c18-r-t4-p3-1"
+  },
+  {
+    "id": "c18-r-t4-p3-2",
+    "mode": "reading",
+    "book": 18,
+    "test": 4,
+    "part": 3,
+    "title": "练习 2",
+    "description": "科学家传记：理论、资料与人生叙述 · 定位与证据 · 作者观点判断 · 词库摘要填空 · 作者意图与推断选择",
+    "url": "reading.html?id=c18-r-t4-p3-2"
+  },
+  {
+    "id": "c18-t4-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 4,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "折纸与课堂学习 · 词汇与语境",
+    "url": "foundation.html?id=c18-t4-p3-0"
+  },
+  {
     "id": "c18-t4-p3-1",
     "mode": "listening",
     "book": 18,
@@ -1059,6 +2573,17 @@ window.RRExerciseCatalog = [
     "url": "listening.html?id=c18-t4-p3-2"
   },
   {
+    "id": "c18-t4-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 18,
+    "test": 4,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "作家故居与创作生活 · 词汇与语境",
+    "url": "foundation.html?id=c18-t4-p4-0"
+  },
+  {
     "id": "c18-t4-p4-1",
     "mode": "listening",
     "book": 18,
@@ -1077,6 +2602,750 @@ window.RRExerciseCatalog = [
     "title": "练习 2 · 定位与同义替换",
     "description": "作家故居与创作生活 · 定位词标记 · 同义替换 · 信号词捕捉",
     "url": "listening.html?id=c18-t4-p4-2"
+  },
+  {
+    "id": "c17-r-t1-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 17,
+    "test": 1,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "地下铁路：拥堵、施工与技术条件 · 词汇与语境",
+    "url": "foundation.html?id=c17-r-t1-p1-0"
+  },
+  {
+    "id": "c17-r-t1-p1-1",
+    "mode": "reading",
+    "book": 17,
+    "test": 1,
+    "part": 1,
+    "title": "练习 1",
+    "description": "地下铁路：拥堵、施工与技术条件 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c17-r-t1-p1-1"
+  },
+  {
+    "id": "c17-r-t1-p1-2",
+    "mode": "reading",
+    "book": 17,
+    "test": 1,
+    "part": 1,
+    "title": "练习 2",
+    "description": "地下铁路：拥堵、施工与技术条件 · 定位与证据 · 一词笔记填空 · 信息判断",
+    "url": "reading.html?id=c17-r-t1-p1-2"
+  },
+  {
+    "id": "c17-r-t1-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 17,
+    "test": 1,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "体育场：历史改造、多用途与城市能源 · 词汇与语境",
+    "url": "foundation.html?id=c17-r-t1-p2-0"
+  },
+  {
+    "id": "c17-r-t1-p2-1",
+    "mode": "reading",
+    "book": 17,
+    "test": 1,
+    "part": 2,
+    "title": "练习 1",
+    "description": "体育场：历史改造、多用途与城市能源 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c17-r-t1-p2-1"
+  },
+  {
+    "id": "c17-r-t1-p2-2",
+    "mode": "reading",
+    "book": 17,
+    "test": 1,
+    "part": 2,
+    "title": "练习 2",
+    "description": "体育场：历史改造、多用途与城市能源 · 定位与证据 · 段落信息匹配 · 一词摘要填空 · 双项选择",
+    "url": "reading.html?id=c17-r-t1-p2-2"
+  },
+  {
+    "id": "c17-r-t1-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 17,
+    "test": 1,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "历史书评：逃亡叙事、史料与人物评价 · 词汇与语境",
+    "url": "foundation.html?id=c17-r-t1-p3-0"
+  },
+  {
+    "id": "c17-r-t1-p3-1",
+    "mode": "reading",
+    "book": 17,
+    "test": 1,
+    "part": 3,
+    "title": "练习 1",
+    "description": "历史书评：逃亡叙事、史料与人物评价 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c17-r-t1-p3-1"
+  },
+  {
+    "id": "c17-r-t1-p3-2",
+    "mode": "reading",
+    "book": 17,
+    "test": 1,
+    "part": 3,
+    "title": "练习 2",
+    "description": "历史书评：逃亡叙事、史料与人物评价 · 定位与证据 · 词库摘要填空 · 作者观点判断 · 书评意图选择",
+    "url": "reading.html?id=c17-r-t1-p3-2"
+  },
+  {
+    "id": "c17-r-t2-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 17,
+    "test": 2,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "古文书：残片、流转与解读 · 词汇与语境",
+    "url": "foundation.html?id=c17-r-t2-p1-0"
+  },
+  {
+    "id": "c17-r-t2-p1-1",
+    "mode": "reading",
+    "book": 17,
+    "test": 2,
+    "part": 1,
+    "title": "练习 1",
+    "description": "古文书：残片、流转与解读 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c17-r-t2-p1-1"
+  },
+  {
+    "id": "c17-r-t2-p1-2",
+    "mode": "reading",
+    "book": 17,
+    "test": 2,
+    "part": 1,
+    "title": "练习 2",
+    "description": "古文书：残片、流转与解读 · 定位与证据 · 一词笔记填空 · 信息判断",
+    "url": "reading.html?id=c17-r-t2-p1-2"
+  },
+  {
+    "id": "c17-r-t2-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 17,
+    "test": 2,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "重新驯化作物：性状、代价与应用 · 词汇与语境",
+    "url": "foundation.html?id=c17-r-t2-p2-0"
+  },
+  {
+    "id": "c17-r-t2-p2-1",
+    "mode": "reading",
+    "book": 17,
+    "test": 2,
+    "part": 2,
+    "title": "练习 1",
+    "description": "重新驯化作物：性状、代价与应用 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c17-r-t2-p2-1"
+  },
+  {
+    "id": "c17-r-t2-p2-2",
+    "mode": "reading",
+    "book": 17,
+    "test": 2,
+    "part": 2,
+    "title": "练习 2",
+    "description": "重新驯化作物：性状、代价与应用 · 定位与证据 · 段落信息匹配 · 人物观点匹配 · 一词句子填空",
+    "url": "reading.html?id=c17-r-t2-p2-2"
+  },
+  {
+    "id": "c17-r-t2-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 17,
+    "test": 2,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "创新的来源：灵光、试错与累积 · 词汇与语境",
+    "url": "foundation.html?id=c17-r-t2-p3-0"
+  },
+  {
+    "id": "c17-r-t2-p3-1",
+    "mode": "reading",
+    "book": 17,
+    "test": 2,
+    "part": 3,
+    "title": "练习 1",
+    "description": "创新的来源：灵光、试错与累积 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c17-r-t2-p3-1"
+  },
+  {
+    "id": "c17-r-t2-p3-2",
+    "mode": "reading",
+    "book": 17,
+    "test": 2,
+    "part": 3,
+    "title": "练习 2",
+    "description": "创新的来源：灵光、试错与累积 · 定位与证据 · 论证与例证选择 · 作者观点判断 · 词库摘要填空",
+    "url": "reading.html?id=c17-r-t2-p3-2"
+  },
+  {
+    "id": "c17-r-t3-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 17,
+    "test": 3,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "袋狼：行为线索、衰退与保护时机 · 词汇与语境",
+    "url": "foundation.html?id=c17-r-t3-p1-0"
+  },
+  {
+    "id": "c17-r-t3-p1-1",
+    "mode": "reading",
+    "book": 17,
+    "test": 3,
+    "part": 1,
+    "title": "练习 1",
+    "description": "袋狼：行为线索、衰退与保护时机 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c17-r-t3-p1-1"
+  },
+  {
+    "id": "c17-r-t3-p1-2",
+    "mode": "reading",
+    "book": 17,
+    "test": 3,
+    "part": 1,
+    "title": "练习 2",
+    "description": "袋狼：行为线索、衰退与保护时机 · 定位与证据 · 一词笔记填空 · 信息判断",
+    "url": "reading.html?id=c17-r-t3-p1-2"
+  },
+  {
+    "id": "c17-r-t3-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 17,
+    "test": 3,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "棕榈油：产量、生计与环境取舍 · 词汇与语境",
+    "url": "foundation.html?id=c17-r-t3-p2-0"
+  },
+  {
+    "id": "c17-r-t3-p2-1",
+    "mode": "reading",
+    "book": 17,
+    "test": 3,
+    "part": 2,
+    "title": "练习 1",
+    "description": "棕榈油：产量、生计与环境取舍 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c17-r-t3-p2-1"
+  },
+  {
+    "id": "c17-r-t3-p2-2",
+    "mode": "reading",
+    "book": 17,
+    "test": 3,
+    "part": 2,
+    "title": "练习 2",
+    "description": "棕榈油：产量、生计与环境取舍 · 定位与证据 · 段落信息匹配 · 双项选择 · 两词句子填空",
+    "url": "reading.html?id=c17-r-t3-p2-2"
+  },
+  {
+    "id": "c17-r-t3-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 17,
+    "test": 3,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "摩天楼书评：高度、成本与城市发展 · 词汇与语境",
+    "url": "foundation.html?id=c17-r-t3-p3-0"
+  },
+  {
+    "id": "c17-r-t3-p3-1",
+    "mode": "reading",
+    "book": 17,
+    "test": 3,
+    "part": 3,
+    "title": "练习 1",
+    "description": "摩天楼书评：高度、成本与城市发展 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c17-r-t3-p3-1"
+  },
+  {
+    "id": "c17-r-t3-p3-2",
+    "mode": "reading",
+    "book": 17,
+    "test": 3,
+    "part": 3,
+    "title": "练习 2",
+    "description": "摩天楼书评：高度、成本与城市发展 · 定位与证据 · 书评观点选择 · 作者观点判断 · 词库摘要填空",
+    "url": "reading.html?id=c17-r-t3-p3-2"
+  },
+  {
+    "id": "c17-r-t4-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 17,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "蝙蝠与农业：捕食证据和共同利益 · 词汇与语境",
+    "url": "foundation.html?id=c17-r-t4-p1-0"
+  },
+  {
+    "id": "c17-r-t4-p1-1",
+    "mode": "reading",
+    "book": 17,
+    "test": 4,
+    "part": 1,
+    "title": "练习 1",
+    "description": "蝙蝠与农业：捕食证据和共同利益 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c17-r-t4-p1-1"
+  },
+  {
+    "id": "c17-r-t4-p1-2",
+    "mode": "reading",
+    "book": 17,
+    "test": 4,
+    "part": 1,
+    "title": "练习 2",
+    "description": "蝙蝠与农业：捕食证据和共同利益 · 定位与证据 · 信息判断 · 一词表格填空",
+    "url": "reading.html?id=c17-r-t4-p1-2"
+  },
+  {
+    "id": "c17-r-t4-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 17,
+    "test": 4,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "教育与经济增长：记录、因果和制度障碍 · 词汇与语境",
+    "url": "foundation.html?id=c17-r-t4-p2-0"
+  },
+  {
+    "id": "c17-r-t4-p2-1",
+    "mode": "reading",
+    "book": 17,
+    "test": 4,
+    "part": 2,
+    "title": "练习 1",
+    "description": "教育与经济增长：记录、因果和制度障碍 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c17-r-t4-p2-1"
+  },
+  {
+    "id": "c17-r-t4-p2-2",
+    "mode": "reading",
+    "book": 17,
+    "test": 4,
+    "part": 2,
+    "title": "练习 2",
+    "description": "教育与经济增长：记录、因果和制度障碍 · 定位与证据 · 段落信息匹配 · 一词摘要填空 · 双项选择",
+    "url": "reading.html?id=c17-r-t4-p2-2"
+  },
+  {
+    "id": "c17-r-t4-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 17,
+    "test": 4,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "盲棋与记忆：专门技能和初步研究 · 词汇与语境",
+    "url": "foundation.html?id=c17-r-t4-p3-0"
+  },
+  {
+    "id": "c17-r-t4-p3-1",
+    "mode": "reading",
+    "book": 17,
+    "test": 4,
+    "part": 3,
+    "title": "练习 1",
+    "description": "盲棋与记忆：专门技能和初步研究 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c17-r-t4-p3-1"
+  },
+  {
+    "id": "c17-r-t4-p3-2",
+    "mode": "reading",
+    "book": 17,
+    "test": 4,
+    "part": 3,
+    "title": "练习 2",
+    "description": "盲棋与记忆：专门技能和初步研究 · 定位与证据 · 段落信息匹配 · 信息判断 · 一词摘要填空",
+    "url": "reading.html?id=c17-r-t4-p3-2"
+  },
+  {
+    "id": "c16-r-t1-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 16,
+    "test": 1,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "北极熊：适应机制、研究价值与保护 · 词汇与语境",
+    "url": "foundation.html?id=c16-r-t1-p1-0"
+  },
+  {
+    "id": "c16-r-t1-p1-1",
+    "mode": "reading",
+    "book": 16,
+    "test": 1,
+    "part": 1,
+    "title": "练习 1",
+    "description": "北极熊：适应机制、研究价值与保护 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c16-r-t1-p1-1"
+  },
+  {
+    "id": "c16-r-t1-p1-2",
+    "mode": "reading",
+    "book": 16,
+    "test": 1,
+    "part": 1,
+    "title": "练习 2",
+    "description": "北极熊：适应机制、研究价值与保护 · 定位与证据 · 信息判断 · 一词表格填空",
+    "url": "reading.html?id=c16-r-t1-p1-2"
+  },
+  {
+    "id": "c16-r-t1-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 16,
+    "test": 1,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "阶梯金字塔：结构、遗物与解释分歧 · 词汇与语境",
+    "url": "foundation.html?id=c16-r-t1-p2-0"
+  },
+  {
+    "id": "c16-r-t1-p2-1",
+    "mode": "reading",
+    "book": 16,
+    "test": 1,
+    "part": 2,
+    "title": "练习 1",
+    "description": "阶梯金字塔：结构、遗物与解释分歧 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c16-r-t1-p2-1"
+  },
+  {
+    "id": "c16-r-t1-p2-2",
+    "mode": "reading",
+    "book": 16,
+    "test": 1,
+    "part": 2,
+    "title": "练习 2",
+    "description": "阶梯金字塔：结构、遗物与解释分歧 · 定位与证据 · 段落标题匹配 · 一词笔记填空 · 双项选择",
+    "url": "reading.html?id=c16-r-t1-p2-2"
+  },
+  {
+    "id": "c16-r-t1-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 16,
+    "test": 1,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "未来工作：算法、学习路径与制度选择 · 词汇与语境",
+    "url": "foundation.html?id=c16-r-t1-p3-0"
+  },
+  {
+    "id": "c16-r-t1-p3-1",
+    "mode": "reading",
+    "book": 16,
+    "test": 1,
+    "part": 3,
+    "title": "练习 1",
+    "description": "未来工作：算法、学习路径与制度选择 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c16-r-t1-p3-1"
+  },
+  {
+    "id": "c16-r-t1-p3-2",
+    "mode": "reading",
+    "book": 16,
+    "test": 1,
+    "part": 3,
+    "title": "练习 2",
+    "description": "未来工作：算法、学习路径与制度选择 · 定位与证据 · 观点与推断选择 · 词库摘要填空 · 人物观点匹配",
+    "url": "reading.html?id=c16-r-t1-p3-2"
+  },
+  {
+    "id": "c16-r-t2-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 16,
+    "test": 2,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "山坡地画：维护、测年与象征解释 · 词汇与语境",
+    "url": "foundation.html?id=c16-r-t2-p1-0"
+  },
+  {
+    "id": "c16-r-t2-p1-1",
+    "mode": "reading",
+    "book": 16,
+    "test": 2,
+    "part": 1,
+    "title": "练习 1",
+    "description": "山坡地画：维护、测年与象征解释 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c16-r-t2-p1-1"
+  },
+  {
+    "id": "c16-r-t2-p1-2",
+    "mode": "reading",
+    "book": 16,
+    "test": 2,
+    "part": 1,
+    "title": "练习 2",
+    "description": "山坡地画：维护、测年与象征解释 · 定位与证据 · 信息判断 · 一词笔记填空",
+    "url": "reading.html?id=c16-r-t2-p1-2"
+  },
+  {
+    "id": "c16-r-t2-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 16,
+    "test": 2,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "微生物书评：环境、关系与潜在用途 · 词汇与语境",
+    "url": "foundation.html?id=c16-r-t2-p2-0"
+  },
+  {
+    "id": "c16-r-t2-p2-1",
+    "mode": "reading",
+    "book": 16,
+    "test": 2,
+    "part": 2,
+    "title": "练习 1",
+    "description": "微生物书评：环境、关系与潜在用途 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c16-r-t2-p2-1"
+  },
+  {
+    "id": "c16-r-t2-p2-2",
+    "mode": "reading",
+    "book": 16,
+    "test": 2,
+    "part": 2,
+    "title": "练习 2",
+    "description": "微生物书评：环境、关系与潜在用途 · 定位与证据 · 书评意图选择 · 词库摘要填空 · 作者观点判断",
+    "url": "reading.html?id=c16-r-t2-p2-2"
+  },
+  {
+    "id": "c16-r-t2-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 16,
+    "test": 2,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "明智判断：情境、视角与自我距离 · 词汇与语境",
+    "url": "foundation.html?id=c16-r-t2-p3-0"
+  },
+  {
+    "id": "c16-r-t2-p3-1",
+    "mode": "reading",
+    "book": 16,
+    "test": 2,
+    "part": 3,
+    "title": "练习 1",
+    "description": "明智判断：情境、视角与自我距离 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c16-r-t2-p3-1"
+  },
+  {
+    "id": "c16-r-t2-p3-2",
+    "mode": "reading",
+    "book": 16,
+    "test": 2,
+    "part": 3,
+    "title": "练习 2",
+    "description": "明智判断：情境、视角与自我距离 · 定位与证据 · 观点与研究方法选择 · 词库摘要填空 · 信息判断",
+    "url": "reading.html?id=c16-r-t2-p3-2"
+  },
+  {
+    "id": "c16-r-t3-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 16,
+    "test": 3,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "古罗马造船与航行：结构、用途和定向 · 词汇与语境",
+    "url": "foundation.html?id=c16-r-t3-p1-0"
+  },
+  {
+    "id": "c16-r-t3-p1-1",
+    "mode": "reading",
+    "book": 16,
+    "test": 3,
+    "part": 1,
+    "title": "练习 1",
+    "description": "古罗马造船与航行：结构、用途和定向 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c16-r-t3-p1-1"
+  },
+  {
+    "id": "c16-r-t3-p1-2",
+    "mode": "reading",
+    "book": 16,
+    "test": 3,
+    "part": 1,
+    "title": "练习 2",
+    "description": "古罗马造船与航行：结构、用途和定向 · 定位与证据 · 信息判断 · 一词摘要填空",
+    "url": "reading.html?id=c16-r-t3-p1-2"
+  },
+  {
+    "id": "c16-r-t3-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 16,
+    "test": 3,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "冰中遗物：保存窗口、山地活动与证据空白 · 词汇与语境",
+    "url": "foundation.html?id=c16-r-t3-p2-0"
+  },
+  {
+    "id": "c16-r-t3-p2-1",
+    "mode": "reading",
+    "book": 16,
+    "test": 3,
+    "part": 2,
+    "title": "练习 1",
+    "description": "冰中遗物：保存窗口、山地活动与证据空白 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c16-r-t3-p2-1"
+  },
+  {
+    "id": "c16-r-t3-p2-2",
+    "mode": "reading",
+    "book": 16,
+    "test": 3,
+    "part": 2,
+    "title": "练习 2",
+    "description": "冰中遗物：保存窗口、山地活动与证据空白 · 定位与证据 · 段落信息匹配 · 一词摘要填空 · 双项选择",
+    "url": "reading.html?id=c16-r-t3-p2-2"
+  },
+  {
+    "id": "c16-r-t3-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 16,
+    "test": 3,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "植物的温度感知：状态转换与季节生长 · 词汇与语境",
+    "url": "foundation.html?id=c16-r-t3-p3-0"
+  },
+  {
+    "id": "c16-r-t3-p3-1",
+    "mode": "reading",
+    "book": 16,
+    "test": 3,
+    "part": 3,
+    "title": "练习 1",
+    "description": "植物的温度感知：状态转换与季节生长 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c16-r-t3-p3-1"
+  },
+  {
+    "id": "c16-r-t3-p3-2",
+    "mode": "reading",
+    "book": 16,
+    "test": 3,
+    "part": 3,
+    "title": "练习 2",
+    "description": "植物的温度感知：状态转换与季节生长 · 定位与证据 · 信息判断 · 段落信息匹配 · 两词句子填空",
+    "url": "reading.html?id=c16-r-t3-p3-2"
+  },
+  {
+    "id": "c16-r-t4-p1-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 16,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "古罗马隧道：测量、开挖与路线修正 · 词汇与语境",
+    "url": "foundation.html?id=c16-r-t4-p1-0"
+  },
+  {
+    "id": "c16-r-t4-p1-1",
+    "mode": "reading",
+    "book": 16,
+    "test": 4,
+    "part": 1,
+    "title": "练习 1",
+    "description": "古罗马隧道：测量、开挖与路线修正 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c16-r-t4-p1-1"
+  },
+  {
+    "id": "c16-r-t4-p1-2",
+    "mode": "reading",
+    "book": 16,
+    "test": 4,
+    "part": 1,
+    "title": "练习 2",
+    "description": "古罗马隧道：测量、开挖与路线修正 · 定位与证据 · 图示标注 · 信息判断 · 两词简答",
+    "url": "reading.html?id=c16-r-t4-p1-2"
+  },
+  {
+    "id": "c16-r-t4-p2-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 16,
+    "test": 4,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "阅读习惯：速度、深度与可调整的能力 · 词汇与语境",
+    "url": "foundation.html?id=c16-r-t4-p2-0"
+  },
+  {
+    "id": "c16-r-t4-p2-1",
+    "mode": "reading",
+    "book": 16,
+    "test": 4,
+    "part": 2,
+    "title": "练习 1",
+    "description": "阅读习惯：速度、深度与可调整的能力 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c16-r-t4-p2-1"
+  },
+  {
+    "id": "c16-r-t4-p2-2",
+    "mode": "reading",
+    "book": 16,
+    "test": 4,
+    "part": 2,
+    "title": "练习 2",
+    "description": "阅读习惯：速度、深度与可调整的能力 · 定位与证据 · 观点与研究选择 · 词库摘要填空 · 作者观点判断",
+    "url": "reading.html?id=c16-r-t4-p2-2"
+  },
+  {
+    "id": "c16-r-t4-p3-0",
+    "mode": "reading",
+    "foundation": true,
+    "book": 16,
+    "test": 4,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "对人工智能的态度：信任、偏见与参与 · 词汇与语境",
+    "url": "foundation.html?id=c16-r-t4-p3-0"
+  },
+  {
+    "id": "c16-r-t4-p3-1",
+    "mode": "reading",
+    "book": 16,
+    "test": 4,
+    "part": 3,
+    "title": "练习 1",
+    "description": "对人工智能的态度：信任、偏见与参与 · 语境词义 · 同义改写 · 词组匹配 · 长句理解",
+    "url": "reading.html?id=c16-r-t4-p3-1"
+  },
+  {
+    "id": "c16-r-t4-p3-2",
+    "mode": "reading",
+    "book": 16,
+    "test": 4,
+    "part": 3,
+    "title": "练习 2",
+    "description": "对人工智能的态度：信任、偏见与参与 · 定位与证据 · 段落标题匹配 · 观点选择 · 作者观点判断",
+    "url": "reading.html?id=c16-r-t4-p3-2"
   },
   {
     "id": "c15-r-t4-p1-0",
@@ -1108,5 +3377,1989 @@ window.RRExerciseCatalog = [
     "title": "练习 2",
     "description": "乡土植物与生态恢复 · 定位与证据 · 信息一致性判断 · 笔记填空 · 表格填空",
     "url": "reading.html?id=c15-r-t4-p1-2"
+  },
+  {
+    "id": "c12-t1-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 1,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "家庭郊游与出行准备 · 词汇与语境",
+    "url": "foundation.html?id=c12-t1-p1-0"
+  },
+  {
+    "id": "c12-t1-p1-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 1,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "家庭郊游与出行准备 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t1-p1-1"
+  },
+  {
+    "id": "c12-t1-p1-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 1,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "家庭郊游与出行准备 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t1-p1-2"
+  },
+  {
+    "id": "c12-t1-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 1,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "厨房新员工培训 · 词汇与语境",
+    "url": "foundation.html?id=c12-t1-p2-0"
+  },
+  {
+    "id": "c12-t1-p2-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 1,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "厨房新员工培训 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t1-p2-1"
+  },
+  {
+    "id": "c12-t1-p2-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 1,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "厨房新员工培训 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t1-p2-2"
+  },
+  {
+    "id": "c12-t1-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 1,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "公共图书馆研究选题 · 词汇与语境",
+    "url": "foundation.html?id=c12-t1-p3-0"
+  },
+  {
+    "id": "c12-t1-p3-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 1,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "公共图书馆研究选题 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t1-p3-1"
+  },
+  {
+    "id": "c12-t1-p3-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 1,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "公共图书馆研究选题 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t1-p3-2"
+  },
+  {
+    "id": "c12-t1-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 1,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "商业价值观的适用边界 · 词汇与语境",
+    "url": "foundation.html?id=c12-t1-p4-0"
+  },
+  {
+    "id": "c12-t1-p4-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 1,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "商业价值观的适用边界 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t1-p4-1"
+  },
+  {
+    "id": "c12-t1-p4-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 1,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "商业价值观的适用边界 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t1-p4-2"
+  },
+  {
+    "id": "c12-t2-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 2,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "城市艺术节活动咨询 · 词汇与语境",
+    "url": "foundation.html?id=c12-t2-p1-0"
+  },
+  {
+    "id": "c12-t2-p1-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 2,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "城市艺术节活动咨询 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t2-p1-1"
+  },
+  {
+    "id": "c12-t2-p1-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 2,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "城市艺术节活动咨询 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t2-p1-2"
+  },
+  {
+    "id": "c12-t2-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 2,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "戏剧旅行出发说明 · 词汇与语境",
+    "url": "foundation.html?id=c12-t2-p2-0"
+  },
+  {
+    "id": "c12-t2-p2-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 2,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "戏剧旅行出发说明 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t2-p2-1"
+  },
+  {
+    "id": "c12-t2-p2-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 2,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "戏剧旅行出发说明 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t2-p2-2"
+  },
+  {
+    "id": "c12-t2-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 2,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "北欧研究课程与论文规划 · 词汇与语境",
+    "url": "foundation.html?id=c12-t2-p3-0"
+  },
+  {
+    "id": "c12-t2-p3-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 2,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "北欧研究课程与论文规划 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t2-p3-1"
+  },
+  {
+    "id": "c12-t2-p3-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 2,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "北欧研究课程与论文规划 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t2-p3-2"
+  },
+  {
+    "id": "c12-t2-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 2,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "工作场所冲突与协调 · 词汇与语境",
+    "url": "foundation.html?id=c12-t2-p4-0"
+  },
+  {
+    "id": "c12-t2-p4-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 2,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "工作场所冲突与协调 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t2-p4-1"
+  },
+  {
+    "id": "c12-t2-p4-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 2,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "工作场所冲突与协调 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t2-p4-2"
+  },
+  {
+    "id": "c12-t3-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 3,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "重新开放的社区图书馆 · 词汇与语境",
+    "url": "foundation.html?id=c12-t3-p1-0"
+  },
+  {
+    "id": "c12-t3-p1-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 3,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "重新开放的社区图书馆 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t3-p1-1"
+  },
+  {
+    "id": "c12-t3-p1-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 3,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "重新开放的社区图书馆 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t3-p1-2"
+  },
+  {
+    "id": "c12-t3-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 3,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "主题活动度假的市场与服务 · 词汇与语境",
+    "url": "foundation.html?id=c12-t3-p2-0"
+  },
+  {
+    "id": "c12-t3-p2-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 3,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "主题活动度假的市场与服务 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t3-p2-1"
+  },
+  {
+    "id": "c12-t3-p2-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 3,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "主题活动度假的市场与服务 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t3-p2-2"
+  },
+  {
+    "id": "c12-t3-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 3,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "旅游景点个案研究 · 词汇与语境",
+    "url": "foundation.html?id=c12-t3-p3-0"
+  },
+  {
+    "id": "c12-t3-p3-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 3,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "旅游景点个案研究 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t3-p3-1"
+  },
+  {
+    "id": "c12-t3-p3-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 3,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "旅游景点个案研究 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t3-p3-2"
+  },
+  {
+    "id": "c12-t3-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 3,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "环境污染对鸟类行为的影响 · 词汇与语境",
+    "url": "foundation.html?id=c12-t3-p4-0"
+  },
+  {
+    "id": "c12-t3-p4-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 3,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "环境污染对鸟类行为的影响 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t3-p4-1"
+  },
+  {
+    "id": "c12-t3-p4-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 3,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "环境污染对鸟类行为的影响 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t3-p4-2"
+  },
+  {
+    "id": "c12-t4-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "骑行领队岗位申请 · 词汇与语境",
+    "url": "foundation.html?id=c12-t4-p1-0"
+  },
+  {
+    "id": "c12-t4-p1-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 4,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "骑行领队岗位申请 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t4-p1-1"
+  },
+  {
+    "id": "c12-t4-p1-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 4,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "骑行领队岗位申请 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t4-p1-2"
+  },
+  {
+    "id": "c12-t4-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 4,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "城市艺术街区与步行导览 · 词汇与语境",
+    "url": "foundation.html?id=c12-t4-p2-0"
+  },
+  {
+    "id": "c12-t4-p2-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 4,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "城市艺术街区与步行导览 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t4-p2-1"
+  },
+  {
+    "id": "c12-t4-p2-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 4,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "城市艺术街区与步行导览 · 定位词标记 · 同义替换 · 信号词捕捉 · 跟随路线走地图",
+    "url": "listening.html?id=c12-t4-p2-2"
+  },
+  {
+    "id": "c12-t4-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 4,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "文学作品的银幕改编展示 · 词汇与语境",
+    "url": "foundation.html?id=c12-t4-p3-0"
+  },
+  {
+    "id": "c12-t4-p3-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 4,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "文学作品的银幕改编展示 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t4-p3-1"
+  },
+  {
+    "id": "c12-t4-p3-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 4,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "文学作品的银幕改编展示 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t4-p3-2"
+  },
+  {
+    "id": "c12-t4-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 12,
+    "test": 4,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "城市声景与环境设计 · 词汇与语境",
+    "url": "foundation.html?id=c12-t4-p4-0"
+  },
+  {
+    "id": "c12-t4-p4-1",
+    "mode": "listening",
+    "book": 12,
+    "test": 4,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "城市声景与环境设计 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c12-t4-p4-1"
+  },
+  {
+    "id": "c12-t4-p4-2",
+    "mode": "listening",
+    "book": 12,
+    "test": 4,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "城市声景与环境设计 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c12-t4-p4-2"
+  },
+  {
+    "id": "c11-t1-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 1,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "社区场地租用 · 词汇与语境",
+    "url": "foundation.html?id=c11-t1-p1-0"
+  },
+  {
+    "id": "c11-t1-p1-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 1,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "社区场地租用 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t1-p1-1"
+  },
+  {
+    "id": "c11-t1-p1-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 1,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "社区场地租用 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t1-p1-2"
+  },
+  {
+    "id": "c11-t1-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 1,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "传统农场参观 · 词汇与语境",
+    "url": "foundation.html?id=c11-t1-p2-0"
+  },
+  {
+    "id": "c11-t1-p2-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 1,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "传统农场参观 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t1-p2-1"
+  },
+  {
+    "id": "c11-t1-p2-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 1,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "传统农场参观 · 定位词标记 · 同义替换 · 信号词捕捉 · 跟随路线走地图",
+    "url": "listening.html?id=c11-t1-p2-2"
+  },
+  {
+    "id": "c11-t1-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 1,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "学业表现与心理研究 · 词汇与语境",
+    "url": "foundation.html?id=c11-t1-p3-0"
+  },
+  {
+    "id": "c11-t1-p3-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 1,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "学业表现与心理研究 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t1-p3-1"
+  },
+  {
+    "id": "c11-t1-p3-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 1,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "学业表现与心理研究 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t1-p3-2"
+  },
+  {
+    "id": "c11-t1-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 1,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "海洋生物多样性保护 · 词汇与语境",
+    "url": "foundation.html?id=c11-t1-p4-0"
+  },
+  {
+    "id": "c11-t1-p4-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 1,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "海洋生物多样性保护 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t1-p4-1"
+  },
+  {
+    "id": "c11-t1-p4-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 1,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "海洋生物多样性保护 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t1-p4-2"
+  },
+  {
+    "id": "c11-t2-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 2,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "青年议会报名咨询 · 词汇与语境",
+    "url": "foundation.html?id=c11-t2-p1-0"
+  },
+  {
+    "id": "c11-t2-p1-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 2,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "青年议会报名咨询 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t2-p1-1"
+  },
+  {
+    "id": "c11-t2-p1-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 2,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "青年议会报名咨询 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t2-p1-2"
+  },
+  {
+    "id": "c11-t2-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 2,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "剧院设施与员工导览 · 词汇与语境",
+    "url": "foundation.html?id=c11-t2-p2-0"
+  },
+  {
+    "id": "c11-t2-p2-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 2,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "剧院设施与员工导览 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t2-p2-1"
+  },
+  {
+    "id": "c11-t2-p2-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 2,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "剧院设施与员工导览 · 定位词标记 · 同义替换 · 信号词捕捉 · 跟随路线走地图",
+    "url": "listening.html?id=c11-t2-p2-2"
+  },
+  {
+    "id": "c11-t2-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 2,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "海岸生物实地报告 · 词汇与语境",
+    "url": "foundation.html?id=c11-t2-p3-0"
+  },
+  {
+    "id": "c11-t2-p3-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 2,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "海岸生物实地报告 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t2-p3-1"
+  },
+  {
+    "id": "c11-t2-p3-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 2,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "海岸生物实地报告 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t2-p3-2"
+  },
+  {
+    "id": "c11-t2-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 2,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "公共音乐厅建筑设计 · 词汇与语境",
+    "url": "foundation.html?id=c11-t2-p4-0"
+  },
+  {
+    "id": "c11-t2-p4-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 2,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "公共音乐厅建筑设计 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t2-p4-1"
+  },
+  {
+    "id": "c11-t2-p4-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 2,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "公共音乐厅建筑设计 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t2-p4-2"
+  },
+  {
+    "id": "c11-t3-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 3,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "免费活动咨询 · 词汇与语境",
+    "url": "foundation.html?id=c11-t3-p1-0"
+  },
+  {
+    "id": "c11-t3-p1-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 3,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "免费活动咨询 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t3-p1-1"
+  },
+  {
+    "id": "c11-t3-p1-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 3,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "免费活动咨询 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t3-p1-2"
+  },
+  {
+    "id": "c11-t3-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 3,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "城镇变化与设施规划 · 词汇与语境",
+    "url": "foundation.html?id=c11-t3-p2-0"
+  },
+  {
+    "id": "c11-t3-p2-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 3,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "城镇变化与设施规划 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t3-p2-1"
+  },
+  {
+    "id": "c11-t3-p2-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 3,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "城镇变化与设施规划 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t3-p2-2"
+  },
+  {
+    "id": "c11-t3-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 3,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "故事插图与合作报告 · 词汇与语境",
+    "url": "foundation.html?id=c11-t3-p3-0"
+  },
+  {
+    "id": "c11-t3-p3-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 3,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "故事插图与合作报告 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t3-p3-1"
+  },
+  {
+    "id": "c11-t3-p3-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 3,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "故事插图与合作报告 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t3-p3-2"
+  },
+  {
+    "id": "c11-t3-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 3,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "商业中的民族志研究 · 词汇与语境",
+    "url": "foundation.html?id=c11-t3-p4-0"
+  },
+  {
+    "id": "c11-t3-p4-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 3,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "商业中的民族志研究 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t3-p4-1"
+  },
+  {
+    "id": "c11-t3-p4-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 3,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "商业中的民族志研究 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t3-p4-2"
+  },
+  {
+    "id": "c11-t4-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "节庆节目与票务咨询 · 词汇与语境",
+    "url": "foundation.html?id=c11-t4-p1-0"
+  },
+  {
+    "id": "c11-t4-p1-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 4,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "节庆节目与票务咨询 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t4-p1-1"
+  },
+  {
+    "id": "c11-t4-p1-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 4,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "节庆节目与票务咨询 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t4-p1-2"
+  },
+  {
+    "id": "c11-t4-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 4,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "博物馆藏品与楼层导览 · 词汇与语境",
+    "url": "foundation.html?id=c11-t4-p2-0"
+  },
+  {
+    "id": "c11-t4-p2-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 4,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "博物馆藏品与楼层导览 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t4-p2-1"
+  },
+  {
+    "id": "c11-t4-p2-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 4,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "博物馆藏品与楼层导览 · 定位词标记 · 同义替换 · 信号词捕捉 · 跟随路线走地图",
+    "url": "listening.html?id=c11-t4-p2-2"
+  },
+  {
+    "id": "c11-t4-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 4,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "音乐家演出服装研究 · 词汇与语境",
+    "url": "foundation.html?id=c11-t4-p3-0"
+  },
+  {
+    "id": "c11-t4-p3-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 4,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "音乐家演出服装研究 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t4-p3-1"
+  },
+  {
+    "id": "c11-t4-p3-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 4,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "音乐家演出服装研究 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t4-p3-2"
+  },
+  {
+    "id": "c11-t4-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 11,
+    "test": 4,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "土壤储碳与农业实践 · 词汇与语境",
+    "url": "foundation.html?id=c11-t4-p4-0"
+  },
+  {
+    "id": "c11-t4-p4-1",
+    "mode": "listening",
+    "book": 11,
+    "test": 4,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "土壤储碳与农业实践 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c11-t4-p4-1"
+  },
+  {
+    "id": "c11-t4-p4-2",
+    "mode": "listening",
+    "book": 11,
+    "test": 4,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "土壤储碳与农业实践 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c11-t4-p4-2"
+  },
+  {
+    "id": "c10-t1-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 1,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "家庭自驾行程比较 · 词汇与语境",
+    "url": "foundation.html?id=c10-t1-p1-0"
+  },
+  {
+    "id": "c10-t1-p1-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 1,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "家庭自驾行程比较 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t1-p1-1"
+  },
+  {
+    "id": "c10-t1-p1-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 1,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "家庭自驾行程比较 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t1-p1-2"
+  },
+  {
+    "id": "c10-t1-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 1,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "健身俱乐部设施与入会 · 词汇与语境",
+    "url": "foundation.html?id=c10-t1-p2-0"
+  },
+  {
+    "id": "c10-t1-p2-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 1,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "健身俱乐部设施与入会 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t1-p2-1"
+  },
+  {
+    "id": "c10-t1-p2-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 1,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "健身俱乐部设施与入会 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t1-p2-2"
+  },
+  {
+    "id": "c10-t1-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 1,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "家用电器创新设计辅导 · 词汇与语境",
+    "url": "foundation.html?id=c10-t1-p3-0"
+  },
+  {
+    "id": "c10-t1-p3-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 1,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "家用电器创新设计辅导 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t1-p3-1"
+  },
+  {
+    "id": "c10-t1-p3-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 1,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "家用电器创新设计辅导 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t1-p3-2"
+  },
+  {
+    "id": "c10-t1-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 1,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "森林熊类及栖息地保护 · 词汇与语境",
+    "url": "foundation.html?id=c10-t1-p4-0"
+  },
+  {
+    "id": "c10-t1-p4-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 1,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "森林熊类及栖息地保护 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t1-p4-1"
+  },
+  {
+    "id": "c10-t1-p4-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 1,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "森林熊类及栖息地保护 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t1-p4-2"
+  },
+  {
+    "id": "c10-t2-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 2,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "出行调查与骑行条件 · 词汇与语境",
+    "url": "foundation.html?id=c10-t2-p1-0"
+  },
+  {
+    "id": "c10-t2-p1-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 2,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "出行调查与骑行条件 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t2-p1-1"
+  },
+  {
+    "id": "c10-t2-p1-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 2,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "出行调查与骑行条件 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t2-p1-2"
+  },
+  {
+    "id": "c10-t2-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 2,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "城市公共设施与主题游乐场 · 词汇与语境",
+    "url": "foundation.html?id=c10-t2-p2-0"
+  },
+  {
+    "id": "c10-t2-p2-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 2,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "城市公共设施与主题游乐场 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t2-p2-1"
+  },
+  {
+    "id": "c10-t2-p2-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 2,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "城市公共设施与主题游乐场 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t2-p2-2"
+  },
+  {
+    "id": "c10-t2-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 2,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "探险者生平与实验考古汇报 · 词汇与语境",
+    "url": "foundation.html?id=c10-t2-p3-0"
+  },
+  {
+    "id": "c10-t2-p3-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 2,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "探险者生平与实验考古汇报 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t2-p3-1"
+  },
+  {
+    "id": "c10-t2-p3-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 2,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "探险者生平与实验考古汇报 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t2-p3-2"
+  },
+  {
+    "id": "c10-t2-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 2,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "企业管理与工作方式变化 · 词汇与语境",
+    "url": "foundation.html?id=c10-t2-p4-0"
+  },
+  {
+    "id": "c10-t2-p4-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 2,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "企业管理与工作方式变化 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t2-p4-1"
+  },
+  {
+    "id": "c10-t2-p4-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 2,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "企业管理与工作方式变化 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t2-p4-2"
+  },
+  {
+    "id": "c10-t3-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 3,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "托育中心报名与照护安排 · 词汇与语境",
+    "url": "foundation.html?id=c10-t3-p1-0"
+  },
+  {
+    "id": "c10-t3-p1-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 3,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "托育中心报名与照护安排 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t3-p1-1"
+  },
+  {
+    "id": "c10-t3-p1-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 3,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "托育中心报名与照护安排 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t3-p1-2"
+  },
+  {
+    "id": "c10-t3-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 3,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "海豚保护组织与认养计划 · 词汇与语境",
+    "url": "foundation.html?id=c10-t3-p2-0"
+  },
+  {
+    "id": "c10-t3-p2-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 3,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "海豚保护组织与认养计划 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t3-p2-1"
+  },
+  {
+    "id": "c10-t3-p2-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 3,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "海豚保护组织与认养计划 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t3-p2-2"
+  },
+  {
+    "id": "c10-t3-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 3,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "戏剧课程反思与海外学习申请 · 词汇与语境",
+    "url": "foundation.html?id=c10-t3-p3-0"
+  },
+  {
+    "id": "c10-t3-p3-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 3,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "戏剧课程反思与海外学习申请 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t3-p3-1"
+  },
+  {
+    "id": "c10-t3-p3-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 3,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "戏剧课程反思与海外学习申请 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t3-p3-2"
+  },
+  {
+    "id": "c10-t3-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 3,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "动机取向与领导方式 · 词汇与语境",
+    "url": "foundation.html?id=c10-t3-p4-0"
+  },
+  {
+    "id": "c10-t3-p4-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 3,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "动机取向与领导方式 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t3-p4-1"
+  },
+  {
+    "id": "c10-t3-p4-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 3,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "动机取向与领导方式 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t3-p4-2"
+  },
+  {
+    "id": "c10-t4-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "住宅维修询价与施工顺序 · 词汇与语境",
+    "url": "foundation.html?id=c10-t4-p1-0"
+  },
+  {
+    "id": "c10-t4-p1-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 4,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "住宅维修询价与施工顺序 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t4-p1-1"
+  },
+  {
+    "id": "c10-t4-p1-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 4,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "住宅维修询价与施工顺序 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t4-p1-2"
+  },
+  {
+    "id": "c10-t4-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 4,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "历史港口的兴衰与参观安排 · 词汇与语境",
+    "url": "foundation.html?id=c10-t4-p2-0"
+  },
+  {
+    "id": "c10-t4-p2-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 4,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "历史港口的兴衰与参观安排 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t4-p2-1"
+  },
+  {
+    "id": "c10-t4-p2-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 4,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "历史港口的兴衰与参观安排 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t4-p2-2"
+  },
+  {
+    "id": "c10-t4-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 4,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "实习收获与申请信息来源 · 词汇与语境",
+    "url": "foundation.html?id=c10-t4-p3-0"
+  },
+  {
+    "id": "c10-t4-p3-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 4,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "实习收获与申请信息来源 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t4-p3-1"
+  },
+  {
+    "id": "c10-t4-p3-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 4,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "实习收获与申请信息来源 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t4-p3-2"
+  },
+  {
+    "id": "c10-t4-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 10,
+    "test": 4,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "纳米技术的风险讨论与可能用途 · 词汇与语境",
+    "url": "foundation.html?id=c10-t4-p4-0"
+  },
+  {
+    "id": "c10-t4-p4-1",
+    "mode": "listening",
+    "book": 10,
+    "test": 4,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "纳米技术的风险讨论与可能用途 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c10-t4-p4-1"
+  },
+  {
+    "id": "c10-t4-p4-2",
+    "mode": "listening",
+    "book": 10,
+    "test": 4,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "纳米技术的风险讨论与可能用途 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c10-t4-p4-2"
+  },
+  {
+    "id": "c9-t1-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 1,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "餐饮岗位咨询与面试安排 · 词汇与语境",
+    "url": "foundation.html?id=c9-t1-p1-0"
+  },
+  {
+    "id": "c9-t1-p1-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 1,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "餐饮岗位咨询与面试安排 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t1-p1-1"
+  },
+  {
+    "id": "c9-t1-p1-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 1,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "餐饮岗位咨询与面试安排 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t1-p1-2"
+  },
+  {
+    "id": "c9-t1-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 1,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "运动用品店开业与活动介绍 · 词汇与语境",
+    "url": "foundation.html?id=c9-t1-p2-0"
+  },
+  {
+    "id": "c9-t1-p2-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 1,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "运动用品店开业与活动介绍 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t1-p2-1"
+  },
+  {
+    "id": "c9-t1-p2-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 1,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "运动用品店开业与活动介绍 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t1-p2-2"
+  },
+  {
+    "id": "c9-t1-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 1,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "学术学习经历与参与讨论 · 词汇与语境",
+    "url": "foundation.html?id=c9-t1-p3-0"
+  },
+  {
+    "id": "c9-t1-p3-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 1,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "学术学习经历与参与讨论 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t1-p3-1"
+  },
+  {
+    "id": "c9-t1-p3-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 1,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "学术学习经历与参与讨论 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t1-p3-2"
+  },
+  {
+    "id": "c9-t1-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 1,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "海洋动物搁浅：解释与证据 · 词汇与语境",
+    "url": "foundation.html?id=c9-t1-p4-0"
+  },
+  {
+    "id": "c9-t1-p4-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 1,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "海洋动物搁浅：解释与证据 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t1-p4-1"
+  },
+  {
+    "id": "c9-t1-p4-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 1,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "海洋动物搁浅：解释与证据 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t1-p4-2"
+  },
+  {
+    "id": "c9-t2-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 2,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "学生宿舍申请与个人偏好 · 词汇与语境",
+    "url": "foundation.html?id=c9-t2-p1-0"
+  },
+  {
+    "id": "c9-t2-p1-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 2,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "学生宿舍申请与个人偏好 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t2-p1-1"
+  },
+  {
+    "id": "c9-t2-p1-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 2,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "学生宿舍申请与个人偏好 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t2-p1-2"
+  },
+  {
+    "id": "c9-t2-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 2,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "自然公园活动与园内路线 · 词汇与语境",
+    "url": "foundation.html?id=c9-t2-p2-0"
+  },
+  {
+    "id": "c9-t2-p2-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 2,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "自然公园活动与园内路线 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t2-p2-1"
+  },
+  {
+    "id": "c9-t2-p2-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 2,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "自然公园活动与园内路线 · 定位词标记 · 同义替换 · 信号词捕捉 · 跟随路线走地图",
+    "url": "listening.html?id=c9-t2-p2-2"
+  },
+  {
+    "id": "c9-t2-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 2,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "自主学习中心的改进讨论 · 词汇与语境",
+    "url": "foundation.html?id=c9-t2-p3-0"
+  },
+  {
+    "id": "c9-t2-p3-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 2,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "自主学习中心的改进讨论 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t2-p3-1"
+  },
+  {
+    "id": "c9-t2-p3-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 2,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "自主学习中心的改进讨论 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t2-p3-2"
+  },
+  {
+    "id": "c9-t2-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 2,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "企业组织文化与适合的员工 · 词汇与语境",
+    "url": "foundation.html?id=c9-t2-p4-0"
+  },
+  {
+    "id": "c9-t2-p4-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 2,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "企业组织文化与适合的员工 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t2-p4-1"
+  },
+  {
+    "id": "c9-t2-p4-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 2,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "企业组织文化与适合的员工 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t2-p4-2"
+  },
+  {
+    "id": "c9-t3-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 3,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "度假公寓比较与保险条款 · 词汇与语境",
+    "url": "foundation.html?id=c9-t3-p1-0"
+  },
+  {
+    "id": "c9-t3-p1-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 3,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "度假公寓比较与保险条款 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t3-p1-1"
+  },
+  {
+    "id": "c9-t3-p1-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 3,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "度假公寓比较与保险条款 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t3-p1-2"
+  },
+  {
+    "id": "c9-t3-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 3,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "家庭主题公园的发展与分工 · 词汇与语境",
+    "url": "foundation.html?id=c9-t3-p2-0"
+  },
+  {
+    "id": "c9-t3-p2-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 3,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "家庭主题公园的发展与分工 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t3-p2-1"
+  },
+  {
+    "id": "c9-t3-p2-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 3,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "家庭主题公园的发展与分工 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t3-p2-2"
+  },
+  {
+    "id": "c9-t3-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 3,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "论文选题与学习方法指导 · 词汇与语境",
+    "url": "foundation.html?id=c9-t3-p3-0"
+  },
+  {
+    "id": "c9-t3-p3-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 3,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "论文选题与学习方法指导 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t3-p3-1"
+  },
+  {
+    "id": "c9-t3-p3-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 3,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "论文选题与学习方法指导 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t3-p3-2"
+  },
+  {
+    "id": "c9-t3-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 3,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "地下住宅的设计与环境代价 · 词汇与语境",
+    "url": "foundation.html?id=c9-t3-p4-0"
+  },
+  {
+    "id": "c9-t3-p4-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 3,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "地下住宅的设计与环境代价 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t3-p4-1"
+  },
+  {
+    "id": "c9-t3-p4-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 3,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "地下住宅的设计与环境代价 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t3-p4-2"
+  },
+  {
+    "id": "c9-t4-p1-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 4,
+    "part": 1,
+    "title": "练习 0 · 基础词汇",
+    "description": "诊所注册、服务收费与讲座安排 · 词汇与语境",
+    "url": "foundation.html?id=c9-t4-p1-0"
+  },
+  {
+    "id": "c9-t4-p1-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 4,
+    "part": 1,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "诊所注册、服务收费与讲座安排 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t4-p1-1"
+  },
+  {
+    "id": "c9-t4-p1-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 4,
+    "part": 1,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "诊所注册、服务收费与讲座安排 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t4-p1-2"
+  },
+  {
+    "id": "c9-t4-p2-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 4,
+    "part": 2,
+    "title": "练习 0 · 基础词汇",
+    "description": "度假公寓设备说明与物品位置 · 词汇与语境",
+    "url": "foundation.html?id=c9-t4-p2-0"
+  },
+  {
+    "id": "c9-t4-p2-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 4,
+    "part": 2,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "度假公寓设备说明与物品位置 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t4-p2-1"
+  },
+  {
+    "id": "c9-t4-p2-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 4,
+    "part": 2,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "度假公寓设备说明与物品位置 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t4-p2-2"
+  },
+  {
+    "id": "c9-t4-p3-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 4,
+    "part": 3,
+    "title": "练习 0 · 基础词汇",
+    "description": "海外学习经历与教育方式适应 · 词汇与语境",
+    "url": "foundation.html?id=c9-t4-p3-0"
+  },
+  {
+    "id": "c9-t4-p3-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 4,
+    "part": 3,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "海外学习经历与教育方式适应 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t4-p3-1"
+  },
+  {
+    "id": "c9-t4-p3-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 4,
+    "part": 3,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "海外学习经历与教育方式适应 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t4-p3-2"
+  },
+  {
+    "id": "c9-t4-p4-0",
+    "mode": "listening",
+    "foundation": true,
+    "book": 9,
+    "test": 4,
+    "part": 4,
+    "title": "练习 0 · 基础词汇",
+    "description": "城市庭院野生动物调查 · 词汇与语境",
+    "url": "foundation.html?id=c9-t4-p4-0"
+  },
+  {
+    "id": "c9-t4-p4-1",
+    "mode": "listening",
+    "book": 9,
+    "test": 4,
+    "part": 4,
+    "title": "练习 1 · 词汇与句子听写",
+    "description": "城市庭院野生动物调查 · 词汇与表达 · 听句子填空",
+    "url": "listening.html?id=c9-t4-p4-1"
+  },
+  {
+    "id": "c9-t4-p4-2",
+    "mode": "listening",
+    "book": 9,
+    "test": 4,
+    "part": 4,
+    "title": "练习 2 · 定位与同义替换",
+    "description": "城市庭院野生动物调查 · 定位词标记 · 同义替换 · 信号词捕捉",
+    "url": "listening.html?id=c9-t4-p4-2"
   }
 ];

@@ -8,6 +8,7 @@ window.RRAddTopic = config => {
   const base = `c${book}-t${config.test}-p${config.part}`;
   const audioRoot = `audio/${base}`;
   function tokens(text) {
+    if(Array.isArray(text))return text;
     return text.split('|').map(part => {
       const match=/^\[([^\]]+)\]([.,;:?!]?)$/.exec(part);
       if(match)return{text:match[1]+match[2],key:true};
@@ -32,7 +33,7 @@ window.RRAddTopic = config => {
   window.RRListeningPractices[`${base}-2`] = {
     ...common,id:`${base}-2`,label:'练习 2 · 定位与同义替换',
     sections:[
-      {id:'locators',type:'locator',title:'定位词标记',instruction:'只标记定位表达，不实际答题。每句有独立数量上限；再次点击可取消。',map:config.map||config.diagram,mapBeforeIndex:config.mapBeforeIndex??6,items:config.locators.map((entry,index)=>({id:`${base}-l${index+1}`,question:tokens(entry[0]),source:tokens(entry[1]),explanation:entry[2],format:entry[3]||'笔记填空',audio:`${audioRoot}/locator-${String(index+1).padStart(2,'0')}.mp3`}))},
+      {id:'locators',type:'locator',title:'定位词标记',instruction:'只标记定位表达，不实际答题。每句有独立数量上限；再次点击可取消。',map:config.map||config.diagram,mapBeforeIndex:config.mapBeforeIndex??6,items:config.locators.map((entry,index)=>({id:`${base}-l${index+1}`,question:tokens(entry[0]),source:tokens(entry[1]),explanation:entry[2],format:entry[3]||'笔记填空',...(entry[4]?{paired:true}:{}),audio:`${audioRoot}/locator-${String(index+1).padStart(2,'0')}.mp3`}))},
       {id:'paraphrases',type:'paraphrase',title:'同义替换',instruction:'将表达拖入对应空格，每段多出 3 项。已填表达可拖回词库或移到其他空格，也可以点选操作。',items:config.paragraphs.map((item,index)=>{
         const segments=[];let last=0;const regex=/\[([^\]]+)\]/g;let match;
         while((match=regex.exec(item.text))){segments.push(item.text.slice(last,match.index));const pairIndex=item.pairs.findIndex(pair=>pair[0]===match[1]);if(pairIndex<0)throw Error(`Missing paraphrase ${base}: ${match[1]}`);segments.push({id:`${base}-p${index+1}-s${pairIndex+1}`,text:match[1],answer:`${base}-p${index+1}-a${pairIndex+1}`,explanation:item.pairs[pairIndex][2]});last=regex.lastIndex;}

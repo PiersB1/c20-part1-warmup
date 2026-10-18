@@ -1,0 +1,71 @@
+RRListenPack({book:9,test:3,part:2,title:'家庭主题公园的发展与分工',focus:'创办动机与早期兴趣、最初开放条件、年度和累计人数、家庭成员旧职责与现职责、工程难点和适龄范围；单选、职责匹配、表格。',formats:[['单选题干',3],['职责匹配',5],['表格填空',2]],
+words:`
+founder|创办人|A founder helps start an organisation or business.|创办人参与建立一家机构或企业。|The ___ described the first small version of the park.|创办人介绍了公园最初的小规模样子。
+miniature|微型的；缩小模型的|A miniature object is much smaller than the full-size version.|微型物体比原尺寸版本小得多。|The children rode on a ___ railway.|孩子们乘坐了微型铁路。
+locomotive|机车；火车头|A locomotive provides power to pull railway vehicles.|机车为牵引铁路车辆提供动力。|The old ___ needed repairs before the next ride.|下次行车前，旧机车需要维修。
+landscape|园林景观；地形景观|A landscape includes the visible features of an area of land.|景观包括一片土地看得到的地貌和环境。|New trees changed the ___ around the track.|新种的树改变了轨道周围的景观。
+seasonal|季节性的；只在特定时节的|A seasonal activity happens during a particular part of the year.|季节性活动在一年中的特定时段进行。|The ___ café closes during the coldest months.|这家季节性咖啡馆在最冷的月份关闭。
+all year round|全年|All year round means throughout every season.|全年就是一年各个季节都包括。|The indoor exhibit is open ___.|室内展览全年开放。
+annual|每年的；一年的|An annual figure relates to a single year.|年度数据与某一年相关。|The report compares ___ visitor numbers.|报告比较每年的访客数量。
+cumulative|累积至今的|A cumulative total adds amounts across several periods.|累计总数把多个时段的数量加起来。|The ___ figure includes visitors from earlier years.|累计数字包括往年的访客。
+retire|退休；退出原来的工作|To retire is to stop doing a regular job, often after many working years.|退休通常是工作多年后停止原来的常规工作。|He plans to ___ but still help occasionally.|他计划退休，但偶尔仍会帮忙。
+recruit|招聘；招募|To recruit people is to find and bring in new staff or members.|招募就是寻找并吸收新员工或成员。|The park will ___ extra staff for the busy period.|公园将在旺季招聘额外人员。
+catering|餐饮供应|Catering involves preparing and supplying food and drink.|餐饮供应包括准备和提供食物饮料。|She manages ___ rather than ticket sales.|她负责餐饮，不负责售票。
+retail|商品零售|Retail is selling goods directly to the people who use them.|零售是把商品直接卖给最终使用者。|Souvenirs have become an important part of ___.|纪念品成为零售业务的重要部分。
+construction|建造；施工|Construction is the process of building something.|施工是建造某物的过程。|The new shelter is still under ___.|新遮雨棚仍在施工。
+maintenance|维修保养|Maintenance keeps equipment or buildings in working condition.|维护保养让设备或建筑保持能用的状态。|Regular ___ helps prevent breakdowns.|定期保养有助于防止故障。
+level the ground|把地面整平|To level the ground is to make its surface even.|平整土地就是让地表变平。|They had to ___ before placing the new track.|铺设新轨道前，他们必须整平地面。
+target age group|主要面向的年龄群体|A target age group is the set of ages an activity is designed for.|目标年龄群体是活动设计主要面向的年龄段。|The leaflet states the ___ for the workshop.|宣传单写明了工作坊适合的主要年龄段。
+`,
+groups:[['founder','miniature','locomotive','landscape','seasonal'],['all year round','annual','cumulative','retire','recruit'],['catering','retail','construction','maintenance','level the ground','target age group']],omitted:['founder','landscape','annual','construction'],
+contexts:[{id:'growth',title:'From a small railway to a visitor attraction',words:['founder','miniature','locomotive','landscape','seasonal','all year round','annual','cumulative'],paragraphs:[
+'The founder began with a {{miniature}} railway and one small {{locomotive}}. The first opening was {{seasonal}}, because the family could only run the rides during part of the year. As the park grew, they added sheltered activities and could welcome visitors {{all year round}}.',
+'Trees and paths improved the landscape around the railway. The annual report gave the number visiting in one year, while a separate {{cumulative}} total added visitors from every year since opening. The two figures answered different questions, so the larger one could not be used as the number for a single year.'
+]},{id:'roles',title:'Keeping the park running',words:['retire','recruit','catering','retail','construction','maintenance','level the ground','target age group'],paragraphs:[
+'As one member of the family prepared to {{retire}}, the park reviewed how work was shared. It needed to {{recruit}} someone for {{catering}}, while another person would manage {{retail}} in the small shop. The construction team planned a new outdoor activity, but would first have to {{level the ground}}.',
+'A separate worker would handle {{maintenance}} after the new equipment opened. Checking it regularly was different from building it in the first place. The team also agreed on the {{target age group}}, so staff could explain who the activity was designed to suit rather than simply saying that it was for everyone.'
+]}],
+vocab:[
+['The founder now has fewer daily duties, but helped create the business.\nfounder 指？','参与创办企业的人','所有刚被招聘的新员工','目前负责每项日常工作的唯一员工','只来公园参观的长期顾客','创办身份不代表现在仍负责全部工作。'],
+['The miniature railway copies the idea of a full-size one.\nminiature 表示？','缩小成微型的','已经永久停止运转的','仅供成年人使用的','只在夜间开放的','说明尺寸，不说明运行或适龄状态。'],
+['The locomotive was repaired separately from the passenger carriages.\nlocomotive 是？','提供牵引动力的火车头','供乘客坐的任意车厢','火车沿着行进的轨道','所有列车的售票窗口','动力机车与客车厢、轨道不同。'],
+['Planting changed the landscape, but did not change the route length.\nlandscape 指？','周围可见的地形和环境景观','按分钟计算的行车时间','每名乘客必须付的票价','这一年的全部游客数量','景观变化不等于长度变化。'],
+['The seasonal ride opens only in the warmer part of the year.\nseasonal 指？','只在一年中特定时段运行','一年所有月份都运行','每天只运行一小时','每位游客只能乘坐一次','季节范围与每天时长不同。'],
+['The exhibition is open all year round, though daily times still vary.\n正确理解是？','一年各季节都开放','每天二十四小时都不关门','全年每天的钟点都必定相同','只在一年最繁忙时开放','全年不等于全天。'],
+['The annual figure is much smaller than the total since opening.\nannual 指？','一个年度的数据','开业至今的累计数据','只计算一天的最多人数','所有年份平均每小时的数据','年度与累计范围不同。'],
+['The cumulative total adds the figures for several years.\ncumulative 指？','多个时期不断累加的','只保留最新一年其余清零的','只计算未成年人参观的','从总数中扣除旺季后的','累加数字不代表某一年规模。']
+],
+multi:[{q:'选择两项都表示“为岗位寻找新人员”。',options:['recruit staff','take on new workers','repair equipment already in use','sell souvenirs directly to visitors'],answers:[0,1],why:'招聘与维护、零售是不同职责。'},{q:'选择两项都表达“保持设备处于可用状态”。',options:['carry out maintenance','service and look after equipment','design a new building from scratch','only sell the equipment after use'],answers:[0,1],why:'维护是持续保养，区别于新建或销售。'}],
+grammar:[['She used to manage the shop, but now she is responsible ___ catering.','for','be responsible for说明当前职责；used to说明过去。','He used to supervise construction, but is now responsible ___ recruiting the seasonal team.'],['The total since opening is larger ___ the number in one year.','than','比较两个不同时间范围，不能互换。','The cumulative figure is much larger ___ the attendance recorded for the most recent year alone.']],
+dictation:[['The ___ still visits the site, although another person manages the daily programme.','founder','founder：创办人。'],['The ___ railway gives visitors a smaller version of a working transport system.','miniature','miniature：微型的。'],['The ___ will be checked before the first passenger trip.','locomotive','locomotive：机车。'],['The team planted trees to make the surrounding ___ more interesting.','landscape','landscape：景观。'],['The attraction was originally ___ because there were few sheltered facilities.','seasonal','seasonal：季节性的。'],['The indoor displays now operate ___, even when the outdoor ride is closed.','all year round','all year round：全年。'],['The ___ attendance is recorded separately from the total accumulated since opening.','annual','annual：年度的。'],['The ___ figure includes visitors from the earlier small-scale operation as well as recent years.','cumulative','cumulative：累计的。'],['The family needs to ___ additional workers before expanding its opening hours.','recruit','recruit：招聘。'],['The employee responsible for ___ deals with meals and drinks, rather than souvenirs or admission tickets.','catering','catering：餐饮供应。']],
+locators:`
+What directly [inspired|1] the decision to open?~A charity event actually [prompted|1] us to open: visitors enjoyed our borrowed miniature railway and asked when they could come again.~inspired对应prompted，背景兴趣与直接动因不同。
+Why was opening initially [seasonal|1]?~Our [restricted opening period|1] reflected the availability of the borrowed equipment, which had to be returned before the winter term began.~seasonal对应restricted opening period，原因需另外听取。
+Which figure is the [total to date|1]?~The [cumulative|1] attendance is now two hundred and eighty thousand; forty-two thousand is the smaller figure for last year alone.~total to date对应cumulative，年度数据是混淆项。
+Who now deals with [taking on staff|1]?~Elise is now responsible for [recruitment|1]; she previously managed daily ticketing, which Arthur has taken over.~taking on staff对应recruitment，旧职责不可用。
+Who currently oversees [food and drink|1]?~Amir looks after [catering|1] now; before returning to the park he worked in a school, while Rosa runs the souvenir counter.~food and drink对应catering，回归背景非当前零售职责。
+Who manages the [sale of goods|1]?~Rosa manages [retail|1], including the small shop beside the exit; she does not manage ticket sales, which remain Arthur’s responsibility.~sale of goods对应retail，非售票总收入。
+Which person has moved from general management to [looking after machinery|1], and why should their [former|2] construction role not be used to answer the matching task?~Neal kept [maintenance|1] of the railway equipment when the work was shared out; his [previous|2] building duties went to Imogen, so visitors reporting a mechanical fault should contact him rather than assume that the builder looks after every machine.~looking after machinery对应maintenance；former对应previous，按现职而非经历匹配。
+Who is now responsible for [building work|1] rather than the [staff support|2] that another relative has taken over, as the family divides its growing operation into separate duties?~Imogen supervises [construction|1] and checks all new structures; Arthur handles [personnel care|2], while Elise recruits new staff, so the relatives still work together without retaining the broad collection of duties they each had when the park first opened.~building work对应construction；staff support对应personnel care，避免因过去兼任而错配。
+Before the new activity could open, workers had to [make the surface even|1] for [safe use|2]; the physical obstacle described in the table was ___.~We needed to [level the ground|1] because shallow drainage channels crossed the proposed track; [safe operation|2] depended on removing those dips before installing the equipment, rather than simply putting a smooth-looking layer over a surface that was still uneven underneath.~make the surface even对应level the ground；safe use对应without unnecessary danger，工程与目的分别对应。
+The activity’s [intended participants|1] fall within a stated [age range|2], so the table should record ___ rather than assume that all visitors can take part in the same way.~The [target group|1] covers a [span of ages|2] from eight to fourteen, although younger children can watch from the viewing area; staff must check the stated range before suggesting that everyone in a visiting family can use the equipment.~intended participants对应target group；age range对应span of ages，家庭公园不等于所有设施全年龄。
+`,
+paragraphs:[{title:'A changing business',text:'The park began as a [small-scale=>modest-sized=>规模较小。] operation and gradually [grew=>expanded=>扩大。]. It first opened for only a [limited part of the year=>season=>一年特定时段。], then added facilities that could operate in colder weather. The family recorded both [yearly=>annual=>每年。] attendance and the [running total=>cumulative figure=>持续累加的总数。] since the beginning. Those figures could show growth only if their time periods were [kept distinct=>not confused=>不混用不同范围。].',extras:['the latest year alone as the total since opening','exactly the same period for every figure','open twenty-four hours every day']},{title:'Old experience and present responsibilities',text:'A relative’s earlier work in education did not necessarily identify her [current=>present-day=>目前的。] role at the attraction. The family had [redistributed=>shared out differently=>重新分配。] duties as visitor numbers increased. One person handled [recruitment=>taking on employees=>招聘。], another organised [catering=>food provision=>餐饮。], and a third supervised [retail sales=>selling goods to visitors=>向顾客零售商品。]. Keeping the machinery running was a separate [ongoing task=>continuing responsibility=>持续的职责。], not the same as building a new feature once.',extras:['a previous role automatically unchanged','one completed construction job only','all relatives performing one identical role']}],
+signals:[{title:'Growth in the right time frame',focus:'分清创办背景、营业季节变化和访客数字范围。',text:`
+The park grew from a family activity into a public attraction, but it is worth separating the original interest from the decision to open.
+The children enjoyed making models, while a visit elsewhere gave the adults the final push to try running an attraction themselves.~区分童年兴趣与直接促成开业的因素。
+They began with a short season so that the experience could be managed with the facilities and help then available.
+Today the indoor programme runs throughout the year, although that does not mean every outdoor feature stays open in all weather.~当前全年安排有范围，不等于所有设施始终开放。
+The visitor numbers show how much the operation has developed since that early stage.
+Use the annual figure for one year, not the much larger running total accumulated since the opening.~明确年度与累计两个数字的适用范围。
+The printed information labels them separately, and the radio discussion will use both when describing growth.
+`},{title:'The responsibilities people have now',focus:'捕捉旧分工被更新之处，区别建设、保养和目前工程要求。',text:`
+As the attraction became busier, the family could no longer divide every job informally between whoever happened to be free.
+Each person now has a main area, although everyone still helps another team if a particularly busy day makes it necessary.
+The former general manager has stepped back from building work and now concentrates on keeping the machinery in working order.~以前负责建设的人现在主要做维护，按当前职责定位。
+Another relative coordinates staff, while the food service and the shop have different people responsible for them.
+The new outdoor feature has also needed practical preparation before visitors can use it.
+Its main difficulty was making the ground level, rather than finding enough people to sell tickets.~工程真正难点与人员销售问题区分。
+Finally, the age range describes who the feature was designed for; it is not simply a list of everyone allowed into the park.~目标年龄与入园人群范围不同。
+`}]
+});

@@ -1,6 +1,6 @@
 const assert=require('assert'),fs=require('fs'),path=require('path'),vm=require('vm'),os=require('os'),{pathToFileURL}=require('url');
 const root=path.resolve(__dirname,'..'),c={};c.window=c;vm.createContext(c);
-for(const file of ['listening-practices.js','practice-builders.js','preparation-builders.js','editorial-multi.js','editorial-quiz-context.js','editorial-signal-context.js','editorial-revisions.js',...fs.readdirSync(path.join(root,'data')).filter(x=>x.endsWith('.practice.js')).sort(),'reading-practices.js','reading-c21-t1-p1.js','reading-c15-t4-p1.js','foundation-library.js','vocab-meanings.js'])vm.runInContext(fs.readFileSync(path.join(root,'data',file),'utf8'),c);
+for(const file of ['listening-practices.js','practice-builders.js','preparation-builders.js','editorial-multi.js','editorial-quiz-context.js','editorial-signal-context.js','editorial-revisions.js',...fs.readdirSync(path.join(root,'data')).filter(x=>x.endsWith('.practice.js')).sort(),'reading-practices.js','reading-c21-t1-p1.js','reading-c21-t1-p2.js','reading-c15-t4-p1.js','foundation-library.js','vocab-meanings.js'])vm.runInContext(fs.readFileSync(path.join(root,'data',file),'utf8'),c);
 const replacements=JSON.parse(fs.readFileSync(path.join(root,'data/vocabulary-clarity.json'),'utf8'));
 const base=[...Object.values(c.RRListeningPractices),...Object.values(c.RRReadingPractices)];
 let updated=0;

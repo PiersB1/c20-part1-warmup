@@ -12,7 +12,7 @@
       const controls=el('div','audio-controls'),start=button('▶ 播放导览'),pause=button('暂停'),undo=button('退回一步');pause.disabled=true;
       const clock=el('span','audio-clock',`0:00 / ${time(timing?.duration||0)}`);controls.append(start,pause,undo,clock);
       const svg=svgNode('svg',{viewBox:`0 0 ${item.map.width} ${item.map.height}`,role:'img','aria-label':item.title+'，北向上'});
-      const north=svgNode('text',{x:600,y:38,'text-anchor':'middle',class:'route-north'});north.textContent='N ↑';svg.append(north);
+      const north=svgNode('text',{x:Math.min(600,item.map.width-40),y:38,'text-anchor':'middle',class:'route-north'});north.textContent='N ↑';svg.append(north);
       const points=ids=>ids.map(id=>`${nodes.get(id).x},${nodes.get(id).y}`).join(' ');
       item.map.edges.forEach(edge=>svg.append(svgNode('polyline',{points:points(edge),class:'route-road'})));
       const standard=svgNode('polyline',{class:'route-standard',fill:'none'}),trail=svgNode('polyline',{class:'route-trail',fill:'none'});svg.append(standard,trail);

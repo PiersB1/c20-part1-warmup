@@ -161,16 +161,42 @@
       const card=el('article','question-card judgement-card');card.dataset.questionId=item.id;
       head(card,i,item.q);card.append(el('p','reading-context',item.text));
       const fb=el('div','feedback');fb.hidden=true;
-      const value=options(card,item.id,['TRUE','FALSE','NOT GIVEN'],()=>{fb.hidden=true;});card.append(fb);container.append(card);
+      const value=options(card,item.id,section.labels||['TRUE','FALSE','NOT GIVEN'],()=>{fb.hidden=true;});card.append(fb);container.append(card);
       const result=()=>({id:item.id,question:item.q,context:item.text,response:value(),expected:item.answer,responseText:value()||'未作答',expectedText:item.answer,correct:value()===item.answer,total:1,explanation:item.why,translation:item.translation});
       return {result,check(){feedback(fb,`${value()===item.answer?'✓ 正确。':`对应答案：${item.answer}。`} ${item.why}`,value()===item.answer);}};
     });const getResult=()=>summary(section,entries.map(e=>e.result()));return {getResult,check(){entries.forEach(e=>e.check());return getResult();}};
+  }};
+
+
+  RRQuestionTypes['reading-matching']={render(section,container){
+    const article=el('article','question-card reading-passage');
+    article.append(el('h3','passage-title',section.passage.title));
+    section.passage.paragraphs.forEach(p=>{
+      const line=el('p');if(typeof p==='string')line.textContent=p;
+      else line.append(el('strong','',p.label+' '),document.createTextNode(p.text));article.append(line);
+    });container.append(article);
+    const entries=section.items.map((item,i)=>{
+      const card=el('article','question-card reading-match-card');card.dataset.questionId=item.id;
+      head(card,i,item.q);const label=el('label','reading-match-label','选择对应项 '),select=el('select','answer-input');
+      select.setAttribute('aria-label','第'+(i+1)+'题对应项');select.append(new Option('请选择',''));
+      section.choices.forEach(c=>select.append(new Option(c.label,c.id)));
+      const fb=el('div','feedback');fb.hidden=true;select.addEventListener('change',()=>{fb.hidden=true;});
+      label.append(select);card.append(label,fb);container.append(card);
+      const result=()=>{const expected=section.choices.find(c=>c.id===item.answer),response=section.choices.find(c=>c.id===select.value);return {id:item.id,question:item.q,response:select.value,responseText:response?.label||'未作答',expected:item.answer,expectedText:expected.label,correct:select.value===item.answer,total:1,explanation:item.why};};
+      return {result,check(){const r=result();feedback(fb,(r.correct?'✓ 正确。':'对应项：'+r.expectedText+'。')+' '+item.why,r.correct);}};
+    });const getResult=()=>({...summary(section,entries.map(e=>e.result())),choices:section.choices});
+    return {getResult,check(){entries.forEach(e=>e.check());return getResult();}};
   }};
 
   const fillReading={render(section,container){
     const isTable=section.type==='reading-table',maxWords=section.maxWords||1;
     const layout=el('div','notes-layout'),article=el('article','question-card reading-passage'),notes=el('div','note-list');
     article.append(el('h3','passage-title',section.passage.title));section.passage.paragraphs.forEach(p=>article.append(el('p','',p)));
+    if(section.passage.diagram){
+      const figure=el('figure','reading-diagram'),img=el('img');
+      img.src=section.passage.diagram.src;img.alt=section.passage.diagram.alt;
+      figure.append(img,el('figcaption','',section.passage.diagram.caption||''));article.append(figure);
+    }
     let tableBody;
     if(isTable){
       const table=el('table','reading-table'),caption=el('caption','',section.passage.title),thead=el('thead'),row=el('tr');
@@ -190,7 +216,8 @@
         feedbackRow=el('tr','table-feedback-row');feedbackRow.hidden=true;feedbackRow.dataset.feedbackFor=item.id;
         const feedbackCell=el('td');feedbackCell.colSpan=item.cells.length;feedbackCell.append(fb);feedbackRow.append(feedbackCell);tableBody.append(card,feedbackRow);
       }else{
-        head(card,i,`笔记 ${i+1}`);const parts=item.q.split('___'),line=el('p','note-line');line.append(document.createTextNode(parts[0]),input,document.createTextNode(parts[1]));card.append(line,fb);notes.append(card);
+        const kind=section.type==='reading-diagram'?'图示':section.type==='reading-short-answer'?'问题':'笔记';
+        head(card,i,`${kind} ${i+1}`);const parts=item.q.split('___'),line=el('p','note-line');line.append(document.createTextNode(parts[0]),input);if(parts.length>1)line.append(document.createTextNode(parts[1]));card.append(line,fb);notes.append(card);if(section.type==='reading-flow'&&i<section.items.length-1)notes.append(el('div','flow-arrow','↓'));
       }
       const result=()=>{
         const response=input.value.trim(),normal=response.toLowerCase().replace(/[.,;:!?]$/,'').replace(/\s+/g,' ');
@@ -204,4 +231,7 @@
   }};
   RRQuestionTypes['reading-notes']=fillReading;
   RRQuestionTypes['reading-table']=fillReading;
+  RRQuestionTypes['reading-flow']=fillReading;
+  RRQuestionTypes['reading-diagram']=fillReading;
+  RRQuestionTypes['reading-short-answer']=fillReading;
 })();
